@@ -1,0 +1,42 @@
+.swiper-pagination-bullet {
+  width: 10px !important;
+  height: 10px !important;
+  border-radius: 50% !important;
+  /* background: #fe7c54; */
+}
+.swiper-pagination-bullet-active {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #fe7c54 !important;
+}
+
+.mySwiper2 {
+  padding: 5px !important;
+  padding-bottom: 60px !important;
+}
+
+.mySwiper2 > .swiper-pagination > .swiper-pagination-bullet-active {
+  background: #3fb65f !important;
+}
+
+.mySwiper3 {
+  padding-bottom: 30px !important;
+}
+
+.mySwiper3 > .swiper-pagination > .swiper-pagination-bullet-active {
+  background: #5838fc !important;
+}
+
+.restult-tab-title > li > a {
+  cursor: pointer;
+}
+
+.ratings i {
+  margin-right: 4px !important;
+}
+
+.package-item {
+  z-index: 0;
+  box-shadow: rgba(82, 89, 129, 0.05) -5px 8px 8px 0px;
+}

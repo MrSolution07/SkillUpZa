@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="74" height="60" viewBox="0 0 74 60">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#pattern);
+      }
+    </style>
+    <pattern id="pattern" preserveAspectRatio="xMidYMid slice" width="100%" height="100%" viewBox="0 0 74 60">
+      <image width="74" height="60" xlink:href="desktop1-image.png"/>
+    </pattern>
+  </defs>
+  <path id="desktop1" class="cls-1" d="M0,0H74V60H0Z"/>
+</svg>
