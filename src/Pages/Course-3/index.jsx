@@ -122,25 +122,25 @@ function Course3() {
                     <h3 className="widget-title">Course Categories</h3>
                     <ul>
                       <li>
-                        <Link to="/">Web Design</Link>
+                        <Link to="">Web Design</Link>
                       </li>
                       <li>
-                        <Link to="/">Marketing</Link>
+                        <Link to="">Marketing</Link>
                       </li>
                       <li>
-                        <Link to="/">Frontend</Link>
+                        <Link to="">Frontend</Link>
                       </li>
                       <li>
-                        <Link to="/">IT &amp; Software</Link>
+                        <Link to="">IT &amp; Software</Link>
                       </li>
                       <li>
-                        <Link to="/">Photography</Link>
+                        <Link to="">Photography</Link>
                       </li>
                       <li>
-                        <Link to="/">Technology</Link>
+                        <Link to="">Technology</Link>
                       </li>
                       <li>
-                        <Link to="/">General</Link>
+                        <Link to="">General</Link>
                       </li>
                     </ul>
                   </aside>

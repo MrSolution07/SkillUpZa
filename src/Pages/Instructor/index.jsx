@@ -25,12 +25,11 @@ function Instructor() {
             <div className="row">
               <div className="col-md-12 text-center">
                 <h2 className="sec-title mb-15">
-                  <span>Classes Taught by</span> Real Creators
+                  <span>Your</span> Jobs
                 </h2>
                 <p className="sec-desc">
-                  Online education is a flexible instructional delivery system
-                  that encompasses any
-                  <br /> kind of learning that takes place via the Internet.
+                  lorem ipsum 
+                  <br /> kind of learning that takes place via the
                 </p>
               </div>
             </div>

@@ -1,8 +1,9 @@
-//this is the main home
+//this is the main home i left the comments so that you can see how to use some options 
 import ProtoTypes from "prop-types";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import useWindowPosition from "../../Hooks/useWindowPosition";
+import { color } from "framer-motion";
 
 function Header({ className, logo, joinBtn, search }) {
   const [activeMobileMenu, setActiveMobileMenu] = useState(false);
@@ -45,7 +46,10 @@ function Header({ className, logo, joinBtn, search }) {
                 style={{ display: activeMobileMenu && "block" }}
               >
                 <ul className="navbar-nav">
-                  <li
+                  <li>
+                    <Link to="/">Home</Link> 
+                  </li>
+                  {/* <li
                     className="menu-item-has-children"
                     onClick={() =>
                       setActiveSubMobileMenu(
@@ -53,9 +57,8 @@ function Header({ className, logo, joinBtn, search }) {
                       )
                     }
                   >
-                    <li>
-                        <Link to="/">Home</Link>
-                    </li>
+                    
+
                     {/* <ul
                       className="sub-menu"
                       style={{
@@ -72,17 +75,13 @@ function Header({ className, logo, joinBtn, search }) {
                         <Link to="/home-3">Home Three</Link>
                       </li>
                     </ul> */}
-                  </li>
+                    {/* </li> */} 
 
-                  <li
-                    className="menu-item-has-children"
-                    onClick={() =>
-                      setActiveSubMobileMenu(
-                        activeMobileSubMenu === "course" ? false : "course"
-                      )
-                    }
-                  >
-                    <a>Courses</a>
+                    <li>
+                        <Link to="/course-3">Learning</Link>
+                      </li>
+
+                    {/* <a>Learning</a>
                     <span className="submenu-toggler">
                       <i
                         className={`fal ${
@@ -111,8 +110,13 @@ function Header({ className, logo, joinBtn, search }) {
                         <Link to="/single-course">Course Details</Link>
                       </li>
                     </ul>
-                  </li>
-                  <li
+                  </li> */}
+
+                      <li>
+                        <Link to="/instructor">Jobs</Link>
+                      </li>
+
+                  {/* <li
                     className="menu-item-has-children"
                     name="pages"
                     onClick={(e) => {
@@ -127,7 +131,7 @@ function Header({ className, logo, joinBtn, search }) {
                       );
                     }}
                   >
-                    <a>Pages</a>
+                    <a>Jobs</a>
                     <span className="submenu-toggler">
                       <i
                         className={`fal ${
@@ -182,17 +186,14 @@ function Header({ className, logo, joinBtn, search }) {
                         <Link to="/404">404 Page</Link>
                       </li>
                     </ul>
+                  </li> */}
+
+                  <li>
+                      <Link to="/about-1">About Us</Link>
                   </li>
-                  <li
-                    className="menu-item-has-children"
-                    onClick={() =>
-                      setActiveSubMobileMenu(
-                        activeMobileSubMenu === "blog" ? false : "blog"
-                      )
-                    }
-                  >
-                    <a>Blog</a>
-                    <span className="submenu-toggler">
+                    
+                    
+                    {/* <span className="submenu-toggler">
                       <i
                         className={`fal ${
                           activeMobileSubMenu === "blog"
@@ -200,8 +201,8 @@ function Header({ className, logo, joinBtn, search }) {
                             : "fa-plus"
                         }`}
                       ></i>
-                    </span>
-                    <ul
+                    </span> */}
+                    {/* <ul
                       className="sub-menu"
                       style={{
                         display: activeMobileSubMenu === "blog" && "block",
@@ -213,8 +214,9 @@ function Header({ className, logo, joinBtn, search }) {
                       <li>
                         <Link to="/single-post">Blog Details</Link>
                       </li>
-                    </ul>
-                  </li>
+                    </ul> */}
+                  {/* </li> */}
+                  
                   <li>
                     <Link to="/contact">Contact</Link>
                   </li>
@@ -237,7 +239,7 @@ function Header({ className, logo, joinBtn, search }) {
                 </a>
               )}
 
-              {/* Join Btn   */}
+              {/* Join Btn  we have to put the link to the login page here */}
               {search && (
                 <form className="search-box" method="post" action="#">
                   <input

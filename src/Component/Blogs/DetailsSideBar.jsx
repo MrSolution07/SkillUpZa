@@ -16,7 +16,7 @@ function DetailsSideBar() {
           <h3 className="widget-title">Categories</h3>
           <ul>
             <li>
-              <Link to="/blog">Web Design</Link>
+              <Link to="/blog">Web Design </Link>
               <span>(24)</span>
             </li>
             <li>
