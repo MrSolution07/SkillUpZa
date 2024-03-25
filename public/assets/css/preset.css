@@ -1,7 +1,6 @@
 /*
  Theme Name: Bisylms
  Theme URI: 
- Author: Mosharof
  Author URI: 
  Description: Bisylms - Education HTML5 Responsive Template
  Version: 1.0
@@ -9,9 +8,9 @@
  License URI:
  */
 
-/*------------------------------------------------------
-/  All Preset Css
-/------------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------------
+/  All Preset Css this is the behavior of many things especially the hovers 
+/------------------------------------------------------------------------------------------------------------*/
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
 
@@ -46,7 +45,7 @@ a{
     transition: all 0.4s ease;
 }
 a:hover{
-    color: #5838fc;
+    color: #13547a;
     text-decoration: none;
 }
 a:focus{

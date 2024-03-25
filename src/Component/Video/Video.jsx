@@ -14,11 +14,11 @@ function Video() {
           <iframe
             width="681"
             height="427"
-            src="//www.youtube.com/embed/FzcfZyEhOoI?autoplay=1&amp;cc_load_policy=1&amp;color=null&amp;controls=1&amp;disablekb=0&amp;enablejsapi=0&amp;end=null&amp;fs=1&amp;h1=null&amp;iv_load_policy=1&amp;loop=0&amp;modestbranding=null&amp;mute=0&amp;origin=null&amp;playsinline=null&amp;rel=0&amp;showinfo=1&amp;start=0&amp;wmode=transparent&amp;theme=dark&amp;nocookie=false"
+            src="https://www.youtube.com/embed/OwgChBWs9xs?si=PcirQp6CYx0027tu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             frameBorder="0"
             allowFullScreen={true}
             tabIndex="-1"
-            allow="autoplay; accelerometer; encrypted-media; gyroscope; picture-in-picture"
+            // allow="autoplay; accelerometer; encrypted-media; gyroscope; picture-in-picture"
             style={{
               maxWidth: "100%",
               position: "fixed",
