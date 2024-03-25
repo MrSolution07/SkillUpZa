@@ -1,3 +1,4 @@
+// the card slides for the memberships 
 import { useEffect, useState } from "react";
 import PackageCard from "../Cards/PackageCard";
 
@@ -30,7 +31,7 @@ function Package() {
         <div className="row">
           <div className="col-md-12 text-center">
             <h2 className="sec-title">
-              <span>Online Learning</span> Offers 3 Types of Membership Packages
+              <span>Online Recuitment</span> Offers 3 Types of Membership Packages for companies
             </h2>
           </div>
         </div>

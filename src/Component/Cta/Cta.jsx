@@ -1,3 +1,4 @@
+//  content of home page with the video
 import { Link } from "react-router-dom";
 
 function Cta() {
@@ -13,12 +14,14 @@ function Cta() {
               <span>Online Course</span> From 160 Top Institutions.
             </h2>
             <p>
-              So I said codswallop car boot cheers mufty I don't want no agro
-              are you taking the
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Id temporibus totam fugit aliquam possimus, voluptates est quisquam 
+                itaque dolor perspiciatis consequuntur quas blanditiis voluptas vero 
+                accusamus asperiores natus tempora esse?
               <br /> piss cheeky my lady gutted mate excuse my french.
             </p>
             <Link
-              to="/course-1"
+              to="/course-3"
               className="bisylms-btn"
               style={{ zIndex: "0" }}
             >

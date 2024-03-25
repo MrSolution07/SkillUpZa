@@ -1,4 +1,4 @@
-//this is the main home i left the comments so that you can see how to use some options 
+//this is the main home 1 left the comments so that you can see how to use some options 
 import ProtoTypes from "prop-types";
 import { useState } from "react";
 import { Link } from "react-router-dom";

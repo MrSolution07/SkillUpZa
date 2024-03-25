@@ -1,3 +1,4 @@
+//  content of the jobs 
 import { useEffect, useState } from "react";
 import Preloader from "../../Component/Preloader";
 import Header from "../../Component/Headers";
@@ -37,8 +38,8 @@ function Instructor() {
               <TeacherCard
                 teacher={{
                   img: "assets/images/home2/teacher/2.png",
-                  name: "Hugh Saturation",
-                  subject: "Photographer",
+                  name: "company",
+                  subject: "Software engineer at blablabla",
                 }}
               />
 

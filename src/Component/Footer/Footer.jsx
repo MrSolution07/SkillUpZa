@@ -1,3 +1,4 @@
+// the footer we will be using
 import ProtoTypes from "prop-types";
 import { Link } from "react-router-dom";
 
@@ -10,7 +11,7 @@ function Footer({ getStart }) {
             <div className="col-md-12">
               <div className="cta-wrapper">
                 <img src="assets/images/home/2.png" alt="" />
-                <h3>You can be your own Guiding star with our help!</h3>
+                <h3>You can be your own Guiding star with SkillUp!</h3>
                 <Link to="/course-3" className="bisylms-btn">
                   Get Started Now
                 </Link>
@@ -26,22 +27,22 @@ function Footer({ getStart }) {
                   <img src="assets/images/logo.png" alt="" />
                 </Link>
                 <p>
-                  Lost the plot Richard you mug cup of tea knackered boot
-                  bender.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Id temporibus totam fugit aliquam possimus, voluptates est quisquam 
+                itaque dolor perspiciatis consequuntur quas blanditiis voluptas vero 
+                accusamus asperiores natus tempora esse?
                 </p>
                 <div className="ab-social">
-                  <a className="fac" href="#">
+                  <a className="fac" >
                     <i className="social_facebook"></i>
                   </a>
-                  <a className="twi" href="#">
+                  <a className="twi" >
                     <i className="social_twitter"></i>
                   </a>
-                  <a className="you" href="#">
+                  <a className="you" >
                     <i className="social_youtube"></i>
                   </a>
-                  <a className="lin" href="#">
-                    <i className="social_linkedin"></i>
-                  </a>
+                  
                 </div>
               </div>
             </aside>
@@ -76,7 +77,7 @@ function Footer({ getStart }) {
               <h3 className="widget-title">Catecories</h3>
               <ul>
                 <li>
-                  <Link to="/course-1">All Courses</Link>
+                  <Link to="/course-3">All Courses</Link>
                 </li>
                 <li>
                   <Link to="#">Storytelling & Voice Over</Link>
@@ -127,8 +128,8 @@ function Footer({ getStart }) {
           <div className="col-lg-12 text-center">
             <div className="copyright">
               <p>
-                © 2021 Copyright all Right Reserved Design by{" "}
-                <a href="http://quomodosoft.com/">Quomodosoft</a>
+                © 2024 Copyright all Right Reserved Design by{" "}
+                <a href="/about-1">Major Tech</a>
               </p>
             </div>
           </div>

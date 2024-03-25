@@ -1,13 +1,4 @@
 /*
- Theme Name: Bisylms
- Theme URI: 
- Author: Mosharof
- Author URI: 
- Description: Bisylms - Education HTML5 Responsive Template
- Version: 1.0
- License:
- License URI:
- */
 
 /*==================================
  [Table of contents]
@@ -28,7 +19,7 @@
 */
 
 /*------------------------------------------------------
-/ 1. Home 01
+/ 1. Home 01 HOME ! !!!!!!!!!!!!
 /------------------------------------------------------*/
 /*----  Header ------*/
 .header-01{
@@ -44,6 +35,7 @@
     position: relative;
     margin: 0;
     padding: 0;
+    
 }
 .navbar-brand{
     position: relative;
@@ -53,7 +45,7 @@
 }
 .navbar-brand img{
     width: auto;
-    height: 46px;
+    height: 70px;
 }
 .navbar-expand-lg .navbar-collapse{
     justify-content: flex-end;
@@ -62,6 +54,7 @@
     position: relative;
     margin: 0;
     padding: 0;
+    
 }
 .navbar-expand-lg .navbar-nav li{
     position: relative;
@@ -235,6 +228,7 @@
     padding: 75px 0 0;
 }
 .hero-content h2{
+    color:#333232;
     font-size: 60px;
     line-height: 72px;
     font-weight: 800;
@@ -249,6 +243,8 @@
     padding: 21px 28px;
 }
 .banner-thumb{
+    height: 100%;
+    width: 100%;
     position: relative;
     z-index: 2;
 }
@@ -5987,7 +5983,7 @@ Profile Page
     display: none;
 }
 .fix-header{
-    background: #5838fc;
+    background: #80d0c7;
     left: 0;
     position: fixed;
     right: 0;

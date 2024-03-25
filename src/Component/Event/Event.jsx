@@ -1,3 +1,5 @@
+// this is the contact now block on the home page
+// we can even put an api to this to fetch real time event for our users.
 import { Link } from "react-router-dom";
 
 function Event() {
@@ -10,7 +12,7 @@ function Event() {
               <span>Contact Now</span> Upcoming Events
             </h2>
           </div>
-        </div>
+        </div> we
         <div className="row">
           <div className="col-md-6">
             <div className="event-item-1">
@@ -18,7 +20,7 @@ function Event() {
                 24 <span>Jun</span>
               </div>
               <p>
-                <i className="icon_pin_alt"></i>New York, US
+                <i className="icon_pin_alt"></i>Johannesburg, SA
               </p>
               <h4>
                 <Link to="single-event">
@@ -87,7 +89,7 @@ function Event() {
         </div>
         <div className="row">
           <div className="col-md-12 text-center">
-            <Link className="read-more" to="#">
+            <Link className="read-more" to="">
               View all Events<i className="arrow_right"></i>
             </Link>
           </div>
