@@ -1,3 +1,4 @@
+// this is the one for home 1
 import ProtoTypes from "prop-types";
 import CourseItemCard from "../Cards/CourseItemCard";
 
@@ -13,7 +14,7 @@ function PopularCourse({ course, heading }) {
               </h2>
             </div>
             <div className="col-md-4">
-              <a className="read-more" href="#">
+              <a className="read-more" href="/course-3">
                 Browse Online Courses<i className="arrow_right"></i>
               </a>
             </div>
