@@ -11,7 +11,7 @@ function Home3TeacherCard({ img, name, position }) {
             Follow
           </Link>
           <div className="teacher-social">
-            <a href="#">
+            {/* <a href="#">
               <i className="social_facebook"></i>
             </a>
             <a href="#">
@@ -22,7 +22,7 @@ function Home3TeacherCard({ img, name, position }) {
             </a>
             <a href="#">
               <i className="social_linkedin"></i>
-            </a>
+            </a> */}
           </div>
         </div>
         <div className="teacher-meta">

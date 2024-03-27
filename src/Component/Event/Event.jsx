@@ -12,7 +12,7 @@ function Event() {
               <span>Contact Now</span> Upcoming Events
             </h2>
           </div>
-        </div> we
+        </div>
         <div className="row">
           <div className="col-md-6">
             <div className="event-item-1">

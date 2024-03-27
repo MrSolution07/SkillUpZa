@@ -326,7 +326,7 @@
 }
 .read-more{
     font-size: 13px;
-    color: #5d5a67;
+    color: #222224;
     line-height: .8;
     font-weight: 600;
     position: relative;
@@ -468,7 +468,7 @@
 }
 .shaf-filter li:hover,
 .shaf-filter li.active{
-    color: #5838fc;
+    color: #13547a;
 }
 .shaf-filter li:first-child{
     margin-left: 0;
@@ -547,10 +547,10 @@
 .front p{
     display: inline-block;
     height: 26px;
-    background: rgba(252, 46, 144, .1);
+    background: rgba(11, 02, 55, 0.10);
     font-size: 13px;
     line-height: .8;
-    color: #fc2e90;
+    color: #211c32;
     font-weight: 600;
     text-align: center;
     border-radius: 3px;
@@ -581,14 +581,14 @@
     font-weight: 600;
 }
 .fcf-bottom a i{
-    color: #5838fc;
+    color: #13547a;
     font-size: 16px;
     position: relative;
     top: 1px;
     margin-right: 10px;
 }
 .back {
-    background: #5838fc;
+    background: #13547a;
     -webkit-transform: rotateY(-180deg);
     -moz-transform: rotateY(-180deg);
     -o-transform: rotateY(-180deg);
@@ -796,7 +796,7 @@
     height: 0;
     border-style: solid;
     border-width: 30px 30px 0 0;
-    border-color: #5838fc #fff #fff #fff;
+    border-color: #13547a #fff #fff #fff;
     content: '';
     visibility: hidden;
     opacity: 0;
@@ -822,7 +822,7 @@
     left: 50px;
     top: 40px;
     font-size: 40px;
-    color: #5838fc;
+    color: #13547a;
     line-height: .8;
     text-transform: capitalize;
     font-weight: 700;
@@ -937,7 +937,7 @@
 .pack-price{
     display: block;
     font-size: 14px;
-    color: #5838fc;
+    color: #13547a;
     line-height: .8;
     font-weight: 700;
     margin: 0 0 25px;
@@ -970,7 +970,7 @@
     margin-right: 0;
 }
 .pack-meta span i {
-    color: #5838fc;
+    color: #13547a;
     font-size: 16px;
     margin-right: 10px;
 }
@@ -1112,7 +1112,7 @@
     margin-right: 30px;
 }
 .bp-meta a i{
-    color: #5838fc;
+    color: #13547a;
     margin-right: 9px;
     position: relative;
     top: 1px;
@@ -1121,7 +1121,7 @@
     margin-right: 0;
 }
 .bp-meta a:hover{
-    color: #5838fc;
+    color: #13547a;
 }
 .b-post-details h3{
     font-size: 20px;
@@ -1133,7 +1133,7 @@
     color: inherit;
 }
 .b-post-details h3 a:hover{
-    color: #5838fc;
+    color: #13547a;
 }
 .post-item-1:hover{
     -webkit-box-shadow: 0px 30px 50px 0px rgba(11, 02, 55, 0.10);
@@ -1244,7 +1244,7 @@ footer .widget ul li a{
     color: inherit;
 }
 footer .widget ul li a:hover{
-    color: #5838fc;
+    color: #13547a;
 }
 .copyright{
     position: relative;
@@ -1259,7 +1259,7 @@ footer .widget ul li a:hover{
     margin: 0;
 }
 .copyright p a{
-    color: #5838fc;
+    color: #13547a;
 }
 .copyright p a:hover{
     color: #767480;
@@ -3254,14 +3254,14 @@ footer .widget ul li a:hover{
 .teachers-section-3 .bisylms-btn{
     margin-top: 40px;
     background: rgba(88, 56, 252, .1);
-    color: #5838fc;
+    color: #13547a;
 }
 .teachers-section-3 .bisylms-btn:hover{
-    background: #5838fc;
+    background: #13547a;
     color: #fff;
 }
 .teachers-section-3 .teacher-item-2 .teacher-thumb{
-    background: #5838fc;
+    background: #13547a;
 }
 .teachers-section-3 .teacher-item-2:hover .teacher-thumb{
     -webkit-box-shadow: 0px 20px 30px 0px rgba(11, 2, 56, 0.16);
@@ -3515,7 +3515,7 @@ footer .widget ul li a:hover{
     bottom: 0;
     font-family: 'ElegantIcons';
     content: "\4e";
-    color: #5838fc;
+    color: #13547a;
     font-size: 10px;
     left: 2px;
     position: absolute;
@@ -3617,7 +3617,7 @@ footer .widget ul li a:hover{
 }
 .bisylms-pagination a, .bisylms-pagination span {
     font-size: 14px;
-    color: #5838fc;
+    color: #13547a;
     font-weight: 600;
     line-height: 40px;
     background: rgba(88, 56, 252, 0.1);
@@ -3634,7 +3634,7 @@ footer .widget ul li a:hover{
 }
 .bisylms-pagination a:hover, .bisylms-pagination .current {
     color: #fff;
-    background: #5838fc;
+    background: #13547a;
     -webkit-box-shadow: 0px 20px 30px 0px rgba(26, 8, 119, 0.24);
     -moz-box-shadow: 0px 20px 30px 0px rgba(26, 8, 119, 0.24);
     box-shadow: 0px 20px 30px 0px rgba(26, 8, 119, 0.24);
@@ -4284,7 +4284,7 @@ blockquote cite{
     bottom: 0;
     font-family: 'ElegantIcons';
     content: "\4e";
-    color: #5838fc;
+    color: #13547a;
     font-size: 10px;
     left: 2px;
     position: absolute;
@@ -4309,11 +4309,11 @@ Profile Page
     padding: 120px 0 210px;
 }
 .instructor-section .teacher-thumb{
-    background-image: linear-gradient(to right top, #5838fc, #4d35ce, #4230a1, #372a76, #2c234d);
+    background-image: linear-gradient(to right top, #0d8395, #20707d, #28a9be, #1a707d, #0d8395)
 }
 .instructor-section .teacher-meta h5 a:hover,
 .instructor-section .teacher-social a:hover{
-    color: #5838fc;
+    color: #13547a;
 }
 .profile-section{
     position: relative;
@@ -4475,7 +4475,7 @@ Profile Page
     color: #5838fc;
 }
 .feature-course-item-4 .price-rate .course-price{
-    color: #5838fc;
+    color: #13547a;
     font-size: 20px;
 }
 .feature-course-item-4 .fci-details .price-rate{
@@ -4720,11 +4720,11 @@ Profile Page
     justify-content: space-between;
 }
 .toolbar-wrapper-2 .toolbar-btn li a i{
-    color: #5838fc;
+    color: #13547a;
 }
 .toolbar-wrapper-2 .toolbar-btn li a{
     border-radius: 3px;
-    color: #5838fc;
+    color: #13547a;
     margin-right: 6px;
     padding: 0 22px;
     background: rgba(88, 56, 252, 0.1);
@@ -4735,7 +4735,7 @@ Profile Page
 .toolbar-wrapper-2 .toolbar-btn li a:hover, 
 .toolbar-wrapper-2 .toolbar-btn li a.active{
     color: #fff;
-    background: #5838fc;
+    background: #13547a;
     -webkit-box-shadow: 0px 20px 30px 0px rgba(26, 8, 119, 0.24);
     -moz-box-shadow: 0px 20px 30px 0px rgba(26, 8, 119, 0.24);
     box-shadow: 0px 20px 30px 0px rgba(26, 8, 119, 0.24);
@@ -4856,11 +4856,11 @@ Profile Page
     transition: all 0.4s ease;
 }
 .course-sidebar .widget ul li a:hover{
-    color: #5838fc;
+    color: #13547a;
 }
 .course-sidebar .widget ul li a:hover:after{
     content: "\5a";
-    color: #5838fc;
+    color: #13547a;
     -webkit-transition: all 0.4s ease;
     -o-transition: all 0.4s ease;
     transition: all 0.4s ease;
@@ -4911,7 +4911,7 @@ Profile Page
     transition: all 0.3s ease;
 }
 .price-filter ul li input[type=checkbox]:checked + label::after {
-    background: #5838fc;
+    background: #13547a;
     border-radius: 0;
     width: 8px;
     height: 8px;
@@ -4927,15 +4927,15 @@ Profile Page
     transition: all 0.3s ease;
 }
 .price-filter ul li input[type=checkbox]:checked + label::before{
-    border-color: #5838fc;
+    border-color: #13547a;
 }
 .price-filter input[type="submit"],
 .price-filter button{
     border: none;
     font-size: 13px;
     font-weight: 600;
-    color: #5838fc;
-    background: rgba(88, 56, 252, 0.1);
+    color: #13547a;
+    background: rgb(12 71 75 / 23%);
     height: 40px;
     padding: 14px 25px;
     text-align: center;
@@ -4955,7 +4955,7 @@ Profile Page
 .price-filter input[type="submit"]:hover,
 .price-filter button:hover{
     color: #fff;
-    background: #5838fc;
+    background: #13547a;
 }
 
 .latest-course{

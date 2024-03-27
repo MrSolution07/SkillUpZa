@@ -1,3 +1,4 @@
+// about us with the card
 import ProtoTypes from "prop-types";
 import { Link } from "react-router-dom";
 import Home3TeacherCard from "../Cards/Home3TeacherCard";
@@ -9,17 +10,17 @@ function Home3Teacher({ className, btnClass }) {
         <div className="row">
           <div className="col-md-12 text-center">
             <h2 className="sec-title mb-15">
-              Classes Taught by
-              <br /> Real Creators
+              Major Tech
+              <br /> Members
             </h2>
             <p className="sec-desc">
-              Online education is a flexible instructional delivery system that
-              encompasses any
-              <br /> kind of learning that takes place via the Internet.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+              Quos minus molestias odit possimus accusantium itaque illo quidem nostrum quae reiciendis labore, 
+              ratione, veritatis tenetur adipisci quibusdam ipsum quisquam vitae odio!
             </p>
           </div>
         </div>
-        <div className="row">
+        <div className="my-row">
           <Home3TeacherCard
             img="assets/images/home3/teacher/1.png"
             name="Dianne Ameter"
@@ -31,6 +32,11 @@ function Home3Teacher({ className, btnClass }) {
             position="Photographer"
           />
           <Home3TeacherCard
+            img="assets/images/home3/teacher/4.png"
+            name="Mr Solution"
+            position="Software Engineer"
+          />
+          <Home3TeacherCard
             img="assets/images/home3/teacher/3.png"
             name="Jim Séchen"
             position="Stylist & Author"
@@ -40,8 +46,9 @@ function Home3Teacher({ className, btnClass }) {
             name="Eric Widget"
             position="Designer"
           />
+
         </div>
-        <div className="row">
+        {/* <div className="row">
           <div className="col-md-12 text-center">
             <Link
               to="/instructor"
@@ -50,7 +57,7 @@ function Home3Teacher({ className, btnClass }) {
               View All Teachers
             </Link>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );
