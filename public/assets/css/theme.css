@@ -410,7 +410,7 @@
     color: inherit;
 }
 .course-item-1 h4 a:hover{
-    color: #5838fc;
+    color: #13547a;
 }
 /*---- About Section ------*/
 .ab-thumb{
@@ -436,7 +436,7 @@
 .ab-content p.mid-item{
     font-size: 20px;
     line-height: 30px;
-    color: #5838fc;
+    color: #08324b;
     margin-bottom: 25px;
 }
 
@@ -612,7 +612,7 @@
     background: #fff;
     font-size: 13px;
     line-height: .8;
-    color: #5838fc;
+    color: #13547a;
     font-weight: 600;
     text-align: center;
     border-radius: 3px;
@@ -715,7 +715,7 @@
     margin-bottom: 44px;
 }
 .cta-section .bisylms-btn{
-    color: #5838fc;
+    color: #13547a;
     background: #fff;
 }
 .video-section{
@@ -3348,7 +3348,7 @@ footer .widget ul li a:hover{
 .single-info p i{
     font-size: 16px;
     line-height: 22px;
-    color: #5838fc;
+    color: #13547a;
     position: absolute;
     left: 0;
     top: 0;
@@ -3454,7 +3454,7 @@ footer .widget ul li a:hover{
 .contact-form input[type="submit"]{
     height: 50px;
     border-radius: 3px;
-    background: #5838fc;
+    background: #13547a;
     color: #fff;
     text-align: center;
     border: none;
@@ -3491,7 +3491,7 @@ footer .widget ul li a:hover{
     margin: 0 0 0;
 }
 .condition-check label a{
-    color: #5838fc;
+    color: #13547a;
 }
 .condition-check label a:hover{
     color: #686875;
