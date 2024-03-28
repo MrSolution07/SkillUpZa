@@ -234,7 +234,7 @@ function Header({ className, logo, joinBtn, search }) {
 
               {/* Join Btn  */}
               {joinBtn && (
-                <a href="#" className="join-btn">
+                <a href="../Login_Dashboard/authentication/auth-register" className="join-btn">
                   Join for Free
                 </a>
               )}

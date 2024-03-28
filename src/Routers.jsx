@@ -15,6 +15,7 @@ import Blogs from "./Pages/Blogs";
 import SinglePost from "./Pages/SinglePost";
 import Contact from "./Pages/Contact";
 
+
 const router = createBrowserRouter([
   {
     path: "/",
