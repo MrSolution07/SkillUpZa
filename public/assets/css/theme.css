@@ -4254,6 +4254,7 @@ blockquote cite{
 .save-comment input[type="checkbox"] {
     display: none;
 }
+
 .save-comment label {
     font-size: 14px;
     line-height: 24px;

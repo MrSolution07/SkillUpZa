@@ -1,7 +1,6 @@
 //Join for free page or register 
 
 
-
 import { Helmet } from 'react-helmet';
 
 const RegisterPage = () => {
@@ -20,7 +19,7 @@ const RegisterPage = () => {
                   </div>
                   <div className="text-center auth-logo-text">
                     <h4 className="mt-0 mb-3 mt-5">SkillUp</h4>
-                    <p className="text-muted mb-0">Get your free SkillUp account now.</p>
+                    <p className="text-muted">Get your free SkillUp account now.</p>
                   </div>
                   <form className="form-horizontal auth-form my-4" action="index.html">
                     <div className="form-group">
@@ -92,7 +91,7 @@ const RegisterPage = () => {
         </div>
       </div>
     </div>
-    
+
   );
 };
 
