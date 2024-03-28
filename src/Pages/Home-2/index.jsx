@@ -8,7 +8,7 @@ import FeatureHome2 from "../../Component/Features/FeatureHome2";
 import Teachers from "../../Component/Teachers/Teachers";
 import Testimonial from "../../Component/Testimonials/Testimonial";
 import Pricing from "../../Component/Pricing/Pricing";
-import Customer from "../../Component/Customer/Customer";
+import Customer from "../../Component/JoinNow/Register";
 import FooterHome2 from "../../Component/Footer/FooterHome2";
 import GotoTop from "../../Component/GotoTop";
 

@@ -14,12 +14,17 @@ import Error from "./Pages/Error";
 import Blogs from "./Pages/Blogs";
 import SinglePost from "./Pages/SinglePost";
 import Contact from "./Pages/Contact";
+import Register from "./Component/JoinNow/Register";
 
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Home />,
+  },
+  {
+    path: "/Register",
+    element: <Register />,
   },
   {
     path: "/home-2",

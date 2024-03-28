@@ -5,7 +5,7 @@ import Footer from "../../Component/Footer/Footer";
 import Banner from "../../Component/Banner/Banner";
 import About from "../../Component/About";
 import Testimonial from "../../Component/Testimonials/Testimonial";
-import Customer from "../../Component/Customer/Customer";
+import Customer from "../../Component/JoinNow/Register";
 import Event from "../../Component/Event/Event";
 import GotoTop from "../../Component/GotoTop";
 
