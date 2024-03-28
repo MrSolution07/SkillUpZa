@@ -1,16 +1,17 @@
 //Join for free page or register 
 
+import "../NewStyle/style.css"
 
 import { Helmet } from 'react-helmet';
 
 const RegisterPage = () => {
   return (
-    <div className="container">
+    <div className="container" id="page">
       <div className="row vh-100 ">
         <div className="col-12 align-self-center">
           <div className="auth-page">
-            <div className="card auth-card shadow-lg">
-              <div className="card-body">
+            <div className="card auth-card shadow-lg" id="page">
+              <div className="card-body" >
                 <div className="px-3">
                   <div className="auth-logo-box">
                     <a href="../dashboard/analytics-index.html" className="logo logo-admin">
@@ -18,7 +19,7 @@ const RegisterPage = () => {
                     </a>
                   </div>
                   <div className="text-center auth-logo-text">
-                    <h4 className="mt-0 mb-3 mt-5">SkillUp</h4>
+                    <h4 className="name">SkillUp</h4>
                     <p className="text-muted">Get your free SkillUp account now.</p>
                   </div>
                   <form className="form-horizontal auth-form my-4" action="index.html">
