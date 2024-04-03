@@ -14,8 +14,8 @@ const RegisterPage = () => {
               <div className="card-body" >
                 <div className="px-3">
                   <div className="auth-logo-box">
-                    <a href="../dashboard/analytics-index.html" className="logo logo-admin">
-                      <img src="../assets/images/logo-sm.png" height="55" alt="logo" className="auth-logo" />
+                    <a href="" className="logo logo-admin">
+                      <img src="" height="55" alt="logo" className="auth-logo" />
                     </a>
                   </div>
                   <div className="text-center auth-logo-text">
@@ -84,7 +84,7 @@ const RegisterPage = () => {
                   </form>
                 </div>
                 <div className="m-3 text-center text-muted">
-                  <p className="">Already have an account ? <a href="../authentication/auth-login.html" className="text-primary ml-2">Log in</a></p>
+                  <p className="">Already have an account ? <a href="/LoginPage" className="text-primary ml-2">Log in</a></p>
                 </div>
               </div>
             </div>
