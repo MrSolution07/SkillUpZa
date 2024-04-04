@@ -2,6 +2,7 @@
 
 import "../NewStyle/style.css"
 
+
 import { Helmet } from 'react-helmet';
 
 const RegisterPage = () => {
@@ -10,7 +11,7 @@ const RegisterPage = () => {
       <div className="row vh-100 ">
         <div className="col-12 align-self-center">
           <div className="auth-page">
-            <div className="card auth-card shadow-lg" id="page">
+            <div className="card auth-card shadow-lg" id="regpage">
               <div className="card-body" >
                 <div className="px-3">
                   <div className="auth-logo-box">
@@ -78,7 +79,7 @@ const RegisterPage = () => {
                     </div>
                     <div className="form-group mb-0 row">
                       <div className="col-12 mt-2">
-                        <button className="btn btn-gradient-primary btn-round btn-block waves-effect waves-light" type="button">Register <i className="fas fa-sign-in-alt ml-1"></i></button>
+                        <button className="btn btn-gradient-primary btn-round btn-block waves-effect waves-light" type="button" id="btnReg">Register <i className="fas fa-sign-in-alt ml-1"></i></button>
                       </div>
                     </div>
                   </form>

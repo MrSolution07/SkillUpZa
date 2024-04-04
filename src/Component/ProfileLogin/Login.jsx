@@ -8,7 +8,7 @@ function Login() {
                     <div className="row vh-100 ">
                         <div className="col-12 align-self-center">
                             <div className="auth-page">
-                                <div className="card auth-card shadow-lg">
+                                <div className="card auth-card shadow-lg" id="logpage">
                                     <div className="card-body">
                                         <div className="px-3">
                                             <div className="auth-logo-box">
@@ -58,7 +58,7 @@ function Login() {
                                                 <div className="form-group mb-0 row">
                                                     <div className="col-12 mt-2">
                                                         <Link to="/ProfilePage">
-                                                            <button className="btn btn-gradient-primary btn-round btn-block waves-effect waves-light" type="button">Log In <i className="fas fa-sign-in-alt ml-1"></i></button>
+                                                            <button className="btn btn-gradient-primary btn-round btn-block waves-effect waves-light" id="btnLog" type="button">Log In <i className="fas fa-sign-in-alt ml-1"></i></button>
                                                         </Link>
                                                     </div>
                                                     {/* end col */}

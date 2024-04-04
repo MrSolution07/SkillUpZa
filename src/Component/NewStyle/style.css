@@ -1,3 +1,50 @@
-.name{
+/* Registration Page */
+#regpage{
+    border-radius: 15px;
+    min-width: 0%;
+    max-width: 700px;
+    margin: auto;
+}
+#regpage h4{
     color: #13547a;
+}
+#btnReg{
+    border-radius: 12px;
+}
+#btnReg:hover{
+    background-color: #17a2b8;
+}
+
+/* Login Page */
+#logpage{
+    border-radius: 15px;
+    min-width: 0%;
+    max-width: 700px;
+    margin: auto;
+}
+#logpage h4{
+    color: #13547a;
+}
+#btnLog{
+    border-radius: 12px;
+}
+#btnLog:hover{
+    background-color: #17a2b8;
+}
+
+/* Password Reset Page */
+#pwreset{
+    border-radius: 15px;
+    min-width: 0%;
+    max-width: 700px;
+    margin: auto;
+}
+#pwreset h4{
+    color: #13547a;
+}
+#btnReset{
+    border-radius: 12px;
+}
+#btnReset:hover{
+    background-color: #17a2b8;
 }
