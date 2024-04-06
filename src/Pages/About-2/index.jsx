@@ -22,7 +22,7 @@ function About2() {
     content = (
       <>
         <Header logo="assets/images/logo4.png" joinBtn={true} />
-        <Banner title="About Classic" background="assets/images/banner.jpg" />
+        <Banner title="About Classic" background="assets/images/bannerabout.jpg" />
         <About />
         <Testimonial />
         <Event />

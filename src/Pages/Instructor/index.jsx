@@ -20,7 +20,7 @@ function Instructor() {
     content = (
       <>
         <Header logo="assets/images/logo4.png" joinBtn={true} />
-        <Banner title="Instructor" background="assets/images/banner.jpg" />
+        <Banner title="Instructor" background="assets/images/bannerjob.jpg" />
         <section className="instructor-section">
           <div className="container">
             <div className="row">

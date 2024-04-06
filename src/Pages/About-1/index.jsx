@@ -25,7 +25,7 @@ function About1() {
     content = (
       <>
         <Header logo="assets/images/logo4.png" joinBtn={true} />
-        <Banner title="About Us" background="assets/images/banner.jpg" />
+        <Banner title="About Us" background="assets/images/bannerabout.jpg" />
         <PopularCourse />
         <Home3Funfact />
         <Package />

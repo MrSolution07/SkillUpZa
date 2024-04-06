@@ -12,7 +12,7 @@ function Login() {
                                     <div className="card-body">
                                         <div className="px-3">
                                             <div className="auth-logo-box">
-                                                <a href="" className="logo logo-admin"><img src="../assets/images/logo.png" height="55" alt="logo" className="auth-logo" /></a>
+                                                <a href="/" className="logo logo-admin"><img src="../assets/images/logo.png" height="55" alt="logo" className="auth-logo" /></a>
                                             </div>
                                             {/* end auth-logo-box */}
                                             <div className="text-center auth-logo-text">

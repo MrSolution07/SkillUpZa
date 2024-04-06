@@ -20,7 +20,7 @@ function Contact() {
     content = (
       <>
         <Header logo="assets/images/logo4.png" joinBtn={true} />
-        <Banner title="Contact Us" background="assets/images/banner.jpg" />
+        <Banner title="Contact Us" background="assets/images/bannercontact.jpg" />
         <section className="contact-section">
           <div className="container">
             <div className="row">

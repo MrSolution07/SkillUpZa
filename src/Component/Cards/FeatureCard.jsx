@@ -41,7 +41,7 @@ function FeatureCard({ course }) {
           </div>
           <div className="back">
             <div className="fcf-thumb">
-              <img src="assets/images/home/course/6.png" alt="" />
+              {/* <img src="assets/images/home/course/6.png" alt="" /> */}
             </div>
             <Link to={courseLink} className="c-cate">
               {title}
