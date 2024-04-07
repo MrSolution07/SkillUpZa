@@ -35,7 +35,7 @@ function Forgotpsw() {
                                         </form>
                                     </div>
                                     <div className="m-3 text-center text-muted">
-                                        <p className="">Remember It ? <a href="/Login" className="text-primary ml-2">Sign in</a></p>
+                                        <p className="">Remember It ? <a href="/LoginPage" className="text-primary ml-2">Sign in</a></p>
                                     </div>
                                 </div>
                             </div>
