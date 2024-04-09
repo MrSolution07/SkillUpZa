@@ -32,17 +32,17 @@ function Home3Teacher({ className, btnClass }) {
             position="Photographer"
           />
           <Home3TeacherCard
-            img="assets/images/home3/teacher/4.png"
+            img="assets/images/home3/teacher/3.png"
             name="Mr Solution"
             position="Software Engineer"
           />
           <Home3TeacherCard
-            img="assets/images/home3/teacher/3.png"
+            img="assets/images/home3/teacher/4.png"
             name="Jim Séchen"
             position="Stylist & Author"
           />
           <Home3TeacherCard
-            img="assets/images/home3/teacher/4.png"
+            img="assets/images/home3/teacher/5.png"
             name="Eric Widget"
             position="Designer"
           />

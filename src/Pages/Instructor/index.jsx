@@ -37,7 +37,7 @@ function Instructor() {
             <div className="row">
               <TeacherCard
                 teacher={{
-                  img: "assets/images/home2/teacher/2.png",
+                  img: "assets/images/home2/teacher/1.png",
                   name: "company",
                   subject: "Software engineer at blablabla",
                 }}
@@ -45,7 +45,7 @@ function Instructor() {
 
               <TeacherCard
                 teacher={{
-                  img: "assets/images/home2/teacher/1.png",
+                  img: "assets/images/home2/teacher/2.png",
                   name: "Dianne Ameter",
                   subject: "Illustrator",
                 }}
@@ -69,7 +69,7 @@ function Instructor() {
 
               <TeacherCard
                 teacher={{
-                  img: "assets/images/home2/teacher/1.png",
+                  img: "assets/images/home2/teacher/5.png",
                   name: "Dianne Ameter",
                   subject: "Illustrator",
                 }}
@@ -77,7 +77,7 @@ function Instructor() {
 
               <TeacherCard
                 teacher={{
-                  img: "assets/images/home2/teacher/2.png",
+                  img: "assets/images/home2/teacher/6.png",
                   name: "Hugh Saturation",
                   subject: "Photographer",
                 }}
@@ -85,7 +85,7 @@ function Instructor() {
 
               <TeacherCard
                 teacher={{
-                  img: "assets/images/home2/teacher/3.png",
+                  img: "assets/images/home2/teacher/7.png",
                   name: "Jim Séchen",
                   subject: "Stylist & Author",
                 }}
@@ -93,7 +93,7 @@ function Instructor() {
 
               <TeacherCard
                 teacher={{
-                  img: "assets/images/home2/teacher/4.png",
+                  img: "assets/images/home2/teacher/8.png",
                   name: "Eric Widget",
                   subject: "Designer",
                 }}
@@ -101,7 +101,7 @@ function Instructor() {
 
               <TeacherCard
                 teacher={{
-                  img: "assets/images/home2/teacher/1.png",
+                  img: "assets/images/home2/teacher/6.png",
                   name: "Dianne Ameter",
                   subject: "Illustrator",
                 }}
@@ -109,7 +109,7 @@ function Instructor() {
 
               <TeacherCard
                 teacher={{
-                  img: "assets/images/home2/teacher/2.png",
+                  img: "assets/images/home2/teacher/4.png",
                   name: "Hugh Saturation",
                   subject: "Photographer",
                 }}
@@ -117,7 +117,7 @@ function Instructor() {
 
               <TeacherCard
                 teacher={{
-                  img: "assets/images/home2/teacher/3.png",
+                  img: "assets/images/home2/teacher/1.png",
                   name: "Jim Séchen",
                   subject: "Stylist & Author",
                 }}
@@ -125,7 +125,7 @@ function Instructor() {
 
               <TeacherCard
                 teacher={{
-                  img: "assets/images/home2/teacher/4.png",
+                  img: "assets/images/home2/teacher/3.png",
                   name: "Eric Widget",
                   subject: "Designer",
                 }}

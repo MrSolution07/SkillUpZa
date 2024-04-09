@@ -29,10 +29,7 @@ function HomeHero() {
             <div className="hero-content">
               <h2>Your path to Success</h2>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Id temporibus totam fugit aliquam possimus, voluptates est quisquam 
-                itaque dolor perspiciatis consequuntur quas blanditiis voluptas vero 
-                accusamus asperiores natus tempora esse?
+                Keep current with the job market demand by having access to a range of available job opportunites. Whether seeking to upskill or transition to a new career, our platform provides the tools necesarry to equip you in any work industry. 
               </p>
               <Link to="/course-3" className="bisylms-btn">
                 Ready to Get Started?

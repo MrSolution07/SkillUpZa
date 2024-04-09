@@ -85,7 +85,7 @@ function FooterHome2() {
           </div>
           <div className="col-lg-3 col-md-3">
             <aside className="widget">
-              <h3 className="widget-title">Catecories</h3>
+              <h3 className="widget-title">Categories</h3>
               <ul>
                 <li>
                   <Link to="/course-3">All Courses</Link>

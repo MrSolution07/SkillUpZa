@@ -7,7 +7,6 @@ import FeatureHome3 from "../../Component/Features/FeatureHome3";
 import CourseHome3 from "../../Component/Course/CourseHome3";
 import Home3Register from "../../Component/Register/Home3Register";
 import FeatureCourse from "../../Component/Course/FeatureCourse";
-import Home3Funfact from "../../Component/FunFact/Home3Funfact";
 import Home3AppStore from "../../Component/AppStore/Home3AppStore";
 import Home3Teacher from "../../Component/Teachers/Home3Teacher";
 import CallAction from "../../Component/CallAction";
@@ -32,7 +31,6 @@ function Home3() {
         <CourseHome3 />
         <Home3Register />
         <FeatureCourse />
-        <Home3Funfact />
         <Home3AppStore />
         <Home3Teacher />
         <CallAction />
