@@ -152,3 +152,4 @@ function FooterHome2() {
 }
 
 export default FooterHome2;
+

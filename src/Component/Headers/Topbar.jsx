@@ -8,10 +8,10 @@ function Topbar() {
           <div className="col-md-7">
             <div className="topinfo">
               <p>
-                <i className="icon_mail_alt"></i>bisy@support.com
+                <i className="icon_mail_alt"></i>skillUp@gmail.com
               </p>
               <p>
-                <i className="icon_phone"></i>(+642) 245 356 432
+                <i className="icon_phone"></i>+27 849 980 630
               </p>
             </div>
           </div>
