@@ -16,7 +16,7 @@ const RegisterPage = () => {
                 <div className="px-3">
                   <div className="auth-logo-box">
                     <a href="" className="logo logo-admin">
-                      <img src="" height="55" alt="logo" className="auth-logo" />
+                      <img src="../assets/images/logo.png" height="55" alt="logo" className="auth-logo" />
                     </a>
                   </div>
                   <div className="text-center auth-logo-text">
