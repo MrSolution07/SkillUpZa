@@ -29,9 +29,11 @@ function About1() {
         {/* <PopularCourse /> */}
         {/* <Home3Funfact /> */}
         {/* <Package /> */}
-        {/* <Cta />
-        <Video /> */}   
+        {/* <Cta />*/}
+          
         <Home3Teacher className="teachers-section-3" btnClass="bisylms-btn" />
+        <Cta />
+        <Video />  
         <Footer />
         <GotoTop />
       </>

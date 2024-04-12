@@ -28,11 +28,11 @@ function Home() {
         <HomeHero />
         <PopularCourse course={true} heading={true} />
         <Feature />
-        <Cta />
-        <Video />
-        <Event />
-        <Package />
-        <Blogs />
+        {/* <Cta /> */}
+        {/* <Video /> */}
+        <Event /> 
+        {/* <Package />
+        <Blogs /> */}
         <Footer getStart={true} />
         <GotoTop />
       </>
