@@ -26,11 +26,12 @@ function About1() {
       <>
         <Header logo="assets/images/logo4.png" joinBtn={true} />
         <Banner title="About Us" background="assets/images/banner.jpg" />
-        <PopularCourse />
-        <Home3Funfact />
-        <Package />
-        <Cta />
-        <Video />
+        {/* i spoke with users and they didn't like the complicity of the previous look */}
+        {/* <PopularCourse /> */}
+        {/* <Home3Funfact /> */}
+        {/* <Package /> */}
+        {/* <Cta />
+        <Video /> */}   
         <Home3Teacher className="teachers-section-3" btnClass="bisylms-btn" />
         <Footer />
         <GotoTop />
