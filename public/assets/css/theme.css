@@ -140,7 +140,7 @@
     display: block;
 }
 .navbar-expand-lg .navbar-nav li .sub-menu li:hover > a{
-    color: #5838fc;
+    color: #08324b;
 }
 .navbar-expand-lg .navbar-nav li:hover .sub-menu{
     visibility: visible;

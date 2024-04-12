@@ -234,7 +234,7 @@ File: Topbar
 }
 
 .topbar .topbar-left .logo .logo-sm {
-  height: 24px;
+  height: 70px;
 }
 
 .topbar .topbar-left .logo .logo-lg {
@@ -911,7 +911,7 @@ File: Horizontal-nav
     margin-top: 5px;
   }
   .navbar-custom-menu .has-submenu.active a {
-    color: #1761fd;
+    color: #08324b;
   }
 }
 
@@ -930,7 +930,7 @@ File: Horizontal-nav
     display: inline-block !important;
   }
   .topbar .has-submenu.active a {
-    color: #1761fd;
+    color: #08324b;
   }
 }
 
