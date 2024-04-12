@@ -24,11 +24,13 @@ function About1() {
     content = (
       <>
         <Header logo="assets/images/logo4.png" joinBtn={true} />
-        <Banner title="About Us" background="assets/images/bannerabout.jpg" />
-        <PopularCourse />
-        <Package />
-        <Cta />
-        <Video />
+        <Banner title="About Us" background="assets/images/banner.jpg" />
+        {/* i spoke with users and they didn't like the complicity of the previous look */}
+        {/* <PopularCourse /> */}
+        {/* <Home3Funfact /> */}
+        {/* <Package /> */}
+        {/* <Cta />
+        <Video /> */}   
         <Home3Teacher className="teachers-section-3" btnClass="bisylms-btn" />
         <Footer />
         <GotoTop />

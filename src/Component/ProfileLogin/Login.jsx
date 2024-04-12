@@ -57,9 +57,9 @@ function Login() {
                                                 {/* end form-group */}
                                                 <div className="form-group mb-0 row">
                                                     <div className="col-12 mt-2">
-                                                        <Link to="/ProfilePage">
-                                                            <button className="btn btn-gradient-primary btn-round btn-block waves-effect waves-light" id="btnLog" type="button">Log In <i className="fas fa-sign-in-alt ml-1"></i></button>
-                                                        </Link>
+                                                        
+                                                            <a href='SkillUp/HTML/authentication/ProfilePage.html' ><button className="btn btn-gradient-primary btn-round btn-block waves-effect waves-light" id="btnLog" type="button">Log In <i className="fas fa-sign-in-alt ml-1"></i></button></a>
+                                                        
                                                     </div>
                                                     {/* end col */}
                                                 </div>

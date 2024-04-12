@@ -11,7 +11,6 @@ import SinglePost from "./Pages/SinglePost";
 import Contact from "./Pages/Contact";
 import Register from "./Component/JoinNow/Register";
 import LoginPage from "./Component/ProfileLogin/Login";
-import ProfilePage from "./Component/ProfileLogin/ProfilePage";
 import Forgotpsw from "./Component/ProfileLogin/Forgotpsw";
 
 
@@ -23,10 +22,6 @@ const router = createBrowserRouter([
   {
     path: "/LoginPage",
     element: <LoginPage />,
-  },
-  {
-    path: "/ProfilePage",
-    element: <ProfilePage />,
   },
   {
     path: "/Forgotpsw",
