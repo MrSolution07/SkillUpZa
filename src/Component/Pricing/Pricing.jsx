@@ -42,7 +42,7 @@ function Pricing() {
                   <i className="icon_check"></i>Private sessions
                 </li>
               </ul>
-              <Link to="/" className="bisylms-btn-2">
+              <Link to="/" className="SkillUplms-btn-2">
                 Buy Now
               </Link>
             </div>
@@ -71,7 +71,7 @@ function Pricing() {
                   <i className="icon_check"></i>Private sessions
                 </li>
               </ul>
-              <Link to="/" className="bisylms-btn-2">
+              <Link to="/" className="SkillUplms-btn-2">
                 Buy Now
               </Link>
             </div>
@@ -100,7 +100,7 @@ function Pricing() {
                   <i className="icon_check"></i>Private sessions
                 </li>
               </ul>
-              <Link to="/" className="bisylms-btn-2">
+              <Link to="/" className="SkillUplms-btn-2">
                 Buy Now
               </Link>
             </div>

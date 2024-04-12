@@ -243,7 +243,7 @@
     margin-bottom: 36px;
     text-align: justify;
 }
-.hero-content .bisylms-btn{
+.hero-content .SkillUplms-btn{
     height: 54px;
     padding: 21px 28px;
 }
@@ -268,7 +268,7 @@
     animation-name: fadeInRight;
     animation-delay: 0.35s;
 }
-.hero-content .bisylms-btn{
+.hero-content .SkillUplms-btn{
     -webkit-animation-duration: 3s;
     animation-duration: 3s;
     -webkit-animation-fill-mode: both;
@@ -716,7 +716,7 @@
     color: #fff;
     margin-bottom: 44px;
 }
-.cta-section .bisylms-btn{
+.cta-section .SkillUplms-btn{
     color: #13547a;
     background: #fff;
 }
@@ -861,11 +861,11 @@
 .event-item-1 h4 a:hover{
     color: #5838fc;
 }
-.event-item-1 .bisylms-btn{
+.event-item-1 .SkillUplms-btn{
     height: 30px;
     padding: 9px 19px;
 }
-.event-item-1 .bisylms-btn:hover{
+.event-item-1 .SkillUplms-btn:hover{
     -webkit-box-shadow: 0px 10px 20px 0px rgba(37, 14, 154, 0.24);
     -moz-box-shadow:    0px 10px 20px 0px rgba(37, 14, 154, 0.24);
     box-shadow:         0px 10px 20px 0px rgba(37, 14, 154, 0.24);
@@ -1166,7 +1166,7 @@
     margin: 52px 0 0 -115px;
     width: 48%;
 }
-.cta-wrapper .bisylms-btn{
+.cta-wrapper .SkillUplms-btn{
     margin-top: 75px;
 }
 .footer-1{
@@ -1320,14 +1320,14 @@ footer .widget ul li a:hover{
     top: 2px;
     margin-right: 10px;
 }
-.topbar .bisylms-btn-2{
+.topbar .SkillUplms-btn-2{
     height: 40px;
     background: #fe7c54;
     color: #fff;
     border-radius: 0;
     padding: 14px 18px;
 }
-.topbar .bisylms-btn-2:hover{
+.topbar .SkillUplms-btn-2:hover{
     background: #5838fc;
 }
 
@@ -1502,7 +1502,7 @@ footer .widget ul li a:hover{
 .hero-content ul li:nth-child(3){
     color: #5838fc;
 }
-.hero-banner-2 .bisylms-btn-2{
+.hero-banner-2 .SkillUplms-btn-2{
     height: 54px;
     color: #fff;
     background: #fe7c54;
@@ -1587,7 +1587,7 @@ footer .widget ul li a:hover{
     border-color: #f5f5f8;
     box-shadow: none;
 }
-.popular-course-section-2 .bisylms-btn-2{
+.popular-course-section-2 .SkillUplms-btn-2{
     margin-top: 30px;
 }
 .popular-course-section-2 .ab-thumb{
@@ -1665,7 +1665,7 @@ footer .widget ul li a:hover{
     background: #f5f7fa;
     padding: 111px 0 90px;
 }
-.feature-course-section-2 .bisylms-btn-2{
+.feature-course-section-2 .SkillUplms-btn-2{
     margin-top: 30px;
 }
 .feature-course-item-2{
@@ -2397,7 +2397,7 @@ footer .widget ul li a:hover{
     color: #fff;
     margin: 10px 0 40px;
 }
-.slider-content .bisylms-btn-3{
+.slider-content .SkillUplms-btn-3{
     background: #3fb65f;
     color: #fff;
 }
@@ -2439,7 +2439,7 @@ footer .widget ul li a:hover{
     animation-delay: 1.5s;
     animation-name: fadeInRight;
 }
-.hero-slider .owl-item.active .slider-content .bisylms-btn-3{
+.hero-slider .owl-item.active .slider-content .SkillUplms-btn-3{
     animation-delay: 1.6s;
     animation-name: fadeInUp;
 }
@@ -3044,13 +3044,13 @@ footer .widget ul li a:hover{
 .appstore-section .sec-desc{
     margin-bottom: 44px;
 }
-.appstore-section .bisylms-btn-3{
+.appstore-section .SkillUplms-btn-3{
     background: #3fb65f;
     height: 60px;
     padding: 13px 30px;
     text-align: center;
 }
-.appstore-section .bisylms-btn-3:last-child{
+.appstore-section .SkillUplms-btn-3:last-child{
     margin-left: 10px;
 }
 .app-img{
@@ -3075,7 +3075,7 @@ footer .widget ul li a:hover{
     position: relative;
     padding: 110px 0 120px;
 }
-.teachers-section-2 .bisylms-btn-3{
+.teachers-section-2 .SkillUplms-btn-3{
     margin-top: 40px;
 }
 .teacher-item-2{
@@ -3178,7 +3178,7 @@ footer .widget ul li a:hover{
     color: #fff;
     margin-bottom: 44px;
 }
-.cta-section-2 .bisylms-btn-3{
+.cta-section-2 .SkillUplms-btn-3{
     color: #fff;
     background: #3fb65f;
 }
@@ -3254,12 +3254,12 @@ footer .widget ul li a:hover{
     position: relative;
     padding: 112px 0 120px;
 }
-.teachers-section-3 .bisylms-btn{
+.teachers-section-3 .SkillUplms-btn{
     margin-top: 40px;
     background: rgba(88, 56, 252, .1);
     color: #13547a;
 }
-.teachers-section-3 .bisylms-btn:hover{
+.teachers-section-3 .SkillUplms-btn:hover{
     background: #13547a;
     color: #fff;
 }
@@ -3291,12 +3291,12 @@ footer .widget ul li a:hover{
     position: relative;
     padding: 37px 0 217px;
 }
-.ab-customars-section .bisylms-btn-2{
+.ab-customars-section .SkillUplms-btn-2{
     background: rgba(88, 56, 252, .1);
     color: #5838fc;
     border-radius: 3px;
 }
-.ab-customars-section .bisylms-btn-2:hover{
+.ab-customars-section .SkillUplms-btn-2:hover{
     background: #5838fc;
     color: #fff;
     -webkit-box-shadow: 0px 10px 20px 0px rgba(37, 14, 154, 0.24);
@@ -3363,12 +3363,12 @@ footer .widget ul li a:hover{
     margin-bottom: 24px;
     color: #2c234d;
 }
-.bisylms-map {
+.SkillUplms-map {
     position: relative;
     line-height: .8;
     overflow: hidden;
 }
-.bisylms-map iframe {
+.SkillUplms-map iframe {
     width: 100%;
     height: 480px;
     border: none;
@@ -3613,12 +3613,12 @@ footer .widget ul li a:hover{
     position: relative;
     padding: 120px 0;
 }
-.bisylms-pagination {
+.SkillUplms-pagination {
     position: relative;
     z-index: 3;
     margin: 10px 0 0;
 }
-.bisylms-pagination a, .bisylms-pagination span {
+.SkillUplms-pagination a, .SkillUplms-pagination span {
     font-size: 14px;
     color: #13547a;
     font-weight: 600;
@@ -3635,25 +3635,25 @@ footer .widget ul li a:hover{
     -o-transition: all 0.4s ease;
     transition: all 0.4s ease;
 }
-.bisylms-pagination a:hover, .bisylms-pagination .current {
+.SkillUplms-pagination a:hover, .SkillUplms-pagination .current {
     color: #fff;
     background: #13547a;
     -webkit-box-shadow: 0px 20px 30px 0px rgba(26, 8, 119, 0.24);
     -moz-box-shadow: 0px 20px 30px 0px rgba(26, 8, 119, 0.24);
     box-shadow: 0px 20px 30px 0px rgba(26, 8, 119, 0.24);
 }
-.bisylms-pagination a.next, .bisylms-pagination a.prev {
+.SkillUplms-pagination a.next, .SkillUplms-pagination a.prev {
     width: auto;
     padding: 0 15px;
     text-transform: capitalize;
 }
-.bisylms-pagination a.next i{
+.SkillUplms-pagination a.next i{
     font-size: 18px;
     position: relative;
     top: 4px;
     margin-left: 9px;
 }
-.bisylms-pagination a.prev i{
+.SkillUplms-pagination a.prev i{
     font-size: 18px;
     position: relative;
     top: 4px;
@@ -5156,7 +5156,7 @@ Profile Page
     color: #2c234d;
     font-weight: 600;
 }
-.info-course .bisylms-btn {
+.info-course .SkillUplms-btn {
     height: 40px;
     width: 100%;
     padding: 14px 25px;

@@ -50,7 +50,7 @@ function Home3Teacher({ className, btnClass }) {
           <div className="col-md-12 text-center">
             <Link
               to="/instructor"
-              className={btnClass ? btnClass : "bisylms-btn-3"}
+              className={btnClass ? btnClass : "SkillUplms-btn-3"}
             >
               View All Teachers
             </Link>

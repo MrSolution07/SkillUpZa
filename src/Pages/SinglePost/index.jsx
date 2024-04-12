@@ -67,7 +67,7 @@ function SinglePost() {
                   
                   <div className="post-tags">
                     <h5>Tags:</h5>
-                    <a href="#">Bisy LMS</a>
+                    <a href="#">SkillUp LMS</a>
                     <a href="#">Design</a>
                     <a href="#">General</a>
                   </div>

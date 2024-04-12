@@ -16,7 +16,7 @@ function Topbar() {
             </div>
           </div>
           <div className="col-md-5 text-right">
-            <Link to="#" className="bisylms-btn-2">
+            <Link to="#" className="SkillUplms-btn-2">
               Create Account
             </Link>
           </div>

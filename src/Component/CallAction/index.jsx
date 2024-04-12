@@ -17,7 +17,7 @@ function CallAction({ btnClass }) {
               stories to help you
               <br /> learn while staying home.
             </p>
-            <a href="#" className={btnClass ? btnClass : "bisylms-btn-3"}>
+            <a href="#" className={btnClass ? btnClass : "SkillUplms-btn-3"}>
               Explore Resources
             </a>
           </div>
