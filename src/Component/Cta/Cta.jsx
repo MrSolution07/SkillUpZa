@@ -14,11 +14,8 @@ function Cta() {
               <span>Online Course</span> From 160 Top Institutions.
             </h2>
             <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Id temporibus totam fugit aliquam possimus, voluptates est quisquam 
-                itaque dolor perspiciatis consequuntur quas blanditiis voluptas vero 
-                accusamus asperiores natus tempora esse?
-              <br /> piss cheeky my lady gutted mate excuse my french.
+            Explore a diverse range of subjects, from in-demand tech skills to established academic disciplines. Whether you're interested in data science, business analytics, creative writing, or mastering a new language, you'll find comprehensive and engaging courses.
+              <br /> Learn from these courses the skills that you need to know to thrive in any industry.
             </p>
             <Link
               to="/course-3"

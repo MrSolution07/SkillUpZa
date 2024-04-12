@@ -28,7 +28,7 @@ function Contact() {
                 <div className="contact--info-area">
                   <h3>Get in touch</h3>
                   <p>
-                    Looking for help? Fill the form and start a new adventure.
+                    Looking for help? Get in touch wih us.
                   </p>
                   <div className="single-info">
                     <h5>Headquaters</h5>
@@ -77,7 +77,7 @@ function Contact() {
                 <div className="contact-form">
                   <h4>Let’s Connect</h4>
                   <p>
-                    Integer at lorem eget diam facilisis lacinia ac id massa.
+                    Fill out your details
                   </p>
                   <ContactForm />
                 </div>

@@ -61,8 +61,8 @@ function CourseSingle() {
                       </div>
                     </div>
                     <div className="course-price">
-                      $75.00
-                      <span>$92.00</span>
+                      R75.00
+                      <span>R92.00</span>
                     </div>
                   </div>
                   <div className="sc-thumb">
@@ -117,37 +117,23 @@ function CourseSingle() {
                           role="tabpanel"
                         >
                           <div className="overview-content">
-                            <h4>Course Description</h4>
+                          <h4>Art & Design for Problem Solvers: Unleash Your Creative Approach</h4>
+                            <p>This course dives into the world of art and design, not just as creative expression, but as a powerful tool for problem-solving. You'll explore how design thinking methodologies and visual communication techniques can be applied to tackle real-world challenges across various disciplines.</p>
+
                             <p>
-                              You mug tickety-boo bite your arm off David
-                              bamboozled easy peasy in my flat bugger
-                              argy-bargy, Oxford starkers barney bender haggle
-                              barmy A bit of how's your father, pear shaped arse
-                              over tit dropped a clanger cup of char bloke mufty
-                              pukka. He legged it some dodgy chav pardon you
-                              vagabond old bubble and squeak posh young
-                              delinquent mufty Charles quaint, bloke spend a
-                              penny sloshed Harry car boot bugger all mate
-                              bamboozled blatant cack, skive off hanky panky
-                              cheeky chap hotpot burke such a fibber cheeky
-                              bugger blag. Chinwag Eaton owt to do with me
-                              Charles excuse my French cor blimey guvnor bender
-                              give us a bell gosh bamboozled, wind up in my flat
-                              David bog lurgy the full monty cup of char cockup,
-                              brolly bevvy super bubble and squeak well starkers
-                              cobblers smashing. Only a quid amongst well
-                              argy-bargy hotpot bugger all mate chimney pot cup
-                              of char do one barmy fantastic, Eaton bloke barney
-                              blower haggle cheesed off Elizabeth daft.
+                              <b>What you'll learn: </b>
+                              <b>Design Thinking Fundamentals:</b> Discover the design thinking process, a human-centered approach to problem-solving. Learn how to empathize with users, define problems, ideate solutions, prototype, and test your ideas iteratively.
+                              <b>Visual Thinking and Communication:</b> Develop your visual vocabulary and storytelling skills. Explore tools like sketching, diagramming, and visual storytelling to communicate ideas effectively and engage your audience.
+                              <b>Creativity and Innovation:</b> Cultivate a growth mindset and explore techniques to spark creative thinking. Learn to overcome creative blocks and develop a process for generating innovative solutions.
+                              <b>Brainstorming and Ideation:</b> Master brainstorming techniques to generate a multitude of creative solutions to any problem. Learn to evaluate ideas objectively and select the most promising ones for further development.
+                              <b>Prototyping and User Testing:</b> Create low-fidelity prototypes to visualize and test your ideas quickly and cheaply. Learn to gather user feedback and iterate on your designs based on real-world insights.
                             </p>
+                            <h4>Course Structure</h4>
                             <p>
-                              Chimney pot barmy easy peasy he lost his bottle
-                              nancy boy old cor blimey guvnor bog tickety-boo
-                              geeza, Richard on your bike mate down the pub are
-                              you taking the piss cack super hunky-dory haggle I
-                              spend a penny, hanky panky zonked cobblers
-                              spiffing good time cup of tea in my flat faff
-                              about the full monty.
+                              The course will combine lectures, interactive workshops, and hands-on projects.
+                              Lectures will introduce key concepts and frameworks for problem-solving through art and design.
+                              Workshops will provide opportunities to apply these concepts through guided activities and group discussions.
+                              Hands-on projects will allow you to tackle real-world design challenges and develop your creative problem-solving skills in a practical setting
                             </p>
                             <h4>Course Description</h4>
                             <ul>
@@ -155,31 +141,21 @@ function CourseSingle() {
                                 <i className="icon_check_alt2"></i>Learn The
                                 Latest Skills
                                 <span>
-                                  He lost his bottle starkers up the duff wind
-                                  up easy peasy cracking goal cheers I butty
-                                  only a quid he legged it, cuppa the little
-                                  rotter bevvy bugger all mate spiffing good
-                                  time.
+                                  This course will provide you with the recent tools you need to gain knowledge and build on your expertise.
                                 </span>
                               </li>
                               <li>
                                 <i className="icon_check_alt2"></i>Earn a
                                 Certificate or Degree
                                 <span>
-                                  Chimney pot barmy easy peasy he lost his
-                                  bottle nancy boy old cor blimey guvnor bog
-                                  tickety-boo geeza, Richard on your bike mate
-                                  down the pub are you taking.
+                                  Earn a certificate upon completion of this course to build on your CV.
                                 </span>
                               </li>
                               <li>
                                 <i className="icon_check_alt2"></i>Get Ready for
                                 a Career
                                 <span>
-                                  Lost the plot plastered he lost his bottle
-                                  blatant barney butty are you taking the piss
-                                  porkies me old mucker young delinquent
-                                  smashing so I said pear shaped cheeky say.
+                                  Be ready for the workplace as this course will prepare you the comprehensive and practical understanding.
                                 </span>
                               </li>
                             </ul>
@@ -857,7 +833,10 @@ function CourseSingle() {
                     <LatestCourseCard
                       img="assets/images/course/1.jpg"
                       name="Using creative problem Solving"
-                      price="24.00"
+                      price="64.00"
+                      offerPrice="46.00"
+
+
                     />
                     <LatestCourseCard
                       img="assets/images/course/2.jpg"
@@ -867,15 +846,15 @@ function CourseSingle() {
                     />
                     <LatestCourseCard
                       img="assets/images/course/3.jpg"
-                      name="Making music Other people"
+                      name="Front-End Development with React"
                       price="76.00"
-                      offerPrice="$46"
+                      offerPrice="46.00"
                     />
                     <LatestCourseCard
                       img="assets/images/course/4.jpg"
-                      name="Learning jQuery mobile."
+                      name="Business Analytics and Economics."
                       price="94.00"
-                      offerPrice="$74.00"
+                      offerPrice="74.00"
                     />
                   </aside>
                 </div>

@@ -140,14 +140,13 @@ function PopularCourse({ course, heading }) {
           </div>
           <div className="col-lg-5 col-md-6">
             <div className="ab-content">
-              <h3>I will stay with you until you pass your exam.</h3>
+              <h3>Fuel Your Career. Find Your Perfect Fit.</h3>
               <p className="mid-item">
                 Who else do you know who'll do that for you?
               </p>
               <p>
-                So I said codswallop car boot cheers mufty I don't want no agro
-                are you taking the piss cheeky my lady gutted mate excuse my
-                french, gormless have it cras.
+                We will help you grow and build on the skills needed to land your dream job. 
+                Join us now and experience a seamless job-skeeing process. 
               </p>
               <a className="bisylms-btn" href="#">
                 Know More

@@ -23,7 +23,7 @@ function Pricing() {
               <h5>Basic</h5>
               <img src="assets/images/home2/p1.png" alt="" />
               <div className="p-price">
-                <sup>$</sup> 24 <span>/ mo</span>
+                <sup>R</sup> 24 <span>/ mo</span>
               </div>
               <ul>
                 <li>
@@ -52,7 +52,7 @@ function Pricing() {
               <h5>Standard</h5>
               <img src="assets/images/home2/p2.png" alt="" />
               <div className="p-price">
-                <sup>$</sup> 49 <span>/ mo</span>
+                <sup>R</sup> 49 <span>/ mo</span>
               </div>
               <ul>
                 <li>
@@ -81,7 +81,7 @@ function Pricing() {
               <h5>Platinum</h5>
               <img src="assets/images/home2/p3.png" alt="" />
               <div className="p-price">
-                <sup>$</sup> 75 <span>/ mo</span>
+                <sup>R</sup> 75 <span>/ mo</span>
               </div>
               <ul>
                 <li>

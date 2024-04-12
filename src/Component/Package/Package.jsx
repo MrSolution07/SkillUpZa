@@ -49,7 +49,7 @@ function Package() {
                   classes: "3",
                   link: "/single-course",
                   description:
-                    "He nicked it I don't want no agro what a load of rubbishbleeding skive off tickety-boo hunky dory chancer.",
+                    "This premium membership offers everything in Silver, plus additional features designed for high-volume recruitment teams and specialized talent acquisition needs.",
                 }}
                 id={1}
                 status={carusole}
@@ -65,7 +65,7 @@ function Package() {
                   classes: "3",
                   link: "/single-course",
                   description:
-                    "He nicked it I don't want no agro what a load of rubbishbleeding skive off tickety-boo hunky dory chancer.",
+                    "This membership builds on the Bronze tier, offering powerful features to gain deeper insights, personalize your outreach, and build a competitive talent pipeline.",
                 }}
                 id={2}
                 status={carusole}
@@ -81,7 +81,7 @@ function Package() {
                   classes: "3",
                   link: "/single-course",
                   description:
-                    "He nicked it I don't want no agro what a load of rubbishbleeding skive off tickety-boo hunky dory chancer.",
+                    "Designed for small-scale recruiters, this membership offers essential features to streamline your talent search and optimize your hiring process.",
                 }}
                 id={3}
                 status={carusole}
@@ -97,7 +97,7 @@ function Package() {
                   classes: "3",
                   link: "/single-course",
                   description:
-                    "He nicked it I don't want no agro what a load of rubbishbleeding skive off tickety-boo hunky dory chancer.",
+                    "This membership builds on the Bronze tier, offering powerful features to gain deeper insights, personalize your outreach, and build a competitive talent pipeline.",
                 }}
                 id={4}
                 status={carusole}

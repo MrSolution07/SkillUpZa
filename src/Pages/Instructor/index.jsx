@@ -26,11 +26,10 @@ function Instructor() {
             <div className="row">
               <div className="col-md-12 text-center">
                 <h2 className="sec-title mb-15">
-                  <span>Your</span> Jobs
+                  <span></span> Jobs
                 </h2>
                 <p className="sec-desc">
-                  lorem ipsum 
-                  <br /> kind of learning that takes place via the
+                  Explore available job vacancies
                 </p>
               </div>
             </div>
@@ -38,96 +37,96 @@ function Instructor() {
               <TeacherCard
                 teacher={{
                   img: "assets/images/home2/teacher/1.png",
-                  name: "company",
-                  subject: "Software engineer at blablabla",
+                  name: "IBM",
+                  subject: "Quantum education and Workforce Intern",
                 }}
               />
 
               <TeacherCard
                 teacher={{
                   img: "assets/images/home2/teacher/2.png",
-                  name: "Dianne Ameter",
-                  subject: "Illustrator",
+                  name: "Safe Growth",
+                  subject: "Business Accountant",
                 }}
               />
 
               <TeacherCard
                 teacher={{
                   img: "assets/images/home2/teacher/3.png",
-                  name: "Jim Séchen",
-                  subject: "Stylist & Author",
+                  name: "Tonga Digital",
+                  subject: "HR and Marketing Executive",
                 }}
               />
 
               <TeacherCard
                 teacher={{
                   img: "assets/images/home2/teacher/4.png",
-                  name: "Eric Widget",
-                  subject: "Designer",
+                  name: "Multichoice",
+                  subject: "Customer Quality Manager",
                 }}
               />
 
               <TeacherCard
                 teacher={{
                   img: "assets/images/home2/teacher/5.png",
-                  name: "Dianne Ameter",
-                  subject: "Illustrator",
+                  name: "Pepsi",
+                  subject: "Field Agronomist",
                 }}
               />
 
               <TeacherCard
                 teacher={{
                   img: "assets/images/home2/teacher/6.png",
-                  name: "Hugh Saturation",
-                  subject: "Photographer",
+                  name: "NTT",
+                  subject: "Digital Developer",
                 }}
               />
 
               <TeacherCard
                 teacher={{
                   img: "assets/images/home2/teacher/7.png",
-                  name: "Jim Séchen",
-                  subject: "Stylist & Author",
+                  name: "Kargo Logistics",
+                  subject: "Logistics Coordinator",
                 }}
               />
 
               <TeacherCard
                 teacher={{
                   img: "assets/images/home2/teacher/8.png",
-                  name: "Eric Widget",
-                  subject: "Designer",
+                  name: "ReMax",
+                  subject: "Real-Estate Agent",
                 }}
               />
 
               <TeacherCard
                 teacher={{
                   img: "assets/images/home2/teacher/6.png",
-                  name: "Dianne Ameter",
-                  subject: "Illustrator",
+                  name: "NTT",
+                  subject: "Financial Accountant",
                 }}
               />
 
               <TeacherCard
                 teacher={{
                   img: "assets/images/home2/teacher/4.png",
-                  name: "Hugh Saturation",
-                  subject: "Photographer",
+                  name: "Multichoice",
+                  subject: "Senior Programme Risk Assurance Specialist",
                 }}
               />
 
               <TeacherCard
                 teacher={{
                   img: "assets/images/home2/teacher/1.png",
-                  name: "Jim Séchen",
-                  subject: "Stylist & Author",
+                  name: "IBM",
+                  subject: "Solution Manager",
                 }}
               />
 
               <TeacherCard
                 teacher={{
                   img: "assets/images/home2/teacher/3.png",
-                  name: "Eric Widget",
-                  subject: "Designer",
+                  name: "Tonga Digital",
+                  subject: "Graphic Designer",
                 }}
               />
             </div>

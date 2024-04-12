@@ -29,10 +29,10 @@ function HomeHero() {
             <div className="hero-content">
               <h2>Your path to Success</h2>
               <p>
-                Keep current with the job market demand by having access to a range of available job opportunites. Whether seeking to upskill or transition to a new career, our platform provides the tools necesarry to equip you in any work industry. 
+                Let us equip you the tools needed to thrive in today's job market. With our range of job opportunities made available to you, spanning diverse industries and locations, alongside valuable <b>career resources</b> to guide you every step of the way.
               </p>
               <Link to="/course-3" className="bisylms-btn">
-                Ready to Get Started?
+                Get Started
               </Link>
             </div>
           </div>

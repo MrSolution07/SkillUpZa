@@ -27,10 +27,8 @@ function Footer({ getStart }) {
                   <img src="assets/images/logo.png" alt="" />
                 </Link>
                 <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Id temporibus totam fugit aliquam possimus, voluptates est quisquam 
-                itaque dolor perspiciatis consequuntur quas blanditiis voluptas vero 
-                accusamus asperiores natus tempora esse?
+                 Skill Up is a company focused on empowring people by facililating them in the job-seeking proccess and providing the necessary tools to optimize them for the job market. We offer a robust and intuitive web application to achieve this.
+                 Follow us for more.
                 </p>
                 <div className="ab-social">
                   <a className="fac" >

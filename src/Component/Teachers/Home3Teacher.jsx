@@ -14,37 +14,35 @@ function Home3Teacher({ className, btnClass }) {
               <br /> Members
             </h2>
             <p className="sec-desc">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-              Quos minus molestias odit possimus accusantium itaque illo quidem nostrum quae reiciendis labore, 
-              ratione, veritatis tenetur adipisci quibusdam ipsum quisquam vitae odio!
+              Meet the founders.
             </p>
           </div>
         </div>
         <div className="my-row">
           <Home3TeacherCard
             img="assets/images/home3/teacher/1.png"
-            name="Dianne Ameter"
-            position="Illustrator"
-          />
-          <Home3TeacherCard
-            img="assets/images/home3/teacher/2.png"
-            name="Hugh Saturation"
-            position="Photographer"
-          />
-          <Home3TeacherCard
-            img="assets/images/home3/teacher/3.png"
-            name="Mr Solution"
+            name="Christian Bulabula"
             position="Software Engineer"
           />
           <Home3TeacherCard
+            img="assets/images/home3/teacher/2.png"
+            name="Mike Lungwa"
+            position="Software Engineer"
+          />
+          <Home3TeacherCard
+            img="assets/images/home3/teacher/3.png"
+            name="Lesedi Ntamane"
+            position="UX Designer "
+          />
+          <Home3TeacherCard
             img="assets/images/home3/teacher/4.png"
-            name="Jim Séchen"
-            position="Stylist & Author"
+            name="Anonga Mabuda"
+            position="Front-end Web Developer"
           />
           <Home3TeacherCard
             img="assets/images/home3/teacher/5.png"
-            name="Eric Widget"
-            position="Designer"
+            name="Govener Khoza"
+            position="UI Engineer"
           />
 
         </div>

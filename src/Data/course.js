@@ -2,7 +2,7 @@ export const course = [
   {
     id: 1,
     title: " Business Study",
-    heading: "Learning jQuery Mobile for Beginners",
+    heading: "Business Analytics and Economics",
     lesson: 9,
     student: 76,
     img: "assets/images/home/course/3.png",
@@ -12,8 +12,8 @@ export const course = [
     img5: "assets/images/course/l1.jpg",
     reviews: 2,
     rating: 4.5,
-    price: "40.00",
-    offerPrice: "30.00",
+    price: "450.00",
+    offerPrice: "150.00",
     author: {
       name: "Anthony",
       profile: "#",
@@ -25,7 +25,7 @@ export const course = [
   {
     id: 2,
     title: "Web Development",
-    heading: "Making Music with Other People",
+    heading: "Front-End Development with React",
     lesson: 12,
     student: 124,
     img: "assets/images/home/course/4.png",
@@ -35,8 +35,8 @@ export const course = [
     img4: "assets/images/course/l2.jpg",
     reviews: 2,
     rating: 4.5,
-    price: "45.00",
-    offerPrice: "55.00",
+    price: "450.00",
+    offerPrice: "250.00",
     author: {
       name: "Anthony",
       profile: "#",
@@ -58,8 +58,8 @@ export const course = [
     img5: "assets/images/course/l3.jpg",
     reviews: 2,
     rating: 4.5,
-    price: "60.00",
-    offerPrice: "36.00",
+    price: "600.00",
+    offerPrice: "360.00",
     author: {
       name: "Antony",
       profile: "#",
@@ -81,8 +81,8 @@ export const course = [
     img5: "assets/images/course/l4.jpg",
     reviews: 2,
     rating: 4.5,
-    price: "50.00",
-    offerPrice: "38.00",
+    price: "550.00",
+    offerPrice: "380.00",
     author: {
       name: "Antony",
       profile: "#",
@@ -104,8 +104,8 @@ export const course = [
     img5: "assets/images/course/l5.jpg",
     reviews: 2,
     rating: 4.5,
-    price: "50.00",
-    offerPrice: "40.00",
+    price: "500.00",
+    offerPrice: "450.00",
     author: {
       name: "Antony",
       profile: "#",
@@ -117,7 +117,7 @@ export const course = [
   {
     id: 6,
     title: "Data Science",
-    heading: "Buddhism and Modern Psychology",
+    heading: "Advanced Statistical Modeling",
     lesson: 18,
     student: 228,
     img: "assets/images/home/course/6.png",
@@ -127,8 +127,8 @@ export const course = [
     img5: "assets/images/course/l6.jpg",
     reviews: 2,
     rating: 4.5,
-    price: "75.00",
-    offerPrice: "65.00",
+    price: "750.00",
+    offerPrice: "600.00",
     author: {
       name: "Antony",
       profile: "#",

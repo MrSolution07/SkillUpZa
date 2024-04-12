@@ -12,7 +12,7 @@ function LatestCourseCard({ img, name, offerPrice, price }) {
       </h5>
       <div className="course-price" style={{ marginTop: "5px" }}>
         {offerPrice ? offerPrice : price}{" "}
-        {offerPrice && <span style={{ marginLeft: "5px" }}> ${price}</span>}
+        {offerPrice && <span style={{ marginLeft: "5px" }}> R{price}</span>}
       </div>
     </div>
   );

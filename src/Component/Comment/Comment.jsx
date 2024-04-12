@@ -12,9 +12,7 @@ function Comment() {
             <span>April 03, 2019</span>
             <div className="comment">
               <p>
-                He legged it bevvy mush owt to do with me such fibber fa about
-                cup of tea sloshed morish butty bubble. Butty gormless lavatory
-                bits and bobs pardon you daft ummm I'm telling.
+              "As a developer, Lee's focus on clarity and responsiveness is refreshing. It's a great reminder that a well-designed interface makes our job so much easier."
               </p>
             </div>
             <a className="comment-reply-link" href="#">
@@ -32,10 +30,7 @@ function Comment() {
                 <span>April 14, 2019</span>
                 <div className="comment">
                   <p>
-                    Super chancer cheeky bloke haggle give us a bell well mufty
-                    chinwag say bite. lavatory twit bits and bobs pardon you
-                    daft ummm I'm telling. Blatant matie boy say bugger all mate
-                    butty gormless
+                  "Love the bit about the power of visuals! A touch of personality can go a long way in building brand recognition and user engagement."
                   </p>
                 </div>
                 <a className="comment-reply-link" href="#">
@@ -53,10 +48,7 @@ function Comment() {
                 <span>July 27, 2020</span>
                 <div className="comment">
                   <p>
-                    Oxford baking cakes dropped clanger fanny around vagabond
-                    amongst cor blimey guvnor. Blatant matie boy say bugger all
-                    mate butty gormless lavatory twit bits and bobs pardon you
-                    daft ummm I'm telling.
+                  "This is exactly what I was looking for! Clear, concise, and packed with valuable insights. Thanks for sharing!"                  
                   </p>
                 </div>
                 <a className="comment-reply-link" href="#">

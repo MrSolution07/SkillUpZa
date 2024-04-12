@@ -35,8 +35,8 @@ function CourseListViewV2({ course }) {
         </div>
         <div className="price-rate">
           <div className="course-price">
-            {offerPrice}
-            <span>${price}</span>
+            R{offerPrice}
+            <span>R{price}</span>
           </div>
           <div className="ratings">
             <i className="icon_star"></i>

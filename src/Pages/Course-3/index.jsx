@@ -163,15 +163,15 @@ function Course3() {
                     />
                     <LatestCourseCard
                       img="assets/images/course/3.jpg"
-                      name="Making music Other people"
+                      name="Front-End Development with React"
                       price="76.00"
-                      offerPrice="$46"
+                      offerPrice="R46"
                     />
                     <LatestCourseCard
                       img="assets/images/course/4.jpg"
-                      name="Learning jQuery mobile."
+                      name="Business Analytics and Economics."
                       price="94.00"
-                      offerPrice="$74.00"
+                      offerPrice="R74.00"
                     />
                   </aside>
                 </div>

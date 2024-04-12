@@ -38,7 +38,7 @@ function FeatureCourseCard({ course, className, swiper }) {
           <div className="price-rate">
             <div className="course-price">
               {offerPrice}
-              <span>${price}</span>
+              <span>R{price}</span>
             </div>
             <div className="ratings">
               <i className="icon_star"></i>

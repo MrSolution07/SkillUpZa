@@ -17,7 +17,7 @@ function BlogBanner() {
             </h2>
             <div className="bp-meta">
               <Link to="#">
-                <i className="icon_clock_alt"></i>April 22, 2020
+                <i className="icon_clock_alt"></i>May 27, 2024
               </Link>
               <Link to="#">
                 <i className="icon_chat_alt"></i>6 Comments

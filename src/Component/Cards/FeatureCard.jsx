@@ -60,8 +60,8 @@ function FeatureCard({ course }) {
               </span>
             </div>
             <div className="course-price">
-              ${offerPrice}
-              <span>${price}</span>
+              R{offerPrice}
+              <span>R{price}</span>
             </div>
             <div className="author">
               <img src={author.img} alt="" />

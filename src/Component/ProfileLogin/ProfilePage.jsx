@@ -397,13 +397,13 @@ const ProfilePage = () => {
                                 <div className=" d-flex justify-content-between">
                                   <img src="../assets/images/widgets/monthly-re.png" alt="" height={75} />
                                   <div className="align-self-center">
-                                    <h2 className="mt-0 mb-2 font-weight-semibold">$955<span className="badge badge-soft-success font-11 ml-2"><i className="fas fa-arrow-up" /> 8.6%</span></h2>
+                                    <h2 className="mt-0 mb-2 font-weight-semibold">R955<span className="badge badge-soft-success font-11 ml-2"><i className="fas fa-arrow-up" /> 8.6%</span></h2>
                                     <h4 className="title-text mb-0">Monthly Revenue</h4>
                                   </div>
                                 </div>
                                 <div className="d-flex justify-content-between bg-purple p-3 mt-3 rounded">
                                   <div>
-                                    <h4 className="mb-1 font-weight-semibold text-white">$10255</h4>
+                                    <h4 className="mb-1 font-weight-semibold text-white">R10255</h4>
                                     <p className="text-white mb-0">Card Balance</p>
                                   </div>
                                   <div>

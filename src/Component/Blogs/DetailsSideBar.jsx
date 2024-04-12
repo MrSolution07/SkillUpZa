@@ -70,7 +70,7 @@ function DetailsSideBar() {
               <img src="assets/images/blog/p3.jpg" alt="" />
             </Link>
             <h5>
-              <Link to="/single-post">Making music with Other people</Link>
+              <Link to="/single-post">Front-End Development with React</Link>
             </h5>
             <span>April 12, 2020</span>
           </div>
