@@ -19,7 +19,7 @@ function Cta() {
             </p>
             <Link
               to="/course-3"
-              className="bisylms-btn"
+              className="SkillUplms-btn"
               style={{ zIndex: "0" }}
             >
               Start Courses

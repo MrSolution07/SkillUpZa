@@ -69,7 +69,7 @@ function PackageCard({ packageInfo, id, status }) {
           </span>
         </div>
         <p>{description}</p>
-        <Link to={link} className="bisylms-btn">
+        <Link to={link} className="SkillUplms-btn">
           Apply Now
         </Link>
       </div>

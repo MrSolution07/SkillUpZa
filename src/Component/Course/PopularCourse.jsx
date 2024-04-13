@@ -148,7 +148,7 @@ function PopularCourse({ course, heading }) {
                 We will help you grow and build on the skills needed to land your dream job. 
                 Join us now and experience a seamless job-skeeing process. 
               </p>
-              <a className="bisylms-btn" href="#">
+              <a className="SkillUplms-btn" href="#">
                 Know More
               </a>
             </div>

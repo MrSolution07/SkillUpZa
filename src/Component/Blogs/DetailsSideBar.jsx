@@ -89,7 +89,7 @@ function DetailsSideBar() {
         <aside className="widget">
           <h3 className="widget-title">Popular Tags</h3>
           <div className="tags">
-            <Link to="/course">Bisy LMS</Link>
+            <Link to="/course">SkillUp LMS</Link>
             <Link to="/course">Design</Link>
             <Link to="/course">General</Link>
             <Link to="/course">Online</Link>

@@ -34,7 +34,7 @@ function Blogs() {
                 </div>
                 <div className="row">
                   <div className="col-lg-12">
-                    <div className="bisylms-pagination">
+                    <div className="SkillUplms-pagination">
                       <span className="current">01</span>
                       <a>02</a>
                       <a className="next">

@@ -51,7 +51,7 @@ function Contact() {
                     <h5>Support</h5>
                     <p>
                       <i className="icon_mail_alt"></i>
-                      bisy@support.com
+                      SkillUp@support.com
                       <br />
                       help@education.com
                     </p>

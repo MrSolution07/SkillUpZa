@@ -830,7 +830,7 @@ function CourseSingle() {
                           <span>Deadline: </span> 16 April 2020
                         </li>
                       </ul>
-                      <Link className="bisylms-btn" to="/">
+                      <Link className="SkillUplms-btn" to="/">
                         Enroll Course
                       </Link>
                     </div>

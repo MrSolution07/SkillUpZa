@@ -64,7 +64,7 @@ function Home2PopularCourse() {
         </div>
         <div className="row">
           <div className="col-lg-12 text-center">
-            <Link to="/course-1" className="bisylms-btn-2">
+            <Link to="/course-1" className="SkillUplms-btn-2">
               View All Courses
             </Link>
           </div>

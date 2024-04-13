@@ -12,7 +12,7 @@ function Footer({ getStart }) {
               <div className="cta-wrapper">
                 <img src="assets/images/home/2.png" alt="" />
                 <h3>You can be your own Guiding star with SkillUp!</h3>
-                <Link to="/course-3" className="bisylms-btn">
+                <Link to="/course-3" className="SkillUplms-btn">
                   Get Started Now
                 </Link>
               </div>

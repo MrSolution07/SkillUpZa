@@ -1,8 +1,8 @@
 /*
- Theme Name: Bisylms
+ Theme Name: SkillUplms
  Theme URI: 
  Author URI: 
- Description: Bisylms - Education HTML5 Responsive Template
+ Description: SkillUplms - Education HTML5 Responsive Template
  Version: 1.0
  License:
  License URI:
@@ -62,7 +62,7 @@ input[type=number] {
   -moz-appearance: textfield;
 }
 /*---- Common Btn ----*/
-.bisylms-btn{
+.SkillUplms-btn{
     border: none;
     font-size: 13px;
     font-weight: 600;
@@ -83,13 +83,13 @@ input[type=number] {
     -o-transition: all 0.4s ease;
     transition: all 0.4s ease;
 }
-.bisylms-btn:hover {
+.SkillUplms-btn:hover {
     color: #fff;
     -webkit-box-shadow: 0px 20px 30px 0px rgba(26, 8, 119, 0.24);
     -moz-box-shadow:    0px 20px 30px 0px rgba(26, 8, 119, 0.24);
     box-shadow:         0px 20px 30px 0px rgba(26, 8, 119, 0.24);
 }
-.bisylms-btn-2{
+.SkillUplms-btn-2{
     border: none;
     font-size: 13px;
     font-weight: 600;
@@ -110,14 +110,14 @@ input[type=number] {
     -o-transition: all 0.4s ease;
     transition: all 0.4s ease;
 }
-.bisylms-btn-2:hover {
+.SkillUplms-btn-2:hover {
     color: #fff;
     background: #fe7c54;
     -webkit-box-shadow: 0px 20px 30px 0px rgba(120, 34, 8, 0.20);
     -moz-box-shadow:    0px 20px 30px 0px rgba(120, 34, 8, 0.20);
     box-shadow:         0px 20px 30px 0px rgba(120, 34, 8, 0.20);
 }
-.bisylms-btn-3{
+.SkillUplms-btn-3{
     border: none;
     font-size: 13px;
     font-weight: 600;
@@ -138,7 +138,7 @@ input[type=number] {
     -o-transition: all 0.4s ease;
     transition: all 0.4s ease;
 }
-.bisylms-btn-3:hover {
+.SkillUplms-btn-3:hover {
     color: #fff;
     background: #3fb65f;
     -webkit-box-shadow: 0px 14px 20px 0px rgba(8, 120, 38, 0.24);

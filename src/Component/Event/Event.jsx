@@ -27,7 +27,7 @@ function Event() {
                   Consumer Food Safety Education Conference
                 </Link>
               </h4>
-              <Link className="bisylms-btn" to="#">
+              <Link className="SkillUplms-btn" to="#">
                 Get Ticket
               </Link>
             </div>
@@ -45,7 +45,7 @@ function Event() {
                   Build Education Website Using WordPress
                 </Link>
               </h4>
-              <Link className="bisylms-btn" to="#">
+              <Link className="SkillUplms-btn" to="#">
                 Get Ticket
               </Link>
             </div>
@@ -63,7 +63,7 @@ function Event() {
                   How Meditation Improve your Mental Health?
                 </Link>
               </h4>
-              <Link className="bisylms-btn" to="#">
+              <Link className="SkillUplms-btn" to="#">
                 Get Ticket
               </Link>
             </div>
@@ -81,7 +81,7 @@ function Event() {
                   Understanding Luxury Fashion in a Changing
                 </Link>
               </h4>
-              <Link className="bisylms-btn" to="#">
+              <Link className="SkillUplms-btn" to="#">
                 Get Ticket
               </Link>
             </div>

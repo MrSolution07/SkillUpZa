@@ -31,7 +31,7 @@ function About1() {
         {/* <Package /> */}
         {/* <Cta />*/}
           
-        <Home3Teacher className="teachers-section-3" btnClass="bisylms-btn" />
+        <Home3Teacher className="teachers-section-3" btnClass="SkillUplms-btn" />
         <Cta />
         <Video />  
         <Footer />

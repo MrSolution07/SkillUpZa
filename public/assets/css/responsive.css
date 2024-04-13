@@ -1,9 +1,9 @@
 /*
- Theme Name: Bisylms
+ Theme Name: SkillUplms
  Theme URI: 
  Author: Mosharof
  Author URI: 
- Description: Bisylms - Education HTML5 Responsive Template
+ Description: SkillUplms - Education HTML5 Responsive Template
  Version: 1.0
  License:
  License URI:
@@ -253,10 +253,10 @@
 	.hero-banner-2{
 		padding-bottom: 100px;
 	}
-	.appstore-section .bisylms-btn-3:last-child{
+	.appstore-section .SkillUplms-btn-3:last-child{
 		margin-left: 5px;
 	}
-	.appstore-section .bisylms-btn-3{
+	.appstore-section .SkillUplms-btn-3{
 		padding: 13px 24px;
 	}
 
@@ -310,7 +310,7 @@
 		padding-right: 20px;
 		padding-left: 20px;
 	}
-	.cta-wrapper .bisylms-btn{
+	.cta-wrapper .SkillUplms-btn{
 		padding: 20px 10px;
     	min-width: 150px;
 	}
@@ -907,7 +907,7 @@
 		margin: 20px 0;
 		width: 100%;
 	}
-	.cta-wrapper .bisylms-btn {
+	.cta-wrapper .SkillUplms-btn {
 	    margin-top: 20px;
 	}
 	.hero-banner-1{
@@ -929,7 +929,7 @@
 	.header-02 .navbar.navbar-expand-lg .navbar-toggler{
 		right: 0;
 	}
-	.topbar .bisylms-btn-2{
+	.topbar .SkillUplms-btn-2{
 		display: none;
 	}
 	.topinfo{
@@ -963,7 +963,7 @@
 	.funfact-item{
 		margin: 0 0 20px;
 	}
-	.feature-course-section-2 .bisylms-btn-2{
+	.feature-course-section-2 .SkillUplms-btn-2{
 		float: left;
 		margin: -30px 0 50px;
 	}
@@ -1015,7 +1015,7 @@
 	.hero-slider .bg-img{
 		height: 650px;
 	}
-	.appstore-section .bisylms-btn-3:last-child{
+	.appstore-section .SkillUplms-btn-3:last-child{
 		margin: 10px 0 0;
 	}
 	#card-slider {

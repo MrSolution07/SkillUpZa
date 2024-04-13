@@ -10,16 +10,16 @@ function Home3AppStore() {
             <h2 className="sec-title">
               Start achieving
               <br /> academic excellence
-              <br /> with Bisy
+              <br /> with SkillUp
             </h2>
             <p className="sec-desc">
-              Take classes on the go with the Bisy app. Stream or download to
+              Take classes on the go with the SkillUp app. Stream or download to
               watch on the plane, the subway, or wherever you learn best.
             </p>
-            <a href="#" className="bisylms-btn-3">
+            <a href="#" className="SkillUplms-btn-3">
               <img src="assets/images/home3/btn.png" alt="" />
             </a>
-            <a href="#" className="bisylms-btn-3">
+            <a href="#" className="SkillUplms-btn-3">
               <img src="assets/images/home3/btn2.png" alt="" />
             </a>
           </div>
