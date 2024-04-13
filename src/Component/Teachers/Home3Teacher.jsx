@@ -41,7 +41,7 @@ function Home3Teacher({ className, btnClass }) {
           />
           <Home3TeacherCard
             img="assets/images/home3/teacher/5.png"
-            name="Govener Khoza"
+            name="Governor Khoza"
             position="UI Engineer"
           />
 

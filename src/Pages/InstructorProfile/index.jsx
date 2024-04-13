@@ -90,13 +90,11 @@ function InstructorProfile() {
                     <img src="assets/images/home2/teacher/1.png" alt="" />
                   </div>
                   <div className="teacher-meta">
-                    <h5>Dianne Ameter</h5>
-                    <p>Illustrator</p>
+                    <h5></h5>
+                    <p></p>
                   </div>
                   <p>
-                    Cup of char skive off bodge bobby blower tickety-boo quaint
-                    a blinding shot pear shaped squiffy harry, young delinquent
-                    grub so I said cuppa faff about bum bag bugger.
+                   
                   </p>
                   <div className="ab-social">
                     <h5>Follow Us</h5>

@@ -152,8 +152,9 @@ function Course3() {
                     <h3 className="widget-title">Latest Courses</h3>
                     <LatestCourseCard
                       img="assets/images/course/1.jpg"
-                      name="Using creative problem Solving"
-                      price="24.00"
+                      name="Algorithims and Data Structures"
+                      price="64.00"
+                      offerPrice="46.00"
                     />
                     <LatestCourseCard
                       img="assets/images/course/2.jpg"

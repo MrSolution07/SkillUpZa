@@ -52,9 +52,9 @@ function DetailsSideBar() {
               <img src="assets/images/blog/p1.jpg" alt="" />
             </Link>
             <h5>
-              <Link to="/single-post">Using creative problem Solving</Link>
+              <Link to="/single-post">Algorithims and Data Structures</Link>
             </h5>
-            <span>March 10, 2020</span>
+            <span>March 10, 2024</span>
           </div>
           <div className="popular-post">
             <Link to="/single-post">
@@ -63,7 +63,7 @@ function DetailsSideBar() {
             <h5>
               <Link to="/single-post">Fundamentals of UI Design</Link>
             </h5>
-            <span>Jan 14, 2020</span>
+            <span>Jan 14, 2024</span>
           </div>
           <div className="popular-post">
             <Link to="/single-post">
@@ -72,7 +72,7 @@ function DetailsSideBar() {
             <h5>
               <Link to="/single-post">Front-End Development with React</Link>
             </h5>
-            <span>April 12, 2020</span>
+            <span>April 12, 2024</span>
           </div>
           <div className="popular-post">
             <Link to="/single-post">
@@ -83,7 +83,7 @@ function DetailsSideBar() {
                 Brush strokes energize Trees in paintings
               </Link>
             </h5>
-            <span>July 4, 2020</span>
+            <span>July 4, 2024</span>
           </div>
         </aside>
         <aside className="widget">
@@ -97,7 +97,7 @@ function DetailsSideBar() {
             <Link to="/course">Artist</Link>
             <Link to="/course">Education</Link>
             <Link to="/course">Motivation</Link>
-            <Link to="/course">Politico</Link>
+            <Link to="/course">Politics</Link>
             <Link to="/course">Live Cases</Link>
           </div>
         </aside>

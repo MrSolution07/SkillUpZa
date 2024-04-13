@@ -71,7 +71,7 @@ export const course = [
   {
     id: 4,
     title: "Computer Science",
-    heading: "Using Creative Problem Solving",
+    heading: "Algorithims and Data Structures",
     lesson: 10,
     student: 142,
     img: "assets/images/home/course/1.png",

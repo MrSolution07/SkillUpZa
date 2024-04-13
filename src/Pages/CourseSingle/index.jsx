@@ -155,7 +155,7 @@ function CourseSingle() {
                                 <i className="icon_check_alt2"></i>Get Ready for
                                 a Career
                                 <span>
-                                  Be ready for the workplace as this course will prepare you the comprehensive and practical understanding.
+                                  Be ready for the workplace as this course will give you a comprehensive and practical understanding.
                                 </span>
                               </li>
                             </ul>
@@ -180,7 +180,7 @@ function CourseSingle() {
                                   aria-expanded="true"
                                   aria-controls="acc_1"
                                 >
-                                  Understanding Customer Service
+                                  Part 1: Foundations & Exploration (Weeks 1-4)
                                 </button>
                               </h5>
                             </div>
@@ -195,7 +195,7 @@ function CourseSingle() {
                                   <h5>
                                     <i className="icon_menu-square_alt2"></i>
                                     <Link to="/">
-                                      Identifying Customer Expectations
+                                    Develop an understanding of design thinking principles (empathize, define, ideate, prototype, test)
                                     </Link>
                                   </h5>
                                   <div className="ci-tools">
@@ -211,7 +211,8 @@ function CourseSingle() {
                                   <h5>
                                     <i className="icon_menu-square_alt2"></i>
                                     <Link to="/">
-                                      Customer Service And The Telephone
+                                      Explore various art and design movements and their approaches to problem-solving
+      
                                     </Link>
                                   </h5>
                                   <div className="ci-tools">
@@ -226,7 +227,7 @@ function CourseSingle() {
                                 <div className="ci-item with-bg">
                                   <h5>
                                     <i className="icon_menu-square_alt2"></i>
-                                    <Link to="/">Handling Complaints</Link>
+                                    <Link to="/">Experiment with different materials and techniques to generate ideas</Link>
                                   </h5>
                                   <div className="ci-tools">
                                     <Link to="/" className="time">
@@ -241,8 +242,7 @@ function CourseSingle() {
                                   <h5>
                                     <i className="icon_menu-square_alt2"></i>
                                     <Link to="/">
-                                      Customer Service Skills - Course
-                                      Assessment
+                                    Introduce the design thinking process through a fun, low-stakes challenge.
                                     </Link>
                                   </h5>
                                   <div className="ci-tools">
@@ -257,7 +257,9 @@ function CourseSingle() {
                                 <div className="ci-item with-bg">
                                   <h5>
                                     <i className="icon_menu-square_alt2"></i>
-                                    <Link to="/">Focusing On The Customer</Link>
+                                    <Link to="/">Creative Problem Solving - Course
+                                      Assessment
+                                    </Link>
                                   </h5>
                                   <div className="ci-tools">
                                     <Link to="/" className="time">
@@ -281,7 +283,7 @@ function CourseSingle() {
                                   aria-expanded="true"
                                   aria-controls="acc_2"
                                 >
-                                  Handling Complaints
+                                  Part 2: Deep Dive & Skill Building (Weeks 5-8)
                                 </button>
                               </h5>
                             </div>
@@ -295,7 +297,8 @@ function CourseSingle() {
                                 <div className="ci-item with-bg">
                                   <h5>
                                     <i className="icon_menu-square_alt2"></i>
-                                    <Link href="#">Handling Complaints</Link>
+                                    <Link href="#">Refine critical thinking skills for problem analysis and ideation
+                                    </Link>
                                   </h5>
                                   <div className="ci-tools">
                                     <Link href="#" className="time">
@@ -310,7 +313,7 @@ function CourseSingle() {
                                   <h5>
                                     <i className="icon_menu-square_alt2"></i>
                                     <Link href="#">
-                                      Customer Service And The Telephone
+                                    Develop specific art and design skills relevant to chosen focus areas (e.g., sketching, user interface design, typography)
                                     </Link>
                                   </h5>
                                   <div className="ci-tools">
@@ -325,7 +328,8 @@ function CourseSingle() {
                                 <div className="ci-item with-bg">
                                   <h5>
                                     <i className="icon_menu-square_alt2"></i>
-                                    <Link href="#">WooCommerce Payments</Link>
+                                    <Link href="#">Learn effective communication techniques to present design solutions
+                                    </Link>
                                   </h5>
                                   <div className="ci-tools">
                                     <Link href="#" className="questions">
@@ -352,7 +356,7 @@ function CourseSingle() {
                                   aria-expanded="true"
                                   aria-controls="acc_3"
                                 >
-                                  Pellentesque Pretium
+                                  Part 3:  Implementation & Reflection (Weeks 9-12)
                                 </button>
                               </h5>
                             </div>
@@ -366,7 +370,8 @@ function CourseSingle() {
                                 <div className="ci-item with-bg">
                                   <h5>
                                     <i className="icon_menu-square_alt2"></i>
-                                    <Link to="/">How to Use WordPress</Link>
+                                    <Link to="/">Implement chosen design solution through a final project
+                                    </Link>
                                   </h5>
                                   <div className="ci-tools">
                                     <Link to="/" className="time">
@@ -381,7 +386,7 @@ function CourseSingle() {
                                   <h5>
                                     <i className="icon_menu-square_alt2"></i>
                                     <Link to="/">
-                                      Certificate On Theme Development
+                                    Reflect on the creative problem-solving process and learning outcomes
                                     </Link>
                                   </h5>
                                   <div className="ci-tools">
@@ -396,7 +401,7 @@ function CourseSingle() {
                                 <div className="ci-item with-bg">
                                   <h5>
                                     <i className="icon_menu-square_alt2"></i>
-                                    <Link to="/">Focusing On The Customer</Link>
+                                    <Link to="/">Showcase and critique final projects in a professional setting</Link>
                                   </h5>
                                   <div className="ci-tools">
                                     <Link to="/" className="questions">
@@ -414,7 +419,7 @@ function CourseSingle() {
                                   <h5>
                                     <i className="icon_menu-square_alt2"></i>
                                     <Link to="/">
-                                      Identifying Customer Expectations
+                                      Overall skills assessment 
                                     </Link>
                                   </h5>
                                   <div className="ci-tools">

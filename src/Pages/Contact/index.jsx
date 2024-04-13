@@ -28,23 +28,23 @@ function Contact() {
                 <div className="contact--info-area">
                   <h3>Get in touch</h3>
                   <p>
-                    Looking for help? Get in touch wih us.
+                    Looking for help? Get in touch with us.
                   </p>
                   <div className="single-info">
                     <h5>Headquaters</h5>
                     <p>
                       <i className="icon_house_alt"></i>
-                      744 New York Ave, Brooklyn, Kings,
-                      <br /> New York 10224
+                      Bunting Road,Auckland Park 2092
+                      <br /> Johannesburg, SA
                     </p>
                   </div>
                   <div className="single-info">
                     <h5>Phone</h5>
                     <p>
                       <i className="icon_phone"></i>
-                      (+642) 245 356 432
+                      (+010) 245 356 432
                       <br />
-                      (+420) 336 476 328
+                      (+010) 336 476 328
                     </p>
                   </div>
                   <div className="single-info">
