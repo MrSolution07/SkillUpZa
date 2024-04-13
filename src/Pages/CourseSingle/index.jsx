@@ -450,12 +450,12 @@ function CourseSingle() {
                               <h5>
                                 <Link to="/">Dianne Ameter</Link>
                               </h5>
-                              <span>Illustrator</span>
+                              <span>industrial designer</span>
                               <p>
-                                I don't want no agro car boot lavatory wind up
-                                twit haggle spiffing show off show off pick your
-                                nose and blow off spend a penny David zonked
-                                what a plonker are you taking.
+                               Dianne Ameter will guide students through the design thinking process, emphasizing
+                               empathy, ideation, prototyping, and iteration.  Students will learn how to use 
+                               creative problem solving to approach challenges from a human-centered perspective, 
+                               culminating in projects that address social or environmental needs.
                               </p>
                               <div className="teacher-social">
                                 <a href="#">
@@ -481,12 +481,12 @@ function CourseSingle() {
                               <h5>
                                 <a href="#">Hugh Saturation</a>
                               </h5>
-                              <span>Photographer</span>
+                              <span>Media artist and educator</span>
                               <p>
-                                I don't want no agro car boot lavatory wind up
-                                twit haggle spiffing show off show off pick your
-                                nose and blow off spend a penny David zonked
-                                what a plonker are you taking.
+                              Through his course, "Hacking the System: Creative Problem Solving in the Digital Age," plus a mix of lectures, workshops, and guest speakers, Hugh Saturation will introduce students 
+                              to creative problem-solving techniques like brainstorming, lateral thinking, and design 
+                              thinking.  The course will also delve into using digital tools and platforms to amplify 
+                              creative solutions.
                               </p>
                               <div className="teacher-social">
                                 <a href="#">
@@ -512,12 +512,13 @@ function CourseSingle() {
                               <h5>
                                 <Link to="/">Jim Séchen</Link>
                               </h5>
-                              <span>Stylist & Author</span>
+                              <span>Multidisciplinary artist and educator</span>
                               <p>
-                                I don't want no agro car boot lavatory wind up
-                                twit haggle spiffing show off show off pick your
-                                nose and blow off spend a penny David zonked
-                                what a plonker are you taking.
+                              Jim Séchen will guide students through the design thinking process,
+                              emphasizing empathy, ideation, prototyping, and iteration.  Students will 
+                              learn how to use creative problem solving to approach challenges from a 
+                              human-centered perspective, culminating in projects that address social or 
+                              environmental needs.
                               </p>
                               <div className="teacher-social">
                                 <a href="#">
@@ -645,16 +646,16 @@ function CourseSingle() {
                                       alt=""
                                     />
                                     <h5>
-                                      <Link to="/">Dianne Ameter</Link>
+                                      <Link to="/">Sandy Shoreside</Link>
                                     </h5>
-                                    <span>August 8, 2012 at 9:22 am</span>
+                                    <span>September 8, 2023 at 9:22 am</span>
                                     <div className="comment">
                                       <p>
-                                        I don't want no agro car boot lavatory
-                                        wind up twit haggle spiffing show off
-                                        show off pick your nose and blow off
-                                        spend a penny David zonked what a
-                                        plonker are you taking.
+                                      "Hacking the System" sounded a bit out there at first, but Mr Saturation is a genius.  The 
+                                       class showed me how my coding skills can be used for more than just building websites. 
+                                       We learned how to think outside the box and use technology to tackle problems in 
+                                       innovative ways.  The guest speakers were amazing, and the projects were challenging
+                                       but super rewarding. 
                                       </p>
                                     </div>
                                     <div className="ratings">
@@ -674,15 +675,15 @@ function CourseSingle() {
                                       alt=""
                                     />
                                     <h5>
-                                      <Link to="/">Hugh Saturation</Link>
+                                      <Link to="/">Jehkiey Chen</Link>
                                     </h5>
-                                    <span>March 14, 2012 at 10:13 am</span>
+                                    <span>March 14, 2024 at 10:13 am</span>
                                     <div className="comment">
                                       <p>
-                                        Lavatory wind up twit haggle spiffing
-                                        show off show off pick your nose and
-                                        blow off spend a penny David zonked what
-                                        a plonker are you taking.
+                                      Ms. Dianne's "Design Thinking for Change" was a solid 4 stars! We tackled real issues 
+                                      creatively, and the process felt practical. I just wished there was a bit more on how to 
+                                      actually implement those solutions in the real world. Still, great experience - my design 
+                                      skills can make a difference!
                                       </p>
                                     </div>
                                     <div className="ratings">
@@ -704,15 +705,21 @@ function CourseSingle() {
                                       alt=""
                                     />
                                     <h5>
-                                      <Link to="/">Jim Séchen</Link>
+                                      <Link to="/">Barb Dwyer</Link>
                                     </h5>
-                                    <span>April 16, 2012 at 12:15 pm</span>
+                                    <span>April 16, 2024 at 12:15 pm</span>
                                     <div className="comment">
                                       <p>
-                                        He lost his bottle cheeky bugger such
-                                        fibber Harry porkies spiffing good time
-                                        wind up argy bargy arse bite your arm
-                                        off bugger.
+                                        Mr. Séchens' course introduced some interesting concepts about combining art and design
+                                        disciplines.  Exploring areas like theater set design and animation alongside illustration
+                                        was refreshing, and it definitely opened my eyes to how these fields can inspire each 
+                                        other.  I feel somewhat more confident approaching design projects with a broader 
+                                        perspective, which could be helpful in the job market.
+
+                                        However, the class lacked depth in some areas.  While we touched on various disciplines, I 
+                                        would have liked a more thorough exploration of how to truly integrate them into cohesive 
+                                        design solutions. Overall, it was a decent springboard, but it could have benefited from 
+                                        a more focused approach.
                                       </p>
                                     </div>
                                     <div className="ratings">
