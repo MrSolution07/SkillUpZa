@@ -4,8 +4,31 @@ import "../NewStyle/style.css"
 
 
 import { Helmet } from 'react-helmet';
+import { useState } from "react";
+import axios from "axios";
 
 const RegisterPage = () => {
+  const [username, setUsername] = useState("")
+  const [email, setEmail] = useState("")
+  const [password, setPassword] = useState("")
+  const [conf_password, setConfPassword] = useState("")
+  const [mo_number, setMoNumber] = useState("")
+
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    axios.post("http://localhost:3001/Register", {
+      username: username,
+      email: email,
+      password: password,
+      conf_password: conf_password,
+      mo_number: mo_number
+    }).then((response) => {
+      console.log(response)
+    }).catch((err) => {
+      console.log(err)
+    })
+  }
+
   return (
     <div className="container" id="page">
       <div className="row vh-100 ">
@@ -23,14 +46,14 @@ const RegisterPage = () => {
                     <h4 className="name">SkillUp</h4>
                     <p className="text-muted">Get your free SkillUp account now.</p>
                   </div>
-                  <form className="form-horizontal auth-form my-4" action="index.html">
+                  <form className="form-horizontal auth-form my-4" action="index.html" onSubmit={handleSubmit}>
                     <div className="form-group">
                       <label htmlFor="username">Username</label>
                       <div className="input-group mb-3">
                         <span className="auth-form-icon">
                           <i className="dripicons-user"></i>
                         </span>
-                        <input type="text" className="form-control" id="username" placeholder="Enter username" />
+                        <input type="text" className="form-control" id="username" placeholder="Enter username" onChange={(e) => setUsername(e.target.value)} />
                       </div>
                     </div>
                     <div className="form-group">
@@ -39,7 +62,7 @@ const RegisterPage = () => {
                         <span className="auth-form-icon">
                           <i className="dripicons-mail"></i>
                         </span>
-                        <input type="email" className="form-control" id="useremail" placeholder="Enter Email" />
+                        <input type="email" className="form-control" id="useremail" placeholder="Enter Email" onChange={(e) => setEmail(e.target.value)}/>
                       </div>
                     </div>
                     <div className="form-group">
@@ -48,7 +71,7 @@ const RegisterPage = () => {
                         <span className="auth-form-icon">
                           <i className="dripicons-lock"></i>
                         </span>
-                        <input type="password" className="form-control" id="userpassword" placeholder="Enter password" />
+                        <input type="password" className="form-control" id="userpassword" placeholder="Enter password" onChange={(e) => setPassword(e.target.value)}/>
                       </div>
                     </div>
                     <div className="form-group">
@@ -57,7 +80,7 @@ const RegisterPage = () => {
                         <span className="auth-form-icon">
                           <i className="dripicons-lock-open"></i>
                         </span>
-                        <input type="password" className="form-control" id="conf_password" placeholder="Enter Confirm Password" />
+                        <input type="password" className="form-control" id="conf_password" placeholder="Confirm Password" onChange={(e) => setConfPassword(e.target.value)}/>
                       </div>
                     </div>
                     <div className="form-group">
@@ -66,7 +89,7 @@ const RegisterPage = () => {
                         <span className="auth-form-icon">
                           <i className="dripicons-phone"></i>
                         </span>
-                        <input type="text" className="form-control" id="mo_number" placeholder="Enter Mobile Number" />
+                        <input type="text" className="form-control" id="mo_number" placeholder="Enter Mobile Number" onChange={(e) => setMoNumber(e.target.value)}/>
                       </div>
                     </div>
                     <div className="form-group row mt-4">
@@ -79,7 +102,7 @@ const RegisterPage = () => {
                     </div>
                     <div className="form-group mb-0 row">
                       <div className="col-12 mt-2">
-                        <button className="btn btn-gradient-primary btn-round btn-block waves-effect waves-light" type="button" id="btnReg">Register <i className="fas fa-sign-in-alt ml-1"></i></button>
+                        <button className="btn btn-gradient-primary btn-round btn-block waves-effect waves-light" type="submit" id="btnReg">Register <i className="fas fa-sign-in-alt ml-1"></i></button>
                       </div>
                     </div>
                   </form>
