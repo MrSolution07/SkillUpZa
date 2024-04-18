@@ -325,11 +325,13 @@
     position: relative;
     padding: 0px 0 120px;
 }
+/* this is the view all events */
 .read-more{
     font-size: 13px;
     color: #222224;
     line-height: .8;
     font-weight: 600;
+    margin-bottom: 80px;
     position: relative;
     display: inline-block;
 }
