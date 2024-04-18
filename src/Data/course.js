@@ -25,7 +25,7 @@ export const course = [
   {
     id: 2,
     title: "Web Development",
-    heading: "Front-End Development with React",
+    heading: "Front-End Development",
     lesson: 12,
     student: 124,
     img: "assets/images/home/course/4.png",

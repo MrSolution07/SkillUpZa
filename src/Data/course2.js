@@ -94,7 +94,7 @@ export const course = [
   {
     id: 5,
     title: "Art & Design",
-    heading: "Graphic Design Principles",
+    heading: "Graphic Design Basics",
     lesson: 8,
     student: 102,
     img: "assets/images/home/course/10.png",

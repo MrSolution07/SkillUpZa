@@ -1,6 +1,7 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./Pages/Home";
 import Course3 from "./Pages/Course-3";
+import Course4 from "./Pages/Course-4";
 import CourseSingle from "./Pages/CourseSingle";
 import About1 from "./Pages/About-1";
 import Instructor from "./Pages/Instructor";
@@ -34,6 +35,10 @@ const router = createBrowserRouter([
   {
     path: "/course-3",
     element: <Course3 />,
+  },
+  {
+    path:"/course-4",
+    element: <Course4/>,
   },
   {
     path: "/single-course",

@@ -106,10 +106,10 @@ function Course3() {
                       <div className="col-lg-12">
                         <div className="SkillUplms-pagination">
                           <span className="current">01</span>
-                          <a>02</a>
-                          <a className="next">
+                          <Link to="/course-4"><a>02</a> </Link>
+                          <Link to = "/course-4" className="next">
                             next<i className="arrow_right"></i>
-                          </a>
+                          </Link>
                         </div>
                       </div>
                     </div>
