@@ -20,14 +20,14 @@ function Login() {
                                                 <p className="text-muted mb-0">Sign in to continue to SkillUp</p>
                                             </div>
                                             {/* end auth-logo-text */}
-                                            <form className="form-horizontal auth-form my-4" action="index.html">
+                                            <form className="form-horizontal auth-form my-4" action="login.php" method="POST">
                                                 <div className="form-group">
                                                     <label htmlFor="username">Username</label>
                                                     <div className="input-group mb-3">
                                                         <span className="auth-form-icon">
                                                             <i className="dripicons-user"></i>
                                                         </span>
-                                                        <input type="text" className="form-control" id="username" placeholder="Enter username" />
+                                                        <input type="text" className="form-control" id="username" name="username" placeholder="Enter username" />
                                                     </div>
                                                 </div>
                                                 {/* end form-group */}
@@ -37,7 +37,7 @@ function Login() {
                                                         <span className="auth-form-icon">
                                                             <i className="dripicons-lock"></i>
                                                         </span>
-                                                        <input type="password" className="form-control" id="userpassword" placeholder="Enter password" />
+                                                        <input type="password" className="form-control" id="userpassword" name='password' placeholder="Enter password" />
                                                     </div>
                                                 </div>
                                                 {/* end form-group */}
