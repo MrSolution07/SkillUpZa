@@ -1,6 +1,6 @@
 // Login page simple but efficient
 import { Link } from "react-router-dom";
-function Login() {
+function CompanyLogin() {
   return (
     <div className="account-body accountbg">
       {/* Login page ni vile */}
@@ -35,7 +35,7 @@ function Login() {
                       method="POST"
                     >
                       <div className="form-group">
-                        <label htmlFor="username">Username</label>
+                        <label htmlFor="username">Company Name</label>
                         <div className="input-group mb-3">
                           <span className="auth-form-icon">
                             <i className="dripicons-user"></i>
@@ -43,15 +43,15 @@ function Login() {
                           <input
                             type="text"
                             className="form-control"
-                            id="username"
-                            name="username"
-                            placeholder="Enter username"
+                            id="companyname"
+                            name="companyname"
+                            placeholder="Enter Company Name"
                           />
                         </div>
                       </div>
                       {/* end form-group */}
                       <div className="form-group">
-                        <label htmlFor="userpassword">Password</label>
+                        <label htmlFor="companypassword">Password</label>
                         <div className="input-group mb-3">
                           <span className="auth-form-icon">
                             <i className="dripicons-lock"></i>
@@ -59,7 +59,7 @@ function Login() {
                           <input
                             type="password"
                             className="form-control"
-                            id="userpassword"
+                            id="companypassword"
                             name="password"
                             placeholder="Enter password"
                           />
@@ -113,14 +113,8 @@ function Login() {
                   <div className="m-3 text-center text-muted">
                     <p className="">
                       Don't have an account ?{" "}
-                      <a href="/Register" className="text-primary ml-2">
+                      <a href="/BusinessRegister" className="text-primary ml-2">
                         Register
-                      </a>
-                    </p>
-                    <p className="">
-                      SkillUp For Business?{" "}
-                      <a href="/BusinessLogin" className="text-primary ml-2">
-                        Sign in here
                       </a>
                     </p>
                   </div>
@@ -136,4 +130,4 @@ function Login() {
   );
 }
 
-export default Login;
+export default CompanyLogin;

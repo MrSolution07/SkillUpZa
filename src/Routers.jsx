@@ -13,6 +13,8 @@ import Contact from "./Pages/Contact";
 import Register from "./Components/JoinNow/Register";
 import LoginPage from "./Components/ProfileLogin/Login";
 import Forgotpsw from "./Components/ProfileLogin/Forgotpsw";
+import BusinessLogin from "./Components/ProfileLogin/BusinessLogin";
+import BusinessRegister from "./Components/JoinNow/BusinessRegister";
 
 // dashboard here
 
@@ -49,6 +51,14 @@ const router = createBrowserRouter([
   {
     path: "/LoginPage",
     element: <LoginPage />,
+  },
+  {
+    path: "/BusinessLogin",
+    element: <BusinessLogin />,
+  },
+  {
+    path: "/BusinessRegister",
+    element: <BusinessRegister />,
   },
   {
     path: "/Forgotpsw",

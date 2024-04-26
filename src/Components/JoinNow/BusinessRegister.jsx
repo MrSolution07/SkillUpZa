@@ -5,7 +5,7 @@ import "../NewStyle/style.css"
 
 import { Helmet } from 'react-helmet';
 
-const BusinessRegisterPage = () => {
+const RegisterPage = () => {
   return (
     <div className="container" id="page">
       <div className="row vh-100 ">
@@ -21,11 +21,11 @@ const BusinessRegisterPage = () => {
                   </div>
                   <div className="text-center auth-logo-text">
                     <h4 className="name">SkillUp</h4>
-                    <p className="text-muted">Get your free SkillUp account now.</p>
+                    <p className="text-muted">Set Up Your SkillUp Business account now.</p>
                   </div>
                   <form className="form-horizontal auth-form my-4" action="index.html">
                     <div className="form-group">
-                      <label htmlFor="username">Username</label>
+                      <label htmlFor="companyname">Company Name</label>
                       <div className="input-group mb-3">
                         <span className="auth-form-icon">
                           <i className="dripicons-user"></i>
@@ -34,7 +34,7 @@ const BusinessRegisterPage = () => {
                       </div>
                     </div>
                     <div className="form-group">
-                      <label htmlFor="useremail">Email</label>
+                      <label htmlFor="companyemail">Email</label>
                       <div className="input-group mb-3">
                         <span className="auth-form-icon">
                           <i className="dripicons-mail"></i>
@@ -43,12 +43,12 @@ const BusinessRegisterPage = () => {
                       </div>
                     </div>
                     <div className="form-group">
-                      <label htmlFor="userpassword">Password</label>
+                      <label htmlFor="companypassword">Password</label>
                       <div className="input-group mb-3">
                         <span className="auth-form-icon">
                           <i className="dripicons-lock"></i>
                         </span>
-                        <input type="password" className="form-control" id="userpassword" placeholder="Enter password" />
+                        <input type="password" className="form-control" id="companypassword" placeholder="Enter password" />
                       </div>
                     </div>
                     <div className="form-group">
@@ -61,7 +61,7 @@ const BusinessRegisterPage = () => {
                       </div>
                     </div>
                     <div className="form-group">
-                      <label htmlFor="mo_number">Mobile Number</label>
+                      <label htmlFor="mo_number">Telephone Number</label>
                       <div className="input-group mb-3">
                         <span className="auth-form-icon">
                           <i className="dripicons-phone"></i>
@@ -97,4 +97,4 @@ const BusinessRegisterPage = () => {
   );
 };
 
-export default BusinessRegisterPage;
+export default RegisterPage;
