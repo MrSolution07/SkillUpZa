@@ -1,15 +1,15 @@
 // our pictures will be here
 import { useEffect, useState } from "react";
-import Preloader from "../../Component/Preloader";
-import Header from "../../Component/Headers";
-import Footer from "../../Component/Footer/Footer";
-import Banner from "../../Component/Banner/Banner";
-import PopularCourse from "../../Component/Course/PopularCourse";
-import Video from "../../Component/Video/Video";
-import Cta from "../../Component/Cta/Cta";
-import Home3Teacher from "../../Component/Teachers/Home3Teacher";
-import Package from "../../Component/Package/Package";
-import GotoTop from "../../Component/GotoTop";
+import Preloader from "../../Components/Preloader";
+import Header from "../../Components/Headers";
+import Footer from "../../Components/Footer/Footer";
+import Banner from "../../Components/Banner/Banner";
+import PopularCourse from "../../Components/Course/PopularCourse";
+import Video from "../../Components/Video/Video";
+import Cta from "../../Components/Cta/Cta";
+import Home3Teacher from "../../Components/Teachers/Home3Teacher";
+import Package from "../../Components/Package/Package";
+import GotoTop from "../../Components/GotoTop";
 
 function About1() {
   const [isLoading, setIsLoading] = useState(true);

@@ -10,12 +10,38 @@ import Error from "./Pages/Error";
 import Blogs from "./Pages/Blogs";
 import SinglePost from "./Pages/SinglePost";
 import Contact from "./Pages/Contact";
-import Register from "./Component/JoinNow/Register";
-import LoginPage from "./Component/ProfileLogin/Login";
-import Forgotpsw from "./Component/ProfileLogin/Forgotpsw";
+import Register from "./Components/JoinNow/Register";
+import LoginPage from "./Components/ProfileLogin/Login";
+import Forgotpsw from "./Components/ProfileLogin/Forgotpsw";
+
+// dashboard here
+
+import DashboardPage from "./Pages/Dashboard/index.tsx";
+import FaqPage from "./Pages/Dashboard/Faq/index.tsx";
+import SkillAI from "./Pages/Dashboard/SkillAI/index.jsx";
+import Jobs from "./Pages/Dashboard/Jobs/jobs.jsx";
 
 
 const router = createBrowserRouter([
+  {
+    path: "/Jobs",
+    element: <Jobs />,
+  },
+
+  {
+    path: "/SkillAI",
+    element: <SkillAI />,
+  },
+  {
+    path: "/Dashboard",
+    element: < DashboardPage />,
+  },
+
+  {
+    path: "/Faq",
+    element: <FaqPage/>,
+  },
+
   {
     path: "/",
     element: <Home />,
@@ -37,8 +63,8 @@ const router = createBrowserRouter([
     element: <Course3 />,
   },
   {
-    path:"/course-4",
-    element: <Course4/>,
+    path: "/course-4",
+    element: <Course4 />,
   },
   {
     path: "/single-course",

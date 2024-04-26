@@ -1,11 +1,11 @@
 //  content of the jobs 
 import { useEffect, useState } from "react";
-import Preloader from "../../Component/Preloader";
-import Header from "../../Component/Headers";
-import Footer from "../../Component/Footer/Footer";
-import Banner from "../../Component/Banner/Banner";
-import TeacherCard from "../../Component/Cards/TeacherCard";
-import GotoTop from "../../Component/GotoTop";
+import Preloader from "../../Components/Preloader";
+import Header from "../../Components/Headers";
+import Footer from "../../Components/Footer/Footer";
+import Banner from "../../Components/Banner/Banner";
+import TeacherCard from "../../Components/Cards/TeacherCard";
+import GotoTop from "../../Components/GotoTop";
 
 function Instructor() {
   const [isLoading, setIsLoading] = useState(true);

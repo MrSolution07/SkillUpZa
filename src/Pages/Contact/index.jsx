@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
-import Preloader from "../../Component/Preloader";
-import Header from "../../Component/Headers";
-import Footer from "../../Component/Footer/Footer";
-import Banner from "../../Component/Banner/Banner";
-import ContactForm from "../../Component/Form/ContactForm";
-import Map from "../../Component/Map";
-import GotoTop from "../../Component/GotoTop";
+import Preloader from "../../Components/Preloader";
+import Header from "../../Components/Headers";
+import Footer from "../../Components/Footer/Footer";
+import Banner from "../../Components/Banner/Banner";
+import ContactForm from "../../Components/Form/ContactForm";
+import Map from "../../Components/Map";
+import GotoTop from "../../Components/GotoTop";
 
 function Contact() {
   const [isLoading, setIsLoading] = useState(true);

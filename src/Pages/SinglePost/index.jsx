@@ -1,12 +1,12 @@
 import { useEffect, useState } from "react";
-import Preloader from "../../Component/Preloader";
-import Header from "../../Component/Headers";
-import Footer from "../../Component/Footer/Footer";
-import BlogBanner from "../../Component/Banner/BlogBanner";
-import DetailsSideBar from "../../Component/Blogs/DetailsSideBar";
-import CommentForm from "../../Component/Form/CommentForm";
-import Comment from "../../Component/Comment/Comment";
-import GotoTop from "../../Component/GotoTop";
+import Preloader from "../../Components/Preloader";
+import Header from "../../Components/Headers";
+import Footer from "../../Components/Footer/Footer";
+import BlogBanner from "../../Components/Banner/BlogBanner";
+import DetailsSideBar from "../../Components/Blogs/DetailsSideBar";
+import CommentForm from "../../Components/Form/CommentForm";
+import Comment from "../../Components/Comment/Comment";
+import GotoTop from "../../Components/GotoTop";
 
 function SinglePost() {
   const [isLoading, setIsLoading] = useState(true);

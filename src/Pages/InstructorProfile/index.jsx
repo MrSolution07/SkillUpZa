@@ -1,13 +1,13 @@
 
 import { useEffect, useState } from "react";
-import Preloader from "../../Component/Preloader";
-import Header from "../../Component/Headers";
-import Footer from "../../Component/Footer/Footer";
-import Banner from "../../Component/Banner/Banner";
+import Preloader from "../../Components/Preloader";
+import Header from "../../Components/Headers";
+import Footer from "../../Components/Footer/Footer";
+import Banner from "../../Components/Banner/Banner";
 import { course } from "../../Data/course";
-import FeatureCourseCard from "../../Component/Cards/FeatureCourseCard";
+import FeatureCourseCard from "../../Components/Cards/FeatureCourseCard";
 import { Link } from "react-router-dom";
-import GotoTop from "../../Component/GotoTop";
+import GotoTop from "../../Components/GotoTop";
 
 const purchased = [
   {

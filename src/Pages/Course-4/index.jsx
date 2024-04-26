@@ -1,15 +1,15 @@
 import { useEffect, useState } from "react";
-import Preloader from "../../Component/Preloader";
-import Header from "../../Component/Headers";
-import Footer from "../../Component/Footer/Footer";
-import Banner from "../../Component/Banner/Banner";
+import Preloader from "../../Components/Preloader";
+import Header from "../../Components/Headers";
+import Footer from "../../Components/Footer/Footer";
+import Banner from "../../Components/Banner/Banner";
 import { course } from "../../Data/course2";
-import FeatureCourseCard from "../../Component/Cards/FeatureCourseCard";
+import FeatureCourseCard from "../../Components/Cards/FeatureCourseCard";
 import { Link } from "react-router-dom";
-import CourseListViewV2 from "../../Component/Cards/CourseListViewV2";
-import LatestCourseCard from "../../Component/Cards/LatestCourseCard";
-import FilterForm from "../../Component/Form/FilterForm";
-import GotoTop from "../../Component/GotoTop";
+import CourseListViewV2 from "../../Components/Cards/CourseListViewV2";
+import LatestCourseCard from "../../Components/Cards/LatestCourseCard";
+import FilterForm from "../../Components/Form/FilterForm";
+import GotoTop from "../../Components/GotoTop";
 
 function Course4() {
   const [isLoading, setIsLoading] = useState(true);

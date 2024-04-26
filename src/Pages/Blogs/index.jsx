@@ -1,13 +1,13 @@
 import { useEffect, useState } from "react";
-import Preloader from "../../Component/Preloader";
-import Header from "../../Component/Headers";
-import Footer from "../../Component/Footer/Footer";
-import Banner from "../../Component/Banner/Banner";
+import Preloader from "../../Components/Preloader";
+import Header from "../../Components/Headers";
+import Footer from "../../Components/Footer/Footer";
+import Banner from "../../Components/Banner/Banner";
 import { blogs } from "../../Data/blog";
-import BlogCard from "../../Component/Cards/BlogCard";
+import BlogCard from "../../Components/Cards/BlogCard";
 
-import DetailsSideBar from "../../Component/Blogs/DetailsSideBar";
-import GotoTop from "../../Component/GotoTop";
+import DetailsSideBar from "../../Components/Blogs/DetailsSideBar";
+import GotoTop from "../../Components/GotoTop";
 
 function Blogs() {
   const [isLoading, setIsLoading] = useState(true);

@@ -1,17 +1,17 @@
 import { useEffect, useState } from "react";
-import Preloader from "../../Component/Preloader";
+import Preloader from "../../Components/Preloader";
 
-import Home3Header from "../../Component/Headers/Home3Header";
-import HomeThreeHero from "../../Component/Heros/HomeThreeHero";
-import FeatureHome3 from "../../Component/Features/FeatureHome3";
-import CourseHome3 from "../../Component/Course/CourseHome3";
-import Home3Register from "../../Component/Register/Home3Register";
-import FeatureCourse from "../../Component/Course/FeatureCourse";
-import Home3AppStore from "../../Component/AppStore/Home3AppStore";
-import Home3Teacher from "../../Component/Teachers/Home3Teacher";
-import CallAction from "../../Component/CallAction";
-import Home3Footer from "../../Component/Footer/Home3Footer";
-import GotoTop from "../../Component/GotoTop";
+import Home3Header from "../../Components/Headers/Home3Header";
+import HomeThreeHero from "../../Components/Heros/HomeThreeHero";
+import FeatureHome3 from "../../Components/Features/FeatureHome3";
+import CourseHome3 from "../../Components/Course/CourseHome3";
+import Home3Register from "../../Components/Register/Home3Register";
+import FeatureCourse from "../../Components/Course/FeatureCourse";
+import Home3AppStore from "../../Components/AppStore/Home3AppStore";
+import Home3Teacher from "../../Components/Teachers/Home3Teacher";
+import CallAction from "../../Components/CallAction";
+import Home3Footer from "../../Components/Footer/Home3Footer";
+import GotoTop from "../../Components/GotoTop";
 
 function Home3() {
   const [isLoading, setIsLoading] = useState(true);

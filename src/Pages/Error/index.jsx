@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import Preloader from "../../Component/Preloader";
+import Preloader from "../../Components/Preloader";
 import { Link } from "react-router-dom";
 
 function Error() {
