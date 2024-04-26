@@ -30,7 +30,7 @@ const RegisterPage = () => {
                         <span className="auth-form-icon">
                           <i className="dripicons-user"></i>
                         </span>
-                        <input type="text" className="form-control" id="username" placeholder="Enter username" />
+                        <input type="text" className="form-control" id="username" placeholder="Enter Company Name" />
                       </div>
                     </div>
                     <div className="form-group">
@@ -66,7 +66,7 @@ const RegisterPage = () => {
                         <span className="auth-form-icon">
                           <i className="dripicons-phone"></i>
                         </span>
-                        <input type="text" className="form-control" id="mo_number" placeholder="Enter Mobile Number" />
+                        <input type="text" className="form-control" id="mo_number" placeholder="Enter Telephone Number" />
                       </div>
                     </div>
                     <div className="form-group row mt-4">
@@ -85,7 +85,7 @@ const RegisterPage = () => {
                   </form>
                 </div>
                 <div className="m-3 text-center text-muted">
-                  <p className="">Already have an account ? <a href="/LoginPage" className="text-primary ml-2">Log in</a></p>
+                  <p className="">Already have an account ? <a href="/BusinessLogin" className="text-primary ml-2">Log in</a></p>
                 </div>
               </div>
             </div>
