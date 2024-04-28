@@ -22,9 +22,13 @@ import DashboardPage from "./Pages/Dashboard/index.tsx";
 import FaqPage from "./Pages/Dashboard/Faq/index.tsx";
 import SkillAI from "./Pages/Dashboard/SkillAI/index.jsx";
 import Jobs from "./Pages/Dashboard/Jobs/jobs.jsx";
-
+import Interview from "./Pages/Dashboard/Interview/index.jsx";
 
 const router = createBrowserRouter([
+  {
+    path: "/Interview",
+    element: <Interview />,
+  },
   {
     path: "/Jobs",
     element: <Jobs />,
