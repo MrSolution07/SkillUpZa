@@ -12,7 +12,7 @@ function Footer({ getStart }) {
               <div className="cta-wrapper">
                 <img src="assets/images/home/2.png" alt="" />
                 <h3>You can be your own Guiding star with SkillUp!</h3>
-                <Link to="/course-3" className="SkillUplms-btn">
+                <Link to="/Register" className="SkillUplms-btn">
                   Get Started Now
                 </Link>
               </div>
@@ -27,20 +27,19 @@ function Footer({ getStart }) {
                   <img src="assets/images/logo.png" alt="" />
                 </Link>
                 <p>
-                 Skill Up is a company focused on empowring people by facililating them in the job-seeking proccess and providing the necessary tools to optimize them for the job market. We offer a robust and intuitive web application to achieve this.
+                 Skill Up is a company focused on empowering people by facililating them in the job-seeking proccess and providing the necessary tools to optimize them for the job market. We offer a robust and intuitive web application to achieve this.
                  Follow us for more.
                 </p>
                 <div className="ab-social">
                   <a className="fac" >
                     <i className="social_facebook"></i>
                   </a>
-                  <a className="twi" >
-                    <i className="social_twitter"></i>
+                  <a className="twi" href="https://twitter.com/_Skill_Up_/status/1784949119582195767?t=PPYZjB1fn0GIJJ5XNoYBKw&s=19">
+                    <i><img src ="public/assets/images/twitter-x.png" alt = ""/></i>
                   </a>
-                  <a className="you" >
-                    <i className="social_youtube"></i>
+                  <a href="https://www.instagram.com/skillup443/">
+                      <i><div><img src="public/assets/images/instagram.png" alt="" /></div></i>
                   </a>
-                  
                 </div>
               </div>
             </aside>
@@ -52,17 +51,13 @@ function Footer({ getStart }) {
                 <li>
                   <Link to="/about-1">About Us</Link>
                 </li>
+                
                 <li>
-                  <Link to="#">Success Story</Link>
+                  <Link to="/instructor">Careers</Link>
                 </li>
+                
                 <li>
-                  <Link to="#">Careers</Link>
-                </li>
-                <li>
-                  <Link to="#">Resource Center</Link>
-                </li>
-                <li>
-                  <Link to="/course-1">Courses</Link>
+                  <Link to="/course-3">Courses</Link>
                 </li>
                 <li>
                   <Link to="/contact">Contact Us</Link>
@@ -78,20 +73,9 @@ function Footer({ getStart }) {
                   <Link to="/course-3">All Courses</Link>
                 </li>
                 <li>
-                  <Link to="#">Storytelling & Voice Over</Link>
-                </li>
-                <li>
-                  <Link to="#">Digital Marketing</Link>
-                </li>
-                <li>
                   <Link to="#">Design & Branding</Link>
                 </li>
-                <li>
-                  <Link to="#">Nanodegree Plus</Link>
-                </li>
-                <li>
-                  <Link to="#">Veterans</Link>
-                </li>
+                
               </ul>
             </aside>
           </div>
@@ -100,23 +84,13 @@ function Footer({ getStart }) {
               <h3 className="widget-title">Support</h3>
               <ul>
                 <li>
-                  <Link to="#">Help Center</Link>
+                  <Link to="/contact">Help Center</Link>
                 </li>
-                <li>
-                  <Link to="#">System Requirements</Link>
-                </li>
-                <li>
-                  <Link to="#">Register Activation Key</Link>
-                </li>
-                <li>
-                  <Link to="#">Site Feedback</Link>
-                </li>
+                
                 <li>
                   <Link to="#">Documentation</Link>
                 </li>
-                <li>
-                  <Link to="#">Forums</Link>
-                </li>
+                
               </ul>
             </aside>
           </div>

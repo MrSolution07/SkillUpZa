@@ -12,21 +12,18 @@ function Home3Footer() {
                   <img src="assets/images/logo3.png" alt="" />
                 </Link>
                 <p>
-                  Lost the plot Richard you mug cup of tea knackered boot
-                  bender.
+                  
                 </p>
                 <div className="ab-social">
-                  <a className="fac" href="#">
+                  <a className="fac">
                     <i className="social_facebook"></i>
                   </a>
-                  <a className="twi" href="#">
-                    <i className="social_twitter"></i>
+                  <a className="twi" href="https://twitter.com/_Skill_Up_/status/1784949119582195767?t=PPYZjB1fn0GIJJ5XNoYBKw&s=19">
+                      <i><img src ="public/assets/images/twitter-x.png" alt = ""/>
+                      </i>
                   </a>
-                  <a className="you" href="#">
-                    <i className="social_youtube"></i>
-                  </a>
-                  <a className="lin" href="#">
-                    <i className="social_linkedin"></i>
+                  <a href="https://www.instagram.com/skillup443/">
+                      <i><img src="public/assets/images/instagram.png" alt="" /></i>
                   </a>
                 </div>
               </div>
@@ -40,10 +37,10 @@ function Home3Footer() {
                   <Link to="/about-1">About Us</Link>
                 </li>
                 <li>
-                  <Link to="/">Success Story</Link>
+                  <Link to="#">Success Story</Link>
                 </li>
                 <li>
-                  <Link to="/">Careers</Link>
+                  <Link to="/instructor">Careers</Link>
                 </li>
                 <li>
                   <Link to="/">Resource Center</Link>
@@ -52,7 +49,7 @@ function Home3Footer() {
                   <Link to="/course-3">Courses</Link>
                 </li>
                 <li>
-                  <Link to="/">Contact Us</Link>
+                  <Link to="/contact">Contact Us</Link>
                 </li>
               </ul>
             </aside>
@@ -68,17 +65,9 @@ function Home3Footer() {
                   <Link to="/">Storytelling & Voice Over</Link>
                 </li>
                 <li>
-                  <Link to="/">Digital Marketing</Link>
-                </li>
-                <li>
                   <Link to="/">Design & Branding</Link>
                 </li>
-                <li>
-                  <Link to="/">Nanodegree Plus</Link>
-                </li>
-                <li>
-                  <Link to="/">Veterans</Link>
-                </li>
+
               </ul>
             </aside>
           </div>
@@ -87,22 +76,20 @@ function Home3Footer() {
               <h3 className="widget-title">Support</h3>
               <ul>
                 <li>
-                  <Link to="/">Help Center</Link>
+                  <Link to="/contact">Help Center</Link>
                 </li>
                 <li>
-                  <Link to="/">System Requirements</Link>
+                  <Link to="#">System Requirements</Link>
+                </li>
+                
+                <li>
+                  <Link to="#">Site Feedback</Link>
                 </li>
                 <li>
-                  <Link to="/">Register Activation Key</Link>
+                  <Link to="#">Documentation</Link>
                 </li>
                 <li>
-                  <Link to="/">Site Feedback</Link>
-                </li>
-                <li>
-                  <Link to="/">Documentation</Link>
-                </li>
-                <li>
-                  <Link to="/">Forums</Link>
+                  <Link to="#">Forums</Link>
                 </li>
               </ul>
             </aside>

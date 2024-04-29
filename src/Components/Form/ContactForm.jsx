@@ -24,7 +24,7 @@ function ContactForm() {
         <div className="condition-check">
           <input id="terms-conditions" type="checkbox" />
           <label htmlFor="terms-conditions">
-            I agree to the <a href="#">Terms & Conditions</a>
+            I agree to the <a href="/privacypolicy">Terms & Conditions</a>
           </label>
         </div>
       </div>

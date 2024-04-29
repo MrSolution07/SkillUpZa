@@ -26,22 +26,24 @@ function Home3Teacher({ className, btnClass }) {
           />
           <Home3TeacherCard
             img="assets/images/home3/teacher/2.png"
-            name="Mike Lungwa"
+            name2="Mike Lungwa"
             position="Back-end Developer"
+            
           />
           <Home3TeacherCard
             img="assets/images/home3/teacher/3.png"
-            name="Lesedi Ntamane"
+            name3="Lesedi Ntamane"
             position="Visual Designer"
+            
           />
           <Home3TeacherCard
             img="assets/images/home3/teacher/4.png"
-            name="Anonga Mabuda"
+            name4="Anonga Mabuda"
             position="Requirements Analyst"
           />
           <Home3TeacherCard
             img="assets/images/home3/teacher/5.png"
-            name="Governor Khoza"
+            name5="Governor Khoza"
             position="Database Administrator"
           />
 

@@ -93,7 +93,7 @@ function Login() {
                       {/* end form-group */}
                       <div className="form-group mb-0 row">
                         <div className="col-12 mt-2">
-                          <a href="/dashboard">
+                          <a href="/AfterLogin">
                             <button
                               className="btn btn-gradient-primary btn-round btn-block waves-effect waves-light"
                               id="btnLog"

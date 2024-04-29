@@ -42,33 +42,31 @@ function Contact() {
                     <h5>Phone</h5>
                     <p>
                       <i className="icon_phone"></i>
-                      (+010) 245 356 432
+                      (+27) 84 998 0630 
                       <br />
-                      (+010) 336 476 328
+                      (+27) 63 531 5852
                     </p>
                   </div>
                   <div className="single-info">
                     <h5>Support</h5>
                     <p>
                       <i className="icon_mail_alt"></i>
-                      <a href="mailto:skillup2024@outlook.com">skillup2024@outlook.com </a>
+                      <a href="mailto:Skillup24@outlook.com">skillup24@outlook.com </a>
                     
                     </p>
                   </div>
                   <div className="ab-social">
                     <h5>Follow Us</h5>
-                    <a className="fac" href="#">
+                    <a className="fac">
                       <i className="social_facebook"></i>
                     </a>
-                    <a className="twi" href="#">
-                      <i className="social_twitter"></i>
-                    </a>
-                    <a className="you" href="#">
-                      <i className="social_youtube"></i>
-                    </a>
-                    <a className="lin" href="#">
-                      <i className="social_linkedin"></i>
-                    </a>
+                    <a className="twi" href="https://twitter.com/_Skill_Up_/status/1784949119582195767?t=PPYZjB1fn0GIJJ5XNoYBKw&s=19">
+                      <i><img src ="public/assets/images/twitter-x.png" alt = ""/>
+                      </i>
+                  </a>
+                  <a href="https://www.instagram.com/skillup443/">
+                      <i><img src="public/assets/images/instagram.png" alt="" /></i>
+                  </a>
                   </div>
                 </div>
               </div>

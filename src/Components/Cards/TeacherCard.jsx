@@ -8,7 +8,7 @@ function TeacherCard({ teacher, swiper }) {
     <div className="teacher-item">
       <div className="teacher-thumb">
         <img src={img} alt="" />
-        <div className="teacher-social">
+        {/* <div className="teacher-social">
           <a href="#">
             <i className="social_dribbble"></i>
           </a>
@@ -21,11 +21,11 @@ function TeacherCard({ teacher, swiper }) {
           <a href="#">
             <i className="social_tumblr"></i>
           </a>
-        </div>
+        </div> */}
       </div>
       <div className="teacher-meta">
         <h5>
-          <Link to="/profile">{name}</Link>
+          <Link to="https://za.indeed.com/?from=gnav-homepage">{name}</Link>
         </h5>
         <p>{subject}</p>
       </div>
