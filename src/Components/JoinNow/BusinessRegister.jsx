@@ -5,7 +5,7 @@ import "../NewStyle/style.css"
 
 import { Helmet } from 'react-helmet';
 
-const RegisterPage = () => {
+const BusinessRegisterPage = () => {
   return (
     <div className="container" id="page">
       <div className="row vh-100 ">
@@ -21,20 +21,20 @@ const RegisterPage = () => {
                   </div>
                   <div className="text-center auth-logo-text">
                     <h4 className="name">SkillUp</h4>
-                    <p className="text-muted">Set Up Your SkillUp Business account now.</p>
+                    <p className="text-muted">Get your free SkillUp account now.</p>
                   </div>
                   <form className="form-horizontal auth-form my-4" action="index.html">
                     <div className="form-group">
-                      <label htmlFor="companyname">Company Name</label>
+                      <label htmlFor="username">Username</label>
                       <div className="input-group mb-3">
                         <span className="auth-form-icon">
                           <i className="dripicons-user"></i>
                         </span>
-                        <input type="text" className="form-control" id="username" placeholder="Enter Company Name" />
+                        <input type="text" className="form-control" id="username" placeholder="Enter username" />
                       </div>
                     </div>
                     <div className="form-group">
-                      <label htmlFor="companyemail">Email</label>
+                      <label htmlFor="useremail">Email</label>
                       <div className="input-group mb-3">
                         <span className="auth-form-icon">
                           <i className="dripicons-mail"></i>
@@ -43,12 +43,12 @@ const RegisterPage = () => {
                       </div>
                     </div>
                     <div className="form-group">
-                      <label htmlFor="companypassword">Password</label>
+                      <label htmlFor="userpassword">Password</label>
                       <div className="input-group mb-3">
                         <span className="auth-form-icon">
                           <i className="dripicons-lock"></i>
                         </span>
-                        <input type="password" className="form-control" id="companypassword" placeholder="Enter password" />
+                        <input type="password" className="form-control" id="userpassword" placeholder="Enter password" />
                       </div>
                     </div>
                     <div className="form-group">
@@ -61,12 +61,12 @@ const RegisterPage = () => {
                       </div>
                     </div>
                     <div className="form-group">
-                      <label htmlFor="mo_number">Telephone Number</label>
+                      <label htmlFor="mo_number">Mobile Number</label>
                       <div className="input-group mb-3">
                         <span className="auth-form-icon">
                           <i className="dripicons-phone"></i>
                         </span>
-                        <input type="text" className="form-control" id="mo_number" placeholder="Enter Telephone Number" />
+                        <input type="text" className="form-control" id="mo_number" placeholder="Enter Mobile Number" />
                       </div>
                     </div>
                     <div className="form-group row mt-4">
@@ -85,7 +85,7 @@ const RegisterPage = () => {
                   </form>
                 </div>
                 <div className="m-3 text-center text-muted">
-                  <p className="">Already have an account ? <a href="/BusinessLogin" className="text-primary ml-2">Log in</a></p>
+                  <p className="">Already have an account ? <a href="/LoginPage" className="text-primary ml-2">Log in</a></p>
                 </div>
               </div>
             </div>
@@ -97,4 +97,4 @@ const RegisterPage = () => {
   );
 };
 
-export default RegisterPage;
+export default BusinessRegisterPage;

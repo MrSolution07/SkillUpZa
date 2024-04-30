@@ -1,1 +1,14 @@
 node_modules
+
+You need to install axios, npm install axios 
+I didn't use leaf coz it was showing me flames.
+
+The name of the database is "users" and the table is "credentials" 
+the attributes are: 
+-Usename
+-Email
+-Password
+-Mobile Number
+
+
+All the PHP are under the folder "php"
