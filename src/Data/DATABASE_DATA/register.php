@@ -10,11 +10,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $password = mysqli_real_escape_string($conn, $_POST['password']);
         $mobile = mysqli_real_escape_string($conn, $_POST['mobile']);
 
-        $hashed_pwd = password_hash($password, PASSWORD_DEFAULT);
+        // $hashed_pwd = password_hash($password, PASSWORD_DEFAULT);
 
         $stmt = $conn->prepare("INSERT INTO credentials (`Username`, `Email`, `Password`, `Mobile Number`) VALUES (?, ?, ?, ?)");
-        $stmt->bind_param("ssss", $username, $email, $hashed_pwd, $mobile);
-
+        $stmt->bind_param("ssss", $username, $email, $password, $mobile);
 
         if ($stmt->execute() === TRUE) {
             $response = array("success" => true, "message" => "USER registered successfully");
@@ -34,3 +33,5 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 $conn->close();
 
 echo json_encode($response);
+?>
+
