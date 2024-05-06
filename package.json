@@ -1,5 +1,5 @@
 {
-  "name": "SkillUp",
+  "name": "skillup",
   "private": false,
   "version": "0.0.0",
   "type": "module",
@@ -10,6 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.3.3",
     "@emotion/react": "^11.11.4",
     "@emotion/styled": "^11.11.5",
     "@mui/icons-material": "^5.15.15",
@@ -18,14 +19,18 @@
     "@radix-ui/react-slot": "^1.0.2",
     "axios": "^1.6.8",
     "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.2",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
+    "cors": "^2.8.5",
     "dotenv": "^16.4.5",
+    "express": "^4.19.2",
     "framer-motion": "^11.0.24",
     "localforage": "^1.10.0",
     "lucide-react": "^0.373.0",
     "match-sorter": "^6.3.1",
     "next": "^14.2.3",
+    "nodemailer": "^6.9.13",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-helmet": "^6.1.0",
@@ -48,5 +53,10 @@
     "eslint-plugin-react-refresh": "^0.3.4",
     "tailwindcss": "^3.4.3",
     "vite": "^4.5.3"
-  }
+  },
+  "description": "this is our second year project 50% of the work",
+  "main": "vite.config.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
