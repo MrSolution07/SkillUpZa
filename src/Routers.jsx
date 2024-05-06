@@ -18,14 +18,29 @@ import BusinessRegister from "./Components/JoinNow/BusinessRegister";
 
 // dashboard here
 
-import DashboardPage from "./Pages/Dashboard/index.tsx";
+import DashboardPage from "./Pages/Dashboard/index.jsx";
 import FaqPage from "./Pages/Dashboard/Faq/index.tsx";
 import SkillAI from "./Pages/Dashboard/SkillAI/index.jsx";
 import Jobs from "./Pages/Dashboard/Jobs/jobs.jsx";
 import Interview from "./Pages/Dashboard/Interview/index.jsx";
 import HomeUsr from "./Pages/HomeUsr/index.jsx";
+import Courses from "./Pages/Dashboard/Courses/index.jsx";
+import Courses2 from "./Pages/Dashboard/Courses2/index2.jsx";
+import MyCourses from "./Pages/Dashboard/MyCourses/inde.jsx";
 
 const router = createBrowserRouter([
+  {
+    path: "/MyCourses",
+    element: <MyCourses />,
+  },
+  {
+    path: "/Courses2",
+    element: <Courses2 />,
+  },
+  {
+    path: "/Courses",
+    element: <Courses />,
+  },
   {
     path: "/HomeUsr",
     element: <HomeUsr />,
