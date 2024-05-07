@@ -155,7 +155,7 @@ function Teachers() {
                   teacher={{
                     img: "assets/images/home2/teacher/3.png",
                     name: "Jim Séchen",
-                    subject: "Stylist & Author",
+                    subject: "Stylist & ",
                   }}
                   swiper={true}
                 />

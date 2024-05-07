@@ -14,11 +14,7 @@ export const course = [
     rating: 4.5,
     price: "450.00",
     offerPrice: "150.00",
-    author: {
-      name: "Anthony",
-      profile: "#",
-      img: "assets/images/home/course/author.png",
-    },
+    
     courseLink: "/Register",
     category: ["Business Study"],
   },
@@ -37,11 +33,7 @@ export const course = [
     rating: 4.5,
     price: "450.00",
     offerPrice: "250.00",
-    author: {
-      name: "Anthony",
-      profile: "#",
-      img: "assets/images/home/course/author.png",
-    },
+   
     courseLink: "/Register",
     category: ["Web Development"],
   },
@@ -60,11 +52,7 @@ export const course = [
     rating: 4.5,
     price: "600.00",
     offerPrice: "360.00",
-    author: {
-      name: "Antony",
-      profile: "#",
-      img: "assets/images/home/course/author.png",
-    },
+    
     courseLink: "/Register",
     category: ["Art & Design"],
   },
@@ -83,11 +71,7 @@ export const course = [
     rating: 4.5,
     price: "550.00",
     offerPrice: "380.00",
-    author: {
-      name: "Antony",
-      profile: "#",
-      img: "assets/images/home/course/author.png",
-    },
+   
     courseLink: "/Register",
     category: ["Science"],
   },
@@ -106,11 +90,7 @@ export const course = [
     rating: 4.5,
     price: "500.00",
     offerPrice: "450.00",
-    author: {
-      name: "Antony",
-      profile: "#",
-      img: "assets/images/home/course/author.png",
-    },
+    
     courseLink: "/Register",
     category: ["Art & Design"],
   },
@@ -129,11 +109,7 @@ export const course = [
     rating: 4.5,
     price: "750.00",
     offerPrice: "600.00",
-    author: {
-      name: "Antony",
-      profile: "#",
-      img: "assets/images/home/course/author.png",
-    },
+    
     courseLink: "/Register",
     category: ["Science"],
   },

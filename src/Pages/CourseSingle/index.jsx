@@ -45,7 +45,7 @@ function CourseSingle() {
                       <div className="author">
                         <img src="assets/images/home3/course/a1.png" alt="" />
                         <span>Teacher</span>
-                        <Link to="/">Anthony</Link>
+                        {/* <Link to="/">Anthony</Link> */}
                       </div>
                       <div className="categories">
                         <span>Categories:</span>

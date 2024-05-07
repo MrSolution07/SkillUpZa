@@ -43,7 +43,7 @@ function FeatureCard2({ course }) {
             <span>R{price}</span>
           </div>
           <div className="author">
-            <img src={author.img} alt="" />
+            
             <Link to={author.profile}>{author.name}</Link>
           </div>
           <div className="ratings">

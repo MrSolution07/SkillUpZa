@@ -40,10 +40,7 @@ function CourseListView({ course, className }) {
           <Link to={courseLink}>{heading}</Link>
         </h4>
         <p>{description}</p>
-        <div className="author">
-          <img src={author.img} alt="" />
-          <a href="#">{author.name}</a>
-        </div>
+        
         <div className="price-rate">
           <div className="course-price">
             R{offerPrice}
