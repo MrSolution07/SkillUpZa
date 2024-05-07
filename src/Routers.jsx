@@ -25,12 +25,18 @@ import Jobs from "./Pages/Dashboard/Jobs/jobs.jsx";
 import Interview from "./Pages/Dashboard/Interview/index.jsx";
 import HomeUsr from "./Pages/HomeUsr/index.jsx";
 
+// HomePage
+import HomePage from "./Components/Social/HomePage.jsx";
+
 const router = createBrowserRouter([
   {
     path: "/HomeUsr",
     element: <HomeUsr />,
   },
-
+  {
+    path: "/HomePage",
+    element: <HomePage />,
+  },
   {
     path: "/Interview",
     element: <Interview />,
