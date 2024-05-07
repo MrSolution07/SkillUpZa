@@ -32,12 +32,12 @@ function FeatureCourseCard({ course, className, swiper }) {
             <Link to="#">{heading}</Link>
           </h4>
           <div className="author">
-            <img src={author?.img} alt="" />
+          
             <Link to={author?.profile}>{author?.name}</Link>
           </div>
           <div className="price-rate">
             <div className="course-price">
-              {offerPrice}
+              R{offerPrice}
               <span>R{price}</span>
             </div>
             <div className="ratings">

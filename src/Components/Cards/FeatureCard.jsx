@@ -62,10 +62,7 @@ function FeatureCard({ course }) {
               R{offerPrice}
               <span>R{price}</span>
             </div>
-            <div className="author">
-              <img src={author.img} alt="" />
-              <Link to={author.profileLink}>{author.name}</Link>
-            </div>
+           
             <div className="fcf-bottom">
               <Link to={courseLink}>
                 <i className="icon_book_alt"></i>

@@ -1,6 +1,8 @@
 //Join for free page or register 
 
-import "../NewStyle/style.css";
+import "../NewStyle/style.css"
+import { Link } from "react-router-dom";
+
 
 
 import { Helmet } from 'react-helmet';
@@ -73,7 +75,7 @@ const RegisterPage = () => {
                       <div className="col-sm-12">
                         <div className="custom-control custom-switch switch-success">
                           <input type="checkbox" className="custom-control-input" id="customSwitchSuccess" />
-                          <label className="custom-control-label text-muted" htmlFor="customSwitchSuccess">By registering you agree to the <a href="#" className="text-primary">Terms of Use</a></label>
+                          <label className="custom-control-label text-muted" htmlFor="customSwitchSuccess">By registering you agree to the <Link to = "/privacypolicy" className="text-primary">Terms of Use</Link></label>
                         </div>
                       </div>
                     </div>
