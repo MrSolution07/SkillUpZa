@@ -1,6 +1,6 @@
 //Join for free page or register 
 
-import "../NewStyle/style.css"
+import "../NewStyle/style.css";
 
 
 import { Helmet } from 'react-helmet';

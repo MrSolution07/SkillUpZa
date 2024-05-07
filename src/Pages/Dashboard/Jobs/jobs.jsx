@@ -4,6 +4,7 @@ import DashboardLayout from "../layout";
 function Jobs() {
   return (
     <DashboardLayout>
+            <div className="container">
             <div className="row">
                 <h2 className="sec-title mb-15">
                   <span></span> 
@@ -11,6 +12,7 @@ function Jobs() {
             </div>
 
             <div className="row">
+              
               <TeacherCard
                 teacher={{
                   img: "assets/images/home2/teacher/1.png",
@@ -107,6 +109,8 @@ function Jobs() {
                 }}
               />
             </div>
+          </div>
+
         
         </DashboardLayout>
     )

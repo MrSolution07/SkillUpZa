@@ -15,7 +15,7 @@ function Home3Footer() {
                   
                 </p>
                 <div className="ab-social">
-                  <a className="fac">
+                  <a className="fac" href="https://www.facebook.com/profile.php?id=61559534575921">
                     <i className="social_facebook"></i>
                   </a>
                   <a className="twi" href="https://twitter.com/_Skill_Up_/status/1784949119582195767?t=PPYZjB1fn0GIJJ5XNoYBKw&s=19">

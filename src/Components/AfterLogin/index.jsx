@@ -9,8 +9,8 @@ const AfterLogin = () => {
     setIsCardToggled(!isCardToggled); // Toggle the state when the card is clicked
   };
 
-  return (
-    
+  return ( 
+     
     <div className="container">
       
 

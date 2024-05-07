@@ -28,7 +28,7 @@ function Home3TeacherCard({ img, name,name2,name3, name4,name5, position }) {
             <Link to="https://www.linkedin.com/in/christian-bulabula-93a667289/">{name}</Link>
             <Link to="https://www.linkedin.com/in/mike-katutwa-a77b66279/">{name2}</Link> 
             <Link to="https://www.linkedin.com/in/lesedi-naledi-ntamane-47b3bb301/">{name3}</Link>
-            <Link to="">{name4}</Link>
+            <Link to="https://linkedin.com/in/anonga-mabuda-68298a26b/">{name4}</Link>
             <Link to="https://www.linkedin.com/in/govenor-khoza-7313a9215/?trk=contact-info">{name5}</Link>
           </h5>
           <p>{position}</p>
