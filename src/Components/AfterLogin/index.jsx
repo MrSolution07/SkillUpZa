@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from "react-router-dom";
-import './AfterLogin.css'; // Import CSS file for styling
+// import './AfterLogin.css'; // Import CSS file for styling
 
 const AfterLogin = () => {
   const [isCardToggled, setIsCardToggled] = useState(false);

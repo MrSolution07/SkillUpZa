@@ -1,3 +1,4 @@
+/* 
 .header {
     position: fixed;
     top: 0;
@@ -130,8 +131,9 @@ label {
     margin-right: 25px; 
     display: flex;
     flex-direction: column;
-    /* justify-content: space-between; */
+    /* was commented justify-content: space-between; 
 }
+
 .left-main-1 {
     height: 340px;
     margin-bottom: 10px;
@@ -381,9 +383,10 @@ label {
     margin-left: 25px;
     display: flex;
     flex-direction: column;
-    /* justify-content: space-between; */
+    /* was commented justify-content: space-between; 
    
 }
+
 .right-main-1 {
     height: 420px;
     background-color:white;
@@ -483,4 +486,4 @@ label {
 .position {
     position: sticky;
     top: 80px;
-}
+} */

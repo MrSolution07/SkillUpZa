@@ -33,8 +33,14 @@ import MyCourses from "./Pages/Dashboard/MyCourses/inde.jsx";
 
 // HomePage
 import HomePage from "./Components/Social/HomePage.jsx";
+import Main from "./Components/Social/Main.jsx";
 
 const router = createBrowserRouter([
+
+  {
+    path: "/Main",
+    element: <Main />,
+  },
   {
     path: "/MyCourses",
     element: <MyCourses />,
