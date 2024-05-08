@@ -98,17 +98,15 @@ function InstructorProfile() {
                   </p>
                   <div className="ab-social">
                     <h5>Follow Us</h5>
-                    <a className="fac" href="#">
+                    <a className="fac">
                       <i className="social_facebook"></i>
                     </a>
-                    <a className="twi" href="#">
-                      <i className="social_twitter"></i>
+                    <a className="twi" href="https://twitter.com/_Skill_Up_/status/1784949119582195767?t=PPYZjB1fn0GIJJ5XNoYBKw&s=19">
+                      <i><img src ="public/assets/images/twitter-x.png" alt = ""/>
+                      </i>
                     </a>
-                    <a className="you" href="#">
-                      <i className="social_youtube"></i>
-                    </a>
-                    <a className="lin" href="#">
-                      <i className="social_linkedin"></i>
+                    <a href="https://www.instagram.com/skillup443/">
+                      <i><img src="public/assets/images/instagram.png" alt="" /></i>
                     </a>
                   </div>
                 </div>

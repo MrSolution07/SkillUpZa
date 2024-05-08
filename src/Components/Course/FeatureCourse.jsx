@@ -16,9 +16,8 @@ function FeatureCourse() {
           </div>
           <div className="col-md-7">
             <p className="sec-desc">
-              Why I say old chap that is spiffing starkers it's your round nancy
-              boy,
-              <br /> knees up have it are you taking the piss.
+              Start building your career today with Skill Up!
+              
             </p>
           </div>
         </div>

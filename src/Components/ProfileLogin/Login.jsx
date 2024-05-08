@@ -368,6 +368,7 @@ const Login = () => {
                       <div className="col-12 mt-2">
                         <button className="btn btn-gradient-primary btn-round btn-block waves-effect waves-light" id="btnLog" type="submit">Log In <i className="fas fa-sign-in-alt ml-1"></i></button>
                       </div>
+
                     </div>
                     {error && <div className="text-danger mt-3">{error}</div>}
                   </form>
@@ -375,13 +376,86 @@ const Login = () => {
                 <div className="m-3 text-center text-muted">
                   <p className="">Don't have an account ? <a href="/Register" className="text-primary ml-2">Register</a></p>
                   <p className="">SkillUp For Business? <a href="/BusinessLogin" className="text-primary ml-2">Sign in here</a></p>
+
+                      {/* end form-group */}
+                    <form>
+                      <div className="form-group">
+                        <label htmlFor="userpassword">Password</label>
+                        <div className="input-group mb-3">
+                          <span className="auth-form-icon">
+                            <i className="dripicons-lock"></i>
+                          </span>
+                          <input
+                            type="password"
+                            className="form-control"
+                            id="userpassword"
+                            name="password"
+                            placeholder="Enter password"
+                          />
+                        </div>
+                      </div>
+                      {/* end form-group */}
+                      <div className="form-group row mt-4">
+                        <div className="col-sm-6">
+                          <div className="custom-control custom-switch switch-success">
+                            <input
+                              type="checkbox"
+                              className="custom-control-input"
+                              id="customSwitchSuccess"
+                            />
+                            <label
+                              className="custom-control-label text-muted"
+                              htmlFor="customSwitchSuccess"
+                            >
+                              Remember me
+                            </label>
+                          </div>
+                        </div>
+                        {/* end col */}
+                        <div className="col-sm-6 text-right">
+                          <a href="/Forgotpsw" className="text-muted font-13">
+                            <i className="dripicons-lock"></i> Forgot password?
+                          </a>
+                        </div>
+                        {/* end col */}
+                      </div>
+                      {/* end form-group */}
+                      <div className="form-group mb-0 row">
+                        <div className="col-12 mt-2">
+                          <a href="/AfterLogin">
+                            <button
+                              className="btn btn-gradient-primary btn-round btn-block waves-effect waves-light"
+                              id="btnLog"
+                              type="button"
+                            >
+                              Log In <i className="fas fa-sign-in-alt ml-1"></i>
+                            </button>
+                          </a>
+                        </div>
+                        {/* end col */}
+                      </div>
+                      {/* end form-group */}
+                    </form>
+                    {/* end form */}
+                  </div>
+                  {/* end /div */}
+                  <div className="m-3 text-center text-muted">
+                    <p className="">
+                      Don't have an account ?{" "}
+                      <a href="/Register" className="text-primary ml-2">
+                        Register
+                      </a>
+                    </p>
+                  </div>
+
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    // </div>
+  
   );
 }
 

@@ -1193,8 +1193,8 @@ footer .widget .widget-title{
 }
 .about-widget img{
     max-width: 100%;
-    height: auto;
-    margin: 0 0 23px;
+    height:80%;
+    margin: 0 0 4px;
 }
 .about-widget p{
     font-size: 15px;
@@ -1208,7 +1208,7 @@ footer .widget .widget-title{
     display: inline-block;
     width: 40px;
     height: 40px;
-    background: #446bb9;
+    /* background: #446bb9; */
     color: #fff;
     border-radius: 50%;
     text-align: center;
@@ -1220,10 +1220,7 @@ footer .widget .widget-title{
     background: #446bb9;
 }
 .ab-social a.twi{
-    background: #00aced;
-}
-.ab-social a.you{
-    background: #f73434;
+    background: black;
 }
 .ab-social a.lin{
     background: #007bb6;
@@ -4003,9 +4000,9 @@ blockquote cite{
 .post-share a.fac {
     background: #446bb9;
 }
-.post-share a.twi {
-    background: #00aced;
-}
+ .post-share a.twi {
+	 background: black;
+} 
 .post-share a.goo {
     background: #ea4335;
 }
@@ -5385,10 +5382,12 @@ Profile Page
     text-align: left;
 }
 .teacher-item-3 .teacher-social a{
-    color: #7e7c87;
+    color:#76747f;
     line-height: 40px;
     margin: 0 3px;
     border: 2px solid #e5e6eb;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
 }
 
 .teacher-item-3 .teacher-social a:hover{
@@ -6029,4 +6028,10 @@ Profile Page
     padding: 17px 0;
     transition: all 0.1s ease-out;
 }
+.privacypolicy{
+    width: 80%;
+    padding: 3%;
+    margin: auto;
+}
+
 

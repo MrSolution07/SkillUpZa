@@ -16,6 +16,9 @@ import Forgotpsw from "./Components/ProfileLogin/Forgotpsw";
 import BusinessLogin from "./Components/ProfileLogin/BusinessLogin";
 import BusinessRegister from "./Components/JoinNow/BusinessRegister";
 
+import PrivacyPolicy from "./Components/Privacypolicy";
+import AfterLogin from "./Components/AfterLogin";
+
 // dashboard here
 
 import DashboardPage from "./Pages/Dashboard/index.jsx";
@@ -60,7 +63,10 @@ const router = createBrowserRouter([
     path: "/Jobs",
     element: <Jobs />,
   },
-
+  {
+    path: "/Afterlogin",
+    element: <AfterLogin />,
+  },
   {
     path: "/SkillAI",
     element: <SkillAI />,
@@ -106,6 +112,10 @@ const router = createBrowserRouter([
   {
     path: "/course-4",
     element: <Course4 />,
+  },
+  {
+    path: "/privacypolicy",
+    element: <PrivacyPolicy />,
   },
   {
     path: "/single-course",

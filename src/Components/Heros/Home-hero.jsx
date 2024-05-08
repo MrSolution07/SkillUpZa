@@ -31,7 +31,7 @@ function HomeHero() {
               <p>
                 Let us equip you the tools needed to thrive in today's job market. With our range of job opportunities made available to you, spanning diverse industries and locations, alongside valuable <b>career resources</b> to guide you every step of the way.
               </p>
-              <Link to="/course-3" className="SkillUplms-btn">
+              <Link to="/Register" className="SkillUplms-btn">
                 Get Started
               </Link>
             </div>

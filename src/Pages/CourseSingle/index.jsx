@@ -467,7 +467,7 @@ function CourseSingle() {
                                   <i className="social_facebook"></i>
                                 </a>
                                 <a href="#">
-                                  <i className="social_twitter"></i>
+                                <i>X</i>
                                 </a>
                                 <a href="#">
                                   <i className="social_linkedin"></i>
@@ -497,8 +497,9 @@ function CourseSingle() {
                                 <a href="#">
                                   <i className="social_facebook"></i>
                                 </a>
-                                <a href="#">
-                                  <i className="social_twitter"></i>
+                                {/* twitter acc */}
+                                <a href="#"> 
+                                  <i>X</i>
                                 </a>
                                 <a href="#">
                                   <i className="social_linkedin"></i>
@@ -530,8 +531,8 @@ function CourseSingle() {
                                   <i className="social_facebook"></i>
                                 </a>
                                 <a href="#">
-                                  <i className="social_twitter"></i>
-                                </a>
+                                <i>X</i>
+                               </a>
                                 <a href="#">
                                   <i className="social_linkedin"></i>
                                 </a>
@@ -760,10 +761,11 @@ function CourseSingle() {
                       <i className="social_facebook"></i>
                     </a>
                     <a className="twi" href="#">
-                      <i className="social_twitter"></i>
+                      <i>
+                        <img src="public/assets/images/twitter-x.png" alt=""/></i>
                     </a>
-                    <a className="goo" href="#">
-                      <i className="social_googleplus"></i>
+                    <a href="#">
+                      <i><div><img src="public/assets/images/instagram.png" alt="" /></div></i>
                     </a>
                   </div>
                   {/* share link end  */}
@@ -835,7 +837,7 @@ function CourseSingle() {
                           <span>Deadline: </span> 16 April 2020
                         </li>
                       </ul>
-                      <Link className="SkillUplms-btn" to="/">
+                      <Link className="SkillUplms-btn" to="/Register">
                         Enroll Course
                       </Link>
                     </div>

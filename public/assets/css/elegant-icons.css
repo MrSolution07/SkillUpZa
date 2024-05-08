@@ -765,7 +765,8 @@ you can use the generic selector below, but it's slower:
 	content: "\e093";
 }
 .social_twitter:before {
-	content: "\e094";
+	/* content: "\e094"; */
+
 }
 .social_pinterest:before {
 	content: "\e095";
