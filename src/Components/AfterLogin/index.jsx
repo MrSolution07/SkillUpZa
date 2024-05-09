@@ -108,7 +108,7 @@ const AfterLogin = () => {
             <div className="card-body">
               <h5 className="card-title">Networking</h5>
               <p className="card-text">
-                Network with other people in your industry
+                Network with other people in your industry  
               </p>
               <a href="#" className="btn btn-primary">
               Networking 
