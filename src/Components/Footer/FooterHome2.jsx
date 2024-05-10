@@ -62,11 +62,7 @@ function FooterHome2() {
                 <li>
                   <Link to="/about-1">About Us</Link>
                 </li>
-                
-                <li>
-                  <Link to="/instructor">Careers</Link>
-                </li>
-                
+                      
                 <li>
                   <Link to="/course-3">Courses</Link>
                 </li>
@@ -83,9 +79,8 @@ function FooterHome2() {
                 <li>
                   <Link to="/course-3">All Courses</Link>
                 </li>
-                
                 <li>
-                  <Link to="#">Design & Branding</Link>
+                  <Link to="/instructor">Careers</Link>
                 </li>
                 
               </ul>
