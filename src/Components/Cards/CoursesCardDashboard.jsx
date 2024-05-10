@@ -19,9 +19,11 @@ function CoursesCardDashboard({ course, className, swiper }) {
       <div className={`${className ? className : "feature-course-item-3"}`}>
         <div className="fcf-thumb">
           <img src={img3} alt="" />
-          <Link className="enroll" >
+          <Link
+            className="enroll"
+          >
             ADD
-          </Link> 
+          </Link>
         </div>
         <div className="fci-details">
           <Link className="c-cate">
@@ -61,3 +63,10 @@ CoursesCardDashboard.propTypes = {
 };
 
 export default CoursesCardDashboard;
+
+
+
+
+
+
+
