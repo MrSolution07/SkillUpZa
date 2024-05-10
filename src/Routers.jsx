@@ -15,7 +15,6 @@ import LoginPage from "./Components/ProfileLogin/Login";
 import Forgotpsw from "./Components/ProfileLogin/Forgotpsw";
 import BusinessLogin from "./Components/ProfileLogin/BusinessLogin";
 import BusinessRegister from "./Components/JoinNow/BusinessRegister";
-import UserSettings from "./Components/UserSettings/index.jsx";
 
 import PrivacyPolicy from "./Components/Privacypolicy";
 import AfterLogin from "./Components/AfterLogin";
@@ -45,10 +44,6 @@ const router = createBrowserRouter([
   {
     path: "/MyCourses",
     element: <MyCourses />,
-  },
-  {
-    path: "/UserSettings",
-    element: <UserSettings />,
   },
   {
     path: "/Courses2",
