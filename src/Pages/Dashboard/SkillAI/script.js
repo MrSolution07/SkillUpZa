@@ -3,7 +3,7 @@ export async function fetchData(userInput) {
     const url = 'https://chatgpt-42.p.rapidapi.com/gpt4';
     const headers = {
         'content-type': 'application/json',
-        'X-RapidAPI-Key': 'e8a2119330mshfa240ee90ad6166p11956ajsnbdd496ada2ef',  // Ensure you protect your API keys appropriately
+        'X-RapidAPI-Key': 'e8a2119330mshfa240ee90ad6166p11956ajsnbdd496ada2ef',  //will hide later
         'X-RapidAPI-Host': 'chatgpt-42.p.rapidapi.com'
     };
     const body = JSON.stringify({
