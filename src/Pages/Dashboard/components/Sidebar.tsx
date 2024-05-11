@@ -135,7 +135,7 @@ const Sidebar = () => {
             </Typography>
             <Item
               title="Profile"
-              to=""
+              to="/UserSettings"
               icon={<PeopleOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}
