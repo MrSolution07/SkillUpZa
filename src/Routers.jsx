@@ -13,17 +13,63 @@ import Contact from "./Pages/Contact";
 import Register from "./Components/JoinNow/Register";
 import LoginPage from "./Components/ProfileLogin/Login";
 import Forgotpsw from "./Components/ProfileLogin/Forgotpsw";
+import BusinessLogin from "./Components/ProfileLogin/BusinessLogin";
+import BusinessRegister from "./Components/JoinNow/BusinessRegister";
+import UserSettings from "./Components/UserSettings/index.jsx";
+
 import PrivacyPolicy from "./Components/Privacypolicy";
 import AfterLogin from "./Components/AfterLogin";
+
 // dashboard here
 
-import DashboardPage from "./Pages/Dashboard/index.tsx";
+import DashboardPage from "./Pages/Dashboard/index.jsx";
 import FaqPage from "./Pages/Dashboard/Faq/index.tsx";
 import SkillAI from "./Pages/Dashboard/SkillAI/index.jsx";
 import Jobs from "./Pages/Dashboard/Jobs/jobs.jsx";
+import Interview from "./Pages/Dashboard/Interview/index.jsx";
+import HomeUsr from "./Pages/HomeUsr/index.jsx";
+import Courses from "./Pages/Dashboard/Courses/index.jsx";
+import Courses2 from "./Pages/Dashboard/Courses2/index2.jsx";
+import MyCourses from "./Pages/Dashboard/MyCourses/inde.jsx";
 
+// HomePage
+import HomePage from "./Components/Social/HomePage.jsx";
+import Main from "./Components/Social/Main.jsx";
 
 const router = createBrowserRouter([
+
+  {
+    path: "/Main",
+    element: <Main />,
+  },
+  {
+    path: "/MyCourses",
+    element: <MyCourses />,
+  },
+  {
+    path: "/UserSettings",
+    element: <UserSettings />,
+  },
+  {
+    path: "/Courses2",
+    element: <Courses2 />,
+  },
+  {
+    path: "/Courses",
+    element: <Courses />,
+  },
+  {
+    path: "/HomeUsr",
+    element: <HomeUsr />,
+  },
+  {
+    path: "/HomePage",
+    element: <HomePage />,
+  },
+  {
+    path: "/Interview",
+    element: <Interview />,
+  },
   {
     path: "/Jobs",
     element: <Jobs />,
@@ -53,6 +99,14 @@ const router = createBrowserRouter([
   {
     path: "/LoginPage",
     element: <LoginPage />,
+  },
+  {
+    path: "/BusinessLogin",
+    element: <BusinessLogin />,
+  },
+  {
+    path: "/BusinessRegister",
+    element: <BusinessRegister />,
   },
   {
     path: "/Forgotpsw",

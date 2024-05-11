@@ -53,10 +53,6 @@ function Footer({ getStart }) {
                 </li>
                 
                 <li>
-                  <Link to="/instructor">Careers</Link>
-                </li>
-                
-                <li>
                   <Link to="/course-3">Courses</Link>
                 </li>
                 <li>
@@ -73,8 +69,9 @@ function Footer({ getStart }) {
                   <Link to="/course-3">All Courses</Link>
                 </li>
                 <li>
-                  <Link to="#">Design & Branding</Link>
+                  <Link to="/instructor">Careers</Link>
                 </li>
+                
                 
               </ul>
             </aside>

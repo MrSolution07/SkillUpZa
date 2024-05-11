@@ -13,7 +13,12 @@ import HelpOutlineOutlinedIcon from "@mui/icons-material/HelpOutlineOutlined";
 import BarChartOutlinedIcon from "@mui/icons-material/BarChartOutlined";
 import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined";
 import React from "react";
+// import { useUser } from '';
+// const UserProfile = () => {
+//   const { username } = useUser();
 
+//   return <div>Welcome, {username}</div>;
+// };
 const Item = ({ title, to, icon, selected, setSelected }) => {
   const theme = useTheme();
   const colors = tokens(theme.palette.mode);
@@ -103,7 +108,7 @@ const Sidebar = () => {
                   fontWeight="bold"
                   sx={{ m: "10px 0 0 0" }}
                 >
-                  Mr Solution
+                  {localStorage.getItem('username')}
                 </Typography>
                 <Typography variant="h5" color={colors.greenAccent[500]}>
                   SkillUp
@@ -144,7 +149,7 @@ const Sidebar = () => {
             />
             <Item
               title="My Courses"
-              to=""
+              to="/Mycourses"
               icon={<ReceiptOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}
@@ -152,7 +157,7 @@ const Sidebar = () => {
 
             <Item
               title="Courses"
-              to=""
+              to="/Courses"
               icon={<ReceiptOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}
@@ -191,7 +196,7 @@ const Sidebar = () => {
             </Typography>
             <Item
               title="Go for an interview"
-              to=""
+              to="/Interview"
               icon={<BarChartOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}

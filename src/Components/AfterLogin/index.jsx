@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import { Link } from "react-router-dom";
-import './AfterLogin.css'; // Import CSS file for styling
+import './AfterLogin.css'; 
 
 const AfterLogin = () => {
   const [isCardToggled, setIsCardToggled] = useState(false);
 
   const handleCardToggle = () => {
-    setIsCardToggled(!isCardToggled); // Toggle the state when the card is clicked
+    setIsCardToggled(!isCardToggled); 
   };
 
   return ( 
