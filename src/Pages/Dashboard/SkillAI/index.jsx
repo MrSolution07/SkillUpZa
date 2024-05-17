@@ -21,6 +21,23 @@ function SkillAI() {
     }
   };
 
+  const handleKeyDown = (e) => {
+    if (e.key === 'Enter') {
+      e.preventDefault(); // Prevent the default form submission behavior
+      handleSend();
+    }
+  };
+
+  // Add the handleKeyDown event handler to the input element
+  <input
+    className="flex-1 rounded-md border border-[#1f2937] bg-transparent py-2 px-3 text-sm focus:border-gray-400 focus:outline-none dark:border-[#f0f0f0] dark:text-gray-900"
+    placeholder="Type your message..."
+    value={userInput}
+    onChange={e => setUserInput(e.target.value)}
+    onKeyDown={handleKeyDown} // Add the onKeyDown event handler
+    type="text"
+  />
+
   const appendMessage = (sender, message) => {
     // Split message by line breaks and add each line as a separate message
     const messageLines = message.split('\n');
@@ -52,6 +69,7 @@ function SkillAI() {
             placeholder="Type your message..."
             value={userInput}
             onChange={e => setUserInput(e.target.value)}
+            onKeyDown={handleKeyDown} // Add the onKeyDown event handler
             type="text"
           />
           <button
@@ -68,8 +86,3 @@ function SkillAI() {
 }
 
 export default SkillAI;
-
-//Messages are now split by lines and not displayed as a single paragraph
-//Styling is also improved but can be further improved
-
-
