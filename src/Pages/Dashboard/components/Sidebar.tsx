@@ -131,11 +131,11 @@ const Sidebar = () => {
               color={colors.grey[300]}
               sx={{ m: "15px 0 5px 20px" }}
             >
-              SkillHUb 
+               
             </Typography>
             <Item
               title="Profile"
-              to=""
+              to="/UserSettings"
               icon={<PeopleOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}

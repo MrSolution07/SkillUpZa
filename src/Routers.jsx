@@ -32,19 +32,16 @@ import Jobs from "./Pages/Dashboard/Jobs/jobs.jsx";
 import HomeUsr from "./Pages/HomeUsr/index.jsx";
 import Courses from "./Pages/Dashboard/Courses/index.jsx";
 import Courses2 from "./Pages/Dashboard/Courses2/index2.jsx";
-import MyCourses from "./Pages/Dashboard/MyCourses/inde.jsx";
+import MyCourses from "./Pages/Dashboard/MyCourses/index.jsx";
 import JobPosting from "./Components/JobPosting";
 
 // HomePage
 import HomePage from "./Components/Social/HomePage.jsx";
-import Main from "./Components/Social/Main.jsx";
+
 
 const router = createBrowserRouter([
 
-  {
-    path: "/Main",
-    element: <Main />,
-  },
+ 
   {
     path: "/MyCourses",
     element: <MyCourses />,

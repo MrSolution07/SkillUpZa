@@ -5,6 +5,12 @@ import CoursesCardDashboard from "../../../Components/Cards/CoursesCardDashboard
 import { Link } from "react-router-dom";
 // import CoursesCardDashboard from "../../../Components/Cards/CoursesCardDashboard";
 import DashboardLayout from "../layout";
+import "../../../../public/assets/css/theme.css";
+import "../../../../public/assets/css/animate.css";
+import "../../../../public/assets/css/bootstrap.css";
+import "../../../../public/assets/css/responsive.css";
+import "../../../../public/assets/css/preset.css";
+import "../../../../public/assets/css/bootstrap.css";
 
 function Mycourses() {
   const [isLoading, setIsLoading] = useState(true);
