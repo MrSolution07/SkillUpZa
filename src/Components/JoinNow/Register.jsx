@@ -160,6 +160,7 @@
 
 import "../NewStyle/style.css";
 import React, { useState } from 'react';
+import {Link} from 'react-router-dom';
 import axios from 'axios';
 
 const RegisterPage = () => {
@@ -236,7 +237,7 @@ const RegisterPage = () => {
                                 <div className="px-3">
                                     <div className="auth-logo-box">
                                         <a href="" className="logo logo-admin">
-                                            <img src="../assets/images/logo.png" height="55" alt="logo" className="auth-logo" />
+                                            <img src="../assets/images/logo.png" height="50" alt="logo" className="auth-logo" />
                                         </a>
                                     </div>
                                     <div className="text-center auth-logo-text">
@@ -293,7 +294,7 @@ const RegisterPage = () => {
                                             <div className="col-sm-12">
                                                 <div className="custom-control custom-switch switch-success">
                                                     <input type="checkbox" className="custom-control-input" id="customSwitchSuccess" checked={termsAccepted} onChange={handleTermsChange} />
-                                                    <label className="custom-control-label text-muted" htmlFor="customSwitchSuccess">By registering you agree to the <a href="#" className="text-primary">Terms of Use</a></label>
+                                                    <label className="custom-control-label text-muted" htmlFor="customSwitchSuccess">By registering you agree to the <Link to="/privacypolicy" className="text-primary">Terms of Use</Link></label>
                                                 </div>
                                             </div>
                                         </div>

@@ -15,49 +15,41 @@ const FaqPage = () => {
   return (
     <DashboardLayout>
       <Box m="20px">
-        <Header title="FAQ" subtitle="Frequently Asked Questions Page" />
+        <Header title="Frequently Asked Questions" />
 
         <Accordion defaultExpanded>
           <AccordionSummary expandIcon={<ExpandMoreIcon />}>
             <Typography color={colors.greenAccent[500]} variant="h5">
-            What is SkillUp?
+            How can SkillUp benefit my business?
             </Typography>
           </AccordionSummary>
           <AccordionDetails>
             <Typography>
-            SkillUp is a web app designed to help you navigate your career journey. Whether you're searching for a new job, looking to upskill in a specific area, or just getting started, SkillUp provides the tools and resources you need to succeed.
-
+              <b>Find Top Talent</b>: Search for candidates based on specific skills, experience, and assessment results.<br />
+              <b>Reduce Recruiting Costs</b>: Target qualified candidates and streamline your hiring process. <br />
+              <b>Improve Candidate Quality</b>: Identify candidates with the right skills and the drive to learn and grow within your company. <br />
+              <b>Build a Talent Pipeline</b>: Connect with potential candidates even when you're not actively hiring. 
+              
             </Typography>
           </AccordionDetails>
         </Accordion>
         <Accordion defaultExpanded>
           <AccordionSummary expandIcon={<ExpandMoreIcon />}>
             <Typography color={colors.greenAccent[500]} variant="h5">
-            What can I do on SkillUp?
+            How does SkillUp work for businesses?
             </Typography>
           </AccordionSummary>
           <AccordionDetails>
             <Typography>
-              Find Jobs: Search for open positions based on your skills, interests, and location. <br />
-              Upskill for a New Career: Explore a variety of learning paths and courses to develop in-demand skills. <br />
-              Skill Assessment: Take our comprehensive assessment to identify your strengths and areas for development. <br />
-              Personalized Recommendations: Get matched with jobs and courses tailored to your unique profile.
+            <b>Create a Free Employer Account</b>: Sign up for a free employer account to access SkillUp's talent pool and features. <br />
+            <b>Post Job Openings</b>: Easily post job openings with detailed descriptions and requirements. <br />
+            <b>Search and Filter Candidates</b>: Utilize our search filters to find candidates who perfectly match your needs. <br />
+            <b>Review Skills</b>: View the results of a candidate's skills to gain deeper insights into their strengths and weaknesses. <br />
+            <b>Connect with Candidates</b>: Contact top candidates directly through the SkillUp social page.
             </Typography>
           </AccordionDetails>
         </Accordion>
-        <Accordion defaultExpanded>
-          <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-            <Typography color={colors.greenAccent[500]} variant="h5">
-            Are the courses on SkillUp free?
-            </Typography>
-          </AccordionSummary>
-          <AccordionDetails>
-            <Typography>
-            SkillUp offers a mix of free and paid courses. You'll find a wide selection of free courses to get you started, along with premium options for in-depth learning and certifications.
-
-            </Typography>
-          </AccordionDetails>
-        </Accordion>
+        
         <Accordion defaultExpanded>
           <AccordionSummary expandIcon={<ExpandMoreIcon />}>
             <Typography color={colors.greenAccent[500]} variant="h5">
@@ -78,8 +70,8 @@ const FaqPage = () => {
           </AccordionSummary>
           <AccordionDetails>
             <Typography>
-            No problem!  Feel free to contact our support team at <a href="mailto:Skillup24@outlook.com">
-              Skillup24@outlook.com </a> and we'll be happy to help.
+            No problem!  Feel free to contact our support team at <a href="mailto:skillupZA@outlook.com">
+            skillupZA@outlook.com </a> and we'll be happy to help.
 
             </Typography>
           </AccordionDetails>

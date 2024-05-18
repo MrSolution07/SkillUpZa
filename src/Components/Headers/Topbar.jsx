@@ -8,7 +8,7 @@ function Topbar() {
           <div className="col-md-7">
             <div className="topinfo">
               <p>
-                <i className="icon_mail_alt"></i>skillUp@gmail.com
+                <i className="icon_mail_alt"></i><a href="mailto:skillupZA@outlook.com">skillupZA@outlook.com </a>
               </p>
               <p>
                 <i className="icon_phone"></i>+27 849 980 630

@@ -262,6 +262,7 @@
 
 
 import React, { useState } from 'react';
+import {Link} from 'react-router-dom';
 import axios from 'axios';
 // import { useUser } from './UserContext.jsx';
 
@@ -324,7 +325,7 @@ const Login = () => {
                 <div className="px-3">
                   <div className="auth-logo-box">
                     <a href="/" className="logo logo-admin">
-                      <img src="../assets/images/logo.png" height="55" alt="logo" className="auth-logo" />
+                      <img src="../assets/images/logo.png" height="50" alt="logo" className="auth-logo" />
                     </a>
                   </div>
                   <div className="text-center auth-logo-text">
@@ -366,16 +367,16 @@ const Login = () => {
                     </div>
                     <div className="form-group mb-0 row">
                       <div className="col-12 mt-2">
-                        <button className="btn btn-gradient-primary btn-round btn-block waves-effect waves-light" id="btnLog" type="submit">Log In <i className="fas fa-sign-in-alt ml-1"></i></button>
+                        <button className="btn btn-gradient-primary btn-round btn-block waves-effect waves-light" id="btnLog" type="submit"><Link to="/AfterLogin">Log In <i className="fas fa-sign-in-alt ml-1"></i></Link></button>
                       </div>
-
+                      
                     </div>
                     {error && <div className="text-danger mt-3">{error}</div>}
                   </form>
                 </div>
                 <div className="m-3 text-center text-muted">
-                  <p className="">Don't have an account ? <a href="/Register" className="text-primary ml-2">Register</a></p>
-                  <p className="">SkillUp For Business? <a href="/BusinessLogin" className="text-primary ml-2">Sign in here</a></p>
+                  <p className="">Don't have an account ? <Link to="/Register" className="text-primary ml-2">Register</Link></p>
+                  <p className="">SkillUp For Business? <Link to="/BusinessLogin" className="text-primary ml-2">Sign in here</Link></p>
                   </div>
                 </div>
               

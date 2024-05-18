@@ -284,6 +284,9 @@
 	    float: left;
 	    margin-right: 30px;
 	}
+	.card{
+		max-width: 100%;
+	}
 	.course-item-1:nth-child(3){
 		margin-right: 0;
 	}
@@ -315,10 +318,10 @@
     	min-width: 150px;
 	}
 	.cta-wrapper h3 {
-	    font-size: 26px;
-	    line-height: 38px;
-	    margin: 52px 20px 0 25px;
-	    width: 48%;
+	    font-size: 24px;
+	    line-height: 30px;
+			text-align: center;
+	    width: 28%;
 	}
 	.app-img img:last-child {
 	    right: -200px;
@@ -396,6 +399,11 @@
     	padding: 0 0 0 0;
     	margin: 0 0;
     }
+		.card{
+			border-radius: 5px;
+			overflow: hidden;
+			margin:20px;
+			}
     .navbar-expand-lg .navbar-nav{
     	padding: 5px 0;
     }
@@ -668,6 +676,13 @@
 	.hero-content h2{
 		color: #fff;
 	}
+	.card{
+	border-radius: 5px;
+	margin-right: 30px;
+	max-width: fit-content;
+	/* position: relative; */
+
+	}
 	.hero-content p{
 		color: #fff;
 	}
@@ -919,8 +934,10 @@
 		margin: -30px 0 50px;
 	}
 	.shaf-filter{
-		text-align: left;
+		text-align: center;
 		margin: -30px 0 50px;
+		
+		
 	}
 	.catecories-box,
 	.search-box{
@@ -1049,3 +1066,5 @@
 	    height: 1070px;
 	}	
 }
+
+

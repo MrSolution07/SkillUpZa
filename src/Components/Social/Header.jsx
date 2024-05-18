@@ -14,11 +14,11 @@ const Header = () => {
         </div>
         <div className="top-icon">
           <img className="home" src="/public/assets/images/icons/users-svgrepo-com.svg" alt="My Network" />
-          <label>My Network</label>
+          <label>FAQ</label>
         </div>
         <div className="top-icon">
           <img className="home" src="/public/assets/images/icons/portfolio-suitcase-svgrepo-com.svg" alt="Jobs" />
-          <label>Jobs</label>
+          <label>Skill AI</label>
         </div>
         {/* <div className="top-icon">
           <img className="home" src="/public/assets/images/icons/chat-square-plain-2-svgrepo-com.svg" alt="Messaging" />

@@ -17,8 +17,11 @@ import BusinessLogin from "./Components/ProfileLogin/BusinessLogin";
 import BusinessRegister from "./Components/JoinNow/BusinessRegister";
 import UserSettings from "./Components/UserSettings/index.jsx";
 
+
 import PrivacyPolicy from "./Components/Privacypolicy";
-import AfterLogin from "./Components/AfterLogin";
+import AfterLogin from "./Pages/AfterLogin";
+import Interview from "./Components/Interview/index.jsx";
+
 
 // dashboard here
 
@@ -26,11 +29,11 @@ import DashboardPage from "./Pages/Dashboard/index.jsx";
 import FaqPage from "./Pages/Dashboard/Faq/index.tsx";
 import SkillAI from "./Pages/Dashboard/SkillAI/index.jsx";
 import Jobs from "./Pages/Dashboard/Jobs/jobs.jsx";
-import Interview from "./Pages/Dashboard/Interview/index.jsx";
 import HomeUsr from "./Pages/HomeUsr/index.jsx";
 import Courses from "./Pages/Dashboard/Courses/index.jsx";
 import Courses2 from "./Pages/Dashboard/Courses2/index2.jsx";
 import MyCourses from "./Pages/Dashboard/MyCourses/inde.jsx";
+import JobPosting from "./Components/JobPosting";
 
 // HomePage
 import HomePage from "./Components/Social/HomePage.jsx";
@@ -45,6 +48,10 @@ const router = createBrowserRouter([
   {
     path: "/MyCourses",
     element: <MyCourses />,
+  },
+  {
+    path: "/JobPosting",
+    element: <JobPosting />,
   },
   {
     path: "/UserSettings",

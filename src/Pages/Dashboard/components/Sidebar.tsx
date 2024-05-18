@@ -192,11 +192,11 @@ const Sidebar = () => {
               color={colors.grey[300]}
               sx={{ m: "15px 0 5px 20px" }}
             >
-              How to ?
+              Post Job
             </Typography>
             <Item
-              title="Go for an interview"
-              to="/Interview"
+              title="Create a job listing"
+              to="/JobPosting"
               icon={<BarChartOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}

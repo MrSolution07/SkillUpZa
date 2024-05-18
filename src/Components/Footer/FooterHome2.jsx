@@ -48,7 +48,7 @@ function FooterHome2() {
                       <i><img src ="public/assets/images/twitter-x.png" alt = ""/>
                       </i>
                     </a>
-                    <a href="https://www.instagram.com/skillup443/">
+                    <a href="https://www.instagram.com/skillupza/">
                       <i><img src="public/assets/images/instagram.png" alt="" /></i>
                     </a>
                 </div>
