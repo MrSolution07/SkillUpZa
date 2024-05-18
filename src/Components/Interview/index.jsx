@@ -15,7 +15,7 @@ const Interview = () => {
 
   return (
     <>
-      <Banner title="Top questions asked during interviews" background="assets/images/bannercontact.jpg" />
+      <Banner title="Top questions asked during interviews" background="assets/images/interviewbanner.jpg" />
 
       <section className="interview-section">
         <Container className="custom-card">
