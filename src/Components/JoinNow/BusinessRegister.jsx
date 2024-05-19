@@ -157,6 +157,7 @@ const BusinessRegisterPage = () => {
             console.log(data);
 
             if (data.success) {
+                
                 alert("Registration successful");
                 // localStorage.setItem('username', formData.businessName); // Store the username in localStorage
                 window.location.href = '/BusinessLogin.jsx'; // Redirect to BusinessLoginPage

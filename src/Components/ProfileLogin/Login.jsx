@@ -281,6 +281,7 @@ const Login = () => {
   };
 
   const [error, setError] = useState('');
+  const [showPassword, setShowPassword] = useState(false);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -313,6 +314,10 @@ const Login = () => {
       setError("An error occurred. Please try again later.");
     }
   };
+
+  const toggleShowPassword = () => {
+    setShowPassword(prev => !prev);
+};
 
   return (
     <div className="container">
@@ -355,13 +360,15 @@ const Login = () => {
                           <i className="dripicons-lock"></i>
                         </span>
                         <input
-                          type="password"
+                          type={showPassword ? "text" : "password"}
                           className="form-control"
                           id="userpassword"
                           name="password"
                           value={formData.password} onChange={handleChange}
                           placeholder="Enter password"
-                        />
+                        /> <button type="button" className="btn btn-secondary" onClick={toggleShowPassword}>
+                        {showPassword ? "Hide" : "Show"}
+                    </button>
                       </div>
                     </div>
                     <div className="form-group mb-0 row">
