@@ -13,17 +13,72 @@ import Contact from "./Pages/Contact";
 import Register from "./Components/JoinNow/Register";
 import LoginPage from "./Components/ProfileLogin/Login";
 import Forgotpsw from "./Components/ProfileLogin/Forgotpsw";
+import BusinessLogin from "./Components/ProfileLogin/BusinessLogin";
+import BusinessRegister from "./Components/JoinNow/BusinessRegister";
+import UserSettings from "./Components/UserSettings/index.jsx";
+import UserFAQ from "./Components/UserFaq";
+
+
 import PrivacyPolicy from "./Components/Privacypolicy";
-import AfterLogin from "./Components/AfterLogin";
+import AfterLogin from "./Pages/AfterLogin";
+import Interview from "./Components/Interview/index.jsx";
+
+
 // dashboard here
 
-import DashboardPage from "./Pages/Dashboard/index.tsx";
+import DashboardPage from "./Pages/Dashboard/index.jsx";
 import FaqPage from "./Pages/Dashboard/Faq/index.tsx";
 import SkillAI from "./Pages/Dashboard/SkillAI/index.jsx";
 import Jobs from "./Pages/Dashboard/Jobs/jobs.jsx";
+import HomeUsr from "./Pages/HomeUsr/index.jsx";
+import Courses from "./Pages/Dashboard/Courses/index.jsx";
+import Courses2 from "./Pages/Dashboard/Courses2/index2.jsx";
+import MyCourses from "./Pages/Dashboard/MyCourses/index.jsx";
+import JobPosting from "./Components/JobPosting";
+
+// HomePage
+import HomePage from "./Components/Social/HomePage.jsx";
 
 
 const router = createBrowserRouter([
+
+ 
+  {
+    path: "/MyCourses",
+    element: <MyCourses />,
+  },
+  {
+    path: "/JobPosting",
+    element: <JobPosting />,
+  },
+  {
+    path: "/UserSettings",
+    element: <UserSettings />,
+  },
+  {
+    path: "/UserFAQ",
+    element: <UserFAQ />,
+  },
+  {
+    path: "/Courses2",
+    element: <Courses2 />,
+  },
+  {
+    path: "/Courses",
+    element: <Courses />,
+  },
+  {
+    path: "/HomeUsr",
+    element: <HomeUsr />,
+  },
+  {
+    path: "/HomePage",
+    element: <HomePage />,
+  },
+  {
+    path: "/Interview",
+    element: <Interview />,
+  },
   {
     path: "/Jobs",
     element: <Jobs />,
@@ -53,6 +108,14 @@ const router = createBrowserRouter([
   {
     path: "/LoginPage",
     element: <LoginPage />,
+  },
+  {
+    path: "/BusinessLogin",
+    element: <BusinessLogin />,
+  },
+  {
+    path: "/BusinessRegister",
+    element: <BusinessRegister />,
   },
   {
     path: "/Forgotpsw",

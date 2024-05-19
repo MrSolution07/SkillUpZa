@@ -22,7 +22,7 @@ function Home3Footer() {
                       <i><img src ="public/assets/images/twitter-x.png" alt = ""/>
                       </i>
                   </a>
-                  <a href="https://www.instagram.com/skillup443/">
+                  <a href="https://www.instagram.com/skillupza/">
                       <i><img src="public/assets/images/instagram.png" alt="" /></i>
                   </a>
                 </div>
@@ -36,15 +36,7 @@ function Home3Footer() {
                 <li>
                   <Link to="/about-1">About Us</Link>
                 </li>
-                <li>
-                  <Link to="#">Success Story</Link>
-                </li>
-                <li>
-                  <Link to="/instructor">Careers</Link>
-                </li>
-                <li>
-                  <Link to="/">Resource Center</Link>
-                </li>
+                
                 <li>
                   <Link to="/course-3">Courses</Link>
                 </li>
@@ -62,11 +54,9 @@ function Home3Footer() {
                   <Link to="/course-1">All Courses</Link>
                 </li>
                 <li>
-                  <Link to="/">Storytelling & Voice Over</Link>
+                  <Link to="/instructor">Careers</Link>
                 </li>
-                <li>
-                  <Link to="/">Design & Branding</Link>
-                </li>
+                
 
               </ul>
             </aside>
@@ -79,18 +69,9 @@ function Home3Footer() {
                   <Link to="/contact">Help Center</Link>
                 </li>
                 <li>
-                  <Link to="#">System Requirements</Link>
-                </li>
-                
-                <li>
-                  <Link to="#">Site Feedback</Link>
-                </li>
-                <li>
                   <Link to="#">Documentation</Link>
                 </li>
-                <li>
-                  <Link to="#">Forums</Link>
-                </li>
+                
               </ul>
             </aside>
           </div>

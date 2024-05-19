@@ -1,8 +1,8 @@
 /*
 
-/*==================================
+/*        ======
  [Table of contents]
- ===================================
+           
  1. Home 01
  2. Home 02
  3. Home 03
@@ -16,6 +16,7 @@
  11. Course Details Page
  12. Back To Top
  13. Preloader
+ 14. After Login Cards
 */
 
 /*------------------------------------------------------
@@ -1190,6 +1191,7 @@ footer .widget .widget-title{
 .about-widget{
     position: relative;
     padding-right: 30px;
+    line-height: 20px;
 }
 .about-widget img{
     max-width: 100%;
@@ -1199,7 +1201,6 @@ footer .widget .widget-title{
 .about-widget p{
     font-size: 15px;
     margin-bottom: 33px;
-    text-align: justify;
 }
 .ab-social{
     position: relative;
@@ -6029,9 +6030,146 @@ Profile Page
     transition: all 0.1s ease-out;
 }
 .privacypolicy{
-    width: 80%;
-    padding: 3%;
-    margin: auto;
+    width: 100%;
+    text-align: left;
+    padding-top: 20px;
+}
+/* styling for the after login cards */
+
+.card {
+    flex: 0 0 calc(33.33% - 20px); 
+    margin: 0px; 
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 5px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .card-img-top {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .card-body {
+    padding: 20px;
+  }
+  
+  .card-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .card-text {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 20px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .btn-primary {
+    display: block;
+    width: 100%;
+    text-align: center;
+    background-color: black;
+    border-color: black;
+  }
+  
+  .btn-primary:hover {
+    background-color: rgb(33, 110, 173);
+  } 
+  
+  
+  
+/* Navbar styling for after login*/
+
+.header-06 .navbar-container {
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    background-color: #80d0c7;
+    transition: all 0.1s ease-out;
+      
+  }
+  .header-06{
+    padding: 20px;
+  }
+
+  .navbar-brand img {
+    height: 50px;
+  }
+  
+  
+
+  
+  .navbar-contact-info {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: white;
+    display: flex;
+    flex-direction:column-reverse;
+    align-items: flex-end;
+    /* margin: 5px; */
+    font-size: 13px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+  }
+
+  
+  
+  .logout-button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 12px;
+    cursor: pointer;
+    margin-left: 20px;
+    padding-top: 0px;
+  }
+
+  .help-button{
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 13px;
+    cursor: pointer;
+    margin-left: 20px;
+    padding-top: 0px;
+  }
+  
+  .logout-button i {
+    margin-right: 5px;
+  }
+  
+  .logout-button:hover{
+    color: black ;
+  }
+  .help-button:hover{
+    color: rgb(33, 110, 173) ;
+  }
+  
+
+/* styling for interview page */
+
+.interview-section{
+    position: relative;
+    background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+    padding: 100px 0;
 }
 
+.interview-footer{
+    position: relative;
+    padding-top: 100px;
+    max-height: 10%;
+}
 
+.custom-card{
+    min-height: 80px; 
+    margin-bottom: 20px;
+}

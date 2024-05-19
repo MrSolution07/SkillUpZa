@@ -19,15 +19,15 @@ function PrivacyPolicy(){
     content = (
   <>
   <div className="privacypolicy">
-      <div class="w3-container w3-center pt-3 "> 
+      <div class="w3-container "> 
 
-    <div class="w3-panel w3-white w3-border w3-round-xlarge">
+    <div class="w3-panel w3-white w3-border ">
       
 
-    <p>Skill Up Privacy Policy.</p>
-    <p>Last updated: 27 May 2024</p>
+    <p>Skill UpZA Privacy Policy.</p>
+    <p>Last updated: 22 May 2024</p>
     <p>
-      This Privacy Policy describes how Skill Up (the "Site", "we", "us", or
+      This Privacy Policy describes how Skill UpZA (the "Site", "we", "us", or
       "our") collects, uses, and discloses your personal information when you
       visit, use our services, or make a purchase from This website is a job and
       skills platform. We empower users to find suitable jobs and also upskill
@@ -45,7 +45,7 @@ function PrivacyPolicy(){
     </p>
     <p>Changes to This Privacy Policy</p>
     <p>
-      We may up to 27 May 2024 this Privacy Policy from time to time, including
+      We may up to 22 May 2024 this Privacy Policy from time to time, including
       to reflect changes to our practices or for other operational, legal, or
       regulatory reasons.
     </p>
@@ -323,7 +323,7 @@ function PrivacyPolicy(){
       request that it be deleted.
     </p>
     <p>
-      As of the Effective 27 May 2024 of this Privacy Policy, we do not have
+      As of the Effective 22 May 2024 of this Privacy Policy, we do not have
       actual knowledge that we "share" or "sell" (as those terms are defined in
       applicable law) personal information of individuals under 16 years of age.
     </p>

@@ -37,7 +37,7 @@ function Footer({ getStart }) {
                   <a className="twi" href="https://twitter.com/_Skill_Up_/status/1784949119582195767?t=PPYZjB1fn0GIJJ5XNoYBKw&s=19">
                     <i><img src ="public/assets/images/twitter-x.png" alt = ""/></i>
                   </a>
-                  <a href="https://www.instagram.com/skillup443/">
+                  <a href="https://www.instagram.com/skillupza/">
                       <i><div><img src="public/assets/images/instagram.png" alt="" /></div></i>
                   </a>
                 </div>
@@ -53,12 +53,8 @@ function Footer({ getStart }) {
                 </li>
                 
                 <li>
-                  <Link to="/instructor">Careers</Link>
-                </li>
-                
-                <li>
                   <Link to="/course-3">Courses</Link>
-                </li>
+                </li> 
                 <li>
                   <Link to="/contact">Contact Us</Link>
                 </li>
@@ -73,8 +69,9 @@ function Footer({ getStart }) {
                   <Link to="/course-3">All Courses</Link>
                 </li>
                 <li>
-                  <Link to="#">Design & Branding</Link>
+                  <Link to="/instructor">Careers</Link>
                 </li>
+                
                 
               </ul>
             </aside>

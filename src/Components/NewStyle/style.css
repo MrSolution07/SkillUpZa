@@ -48,3 +48,80 @@
 #btnReset:hover{
     background-color: #17a2b8;
 }
+
+/* SkillAI */
+.ai-body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Header */
+  .ai-body header {
+    background-color: #4b5563;
+    color: #ffffff;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    font-weight: bold;
+  }
+  
+  /* Chat Messages Container */
+  .ai-body .overflow-auto {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+  }
+  
+  /* Individual Message Styles */
+  .ai-body .flex {
+    justify-content: flex-end;
+    margin-bottom: 10px;
+  }
+  
+  .ai-body .rounded-lg {
+    border-radius: 8px;
+    padding: 10px;
+    max-width: 75%;
+  }
+  
+  /* User Message */
+  .ai-body .bg-gray-400.text-white {
+    background-color: #4b5563;
+    color: #ffffff;
+  }
+  
+  /* Bot Message */
+  .ai-body .bg-gray-200.dark:bg-gray-800.dark:text-gray-200 {
+    background-color: #edf2f7;
+    color: #1a202c;
+  }
+  
+  /* Input Section */
+  
+.ai-body input[type="text"] {
+    flex: 1;
+    border-radius: 15px;
+    padding: 10px;
+    font-size: 14px;
+    margin-right: 10px;
+    width: 75%; /* Add this line */
+}
+
+.ai-body button {
+    background-color: darkcyan;
+    color: #ffffff;
+    border: none;
+    border-radius: 15px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-left: 5px; /* Add this line */
+}
+  .ai-body button:hover {
+    background-color: #4b5563;
+  }
+
+  

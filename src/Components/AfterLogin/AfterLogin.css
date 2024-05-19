@@ -1,9 +1,0 @@
-/* AfterLogin.css */
-
-.card {
-  transition: transform 0.3s ease; /* Apply transition effect to transform property */
-}
-
-.card:hover {
-  transform: translateY(-10px); /* Move the card 10px upwards on hover */
-}
