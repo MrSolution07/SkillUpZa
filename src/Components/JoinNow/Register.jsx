@@ -173,6 +173,8 @@ const RegisterPage = () => {
     });
     const [error, setError] = useState('');
     const [termsAccepted, setTermsAccepted] = useState(false);
+    const [showPassword, setShowPassword] = useState(false);
+    const [showConfirmPassword, setShowConfirmPassword] = useState(false);
 
     const handleChange = (e) => {
         setFormData(prev => {
@@ -227,6 +229,14 @@ const RegisterPage = () => {
         setTermsAccepted(prev => !prev);
     };
 
+    const toggleShowPassword = () => {
+        setShowPassword(prev => !prev);
+    };
+
+    const toggleShowConfirmPassword = () => {
+        setShowConfirmPassword(prev => !prev);
+    };
+
     return (
         <div className="container" id="page">
             <div className="row vh-100 ">
@@ -269,7 +279,10 @@ const RegisterPage = () => {
                                                 <span className="auth-form-icon">
                                                     <i className="dripicons-lock"></i>
                                                 </span>
-                                                <input type="password" className="form-control" id="userpassword" name="password" value={formData.password} onChange={handleChange} placeholder="Enter password" />
+                                                <input type={showPassword ? "text" : "password"} className="form-control" id="userpassword" name="password" value={formData.password} onChange={handleChange} placeholder="Enter password" />
+                                                <button type="button" className="btn btn-secondary" onClick={toggleShowPassword}>
+                                                    {showPassword ? "Hide" : "Show"}
+                                                </button>
                                             </div>
                                         </div>
                                         <div className="form-group">
@@ -278,7 +291,10 @@ const RegisterPage = () => {
                                                 <span className="auth-form-icon">
                                                     <i className="dripicons-lock-open"></i>
                                                 </span>
-                                                <input type="password" className="form-control" id="conf_password" name="confirm_password" value={formData.confirm_password} onChange={handleChange} placeholder="Enter Confirm Password" />
+                                                <input type={showConfirmPassword ? "text" : "password"} className="form-control" id="conf_password" name="confirm_password" value={formData.confirm_password} onChange={handleChange} placeholder="Enter Confirm Password" />
+                                                <button type="button" className="btn btn-secondary" onClick={toggleShowConfirmPassword}>
+                                                    {showConfirmPassword ? "Hide" : "Show"}
+                                                </button>
                                             </div>
                                         </div>
                                         <div className="form-group">
@@ -301,7 +317,6 @@ const RegisterPage = () => {
                                         <div className="form-group mb-0 row">
                                             <div className="col-12 mt-2">
                                                 <button disabled={!termsAccepted} className="btn btn-gradient-primary btn-round btn-block waves-effect waves-light" type="submit" id="btnReg">Register <i className="fas fa-sign-in-alt ml-1"></i></button>
-
                                             </div>
                                         </div>
                                         {error && <div className="text-danger mt-3">{error}</div>}
