@@ -38,13 +38,13 @@ const AfterLoginCards = () => {
       imgSrc: "/public/assets/images/image5.jpg",
       title: "FAQs",
       text: "Explore FAQs to find answers to common queries",
-      link: "/faqs"
+      link: "/UserFAQ"
     },
     {
       imgSrc: "/public/assets/images/image6.jpg",
       title: "Interview Questions",
       text: "Prepare for your interview with common interview questions",
-      link: "/interview-questions"
+      link: "/Interview" 
     }
   ];
 

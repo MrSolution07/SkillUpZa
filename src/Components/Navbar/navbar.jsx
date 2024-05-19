@@ -10,7 +10,7 @@ function Navbar({ className,logo }) {
 
 
   return (
-    <header className={`${className ? className : "header"} sticky ${
+    <header className={`${className ? className : "header-06"} sticky ${
       windowPosition > 0 && "fix-header animated fadeInDown"
     } `}>
       <div className="container">

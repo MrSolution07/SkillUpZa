@@ -4,7 +4,7 @@ import Banner from "../../Components/Banner/Banner";
 import Footer from "../../Components/Footer/Footer";
 import Header from "../Social/Header";
 
-const Interview = () => {
+const UserFAQ = () => {
   const [open, setOpen] = useState({});
 
   const handleToggle = (key) => {
@@ -15,10 +15,9 @@ const Interview = () => {
   };
 
   return (
-
     <>
     <Header/>
-      <Banner title="Top questions asked during interviews" background="assets/images/interviewbanner.jpg" />
+      <Banner title="Frequently Asked Questions" background="assets/images/FAQbanner.jpg" />
 
       <section className="interview-section">
         <Container className="custom-card">
@@ -27,26 +26,29 @@ const Interview = () => {
               <div id="faq">
                 {/* FAQ Items */}
                 <FAQItem 
-                  question="Could you please introduce yourself?"
-                  answer="This is your opportunity to make a strong first impression. Briefly share your educational background, relevant work experience, and skills that align with the job description. Highlight achievements that showcase your value and passion for the field."
+                  question="What is Skill UpZA?"
+                  answer="Skill UpZA is a web app designed to help you navigate your career journey. Whether you're searching for a new job, looking to upskill in a specific area, or just getting started, Skill UpZA provides the tools and resources you need to succeed."
                   isOpen={open["faq1"]}
                   onClick={() => handleToggle("faq1")}
                 />
                 <FAQItem 
-                  question="How did you learn about this job opening?"
-                  answer="This question helps the interviewer understand how you found them. Be honest and highlight your proactive job search strategy."
+                  question="What can I do on Skill UpZA?"
+                  answer="
+                  Find Jobs: Search for open positions based on your skills, interests, and location.
+                  Upskill for a New Career: Explore a variety of learning paths and courses to develop in-demand skills.
+                  Personalized Recommendations: Get matched with jobs and courses tailored to your unique profile."
                   isOpen={open["faq2"]}
                   onClick={() => handleToggle("faq2")}
                 />
                 <FAQItem 
-                  question="What are your greatest strengths?"
-                  answer="Identify 2-3 strengths directly related to the job requirements. Use specific examples to demonstrate how you've leveraged these strengths to achieve success."
+                  question="How can Skill UpZA help me upskill myself?"
+                  answer="Skill UpZA offers an AI algorithm designed to assist you in enhancing your skill set. You can engage with this feature to seek personalized career guidance and advice."
                   isOpen={open["faq3"]}
                   onClick={() => handleToggle("faq3")}
                 />
                 <FAQItem 
-                  question="What are your salary expectations?"
-                  answer="Research the average salary range for the position and location. Instead of giving a specific number, express your confidence in the company's compensation structure."
+                  question="I have another question that's not answered here."
+                  answer="No problem!  Feel free to contact our support team at Skill UpZA@outlook.com and we'll be happy to help."
                   isOpen={open["faq4"]}
                   onClick={() => handleToggle("faq4")}
                 />
@@ -78,4 +80,4 @@ const FAQItem = ({ question, answer, isOpen, onClick }) => (
   </Card>
 );
 
-export default Interview;
+export default UserFAQ;
