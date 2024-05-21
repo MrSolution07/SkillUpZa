@@ -3,7 +3,7 @@
 // but i.m still seeing flames, i need you with the paths and stuff...
 import React from 'react';
 import Login from './Login';
-import UserProfile from './src\Pages\Dashboard\components\Sidebar.tsx';
+import UserProfile from './src\Pages\Dashboard\components\Sidebar.tsx'; // here is your error mike 
 import { UserProvider } from './UserContext';
 
 const App = () => {
