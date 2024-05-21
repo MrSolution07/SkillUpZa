@@ -22,6 +22,7 @@ import UserFAQ from "./Components/UserFaq";
 import PrivacyPolicy from "./Components/Privacypolicy";
 import AfterLogin from "./Pages/AfterLogin";
 import Interview from "./Components/Interview/index.jsx";
+import CompanySettings from "./Components/CompanySettings";
 
 
 // dashboard here
@@ -53,6 +54,10 @@ const router = createBrowserRouter([
   {
     path: "/UserSettings",
     element: <UserSettings />,
+  },
+  {
+    path: "/CompanySettings",
+    element: <CompanySettings />,
   },
   {
     path: "/UserFAQ",

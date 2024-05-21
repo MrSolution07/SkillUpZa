@@ -9,6 +9,7 @@ import SettingsOutlinedIcon from "@mui/icons-material/SettingsOutlined";
 import PersonOutlinedIcon from "@mui/icons-material/PersonOutlined";
 import SearchIcon from "@mui/icons-material/Search";
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Topbar = () => {
   const theme = useTheme();
@@ -38,12 +39,15 @@ const Topbar = () => {
             <LightModeOutlinedIcon />
           )}
         </IconButton>
+        
         <IconButton>
           <NotificationsOutlinedIcon />
         </IconButton>
+        <Link to="/CompanySettings">
         <IconButton>
           <SettingsOutlinedIcon />
         </IconButton>
+        </Link>
         <IconButton>
           <PersonOutlinedIcon />
         </IconButton>

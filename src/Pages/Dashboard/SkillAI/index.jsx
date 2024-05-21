@@ -3,6 +3,7 @@ import { fetchData } from './script'; // Import the modified fetchData from anot
 import Homeheader from "../../../Components/Social/Header";
 import "../../../Components/NewStyle/style.css";
 
+
 function SkillAI() {
   const [userInput, setUserInput] = useState('');
   const [messages, setMessages] = useState([]);

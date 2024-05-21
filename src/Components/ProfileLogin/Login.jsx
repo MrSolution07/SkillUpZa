@@ -97,17 +97,20 @@ const Login = () => {
                         <span className="auth-form-icon">
                           <i className="dripicons-lock"></i>
                         </span>
-                        <input
+                        <input 
                           type={showPassword ? "text" : "password"}
                           className="form-control"
                           id="userpassword"
                           name="password"
                           value={formData.password} onChange={handleChange}
-                          placeholder="Enter password"
-                        /> <button type="button" className="btn btn-secondary" onClick={toggleShowPassword}>
-                        {showPassword ? "Hide" : "Show"}
-                    </button>
+                          placeholder="Enter password" 
+                        /> 
+                        <button type="button" className="btn btn-secondary" onClick={toggleShowPassword}>
+                        <img src="public/assets/images/icons/eyeicon.png" alt="icon" className />
+                        {/* {showPassword ? "Hide" : "Show"} */}
+                        </button>
                       </div>
+                      
                     </div>
                     <div className="form-group mb-0 row">
                       <div className="col-12 mt-2">

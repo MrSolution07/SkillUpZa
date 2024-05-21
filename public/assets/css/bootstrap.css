@@ -2603,13 +2603,15 @@ fieldset:disabled a.btn {
 
 .btn-secondary {
   color: #fff;
-  background-color: #6c757d;
-  border-color: #6c757d;
+  /* background-color: #6c757d; */
+  /* border-color: #6c757d; */
+  width: 10%;
+  line-height: 15px;
 }
 
 .btn-secondary:hover {
   color: #fff;
-  background-color: #5a6268;
+  background-color: #17a2b8;
   border-color: #545b62;
 }
 
