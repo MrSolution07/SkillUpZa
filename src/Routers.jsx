@@ -31,8 +31,8 @@ import DashboardPage from "./Pages/Dashboard/index.jsx";
 import SkillAI from "./Pages/Dashboard/SkillAI/index.jsx";
 import Jobs from "./Pages/Dashboard/Jobs/jobs.jsx";
 // import Interview from "./Pages/Dashboard/Interview/index.jsx";
-import SkillAI from "./Pages/Dashboard/SkillAI/index.jsx";
-import Jobs from "./Pages/Dashboard/Jobs/jobs.jsx";
+
+
 import HomeUsr from "./Pages/HomeUsr/index.jsx";
 import Courses from "./Pages/Dashboard/Courses/index.jsx";
 import Courses2 from "./Pages/Dashboard/Courses2/index2.jsx";
@@ -98,15 +98,12 @@ const router = createBrowserRouter([
     path: "/Dashboard",
     element: < DashboardPage />,
   },
-<<<<<<< HEAD
 
   // {
   //   path: "/Faq",
   //   element: <FaqPage/>,
   // },
 
-=======
->>>>>>> 4d4ccb3fb415118c06d258ebd8059f6a232e287d
   {
     path: "/",
     element: <Home />,

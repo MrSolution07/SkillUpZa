@@ -38,7 +38,7 @@ const Login = () => {
             // setUsername(formData.username);
             localStorage.setItem('username', formData.username);
             alert("Login successful");
-            window.location.href = '/dashboard'; // Redirect to dashboard on successful login
+            window.location.href = '/AfterLogin'; // Redirect to dashboard on successful login
           } else {
             setError("Login failed. Please check your credentials.");
           }
@@ -111,7 +111,7 @@ const Login = () => {
                     </div>
                     <div className="form-group mb-0 row">
                       <div className="col-12 mt-2">
-                        <button className="btn btn-gradient-primary btn-round btn-block waves-effect waves-light" id="btnLog" type="submit"><Link to="/AfterLogin">Log In <i className="fas fa-sign-in-alt ml-1"></i></Link></button>
+                        <button className="btn btn-gradient-primary btn-round btn-block waves-effect waves-light" id="btnLog" type="submit">Log In <i className="fas fa-sign-in-alt ml-1"></i></button>
                       </div>
                       
                     </div>
