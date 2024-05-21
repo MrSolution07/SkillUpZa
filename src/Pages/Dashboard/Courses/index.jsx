@@ -4,7 +4,7 @@ import { course } from "../../../Data/course";
 import CoursesCardDashboard from "../../../Components/Cards/CoursesCardDashboard";
 import { Link } from "react-router-dom";
 // import CoursesCardDashboard from "../../../Components/Cards/CoursesCardDashboard";
-import DashboardLayout from "../layout";
+import Homeheader from "../../../Components/Social/Header";
 import "../../../../public/assets/css/theme.css";
 import "../../../../public/assets/css/animate.css";
 import "../../../../public/assets/css/bootstrap.css";
@@ -25,7 +25,7 @@ function Mycourses() {
   } else {
     content = (
       <>
-      <DashboardLayout>
+      <Homeheader/>
         <section className="coursepage-section-2">
           <div className="container">
             <div className="row">
@@ -96,7 +96,6 @@ function Mycourses() {
             </div>
           </div>
         </section>
-      </DashboardLayout>
       </>
     );
   }

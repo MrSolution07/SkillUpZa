@@ -31,13 +31,13 @@ function Footer({ getStart }) {
                  Follow us for more.
                 </p>
                 <div className="ab-social">
-                  <a className="fac" >
+                  <a className="fac" href="https://www.facebook.com/profile.php?id=61559534575921" >
                     <i className="social_facebook"></i>
                   </a>
                   <a className="twi" href="https://twitter.com/_Skill_Up_/status/1784949119582195767?t=PPYZjB1fn0GIJJ5XNoYBKw&s=19">
                     <i><img src ="public/assets/images/twitter-x.png" alt = ""/></i>
                   </a>
-                  <a href="https://www.instagram.com/skillup443/">
+                  <a href="https://www.instagram.com/skillupza/">
                       <i><div><img src="public/assets/images/instagram.png" alt="" /></div></i>
                   </a>
                 </div>
@@ -54,7 +54,7 @@ function Footer({ getStart }) {
                 
                 <li>
                   <Link to="/course-3">Courses</Link>
-                </li>
+                </li> 
                 <li>
                   <Link to="/contact">Contact Us</Link>
                 </li>

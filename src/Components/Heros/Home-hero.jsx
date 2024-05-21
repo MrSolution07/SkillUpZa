@@ -29,7 +29,9 @@ function HomeHero() {
             <div className="hero-content">
               <h2>Your path to Success</h2>
               <p>
-                Let us equip you the tools needed to thrive in today's job market. With our range of job opportunities made available to you, spanning diverse industries and locations, alongside valuable <b>career resources</b> to guide you every step of the way.
+              Unlock your potential with SkillUp, the ultimate platform
+               for career advancement and personal growth. Discover diverse job opportunities 
+              tailored to your skills and aspirations.
               </p>
               <Link to="/Register" className="SkillUplms-btn">
                 Get Started

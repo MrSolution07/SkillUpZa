@@ -13,12 +13,6 @@ import HelpOutlineOutlinedIcon from "@mui/icons-material/HelpOutlineOutlined";
 import BarChartOutlinedIcon from "@mui/icons-material/BarChartOutlined";
 import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined";
 import React from "react";
-// import { useUser } from '';
-// const UserProfile = () => {
-//   const { username } = useUser();
-
-//   return <div>Welcome, {username}</div>;
-// };
 const Item = ({ title, to, icon, selected, setSelected }) => {
   const theme = useTheme();
   const colors = tokens(theme.palette.mode);
@@ -192,11 +186,11 @@ const Sidebar = () => {
               color={colors.grey[300]}
               sx={{ m: "15px 0 5px 20px" }}
             >
-              How to ?
+              Post Job
             </Typography>
             <Item
-              title="Go for an interview"
-              to="/Interview"
+              title="Create a job listing"
+              to="/JobPosting"
               icon={<BarChartOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}

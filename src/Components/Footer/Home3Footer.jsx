@@ -8,21 +8,21 @@ function Home3Footer() {
           <div className="col-lg-4 col-md-3">
             <aside className="widget">
               <div className="about-widget">
-                <Link to="/">
-                  <img src="assets/images/logo3.png" alt="" />
+                <Link to="">
+                  <img src="assets/images/logo.png" alt="" />
                 </Link>
                 <p>
                   
                 </p>
                 <div className="ab-social">
-                  <a className="fac">
+                  <a className="fac" href="https://www.facebook.com/profile.php?id=61559534575921">
                     <i className="social_facebook"></i>
                   </a>
                   <a className="twi" href="https://twitter.com/_Skill_Up_/status/1784949119582195767?t=PPYZjB1fn0GIJJ5XNoYBKw&s=19">
                       <i><img src ="public/assets/images/twitter-x.png" alt = ""/>
                       </i>
                   </a>
-                  <a href="https://www.instagram.com/skillup443/">
+                  <a href="https://www.instagram.com/skillupza/">
                       <i><img src="public/assets/images/instagram.png" alt="" /></i>
                   </a>
                 </div>
@@ -81,8 +81,8 @@ function Home3Footer() {
           <div className="col-lg-12 text-center">
             <div className="copyright">
               <p>
-                © 2021 Copyright all Right Reserved Design by{" "}
-                <a href="http://quomodosoft.com/">Quomodosoft</a>
+                © 2024 Copyright all Right Reserved Design by {""}
+                <a href="">SkillupZA</a>
               </p>
             </div>
           </div>

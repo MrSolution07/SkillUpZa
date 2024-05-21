@@ -29,10 +29,7 @@ function CourseListViewV2({ course }) {
         <h4>
           <Link to={courseLink}>{heading}</Link>
         </h4>
-        <div className="author">
-          <img src="assets/images/home3/course/a6.png" alt="" />
-          <Link to={author.profile}>{author.name}</Link>
-        </div>
+       
         <div className="price-rate">
           <div className="course-price">
             R{offerPrice}

@@ -98,14 +98,14 @@ function InstructorProfile() {
                   </p>
                   <div className="ab-social">
                     <h5>Follow Us</h5>
-                    <a className="fac">
+                    <a className="fac" href = "https://www.facebook.com/profile.php?id=61559534575921">
                       <i className="social_facebook"></i>
                     </a>
                     <a className="twi" href="https://twitter.com/_Skill_Up_/status/1784949119582195767?t=PPYZjB1fn0GIJJ5XNoYBKw&s=19">
                       <i><img src ="public/assets/images/twitter-x.png" alt = ""/>
                       </i>
                     </a>
-                    <a href="https://www.instagram.com/skillup443/">
+                    <a href="https://www.instagram.com/skillupza/">
                       <i><img src="public/assets/images/instagram.png" alt="" /></i>
                     </a>
                   </div>

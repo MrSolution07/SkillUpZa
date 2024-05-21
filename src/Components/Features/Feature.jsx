@@ -29,21 +29,21 @@ function Feature() {
                 Web Development
               </li>
               <li
-                data-group="art and design"
-                className={activeCategory === "Art and Design" ? "active" : ""}
+                data-group="artanddesign"
+                className={activeCategory === "Art & Design" ? "active" : ""}
                 onClick={(e) => setActiveCategory(e.target.innerText)}
               >
                 Art & Design
               </li>
               <li
-                data-group="engineering"
-                className={activeCategory === "Engineering" ? "active" : ""}
+                data-group="businessstudy"
+                className={activeCategory === "Business Study" ? "active" : ""}
                 onClick={(e) => setActiveCategory(e.target.innerText)}
               >
                 Business Study
               </li>
               <li
-                className={activeCategory === "Data Science" ? "active" : ""}
+                className={activeCategory === "Science" ? "active" : ""}
                 data-group="science"
                 onClick={(e) => setActiveCategory(e.target.innerText)}
               >

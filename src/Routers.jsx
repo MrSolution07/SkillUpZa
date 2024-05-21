@@ -16,9 +16,13 @@ import Forgotpsw from "./Components/ProfileLogin/Forgotpsw";
 import BusinessLogin from "./Components/ProfileLogin/BusinessLogin";
 import BusinessRegister from "./Components/JoinNow/BusinessRegister";
 import UserSettings from "./Components/UserSettings/index.jsx";
+import UserFAQ from "./Components/UserFaq";
+
 
 import PrivacyPolicy from "./Components/Privacypolicy";
-import AfterLogin from "./Components/AfterLogin";
+import AfterLogin from "./Pages/AfterLogin";
+import Interview from "./Components/Interview/index.jsx";
+
 
 // dashboard here
 
@@ -27,10 +31,13 @@ import DashboardPage from "./Pages/Dashboard/index.jsx";
 import SkillAI from "./Pages/Dashboard/SkillAI/index.jsx";
 import Jobs from "./Pages/Dashboard/Jobs/jobs.jsx";
 // import Interview from "./Pages/Dashboard/Interview/index.jsx";
+import SkillAI from "./Pages/Dashboard/SkillAI/index.jsx";
+import Jobs from "./Pages/Dashboard/Jobs/jobs.jsx";
 import HomeUsr from "./Pages/HomeUsr/index.jsx";
 import Courses from "./Pages/Dashboard/Courses/index.jsx";
 import Courses2 from "./Pages/Dashboard/Courses2/index2.jsx";
 import MyCourses from "./Pages/Dashboard/MyCourses/index.jsx";
+import JobPosting from "./Components/JobPosting";
 
 // HomePage
 import HomePage from "./Components/Social/HomePage.jsx";
@@ -44,8 +51,16 @@ const router = createBrowserRouter([
     element: <MyCourses />,
   },
   {
+    path: "/JobPosting",
+    element: <JobPosting />,
+  },
+  {
     path: "/UserSettings",
     element: <UserSettings />,
+  },
+  {
+    path: "/UserFAQ",
+    element: <UserFAQ />,
   },
   {
     path: "/Courses2",
@@ -83,12 +98,15 @@ const router = createBrowserRouter([
     path: "/Dashboard",
     element: < DashboardPage />,
   },
+<<<<<<< HEAD
 
   // {
   //   path: "/Faq",
   //   element: <FaqPage/>,
   // },
 
+=======
+>>>>>>> 4d4ccb3fb415118c06d258ebd8059f6a232e287d
   {
     path: "/",
     element: <Home />,
