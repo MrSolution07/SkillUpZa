@@ -23,10 +23,10 @@ import AfterLogin from "./Components/AfterLogin";
 // dashboard here
 
 import DashboardPage from "./Pages/Dashboard/index.jsx";
-import FaqPage from "./Pages/Dashboard/Faq/index.tsx";
+// import FaqPage from "./Pages/Dashboard/Faq/index.tsx";
 import SkillAI from "./Pages/Dashboard/SkillAI/index.jsx";
 import Jobs from "./Pages/Dashboard/Jobs/jobs.jsx";
-import Interview from "./Pages/Dashboard/Interview/index.jsx";
+// import Interview from "./Pages/Dashboard/Interview/index.jsx";
 import HomeUsr from "./Pages/HomeUsr/index.jsx";
 import Courses from "./Pages/Dashboard/Courses/index.jsx";
 import Courses2 from "./Pages/Dashboard/Courses2/index2.jsx";
@@ -63,10 +63,10 @@ const router = createBrowserRouter([
     path: "/HomePage",
     element: <HomePage />,
   },
-  {
-    path: "/Interview",
-    element: <Interview />,
-  },
+  // {
+  //   path: "/Interview",
+  //   element: <Interview />,
+  // },
   {
     path: "/Jobs",
     element: <Jobs />,
@@ -84,10 +84,10 @@ const router = createBrowserRouter([
     element: < DashboardPage />,
   },
 
-  {
-    path: "/Faq",
-    element: <FaqPage/>,
-  },
+  // {
+  //   path: "/Faq",
+  //   element: <FaqPage/>,
+  // },
 
   {
     path: "/",
