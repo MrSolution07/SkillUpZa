@@ -27,7 +27,6 @@ import Interview from "./Components/Interview/index.jsx";
 // dashboard here
 
 import DashboardPage from "./Pages/Dashboard/index.jsx";
-import FaqPage from "./Pages/Dashboard/Faq/index.tsx";
 import SkillAI from "./Pages/Dashboard/SkillAI/index.jsx";
 import Jobs from "./Pages/Dashboard/Jobs/jobs.jsx";
 import HomeUsr from "./Pages/HomeUsr/index.jsx";
@@ -95,12 +94,6 @@ const router = createBrowserRouter([
     path: "/Dashboard",
     element: < DashboardPage />,
   },
-
-  {
-    path: "/Faq",
-    element: <FaqPage/>,
-  },
-
   {
     path: "/",
     element: <Home />,
