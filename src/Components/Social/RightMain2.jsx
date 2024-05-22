@@ -6,7 +6,7 @@ const RightMain2 = () => {
       <div className="link-box">
         <img className="link" src="" alt="Picture" />
       </div>
-      <p style={{ marginLeft: '20px', marginRight: '20px' }}>USERNAME</p>
+      <p style={{ marginLeft: '20px', marginRight: '20px' }}>{localStorage.getItem('username')}</p>
       <button>Promote a job post</button>
     </div>
   );

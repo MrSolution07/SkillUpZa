@@ -129,6 +129,7 @@ const JobPostingForm = () => {
           setJobName('');
           setJobDescription('');
           setJobImage(null);
+          window.location.href = '/Dashboard'; 
         } else {
           alert('Error: ' + data.message);
         }

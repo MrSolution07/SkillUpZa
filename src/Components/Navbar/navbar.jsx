@@ -9,6 +9,7 @@ function Navbar({ className,logo }) {
 
 
 
+
   return (
     <header className={`${className ? className : "header-06"} sticky ${
       windowPosition > 0 && "fix-header animated fadeInDown"
@@ -35,8 +36,8 @@ function Navbar({ className,logo }) {
 
               {/* Here we can display the user's name and email*/ }
               <div className="navbar-contact-info">
-                <span>Email: user@gmail.com</span>
-                <span>Welcome: Miss User</span>
+                <span>Email: {localStorage.getItem('Email')}</span>
+                <span>Welcome: {localStorage.getItem('username')}</span>
               </div>
             </nav>
           </div>

@@ -144,6 +144,7 @@ function CompanyLogin() {
     });
 
     const [error, setError] = useState('');
+    const [showPassword, setShowPassword] = useState(false);
 
     const handleChange = (e) => {
         setFormData(prev => {
@@ -166,7 +167,7 @@ function CompanyLogin() {
                     if (data.success) {
                         localStorage.setItem('companyname', formData.businessName);
                         alert("Login successful");
-                        window.location.href = '/dashboard'; // Redirect to dashboard on successful login
+                        window.location.href = '/Dashboard'; // Redirect to dashboard on successful login
                     } else {
                         setError("Login failed. Please check your credentials.");
                     }
@@ -180,6 +181,10 @@ function CompanyLogin() {
             setError("An error occurred. Please try again later.");
         }
     };
+
+    const toggleShowPassword = () => {
+        setShowPassword(prev => !prev);
+      };
 
     return (
         <div className="account-body accountbg">
@@ -215,7 +220,10 @@ function CompanyLogin() {
                                                     <span className="auth-form-icon">
                                                         <i className="dripicons-lock"></i>
                                                     </span>
-                                                    <input type="password" className="form-control" id="companypassword" name="password" value={formData.password} onChange={handleChange} placeholder="Enter password" />
+                                                    <input  type={showPassword ? "text" : "password"} className="form-control" id="companypassword" name="password" value={formData.password} onChange={handleChange} placeholder="Enter password" />
+                                                    <button type="button" className="btn btn-secondary" onClick={toggleShowPassword}>
+                                                        {showPassword ? "Hide" : "Show"}
+                                                     </button>
                                                 </div>
                                             </div>
                                             <div className="form-group mb-0 row">

@@ -8,7 +8,7 @@ const MiddleMain2 = () => {
           <img className="middle-pic" src="" alt="Profile Picture" />
         </div>
         <div>
-          <p className="name">UserName</p>
+          <p className="name">{localStorage.getItem('username')}</p>
           <p className="name-about">IT Student</p>
           <p className="name-about">6h &#183; <i className="fa fa-globe" aria-hidden="true"></i></p>
         </div>

@@ -42,7 +42,7 @@ const AccountSettingsCard = () => {
         mobileNumber
       });
       const data = response.data;
-      console.log('Update response:', data);
+
       window.alert('Info updated successfully');
     } catch (error) {
       console.error('Error updating user data:', error);

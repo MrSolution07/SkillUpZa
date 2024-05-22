@@ -117,6 +117,7 @@ const BusinessRegisterPage = () => {
     });
     const [error, setError] = useState('');
     const [termsAccepted, setTermsAccepted] = useState(false);
+    const [showPassword, setShowPassword] = useState(false);
 
     const handleChange = (e) => {
         setFormData(prev => {
@@ -160,7 +161,7 @@ const BusinessRegisterPage = () => {
                 
                 alert("Registration successful");
                 // localStorage.setItem('username', formData.businessName); // Store the username in localStorage
-                window.location.href = '/BusinessLogin.jsx'; // Redirect to BusinessLoginPage
+                window.location.href = '/BusinessLogin'; // Redirect to BusinessLoginPage
             } else {
                 setError(data.message);
             }
@@ -174,6 +175,9 @@ const BusinessRegisterPage = () => {
     const handleTermsChange = () => {
         setTermsAccepted(prev => !prev);
     };
+    const toggleShowPassword = () => {
+        setShowPassword(prev => !prev);
+      };
 
     return (
         <div className="container" id="page">
@@ -199,7 +203,7 @@ const BusinessRegisterPage = () => {
                                                 <span className="auth-form-icon">
                                                     <i className="dripicons-user"></i>
                                                 </span>
-                                                <input type="text" className="form-control" id="username" name="businessName" value={formData.businessName} onChange={handleChange} placeholder="Enter username" />
+                                                <input type="text" className="form-control" id="username" name="businessName" value={formData.businessName} onChange={handleChange} placeholder="Enter Business" />
                                             </div>
                                         </div>
                                         <div className="form-group">
@@ -208,7 +212,7 @@ const BusinessRegisterPage = () => {
                                                 <span className="auth-form-icon">
                                                     <i className="dripicons-mail"></i>
                                                 </span>
-                                                <input type="email" className="form-control" id="useremail" name="email" value={formData.email} onChange={handleChange} placeholder="Enter Email" />
+                                                <input type="email" className="form-control" id="useremail" name="email" value={formData.email} onChange={handleChange} placeholder="Enter company Email" />
                                             </div>
                                         </div>
                                         <div className="form-group">
@@ -217,7 +221,10 @@ const BusinessRegisterPage = () => {
                                                 <span className="auth-form-icon">
                                                     <i className="dripicons-lock"></i>
                                                 </span>
-                                                <input type="password" className="form-control" id="userpassword" name="password" value={formData.password} onChange={handleChange} placeholder="Enter password" />
+                                                <input type={showPassword ? "text" : "password"} className="form-control" id="userpassword" name="password" value={formData.password} onChange={handleChange} placeholder="Enter password" />
+                                                <button type="button" className="btn btn-secondary" onClick={toggleShowPassword}>
+                                                        {showPassword ? "Hide" : "Show"}
+                                                     </button>
                                             </div>
                                         </div>
                                         <div className="form-group">
@@ -226,7 +233,10 @@ const BusinessRegisterPage = () => {
                                                 <span className="auth-form-icon">
                                                     <i className="dripicons-lock-open"></i>
                                                 </span>
-                                                <input type="password" className="form-control" id="conf_password" name="confirm_password" value={formData.confirm_password} onChange={handleChange} placeholder="Confirm Password" />
+                                                <input type={showPassword ? "text" : "password"} className="form-control" id="conf_password" name="confirm_password" value={formData.confirm_password} onChange={handleChange} placeholder="Confirm Password" />
+                                                <button type="button" className="btn btn-secondary" onClick={toggleShowPassword}>
+                                                        {showPassword ? "Hide" : "Show"}
+                                                     </button>
                                             </div>
                                         </div>
                                         <div className="form-group">
@@ -255,7 +265,7 @@ const BusinessRegisterPage = () => {
                                     </form>
                                 </div>
                                 <div className="m-3 text-center text-muted">
-                                    <p className="">Already have an account ? <a href="/BusinessLoginPage" className="text-primary ml-2">Log in</a></p>
+                                    <p className="">Already have an account ? <a href="/BusinessLogin" className="text-primary ml-2">Log in</a></p>
                                 </div>
                             </div>
                         </div>
