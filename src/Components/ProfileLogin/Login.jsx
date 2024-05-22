@@ -1,7 +1,11 @@
 import React, { useState } from 'react';
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import axios from 'axios';
-// import { useUser } from './UserContext.jsx';
+import Visibility from '@mui/icons-material/Visibility';
+import VisibilityOff from '@mui/icons-material/VisibilityOff';
+import IconButton from '@mui/material/IconButton';
+import InputAdornment from '@mui/material/InputAdornment';
+import { TextField } from '@mui/material';
 
 const Login = () => {
   const [formData, setFormData] = useState({
@@ -9,13 +13,11 @@ const Login = () => {
     password: ''
   });
 
-  // this line was suppose to be storing the username 
-  // const { setUsername } = useUser();
-
   const handleChange = (e) => {
-    setFormData(prev => {
-        return { ...prev, [e.target.name]: e.target.value }
-    });
+    setFormData(prev => ({
+      ...prev,
+      [e.target.name]: e.target.value
+    }));
   };
 
   const [error, setError] = useState('');
@@ -32,10 +34,8 @@ const Login = () => {
       axios.post('http://localhost/DATABASE_DATA/Login.php', phpData)
         .then(response => {
           const data = response.data;
-          
 
           if (data.success) {
-            // setUsername(formData.username);
             localStorage.setItem('username', formData.username);
             alert("Login successful");
             window.location.href = '/dashboard'; // Redirect to dashboard on successful login
@@ -55,7 +55,7 @@ const Login = () => {
 
   const toggleShowPassword = () => {
     setShowPassword(prev => !prev);
-};
+  };
 
   return (
     <div className="container">
@@ -76,66 +76,85 @@ const Login = () => {
                   </div>
                   <form className="form-horizontal auth-form my-4" onSubmit={handleSubmit}>
                     <div className="form-group">
-                      <label  htmlFor="username">Username</label>
-                      <div className="input-group mb-3">
-                        <span className="auth-form-icon">
-                          <i className="dripicons-user"></i>
-                        </span>
-                        <input
-                          type="text"
-                          className="form-control"
-                          id="username"
-                          name="username"
-                          value={formData.username} onChange={handleChange} 
-                          placeholder="Enter username"
-                        />
-                      </div>
+                      <label htmlFor="username">Username</label>
+                      <TextField
+                        variant="outlined"
+                        fullWidth
+                        id="username"
+                        name="username"
+                        value={formData.username}
+                        onChange={handleChange}
+                        placeholder="Enter username"
+                        InputProps={{
+                          startAdornment: (
+                            <InputAdornment position="start">
+                              <i className="dripicons-user"></i>
+                            </InputAdornment>
+                          ),
+                          sx: {
+                            height: 36, 
+                            borderRadius:2,
+                            
+                          }
+                      
+                        }}
+                      />
                     </div>
                     <div className="form-group">
                       <label htmlFor="userpassword">Password</label>
-                      <div className="input-group mb-3">
-                        <span className="auth-form-icon">
-                          <i className="dripicons-lock"></i>
-                        </span>
-                        <input 
-                          type={showPassword ? "text" : "password"}
-                          className="form-control"
-                          id="userpassword"
-                          name="password"
-                          value={formData.password} onChange={handleChange}
-                          placeholder="Enter password" 
-                        /> 
-                        <button type="button" className="btn btn-secondary" onClick={toggleShowPassword}>
-                        <img src="public/assets/images/icons/eyeicon.png" alt="icon" className />
-                        {/* {showPassword ? "Hide" : "Show"} */}
-                        </button>
-                      </div>
-                      
+                      <TextField
+                        variant="outlined"
+                        fullWidth
+                        id="userpassword"
+                        name="password"
+                        type={showPassword ? "text" : "password"}
+                        value={formData.password}
+                        onChange={handleChange}
+                        placeholder="Enter password"
+                        InputProps={{
+                          startAdornment: (
+                            <InputAdornment position="start">
+                              <i className="dripicons-lock"></i>
+                            </InputAdornment>
+                          ),
+                          endAdornment: (
+                            <InputAdornment position="end">
+                              <IconButton onClick={toggleShowPassword} edge="end">
+                                {showPassword ? <VisibilityOff /> : <Visibility />}
+                              </IconButton>
+                            </InputAdornment>
+                          ),
+                          sx: {
+                            height: 36,
+                            borderRadius:2,
+                         
+                          }
+                        }}
+                      />
                     </div>
                     <div className="form-group mb-0 row">
                       <div className="col-12 mt-2">
-                        <button className="btn btn-gradient-primary btn-round btn-block waves-effect waves-light" id="btnLog" type="submit"><Link to="/AfterLogin">Log In <i className="fas fa-sign-in-alt ml-1"></i></Link></button>
+                      <Link to="/AfterLogin">
+                        <button className="btn btn-gradient-primary btn-round btn-block waves-effect waves-light" id="btnLog" type="submit">
+                          Log In <i className="fas fa-sign-in-alt ml-1" ></i>
+                        </button>
+                        </Link>
                       </div>
-                      
                     </div>
                     {error && <div className="text-danger mt-3">{error}</div>}
                   </form>
                 </div>
                 <div className="m-3 text-center text-muted">
-                  <p className="">Don't have an account ? <Link to="/Register" className="text-primary ml-2">Register</Link></p>
+                  <p className="">Don't have an account? <Link to="/Register" className="text-primary ml-2">Register</Link></p>
                   <p className="">SkillUp For Business? <Link to="/BusinessLogin" className="text-primary ml-2">Sign in here</Link></p>
-                  </div>
                 </div>
-              
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  
   );
 }
 
 export default Login;
-
-

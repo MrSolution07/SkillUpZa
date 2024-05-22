@@ -26,13 +26,13 @@ const AfterLoginCards = () => {
       imgSrc: "/public/assets/images/image3.jpg",
       title: "Job Application",
       text: "Check and apply for available jobs posted on the platform",
-      link: "/job-application"
+      link: "/Jobs"
     },
     {
       imgSrc: "/public/assets/images/image4.jpg",
-      title: "Career Insights",
-      text: "View insights and on-demand skills related to your career",
-      link: "/career-insights"
+      title: "Courses",
+      text: "View the courses you are currently enrolled for",
+      link: "/Courses"
     },
     {
       imgSrc: "/public/assets/images/image5.jpg",

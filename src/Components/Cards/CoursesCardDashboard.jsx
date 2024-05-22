@@ -84,7 +84,7 @@ function CoursesCardDashboard({ course, className, swiper }) {
     <div className={!swiper ? "col-lg-4 col-md-6" : ""}>
       <div className={`${className ? className : "feature-course-item-3"}`}>
         <div className="fcf-thumb">
-          <img src={course.img3} alt="" />
+          <img src={course.img3} alt="" />  
           <Link to="#" className="enroll" onClick={handleAddCourse}>
             ADD
           </Link>
@@ -93,7 +93,6 @@ function CoursesCardDashboard({ course, className, swiper }) {
           <Link className="c-cate">{course.title}</Link>
           <h4>{course.heading}</h4>
           <div className="author">
-            <img src={course.author?.img} alt="" />
             <Link></Link>
           </div>
           <div className="price-rate">

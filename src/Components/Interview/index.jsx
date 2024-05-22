@@ -29,6 +29,7 @@ const Interview = () => {
                 <FAQItem 
                   question="Could you please introduce yourself?"
                   answer="This is your opportunity to make a strong first impression. Briefly share your educational background, relevant work experience, and skills that align with the job description. Highlight achievements that showcase your value and passion for the field."
+                  
                   isOpen={open["faq1"]}
                   onClick={() => handleToggle("faq1")}
                 />

@@ -1,10 +1,9 @@
-
 import TeacherCard from "../../../Components/Cards/TeacherCard";
-import DashboardLayout from "../layout";
+import Header from "../../../Components/Social/Header"
 function Jobs() {
   return (
-    <DashboardLayout>
             <div className="container">
+           <Header/>
             <div className="row">
                 <h2 className="sec-title mb-15">
                   <span></span> 
@@ -112,7 +111,6 @@ function Jobs() {
           </div>
 
         
-        </DashboardLayout>
     )
 }
 

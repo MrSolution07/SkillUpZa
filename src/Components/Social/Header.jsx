@@ -6,7 +6,6 @@ const Header = () => {
     <header className="header">
       <div className="left-section">
         <img className="logo" src="/public/assets/images/logo.png" alt="Logo" />
-        <input className="search-box" type="text" placeholder="Search" />
       </div>
       <div className="middle-section">
         <Link to="/HomePage">
@@ -17,26 +16,38 @@ const Header = () => {
         </Link>
         <Link to="/UserFAQ">
         <div className="top-icon">
-          <img className="home" src="/public/assets/images/icons/users-svgrepo-com.svg" alt="My Network" />
+          <img className="home" src="/public/assets/images/icons/users-svgrepo-com.svg" alt="FAQ" />
           <label>FAQ</label>
         </div>
         </Link>
         <Link to="/SkillAI">
         <div className="top-icon">
-          <img className="home" src="public\assets\images\icons\icons8-ai-64.png" alt="skillai" style={{height:'25px',width:'30px',marginLeft:'2px'}}/>
+          <img className="home" src="public\assets\images\icons\icons8-ai-64.png" alt="skillai" style={{height:'25px',width:'30px',marginLeft:'2px'}} />
           <label>Skill AI</label>
         </div>
         </Link>
         <Link to="/Interview">
         <div className="top-icon">
-          <img className="home" src="/public/assets/images/icons/portfolio-suitcase-svgrepo-com.svg" alt="Messaging" />
+          <img className="home" src="/public/assets/images/icons/portfolio-suitcase-svgrepo-com.svg" alt="interview" />
           <label>Interview </label>
         </div>
         </Link>
-        <Link to="">
+        <Link to="/Jobs">
         <div className="top-icon">
-          <img className="home" src="/public/assets/images/icons/chat-square-plain-2-svgrepo-com.svg" alt="Messaging" />
+          <img className="home" src="/public/assets/images/icons/chat-square-plain-2-svgrepo-com.svg" alt="jobs" />
           <label>Jobs </label>
+        </div>
+        </Link>
+        <Link to="/Courses">
+        <div className="top-icon">
+          <img className="home" src="public\assets\images\icons\icons8-ai-64.png" alt="courses" style={{height:'25px',width:'30px',marginLeft:'8px'}}/>
+          <label>Courses</label>
+        </div>
+        </Link>
+        <Link to="/MyCourses">
+        <div className="top-icon">
+          <img className="home" src="public\assets\images\icons\icons8-ai-64.png" alt="mycourses" style={{height:'25px',width:'30px',marginLeft:'8px'}}/>
+          <label>My Courses</label>
         </div>
         </Link>
         
