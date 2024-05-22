@@ -35,13 +35,17 @@ import Courses from "./Pages/Dashboard/Courses/index.jsx";
 import Courses2 from "./Pages/Dashboard/Courses2/index2.jsx";
 import MyCourses from "./Pages/Dashboard/MyCourses/index.jsx";
 import JobPosting from "./Components/JobPosting";
+import BussinessAi from "./Pages/Dashboard//AiBusiness/index.jsx";
 
 // HomePage
 import HomePage from "./Components/Social/HomePage.jsx";
 
 
 const router = createBrowserRouter([
-
+  {
+    path: "/BussinessAi",
+    element: <BussinessAi />,
+  },
  
   {
     path: "/MyCourses",

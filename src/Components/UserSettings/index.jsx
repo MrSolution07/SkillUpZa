@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Card, Form, Button, Container, Row, Col } from 'react-bootstrap';
 import axios from 'axios';
+import Homeheader from "../../Components/Social/Header";
 
 const AccountSettingsCard = () => {
   const [username, setUsername] = useState('');
@@ -101,6 +102,8 @@ const AccountSettingsCard = () => {
   };
 
   return (
+  <>
+    <Homeheader />
     <Container>
       <Row className="mb-4">
         <Col xs={12} md={12}>
@@ -217,6 +220,7 @@ const AccountSettingsCard = () => {
         </Col>
       </Row>
     </Container>
+  </>
   );
 };
 
