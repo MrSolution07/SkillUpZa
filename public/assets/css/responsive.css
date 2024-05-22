@@ -1052,6 +1052,11 @@
 		visibility: visible;
 		opacity: 1;
 	}
+	button.btn.btn-secondary {
+		max-width:100%;
+		max-height: fit-content;   
+		width: 70px;
+	}
 
 }
 
@@ -1065,6 +1070,8 @@
 	#card-slider {
 	    height: 1070px;
 	}	
+	
+	
 }
 
 

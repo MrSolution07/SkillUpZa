@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
-import DashboardLayout from '../layout';
 import { fetchData } from './script'; // Import the modified fetchData from another file
+import Homeheader from "../../../Components/Social/Header";
+import "../../../Components/NewStyle/style.css";
+
 
 function SkillAI() {
   const [userInput, setUserInput] = useState('');
@@ -47,7 +49,8 @@ function SkillAI() {
   };
 
   return (
-    <DashboardLayout>
+    <>
+    <Homeheader />
       <div className="ai-body">
         <header className="">
           <div className="title">Skill AI</div>
@@ -81,7 +84,9 @@ function SkillAI() {
           </button>
         </div>
       </div>
-    </DashboardLayout>
+      
+    </>
+      
   );
 }
 

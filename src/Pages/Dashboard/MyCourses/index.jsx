@@ -7,7 +7,7 @@ import "../../../../public/assets/css/bootstrap.css";
 import "../../../../public/assets/css/responsive.css";
 import "../../../../public/assets/css/preset.css";
 import "../../../../public/assets/css/bootstrap.css";
-
+import Homeheader from "../../../Components/Social/Header";
 
 
 
@@ -15,7 +15,8 @@ function Mycourses() {
   const addedCourses = JSON.parse(localStorage.getItem("addedCourses")) || [];
 
   return (
-    <DashboardLayout>
+  <>
+    <Homeheader/>
       <div>
         <h2>My Courses</h2>
         <div className="col-lg-4 col-md-6">
@@ -34,7 +35,7 @@ function Mycourses() {
           ))}
         </div>
       </div>
-    </DashboardLayout>
+    </>
   );
 }
 

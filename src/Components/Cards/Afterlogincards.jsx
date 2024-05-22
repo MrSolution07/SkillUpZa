@@ -20,7 +20,7 @@ const AfterLoginCards = () => {
       imgSrc: "/public/assets/images/image2.jpg",
       title: "Skill AI",
       text: "Utilize the platform's AI for career advice and insights",
-      link: "/skill-ai"
+      link: "/SkillAI"
     },
     {
       imgSrc: "/public/assets/images/image3.jpg",

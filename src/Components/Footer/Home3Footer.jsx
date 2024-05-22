@@ -8,8 +8,8 @@ function Home3Footer() {
           <div className="col-lg-4 col-md-3">
             <aside className="widget">
               <div className="about-widget">
-                <Link to="/">
-                  <img src="assets/images/logo3.png" alt="" />
+                <Link to="">
+                  <img src="assets/images/logo.png" alt="" />
                 </Link>
                 <p>
                   
@@ -81,8 +81,8 @@ function Home3Footer() {
           <div className="col-lg-12 text-center">
             <div className="copyright">
               <p>
-                © 2021 Copyright all Right Reserved Design by{" "}
-                <a href="http://quomodosoft.com/">Quomodosoft</a>
+                © 2024 Copyright all Right Reserved Design by {""}
+                <a href="">SkillupZA</a>
               </p>
             </div>
           </div>
