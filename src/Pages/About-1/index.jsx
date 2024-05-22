@@ -1,4 +1,3 @@
-// our pictures will be here
 import { useEffect, useState } from "react";
 import Preloader from "../../Components/Preloader";
 import Header from "../../Components/Headers";
@@ -32,6 +31,16 @@ function About1() {
         {/* <Cta />*/}
           
         <Home3Teacher className="teachers-section-3" btnClass="SkillUplms-btn" />
+        <div style={{ textAlign: "center", fontSize: "28px", margin: "0 auto", paddingTop: "0", marginBottom: "15%" }}>
+        <p style={{ color: "white", whiteSpace: "pre-line" }}>
+            Skill Up, founded in February 2024, is an innovative platform created by university students
+            passionate about engaging and empowering the youth. Recognizing the challenges posed
+            by the rising unemployment rate and economic decline, our mission is to provide accessible,
+            high-quality education to help individuals enhance their skills and secure their future in the workforce.
+            We offer a variety of courses and learning materials, all designed to equip our users with
+            the tools they need to excel in today's competitive job market.
+          </p>
+        </div>
         <Cta />
         <Video />  
         <Footer />
