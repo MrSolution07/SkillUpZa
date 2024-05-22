@@ -22,7 +22,7 @@ function Home3Teacher({ className, btnClass }) {
           <Home3TeacherCard
             img="assets/images/home3/teacher/1.png"
             name="Christian Bulabula"
-            position="Front-end Developer"
+            position="Lead Developer"
           />
           <Home3TeacherCard
             img="assets/images/home3/teacher/2.png"
@@ -33,18 +33,18 @@ function Home3Teacher({ className, btnClass }) {
           <Home3TeacherCard
             img="assets/images/home3/teacher/3.png"
             name3="Lesedi Ntamane"
-            position="Visual Designer"
+            position="UI/UX Designer"
             
           />
           <Home3TeacherCard
             img="assets/images/home3/teacher/4.png"
             name4="Anonga Mabuda"
-            position="Requirements Analyst"
+            position="Technical Writer & Researcher "
           />
           <Home3TeacherCard
             img="assets/images/home3/teacher/5.png"
             name5="Governor Khoza"
-            position="Database Administrator"
+            position="Front-End Developer"
           />
 
         </div>
