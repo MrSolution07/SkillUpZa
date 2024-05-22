@@ -124,6 +124,10 @@ const BusinessRegisterPage = () => {
             return { ...prev, [e.target.name]: e.target.value }
         });
     };
+    const validatePassword = (password) => {
+        const strongPasswordPattern = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/; //pattern for password with js simple...
+        return strongPasswordPattern.test(password);
+    };
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -142,6 +146,10 @@ const BusinessRegisterPage = () => {
 
         if (formData.password !== formData.confirm_password) {
             setError('Passwords do not match');
+            return;
+        }
+        if (!validatePassword(formData.password)) {
+            setError('Password must be at least 8 characters long, include an uppercase letter, a lowercase letter, a number, and a special character.');
             return;
         }
 
