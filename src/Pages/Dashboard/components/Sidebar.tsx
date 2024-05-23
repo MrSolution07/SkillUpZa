@@ -136,26 +136,12 @@ const Sidebar = () => {
             />
             <Item
               title="SkillUp AI"
-              to="/SkillAI"
+              to="/BussinessAi"
               icon={<ContactsOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}
             />
-            <Item
-              title="My Courses"
-              to="/Mycourses"
-              icon={<ReceiptOutlinedIcon />}
-              selected={selected}
-              setSelected={setSelected}
-            />
-
-            <Item
-              title="Courses"
-              to="/Courses"
-              icon={<ReceiptOutlinedIcon />}
-              selected={selected}
-              setSelected={setSelected}
-            />
+            
 
 
             <Typography
@@ -173,13 +159,13 @@ const Sidebar = () => {
               setSelected={setSelected}
             />
             
-            <Item
+            {/* <Item
               title="FAQ Page"
               to="/Faq"
               icon={<HelpOutlineOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}
-            /> */}
+            />  */}
 
             <Typography
               variant="h6"

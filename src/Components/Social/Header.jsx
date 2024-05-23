@@ -23,7 +23,7 @@ const Header = () => {
           <label>Interview </label>
         </div>
       </Link>
-      <Link to="/Jobs">
+      <Link to="/JobsUser">
         <div className="top-icon">
           <img className="home" src="public\assets\images\icons\jobicon.svg" alt="jobs" />
           <label>Jobs </label>

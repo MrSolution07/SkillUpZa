@@ -29,19 +29,25 @@ import CompanySettings from "./Components/CompanySettings";
 
 import DashboardPage from "./Pages/Dashboard/index.jsx";
 import SkillAI from "./Pages/Dashboard/SkillAI/index.jsx";
-import Jobs from "./Pages/Dashboard/Jobs/jobs.jsx";
 import HomeUsr from "./Pages/HomeUsr/index.jsx";
-import Courses from "./Pages/Dashboard/Courses/index.jsx";
-import Courses2 from "./Pages/Dashboard/Courses2/index2.jsx";
-import MyCourses from "./Pages/Dashboard/MyCourses/index.jsx";
 import JobPosting from "./Components/JobPosting";
 import BussinessAi from "./Pages/Dashboard//AiBusiness/index.jsx";
+import JobsUser from "./Components/Social/page/jobs.jsx";
 
 // HomePage
 import HomePage from "./Components/Social/HomePage.jsx";
+import Jobs from "./Pages/Dashboard/Jobs/jobs.jsx";
+import Courses from "./Pages/Dashboard/Courses/index.jsx";
+import Courses2 from "./Pages/Dashboard/Courses2/index2.jsx";
+import MyCourses from "./Pages/Dashboard/MyCourses/index.jsx";
 
 
 const router = createBrowserRouter([
+  {
+    path: "/JobsUser",
+    element: <JobsUser />,
+  },
+
   {
     path: "/BussinessAi",
     element: <BussinessAi />,
