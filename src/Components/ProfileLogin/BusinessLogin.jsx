@@ -70,7 +70,7 @@ function CompanyLogin() {
                                        </div>
                                        <div className="text-center auth-logo-text">
                                            <h4 className="mt-0 mb-3 mt-5">Welcome Back</h4>
-                                           <p className="text-muted mb-0">Sign in to continue to SkillUp</p>
+                                           <p className="text-muted mb-0">Sign in to continue to Skill UpZA</p>
                                        </div>
                                        <form className="form-horizontal auth-form my-4" onSubmit={handleSubmit}>
                                            <div className="form-group">
@@ -93,11 +93,12 @@ function CompanyLogin() {
                                                        sx: {
                                                            height: 36,
                                                            borderRadius: 2,
+                                                        
                                                        }
                                                    }}
                                                />
                                            </div>
-                                           <div className="form-group">
+                                           <div className="form-group mb-4">
                                                <label htmlFor="userpassword">Password</label>
                                                <TextField
                                                    variant="outlined"
@@ -128,6 +129,11 @@ function CompanyLogin() {
                                                    }}
                                                />
                                                {error && <div className="text-danger mt-3">{error}</div>}
+                                           </div>
+                                           <div className="form-group mb-0 row">
+                                               <div className="col-12 mt-2">
+                                                   <button className="btn btn-gradient-primary btn-round btn-block waves-effect waves-light" id="btnLog" type="submit">Log In <i className="fas fa-sign-in-alt ml-1"></i></button>
+                                               </div>
                                            </div>
                                        </form>
                                    </div>

@@ -84,8 +84,8 @@ const BusinessRegisterPage = () => {
                                         </a>
                                     </div>
                                     <div className="text-center auth-logo-text">
-                                        <h4 className="name">SkillUp</h4>
-                                        <p className="text-muted">Get your free SkillUp account now.</p>
+                                        <h4 className="name">Skill UpZA</h4>
+                                        <p className="text-muted">Get your free Skill UpZA account now.</p>
                                     </div>
                                     <form className="form-horizontal auth-form my-4" onSubmit={handleSubmit}>
                                         <div className="form-group">

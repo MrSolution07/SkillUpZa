@@ -33,7 +33,7 @@ function About1() {
         <Home3Teacher className="teachers-section-3" btnClass="SkillUplms-btn" />
         
         
-        <div style={{ textAlign: "center", fontSize: "18px", margin: "0 auto", paddingTop: "0", marginBottom: "18%",marginLeft:"150px"}}>
+        <div className="abblockqoute" style={{ textAlign: "center", fontSize: "18px", margin: "0 auto", paddingTop: "0", marginBottom: "18%",marginLeft:"150px"}}>
 
           <blockquote style={{ marginTop:"0px",width:"90%" }}>
           <p>Skill UpZA, founded in February 2024, is an innovative platform created by university students

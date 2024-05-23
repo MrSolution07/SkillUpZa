@@ -73,7 +73,7 @@ const Login = () => {
                   </div>
                   <div className="text-center auth-logo-text">
                     <h4 className="mt-0 mb-3 mt-5">Welcome Back</h4>
-                    <p className="text-muted mb-0">Sign in to continue to SkillUp</p>
+                    <p className="text-muted mb-0">Sign in to continue to Skill UpZA</p>
                   </div>
                   <form className="form-horizontal auth-form my-4" onSubmit={handleSubmit}>
                     <div className="form-group">
@@ -147,7 +147,7 @@ const Login = () => {
                 </div>
                 <div className="m-3 text-center text-muted">
                   <p className="">Don't have an account? <Link to="/Register" className="text-primary ml-2">Register</Link></p>
-                  <p className="">SkillUp For Business? <Link to="/BusinessLogin" className="text-primary ml-2">Sign in here</Link></p>
+                  <p className="">Skill UpZA For Business? <Link to="/BusinessLogin" className="text-primary ml-2">Sign in here</Link></p>
                 </div>
               </div>
             </div>

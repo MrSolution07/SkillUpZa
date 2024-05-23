@@ -30,7 +30,7 @@ function SkillAI() {
   };
 
   const appendMessage = (sender, message) => {
-    const messageLines = message.split('\\\\n');
+    const messageLines = message.split('\\\\\\\\n');
     const newMessages = messageLines.map((line, index) => ({ sender, message: line }));
     setMessages(messages => [...messages, ...newMessages]);
   };
@@ -53,7 +53,7 @@ function SkillAI() {
           {isSending && <p>Sending...</p>}
         </div>
         <div className="flex h-14 shrink-0 items-center border-t border-[#1f2937] bg-[#1f2937] px-4 dark:border-[#f0f0f0] dark:bg-[#f0f0f0]" id="prompt">
-          <div style={{ position: 'relative', width: '100%' }}>
+          <div style={{ display: 'flex', alignItems: 'center', width: '100%' }}>
             <input
               className="flex-1 rounded-md border-0 py-2 px-3 text-sm focus:outline-none dark:text-gray-900"
               placeholder="Type your message..."
@@ -67,13 +67,10 @@ function SkillAI() {
               onClick={handleSend}
               type="button"
               style={{
-                position: 'absolute',
-                right: '10px',
-                top: '50%',
-                transform: 'translateY(-50%)',
                 background: 'transparent',
                 border: 'none',
                 cursor: 'pointer',
+                marginLeft: '10px',
               }}
             >
               <SendIcon style={{ color: '#1f2937' }} />
