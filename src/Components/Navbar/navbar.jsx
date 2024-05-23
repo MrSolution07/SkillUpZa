@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import useWindowPosition from "../../Hooks/useWindowPosition";
+import Contact from "../../Pages/Contact";
 
 
 function Navbar({ className,logo }) {
@@ -26,13 +27,17 @@ function Navbar({ className,logo }) {
               {/* Logo End */}
 
               {/* Logout Button */}
+              <Link to="/LoginPage">
               <button className="logout-button">
                 <i className="far fa-power-off fa-1x"></i> Logout
               </button>
+              </Link>
 
+              <Link to="/contact">
               <button className="help-button">
                 <i className="fas fa-question-circle"></i> Help
               </button>
+              </Link>
 
               {/* Here we can display the user's name and email*/ }
               <div className="navbar-contact-info">

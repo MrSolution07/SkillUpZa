@@ -2,6 +2,8 @@ import "../NewStyle/style.css";
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
+import { IconButton, InputAdornment, TextField } from '@mui/material';
+import { Visibility, VisibilityOff } from '@mui/icons-material';
 
 const RegisterPage = () => {
     const [formData, setFormData] = useState({
@@ -17,13 +19,14 @@ const RegisterPage = () => {
     const [showConfirmPassword, setShowConfirmPassword] = useState(false);
 
     const handleChange = (e) => {
-        setFormData(prev => {
-            return { ...prev, [e.target.name]: e.target.value }
-        });
+        setFormData(prev => ({
+            ...prev,
+            [e.target.name]: e.target.value
+        }));
     };
 
     const validatePassword = (password) => {
-        const strongPasswordPattern = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/; //pattern for password with js simple...
+        const strongPasswordPattern = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
         return strongPasswordPattern.test(password);
     };
 
@@ -59,12 +62,12 @@ const RegisterPage = () => {
             phpData.append("password", formData.password);
             phpData.append("mobile", formData.mobile);
 
-            const response = await axios.post('http://localhost/DATABASE_DATA/register.php', phpData);
+            const response = await axios.post('https://skill-up-za-be8f6d8201c2.herokuapp.com/register.php', phpData);
             const data = response.data;
 
             if (data.success) {
                 alert("Registration successful");
-                window.location.href = '/LoginPage'; // Redirect to LoginPage
+                window.location.href = '/LoginPage';
             } else {
                 setError(data.message);
             }
@@ -101,100 +104,127 @@ const RegisterPage = () => {
                                         </a>
                                     </div>
                                     <div className="text-center auth-logo-text">
-                                        <h4 className="name">SkillUp</h4>
-                                        <p className="text-muted">Get your free SkillUp account now.</p>
+                                        <h4 className="name">Skill UpZA</h4>
+                                        <p className="text-muted">Get your free Skill UpZA account now.</p>
                                     </div>
                                     <form className="form-horizontal auth-form my-4" onSubmit={handleSubmit}>
                                         <div className="form-group">
-                                            <label htmlFor="username">Username</label>
-                                            <div className="input-group mb-3">
-                                                <span className="auth-form-icon">
-                                                    <i className="dripicons-user"></i>
-                                                </span>
-                                                <input
-                                                    type="text"
-                                                    className="form-control"
-                                                    id="username"
-                                                    name="username"
-                                                    value={formData.username}
-                                                    onChange={handleChange}
-                                                    placeholder="Enter username"
-                                                />
-                                            </div>
+                                            <TextField
+                                                fullWidth
+                                                label="Username"
+                                                id="username"
+                                                name="username"
+                                                value={formData.username}
+                                                onChange={handleChange}
+                                                placeholder="Enter username"
+                                                variant="outlined"
+                                                margin="normal"
+                                                InputProps={{
+                                                    startAdornment: (
+                                                        <InputAdornment position="start">
+                                                            <i className="dripicons-user"></i>
+                                                        </InputAdornment>
+                                                    ),
+                                                }}
+                                            />
                                         </div>
                                         <div className="form-group">
-                                            <label htmlFor="useremail">Email</label>
-                                            <div className="input-group mb-3">
-                                                <span className="auth-form-icon">
-                                                    <i className="dripicons-mail"></i>
-                                                </span>
-                                                <input
-                                                    type="email"
-                                                    className="form-control"
-                                                    id="useremail"
-                                                    name="email"
-                                                    value={formData.email}
-                                                    onChange={handleChange}
-                                                    placeholder="Enter Email"
-                                                />
-                                            </div>
+                                            <TextField
+                                                fullWidth
+                                                label="Email"
+                                                type="email"
+                                                id="useremail"
+                                                name="email"
+                                                value={formData.email}
+                                                onChange={handleChange}
+                                                placeholder="Enter Email"
+                                                variant="outlined"
+                                                margin="normal"
+                                                InputProps={{
+                                                    startAdornment: (
+                                                        <InputAdornment position="start">
+                                                            <i className="dripicons-mail"></i>
+                                                        </InputAdornment>
+                                                    ),
+                                                }}
+                                            />
                                         </div>
                                         <div className="form-group">
-                                            <label htmlFor="userpassword">Password</label>
-                                            <div className="input-group mb-3">
-                                                <span className="auth-form-icon">
-                                                    <i className="dripicons-lock"></i>
-                                                </span>
-                                                <input
-                                                    type={showPassword ? "text" : "password"}
-                                                    className="form-control"
-                                                    id="userpassword"
-                                                    name="password"
-                                                    value={formData.password}
-                                                    onChange={handleChange}
-                                                    placeholder="Enter password"
-                                                />
-                                                <button type="button" className="btn btn-secondary" onClick={toggleShowPassword}>
-                                                    {showPassword ? "Hide" : "Show"}
-                                                </button>
-                                            </div>
+                                            <TextField
+                                                fullWidth
+                                                label="Password"
+                                                type={showPassword ? "text" : "password"}
+                                                id="userpassword"
+                                                name="password"
+                                                value={formData.password}
+                                                onChange={handleChange}
+                                                placeholder="Enter password"
+                                                variant="outlined"
+                                                margin="normal"
+                                                InputProps={{
+                                                    startAdornment: (
+                                                        <InputAdornment position="start">
+                                                            <i className="dripicons-lock"></i>
+                                                        </InputAdornment>
+                                                    ),
+                                                    endAdornment: (
+                                                        <InputAdornment position="end">
+                                                            <IconButton onClick={toggleShowPassword}>
+                                                                {showPassword ? <VisibilityOff /> : <Visibility />}
+                                                            </IconButton>
+                                                        </InputAdornment>
+                                                    ),
+                                                }}
+                                            />
                                         </div>
                                         <div className="form-group">
-                                            <label htmlFor="conf_password">Confirm Password</label>
-                                            <div className="input-group mb-3">
-                                                <span className="auth-form-icon">
-                                                    <i className="dripicons-lock-open"></i>
-                                                </span>
-                                                <input
-                                                    type={showConfirmPassword ? "text" : "password"}
-                                                    className="form-control"
-                                                    id="conf_password"
-                                                    name="confirm_password"
-                                                    value={formData.confirm_password}
-                                                    onChange={handleChange}
-                                                    placeholder="Enter Confirm Password"
-                                                />
-                                                <button type="button" className="btn btn-secondary" onClick={toggleShowConfirmPassword}>
-                                                    {showConfirmPassword ? "Hide" : "Show"}
-                                                </button>
-                                            </div>
+                                            <TextField
+                                                fullWidth
+                                                label="Confirm Password"
+                                                type={showConfirmPassword ? "text" : "password"}
+                                                id="conf_password"
+                                                name="confirm_password"
+                                                value={formData.confirm_password}
+                                                onChange={handleChange}
+                                                placeholder="Enter Confirm Password"
+                                                variant="outlined"
+                                                margin="normal"
+                                                InputProps={{
+                                                    startAdornment: (
+                                                        <InputAdornment position="start">
+                                                            <i className="dripicons-lock-open"></i>
+                                                        </InputAdornment>
+                                                    ),
+                                                    endAdornment: (
+                                                        <InputAdornment position="end">
+                                                            <IconButton onClick={toggleShowConfirmPassword}>
+                                                                {showConfirmPassword ? <VisibilityOff /> : <Visibility />}
+                                                            </IconButton>
+                                                        </InputAdornment>
+                                                    ),
+                                                }}
+                                            />
                                         </div>
                                         <div className="form-group">
-                                            <label htmlFor="mo_number">Mobile Number</label>
-                                            <div className="input-group mb-3">
-                                                <span className="auth-form-icon">
-                                                    <i className="dripicons-phone"></i>
-                                                </span>
-                                                <input
-                                                    type="tel"
-                                                    className="form-control"
-                                                    id="mo_number"
-                                                    name="mobile"
-                                                    value={formData.mobile}
-                                                    onChange={handleChange}
-                                                    placeholder="Enter Mobile Number"
-                                                />
-                                            </div>
+                                            <TextField
+                                                fullWidth
+                                                label="Mobile Number"
+                                                type="tel"
+                                                id="mo_number"
+                                                name="mobile"
+                                                value={formData.mobile}
+                                                onChange={handleChange}
+                                                placeholder="Enter Mobile Number"
+                                                variant="outlined"
+                                                margin="normal"
+                                                InputProps={{
+                                                    startAdornment: (
+                                                        <InputAdornment position="start">
+                                                            <i className="dripicons-phone"></i>
+                                                        </InputAdornment>
+                                                    ),
+                                                }}
+                                            />
                                         </div>
                                         <div className="form-group row mt-4">
                                             <div className="col-sm-12">
@@ -214,7 +244,7 @@ const RegisterPage = () => {
                                         </div>
                                         <div className="form-group mb-0 row">
                                             <div className="col-12 mt-2">
-                                                <button disabled={!termsAccepted} className="btn btn-gradient-primary btn-round btn-block waves-effect waves-light" type="submit" id="btnReg">
+                                                <button disabled={!termsAccepted} className="btn btn-gradient-primary btn-round btn-block waves-effect waves-light" type="submit" id="btnLog">
                                                     Register <i className="fas fa-sign-in-alt ml-1"></i>
                                                 </button>
                                             </div>
@@ -223,7 +253,7 @@ const RegisterPage = () => {
                                     </form>
                                 </div>
                                 <div className="m-3 text-center text-muted">
-                                    <p className="">Already have an account ? <a href="/LoginPage" className="text-primary ml-2">Log in</a></p>
+                                    <p className="">Already have an account? <a href="/LoginPage" className="text-primary ml-2">Log in</a></p>
                                 </div>
                             </div>
                         </div>

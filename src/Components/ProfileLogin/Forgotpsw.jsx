@@ -14,7 +14,7 @@ function Forgotpsw() {
                                             <a href="#" className="logo logo-admin"><img src="../assets/images/logo.png" height="55" alt="logo" className="auth-logo" /></a>
                                         </div>
                                         <div className="text-center auth-logo-text">
-                                            <h4 className="mt-0 mb-3 mt-5">Reset Password For SkillUp</h4>
+                                            <h4 className="mt-0 mb-3 mt-5">Reset Password For Skill UpZA</h4>
                                             <p className="text-muted mb-0">Enter your Email and instructions will be sent to you!</p>
                                         </div>
                                         <form className="form-horizontal auth-form my-4" action="index.html">

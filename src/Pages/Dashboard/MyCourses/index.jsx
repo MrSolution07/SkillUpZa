@@ -1,6 +1,5 @@
 import React from "react";
-import DashboardLayout from "../layout";
- // Import the CSS file with styles for course cards
+
 import "../../../../public/assets/css/theme.css";
 import "../../../../public/assets/css/animate.css";
 import "../../../../public/assets/css/bootstrap.css";
@@ -30,6 +29,7 @@ function Mycourses() {
                 <p>{course.heading}</p>
                 <span className="price-rate" >R{course.price}</span>
                 {/* Render other details of the course lesedi can make it */}
+                <p>{course.desscription}</p>
               </div>
             </div>
           ))}

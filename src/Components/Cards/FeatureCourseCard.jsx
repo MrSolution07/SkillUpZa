@@ -60,3 +60,4 @@ FeatureCourseCard.propTypes = {
 };
 
 export default FeatureCourseCard;
+

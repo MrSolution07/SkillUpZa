@@ -164,7 +164,8 @@ const Login = () => {
       phpData.append("username", formData.username);
       phpData.append("password", formData.password);
 
-      axios.post('http://localhost/DATABASE_DATA/Login.php', phpData)
+      axios.post('https://skill-up-za-be8f6d8201c2.herokuapp.com/Login.php', phpData)
+                  
         .then(response => {
           const data = response.data;
           if (data.success) {
@@ -211,7 +212,7 @@ const Login = () => {
                   </div>
                   <div className="text-center auth-logo-text">
                     <h4 className="mt-0 mb-3 mt-5">Welcome Back</h4>
-                    <p className="text-muted mb-0">Sign in to continue to SkillUp</p>
+                    <p className="text-muted mb-0">Sign in to continue to Skill UpZA</p>
                   </div>
                   <form className="form-horizontal auth-form my-4" onSubmit={handleSubmit}>
                     <div className="form-group">
@@ -271,5 +272,3 @@ const Login = () => {
 }
 
 export default Login;
-
-

@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import Preloader from "../../../Components/Preloader";
-import { course } from "../../../Data/course";
+import { course } from "../../../Data/course2";
 import CoursesCardDashboard from "../../../Components/Cards/CoursesCardDashboard";
 import { Link } from "react-router-dom";
 // import CoursesCardDashboard from "../../../Components/Cards/CoursesCardDashboard";

@@ -19,13 +19,14 @@ function PrivacyPolicy(){
     content = (
   <>
   <div className="privacypolicy">
-      <div class="w3-container "> 
+      <div class=""> 
 
-    <div class="w3-panel w3-white w3-border ">
+    <div className="w3-panel w3-white" style={{marginTop:"0px"}}>
       
 
-    <p>Skill UpZA Privacy Policy.</p>
-    <p>Last updated: 22 May 2024</p>
+    <p style={{fontSize:"18px"}}>Privacy Policy</p>
+    <p style={{fontSize:"15px",fontStyle:"italic"}}>Last updated: 22 May 2024</p> <br />
+    <br />
     <p>
       This Privacy Policy describes how Skill UpZA (the "Site", "we", "us", or
       "our") collects, uses, and discloses your personal information when you
@@ -36,20 +37,20 @@ function PrivacyPolicy(){
       and "your" means you as the user of the Services, whether you are a
       customer, website visitor, or another individual whose information we have
       collected pursuant to this Privacy Policy.
-    </p>
+    </p> <br />
     <p>
       Please read this Privacy Policy carefully. By using and accessing any of
       the Services, you agree to the collection, use, and disclosure of your
       information as described in this Privacy Policy. If you do not agree to
       this Privacy Policy, please do not use or access any of the Services.
-    </p>
-    <p>Changes to This Privacy Policy</p>
+    </p><br />
+    <p style={{textDecoration:"none",color:"black"}}>Changes to This Privacy Policy</p>  
     <p>
-      We may up to 22 May 2024 this Privacy Policy from time to time, including
+      We may up to <span style={{fontStyle:"italic"}}>22 May 2024</span> this Privacy Policy from time to time, including
       to reflect changes to our practices or for other operational, legal, or
       regulatory reasons.
-    </p>
-    <p>How We Collect and Use Your Personal Information</p>
+    </p> <br />
+    <p style={{fontSize:"18px"}}>How We Collect and Use Your Personal Information</p>
     <p>
       To provide the Services, we collect and have collected over the past 12
       months personal information about you from a variety of sources, as set
@@ -62,8 +63,8 @@ function PrivacyPolicy(){
       with any applicable legal obligations, enforce any applicable terms of
       service, and to protect or defend the Services, our rights, and the rights
       of our users or others.
-    </p>
-    <p>What Personal Information We Collect</p>
+    </p> <br />
+    <p style={{fontSize:"18px"}}>What Personal Information We Collect</p>
     <p>
       The types of personal information we obtain about you depends on how you
       interact with our Site and use our Services. When we use the term
@@ -71,8 +72,7 @@ function PrivacyPolicy(){
       relates to, describes or can be associated with you. The following
       sections describe the categories and specific types of personal
       information we collect.
-    </p>
-    <p>Information We Collect Directly from You</p>
+    </p> <br />
     <p>
       Information that you directly submit to us through our Services may
       include:
@@ -97,13 +97,13 @@ function PrivacyPolicy(){
       - &nbsp; &nbsp;Customer support information including the information you
       choose to include in communications with us, for example, when sending a
       message through the Services.
-    </p>
+    </p> <br />
     <p>
       Some features of the Services may require you to directly provide us with
       certain information about yourself. You may elect not to provide this
       information, but doing so may prevent you from using or accessing these
-      features.
-    </p>
+      features. 
+    </p> <br />
     <p>Information We Collect through Cookies</p>
     <p>
       We also automatically collect certain information about your interaction
@@ -113,7 +113,7 @@ function PrivacyPolicy(){
       information, browser information, information about your network
       connection, your IP address and other information regarding your
       interaction with the Services.
-    </p>
+    </p><br />
     <p>Information We Obtain from Third Parties</p>
     <p>
       Finally, we may obtain information about you from third parties, including
@@ -141,8 +141,8 @@ function PrivacyPolicy(){
       accuracy of the information provided to us by third parties and are not
       responsible for any third party's policies or practices. For more
       information, see the section below, Third Party Websites and Links.
-    </p>
-    <p>How We Use Your Personal Information</p>
+    </p> <br />
+    <p style={{fontSize:"18px"}}>How We Use Your Personal Information</p>
     <p>
       - &nbsp; &nbsp;Providing Products and Services. We use your personal
       information to provide you with the Services in order to perform our
@@ -178,9 +178,9 @@ function PrivacyPolicy(){
       legitimate interests in order to be responsive to you, to provide
       effective services to you, and to maintain our business relationship with
       you.
-    </p>
-    <p>Cookies</p>
-    <p>
+    </p> <br />
+    <p style={{fontSize:"18px"}}>Cookies</p> 
+    <p> 
       Like many websites, we use Cookies on our Site. use Cookies to power and
       improve our Site and our Services (including to remember your actions and
       preferences), to run analytics and better understand user interaction with
@@ -198,8 +198,8 @@ function PrivacyPolicy(){
       or no longer be available. Additionally, blocking Cookies may not
       completely prevent how we share information with third parties such as our
       advertising partners.
-    </p>
-    <p>How We Disclose Personal Information</p>
+    </p> <br />
+    < p style={{fontSize:"18px"}}>How We Disclose Personal Information</p>
     <p>
       In certain circumstances, we may disclose your personal information to
       third parties for legitimate purposes subject to this Privacy Policy. Such
@@ -231,7 +231,7 @@ function PrivacyPolicy(){
       to respond to subpoenas, search warrants and similar requests), to enforce
       any applicable terms of service, and to protect or defend the Services,
       our rights, and the rights of our users or others.
-    </p>
+    </p> <br />
     <p>
       We have, in the past 12 months disclosed the following categories of
       personal information and sensitive personal information (denoted by *) We
@@ -267,8 +267,8 @@ function PrivacyPolicy(){
       We have "sold" and "shared" (as those terms are defined in applicable law)
       personal information over the preceding 12 months for the purpose of
       engaging in advertising and marketing activities, as follows.
-    </p>
-    <p>Category of Personal Information</p>
+    </p> <br />
+    <p style={{fontSize:"18px"}}>Category of Personal Information</p>
     <p>
       - &nbsp; &nbsp;Identifiers such as basic contact details and certain order
       and account information
@@ -280,10 +280,10 @@ function PrivacyPolicy(){
     <p>
       - &nbsp; &nbsp;Internet or other similar network activity, such as Usage
       Data
-    </p>
-    <p>Categories of Recipients</p>
-    <p>- &nbsp; &nbsp;Business and marketing partners</p>
-    <p>User Generated Content</p>
+    </p> <br />
+    <p style={{fontSize:"18px"}}>Categories of Recipients</p>
+    <p>- &nbsp; &nbsp;Business and marketing partners</p> <br />
+    <p style={{fontSize:"18px"}}>User Generated Content</p>
     <p>
       The Services may enable you to post product reviews and other
       user-generated content. If you choose to submit user generated content to
@@ -297,8 +297,8 @@ function PrivacyPolicy(){
       are not responsible for the privacy or security of any information that
       you make publicly available, or for the accuracy, use or misuse of any
       information that you disclose or receive from third parties.
-    </p>
-    <p>Third Party Websites and Links</p>
+    </p> <br />
+    <p style={{fontSize:"18px"}}>Third Party Websites and Links</p>
     <p>
       Our Site may provide links to websites or other online platforms operated
       by third parties. If you follow links to sites not affiliated or
@@ -313,27 +313,24 @@ function PrivacyPolicy(){
       party. Our inclusion of such links does not, by itself, imply any
       endorsement of the content on such platforms or of their owners or
       operators, except as disclosed on the Services.
-    </p>
-    <p>Children's Data</p>
+    </p> <br /> 
+    <p style={{fontSize:"18px"}}>Children's Data</p>
     <p>
       The Services are not intended to be used by children, and we do not
       knowingly collect any personal information about children. If you are the
       parent or guardian of a child who has provided us with their personal
       information, you may contact us using the contact details set out below to
       request that it be deleted.
-    </p>
+    </p> <br />
     <p>
-      As of the Effective 22 May 2024 of this Privacy Policy, we do not have
+      As of the Effective <span style={{fontStyle:"italic"}}></span>of this Privacy Policy, we do not have
       actual knowledge that we "share" or "sell" (as those terms are defined in
       applicable law) personal information of individuals under 16 years of age.
-    </p>
-    <p>Security and Retention of Your Information</p>
+    </p> <br />
+    <p style={{fontSize:"18px"}}>Security and Retention of Your Information</p>
     <p>
       Please be aware that no security measures are perfect or impenetrable, and
-      we cannot guarantee "perfect security." In addition, any&nbsp;
-    </p>
-    <p>&nbsp;</p>
-    <p>
+      we cannot guarantee "perfect security." In addition, any
       information you send to us may not be secure while in transit. We
       recommend that you do not use unsecure channels to communicate sensitive
       or confidential information to us.
@@ -343,8 +340,8 @@ function PrivacyPolicy(){
       such as whether we need the information to maintain your account, to
       provide the Services, comply with legal obligations, resolve disputes or
       enforce other applicable contracts and policies.
-    </p>
-    <p>Your Rights and Choices</p>
+    </p> <br />
+    <p style={{fontSize:"18px"}}>Your Rights and Choices</p>
     <p>
       Depending on where you live, you may have some or all of the rights listed
       below in relation to your personal information. However, these rights are
