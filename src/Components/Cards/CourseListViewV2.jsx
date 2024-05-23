@@ -5,7 +5,6 @@ function CourseListViewV2({ course }) {
   const {
     img5,
     courseLink,
-    author,
     title,
     heading,
     price,

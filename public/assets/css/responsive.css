@@ -1052,6 +1052,11 @@
 		visibility: visible;
 		opacity: 1;
 	}
+	button.btn.btn-secondary {
+		max-width:100%;
+		max-height: fit-content;   
+		width: 70px;
+	}
 
 }
 
@@ -1065,6 +1070,75 @@
 	#card-slider {
 	    height: 1070px;
 	}	
+	
+	
+}
+@media (max-width: 768px) {
+  .home3-teacher .sec-title {
+    font-size: 1.8rem;
+  }
+
+  .home3-teacher .sec-desc {
+    font-size: 1rem;
+  }
+
+  .home3-teacher .teacher-card {
+    width: 160px;
+  }
+
+  .home3-teacher .teacher-card h4 {
+    font-size: 1rem;
+  }
+
+  .home3-teacher .teacher-card p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .home3-teacher .sec-title {
+    font-size: 1.6rem;
+  }
+
+  .home3-teacher .sec-desc {
+    font-size: 0.9rem;
+  }
+
+  .home3-teacher .teacher-card {
+    width: 140px;
+  }
+
+  .home3-teacher .teacher-card h4 {
+    font-size: 0.9rem;
+  }
+
+  .home3-teacher .teacher-card p {
+    font-size: 0.8rem;
+  }
+	.my-row {
+		max-width: fit-content;
+		justify-content: center;
+		display: inline-block;
+	}
+	.col-lg-3 .col-md-6{
+		max-width: 50%;
+	}
+	.teacher-meta{
+		max-width: max-content;
+	}
+	.abblockqoute{
+		display: inline;
+		margin-right: 5%;
+
+	}
+	.abblockqoute p{
+		align-items: center;
+	}
+	.page-banner{
+		background-size: cover ;
+		position: relative;
+		background-position: left;
+	}
 }
 
 
