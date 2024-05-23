@@ -2,7 +2,7 @@ import TeacherCard from "../../../Components/Cards/TeacherCard";
 import Header from "../../../Components/Social/Header"
 function Jobs() {
   return (
-            <div className="container">
+            <div className="container" style={{marginTop:"10%"}}>
            <Header/>
             <div className="row">
                 <h2 className="sec-title mb-15">

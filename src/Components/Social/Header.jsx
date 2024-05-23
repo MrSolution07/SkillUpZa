@@ -18,7 +18,7 @@ const Header = () => {
       </Link>
       <Link to="/SkillAI">
         <div className="top-icon">
-          <img className="home" src="public\assets\images\icons\icons8-ai-64.png" alt="skillai" style={{ height: '25px', width: '30px', marginLeft: '2px' }} />
+          <img className="home" src="public\assets\images\icons\icons8-ai-64.png" alt="skillai" style={{ height: '25px', width: '30px', marginLeft: '9px' }} />
           <label>Skill AI</label>
         </div>
       </Link>
@@ -28,10 +28,22 @@ const Header = () => {
           <label>Interview </label>
         </div>
       </Link>
-      <Link to="">
+      <Link to="/Jobs">
         <div className="top-icon">
           <img className="home" src="/public/assets/images/icons/chat-square-plain-2-svgrepo-com.svg" alt="jobs" />
           <label>Jobs </label>
+        </div>
+      </Link>
+      <Link to="/Courses">
+        <div className="top-icon">
+          <img className="home" src="/public/assets/images/icons/chat-square-plain-2-svgrepo-com.svg" alt="courses" />
+          <label>Courses </label>
+        </div>
+      </Link>
+      <Link to="/MyCourses">
+        <div className="top-icon">
+          <img className="home" src="/public/assets/images/icons/chat-square-plain-2-svgrepo-com.svg" alt="mycourses" />
+          <label>My Courses </label>
         </div>
       </Link>
 
@@ -52,7 +64,7 @@ const Header = () => {
       </Link>
       <Link to="/UserSettings">
         <div className="top-icon">
-          <img className="home" src="public\assets\images\icons\icons8-settings.svg" />
+          <img className="home" src="public\assets\images\icons\icons8-settings1.svg" />
           <label> Settings </label>
         </div>
       </Link>

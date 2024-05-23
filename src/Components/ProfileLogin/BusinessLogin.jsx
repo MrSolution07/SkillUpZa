@@ -75,12 +75,27 @@ function CompanyLogin() {
                                        <form className="form-horizontal auth-form my-4" onSubmit={handleSubmit}>
                                            <div className="form-group">
                                                <label htmlFor="companyname">Company Name</label>
-                                               <div className="input-group mb-3">
-                                                   <span className="auth-form-icon">
-                                                       <i className="dripicons-user"></i>
-                                                   </span>
-                                                   <input type="text" className="form-control" id="companyname" name="businessName" value={formData.businessName} onChange={handleChange} placeholder="Enter Company Name" />
-                                               </div>
+                                               <TextField
+                                                   variant="outlined"
+                                                   fullWidth
+                                                   id="companyname"
+                                                   name="businessName"
+                                                   type="text"
+                                                   value={formData.businessName}
+                                                   onChange={handleChange}
+                                                   placeholder="Enter Company Name"
+                                                   InputProps={{
+                                                       startAdornment: (
+                                                           <InputAdornment position="start">
+                                                               <i className="dripicons-user"></i>
+                                                           </InputAdornment>
+                                                       ),
+                                                       sx: {
+                                                           height: 36,
+                                                           borderRadius: 2,
+                                                       }
+                                                   }}
+                                               />
                                            </div>
                                            <div className="form-group">
                                                <label htmlFor="userpassword">Password</label>

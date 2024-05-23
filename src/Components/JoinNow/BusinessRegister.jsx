@@ -255,7 +255,7 @@ const BusinessRegisterPage = () => {
                                     </form>
                                 </div>
                                 <div className="m-3 text-center text-muted">
-                                    <p className="">Already have an account ? <a href="/BusinessLoginPage" className="text-primary ml-2">Log in</a></p>
+                                    <p className="">Already have an account ? <a href="/BusinessLogin" className="text-primary ml-2">Log in</a></p>
                                 </div>
                             </div>
                         </div>

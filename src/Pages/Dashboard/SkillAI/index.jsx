@@ -38,7 +38,7 @@ function SkillAI() {
   return (
     <>
       <Homeheader />
-      <div className="ai-body" style={{ backgroundColor: 'transparent', border: '0px solid', height: '80vh', overflow: 'auto', display: 'flex', flexDirection: 'column', marginBottom:"25px" }}>
+      <div className="ai-body" style={{ backgroundColor: 'transparent', border: '0px solid', height: '80vh', overflow: 'visible', display: 'flex', flexDirection: 'column', marginBottom: "25px" }}>
         <header className="">
           <div className="title">Skill AI</div>
         </header>
@@ -61,7 +61,7 @@ function SkillAI() {
               onChange={(e) => setUserInput(e.target.value)}
               onKeyDown={handleKeyDown}
               type="text"
-              style={{ backgroundColor: '#d1d5db', paddingRight: '40px' }} 
+              style={{ backgroundColor: '#d1d5db' }}
             />
             <button
               onClick={handleSend}
@@ -76,7 +76,7 @@ function SkillAI() {
                 cursor: 'pointer',
               }}
             >
-              <SendIcon style={{ color: '#1f2937',marginRight:"280px" }} />
+              <SendIcon style={{ color: '#1f2937' }} />
             </button>
           </div>
         </div>
