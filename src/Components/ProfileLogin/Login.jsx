@@ -31,14 +31,15 @@ const Login = () => {
       phpData.append("username", formData.username);
       phpData.append("password", formData.password);
 
-      axios.post('http://localhost/DATABASE_DATA/Login.php', phpData)
+      axios.post('https://skill-up-za-be8f6d8201c2.herokuapp.com/Login.php', phpData)
+                  
         .then(response => {
           const data = response.data;
 
           if (data.success) {
             localStorage.setItem('username', formData.username);
             alert("Login successful");
-            window.location.href = '/dashboard'; // Redirect to dashboard on successful login
+            window.location.href = '/AfterLogin'; // Redirect to dashboard on successful login
           } else {
             setError("Login failed. Please check your credentials.");
           }
