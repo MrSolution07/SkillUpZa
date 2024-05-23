@@ -64,7 +64,7 @@ function CoursesCardDashboard({ course, className, swiper }) {
   const handleAddCourse = async () => {
     try {
       const username = localStorage.getItem("username");
-      const response = await axios.post('http://localhost/DATABASE_DATA/add_course.php', {
+      const response = await axios.post('https://skill-up-za-be8f6d8201c2.herokuapp.com/add_course.php', {
         username: username,
         courseName: course.title,
       });

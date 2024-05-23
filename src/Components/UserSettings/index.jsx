@@ -36,7 +36,7 @@ const AccountSettingsCard = () => {
   const handleAccountSettingsSubmit = async (event) => {
     event.preventDefault();
     try {
-      const response = await axios.post('http://localhost/DATABASE_DATA/update.php', {
+      const response = await axios.post('https://skill-up-za-be8f6d8201c2.herokuapp.com/update.php', {
         username,
         email,
         mobileNumber
@@ -63,7 +63,7 @@ const AccountSettingsCard = () => {
   const handlePasswordChangeSubmit = async (event) => {
     event.preventDefault();
     try {
-      const response = await axios.post('http://localhost/DATABASE_DATA/update.php', {
+      const response = await axios.post('https://skill-up-za-be8f6d8201c2.herokuapp.com/update.php', {
         username,
         currentPassword,
         newPassword
@@ -79,7 +79,7 @@ const AccountSettingsCard = () => {
   const handleDeleteAccount = async () => {
     if (window.confirm('Are you sure you want to delete your account? This action cannot be undone.')) {
       try {
-        const response = await axios.post('http://localhost/DATABASE_DATA/delete.php', {
+        const response = await axios.post('https://skill-up-za-be8f6d8201c2.herokuapp.com/delete.php', {
           username: localStorage.getItem('username')
         });
         const data = response.data;
