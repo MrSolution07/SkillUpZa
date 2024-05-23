@@ -4260,7 +4260,7 @@ input[type="button"].btn-block {
 }
 
 .nav-tabs {
-  border-bottom: 1px solid #dee2e6;
+  /* border-bottom: 1px solid #dee2e6; */
 }
 
 .nav-tabs .nav-item {
@@ -5122,6 +5122,20 @@ a.badge:hover, a.badge:focus {
 .btn .badge {
   position: relative;
   top: -1px;
+}
+.input-group {
+  position: relative;
+}
+
+.input-group .form-control {
+  padding-right: 40px;
+}
+
+.input-group .MuiIconButton-root {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .badge-pill {

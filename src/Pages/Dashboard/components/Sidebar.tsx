@@ -91,7 +91,7 @@ const Sidebar = () => {
                   alt="profile-user"
                   width="100px"
                   height="100px"
-                  src={`../../assets/user.png`}
+                  src={`public/assets/images/logo.png`}
                   style={{ cursor: "pointer", borderRadius: "50%" }}
                 />
               </Box>
@@ -136,26 +136,26 @@ const Sidebar = () => {
             />
             <Item
               title="SkillUp AI"
-              to="/BussinessAi"
+              to="/SkillAI"
               icon={<ContactsOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}
             />
-            {/* <Item
+            <Item
               title="My Courses"
               to="/Mycourses"
               icon={<ReceiptOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}
-            /> */}
+            />
 
-            {/* <Item
+            <Item
               title="Courses"
               to="/Courses"
               icon={<ReceiptOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}
-            /> */}
+            />
 
 
             <Typography
@@ -173,7 +173,7 @@ const Sidebar = () => {
               setSelected={setSelected}
             />
             
-            {/* <Item
+            <Item
               title="FAQ Page"
               to="/Faq"
               icon={<HelpOutlineOutlinedIcon />}

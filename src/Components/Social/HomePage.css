@@ -12,6 +12,9 @@
     justify-content: space-between;
     align-items: center;
     z-index: 100;
+    font-size: smaller;
+    
+    
 }
 main {
     height: auto;
@@ -25,48 +28,7 @@ p {
 padding: 0;
 margin: 0;
 }
-.logo {
-    height: 35px;
-    margin-left: 5px;
-}
-.left-section {
-    display: flex;
-    align-items: center;
-    width: 300px;
-    margin-right: 120px;
-}
-.middle-section {
-    display: flex;
-    flex: 1;
-    justify-content: space-between;
-    align-items: center;
-}
-.right-section {
-    display: flex;
-    border-left: 1px solid rgba(199, 192, 192, 0.5);
-    width: 140px;
-    margin-left: 30px;
-    justify-content: space-between;
-    padding-left: 20px;
 
-}
-.search-box {
-   padding: 7px;
-   border: 1px solid rgba(199, 192, 192, 0.5);
-   background-color: rgba(175, 211, 233, 0.349);
-   width: 300px;
-   background-image: url(icons/search-magnifying-glass-svgrepo-com.svg);
-   background-size: 16px;
-   background-repeat: no-repeat;
-   outline: 0;
-   background-position: 10px; 
-
-
-}
-.search-box::placeholder {
-font-size: 14px;
-padding-left: 25px;
-}
 
 .home {
     height: 23px;
@@ -86,7 +48,7 @@ padding-left: 25px;
 }
 
 .top-icon {
-    margin-top: 10px;
+margin-top: 15px;
    display: flex; 
    flex-direction: column;
    opacity: 0.6;
@@ -97,7 +59,7 @@ padding-left: 25px;
     opacity: 1;
 }
 .notification {
-    margin-top: 10px;
+    margin-top: 16px;
     height: 23px;
     margin-bottom: 0px;
 }
@@ -111,23 +73,12 @@ padding-left: 25px;
  .notification-container:hover {
      opacity: 1;
  }
- .notification-alert {
-    position: absolute;
-    right: 15px;
-    top: -5px;
-    background-color: red;
-    padding: 0px 4px;
-    border-radius: 50%;
-    color: white;
-    opacity: 1;
- }
-label {
-    font-size: 11px;
-} 
+ 
 
 .main {
     display: flex;
     justify-content: space-between;
+    
 
 }
 .left-main {
@@ -146,7 +97,8 @@ label {
     left:  85px;
     border: 1px solid rgba(199, 192, 192, 0.5);
     border-radius: 10px;
-    background: radial-gradient(ellipse at center, #0E2A47 0%, #1D4D75 30%, #2A7DAD 60%, #58C2FF 100%);    width: 230px;
+    background: radial-gradient(ellipse at center, #0E2A47 0%, #1D4D75 30%, #2A7DAD 60%, #58C2FF 100%);
+    width: 230px;
     margin-right: 25px; 
     display: flex;
     flex-direction: column;
@@ -202,14 +154,18 @@ label {
     display: flex;
     padding: 10px 20px;
     
+    
 }
+
+
 .post {
     flex: 1;
     border: 1px solid rgba(199, 192, 192, 0.5);
     background-color: transparent;
     border-radius: 40px;
     height: 50px;
-    margin-top:10px;
+    
+
 }
 .post::placeholder {
     padding-left: 10px;
@@ -247,6 +203,7 @@ label {
     margin-bottom: 5px;
     padding: 5px 12px;
     flex: 1;
+    margin-top: 35px;
 
    
 }

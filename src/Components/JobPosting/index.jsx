@@ -26,7 +26,7 @@ const JobPostingForm = () => {
       formData.append('jobImage', jobImage);
     }
 
-    fetch('http://localhost/DATABASE_DATA/JobPosting.php', {
+    fetch('https://skill-up-za-be8f6d8201c2.herokuapp.com/JobPosting.php', {
       method: 'POST',
       body: formData,
     })

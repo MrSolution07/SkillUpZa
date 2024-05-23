@@ -67,7 +67,7 @@ function SinglePost() {
                   
                   <div className="post-tags">
                     <h5>Tags:</h5>
-                    <a href="#">SkillUp LMS</a>
+                    <a href="#">Skill UpZA LMS</a>
                     <a href="#">Design</a>
                     <a href="#">General</a>
                   </div>
@@ -76,8 +76,9 @@ function SinglePost() {
                     <a className="fac" href="#">
                       <i className="social_facebook"></i>
                     </a>
-                    <a className="twi" href="#">
-                      <i className="social_twitter"></i>
+                    <a className="twi" href="https://twitter.com/_Skill_Up_/status/1784949119582195767?t=PPYZjB1fn0GIJJ5XNoYBKw&s=19">
+                      <i><img src ="public/assets/images/twitter-x.png" alt = ""/>
+                      </i>
                     </a>
                     <a className="goo" href="#">
                       <i className="social_googleplus"></i>
