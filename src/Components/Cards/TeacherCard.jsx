@@ -12,7 +12,7 @@ function TeacherCard({ teacher, swiper }) {
       </div>
       <div className="teacher-meta">
         <h5>
-          <Link to="">{name}</Link>
+          <Link to="https://za.indeed.com/?from=gnav-homepage">{name}</Link>
         </h5>
         <p>{subject}</p>
       </div>

@@ -42,11 +42,31 @@ function DashboardPage({ children }) {
           </Box>
           <Box width="35%" display="flex" flexDirection="column" justifyContent="flex-start" ml={4}>
             {/* DOWNLOAD REPORTS BUTTON */}
-            <Card sx={{ backgroundColor: colors.blueAccent[700], color: colors.grey[100], fontSize: "14px", fontWeight: "bold", padding: "10px 20px", mb: 4, textAlign: "center" }}>
-              <Button sx={{ backgroundColor: colors.blueAccent[700], color: colors.grey[100], fontSize: "14px", fontWeight: "bold", padding: "10px 20px" }}>
-                <DownloadOutlinedIcon sx={{ mr: "10px" }} /> Download Reports
-              </Button>
-            </Card>
+            <Card
+  sx={{
+    backgroundColor: colors.blueAccent[700],
+    color: colors.grey[100],
+    fontSize: "14px",
+    fontWeight: "bold",
+    padding: "10px 20px",
+    mb: 4,
+    textAlign: "center",
+  }}
+>
+  <Button
+    sx={{
+      backgroundColor: colors.blueAccent[700],
+      color: colors.grey[100],
+      fontSize: "14px",
+      fontWeight: "bold",
+      padding: "10px 20px",
+    }}
+  >
+    <DownloadOutlinedIcon sx={{ mr: "10px" }} />
+    Download Reports
+  </Button>
+</Card>
+
             {/* CALENDAR COMPONENT */}
             <Card sx={{ padding: "20px" }}>
               <Calendar />
