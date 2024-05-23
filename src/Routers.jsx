@@ -46,7 +46,10 @@ import HomePage from "./Components/Social/HomePage.jsx";
 
 const router = createBrowserRouter([
 
- 
+  {
+    path: "/Interview",
+    element: <Interview />,
+  },
   {
     path: "/MyCourses",
     element: <MyCourses />,

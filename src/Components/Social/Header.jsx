@@ -1,7 +1,30 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import axios from 'axios';
 import { Link } from 'react-router-dom';
 
 const Header = () => {
+  const [profilePicture, setProfilePicture] = useState('');
+
+  useEffect(() => {
+      const fetchProfilePicture = async () => {
+          try {
+              const username = localStorage.getItem('username');
+              const response = await axios.get('http://localhost/DATABASE_DATA/getpicture.php', {
+                  params: { username }
+              });
+              const data = response.data;
+              if (data.success) {
+                  setProfilePicture(`data:${data.type};base64,${data.image}`);
+              } else {
+                  console.error('Error fetching profile picture:', data.message);
+              }
+          } catch (error) {
+              console.error('Error fetching profile picture:', error);
+          }
+      };
+
+      fetchProfilePicture();
+  }, []);
   return (
     <header className="header">
       <Link to="/HomePage">
@@ -47,7 +70,7 @@ const Header = () => {
         <label>Notifications</label>
       </div>
       <div className="me-icon">
-        <img className="dp" src="\public\assets\images\home3\teacher\3.png" alt="Me" />
+        <img className="dp" src={profilePicture} alt="Me" />
         <label style={{ opacity: 0.6, fontWeight: "bold" }}>Me <i className="fa fa-sort-desc"></i></label>
       </div>
       <Link to="/UserFAQ">
