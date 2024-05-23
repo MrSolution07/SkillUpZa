@@ -4,7 +4,7 @@ const LeftMain1 = () => {
   return (
     <div className="left-main-1">
       <img className="banner" src="/public/assets/images/photos/post.jpg" alt="Banner" height="59px" width="500px" />
-      <img className="my-picture" src="" alt="Profile Picture" />
+      <img className="my-picture" src=""alt="Profile Picture" />
       <div className="about">
         <h5>{localStorage.getItem('username')}</h5>
         <p>IT Student<br />Optimistic</p>
