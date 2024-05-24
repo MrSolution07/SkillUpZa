@@ -24,7 +24,7 @@ const BusinessRegisterPage = () => {
         }));
     };
     const validatePassword = (password) => {
-        const strongPasswordPattern = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/; //pattern for password with js simple...
+        const strongPasswordPattern = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&~#^_+=|\\(){}[\]:;<>,./-])[A-Za-z\d@$!%*?&~#^_+=|\\(){}[\]:;<>,./-]{8,}$/; //pattern for password with js simple...
         return strongPasswordPattern.test(password);
     };
 
