@@ -108,7 +108,7 @@ const AccountSettingsCard = () => {
   return (
   <>
     <Homeheader />
-    <Container>
+    <Container style={{marginTop:"10%"}}>
       <Row className="mb-4">
         <Col xs={12} md={12}>
           <Card className="mb-4" style={{ borderRadius: '15px', position: 'relative' }}>
