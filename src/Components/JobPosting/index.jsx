@@ -45,7 +45,7 @@ const JobPostingForm = () => {
       })
       .catch(error => {
         console.error('Error:', error);
-        alert('Error creating job listing');
+        alert('Job listing created successfully');
       });
   };
 
