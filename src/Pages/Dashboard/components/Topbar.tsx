@@ -18,9 +18,10 @@ const Topbar = () => {
 
   return (
     <Box display="flex" justifyContent="space-between" p={2}>
+      {/* what the point of having the search bar ? */}
       {/* SEARCH BAR */}
       {/* @ts-ignore */}
-      <Box
+      {/* <Box
         display="flex"
         backgroundColor={colors.primary[400]}
         borderRadius="3px"
@@ -28,9 +29,12 @@ const Topbar = () => {
         <InputBase sx={{ ml: 2, flex: 1 }} placeholder="Search" />
         <IconButton type="button" sx={{ p: 1 }}>
           <SearchIcon />
-        </IconButton>
-      </Box> 
+        </IconButton> 
+      </Box>  */}
+      
       {/* ICONS */}
+
+
       <Box display="flex">
         <IconButton onClick={colorMode.toggleColorMode}>
           {theme.palette.mode === "dark" ? (
@@ -44,13 +48,11 @@ const Topbar = () => {
           <NotificationsOutlinedIcon />
         </IconButton>
         <Link to="/CompanySettings">
-        <IconButton>
-          <SettingsOutlinedIcon />
-        </IconButton>
+          <IconButton>
+            <SettingsOutlinedIcon />
+          </IconButton>
         </Link>
-        <IconButton>
-          <PersonOutlinedIcon />
-        </IconButton>
+
       </Box>
     </Box>
   );

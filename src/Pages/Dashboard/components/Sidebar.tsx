@@ -129,18 +129,20 @@ const Sidebar = () => {
             </Typography>
             <Item
               title="Profile"
-              to="/UserSettings"
+              to="/CompanySettings"
               icon={<PeopleOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}
             />
             <Item
-              title="Skill AI"
-              to="/SkillAI"
+              title="SkillUp AI"
+              to="/BussinessAi"
               icon={<ContactsOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}
             />
+            
+
 
             <Typography
               variant="h6"
@@ -150,12 +152,20 @@ const Sidebar = () => {
               Jobs
             </Typography>
             <Item
+              title="Jobs/Interships"
+              to="/Jobs"
+              icon={<PersonOutlinedIcon />}
+              selected={selected}
+              setSelected={setSelected}
+            />
+            
+            {/* <Item
               title="FAQ Page"
               to="/Faq"
               icon={<HelpOutlineOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}
-            />
+            />  */}
 
             <Typography
               variant="h6"

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Card, Form, Button, Container, Row, Col } from 'react-bootstrap';
-
+import DashboardLayout from "../../Pages/Dashboard/layout";
 const CompanySettingsCard = () => {
   const [username, setUsername] = useState('');
   const [email, setEmail] = useState('');
@@ -11,6 +11,8 @@ const CompanySettingsCard = () => {
 
 
   return (
+    <>
+    <DashboardLayout>
     <Container>
       <Row className="mb-4">
         <Col xs={12} md={12}>
@@ -127,6 +129,8 @@ const CompanySettingsCard = () => {
         </Col>
       </Row>
     </Container>
+    </DashboardLayout>
+  </>
   );
 };
 

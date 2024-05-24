@@ -1,11 +1,10 @@
-
 .header {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     height: 60px;
-    background-color: white;
+    background-color:  #f8f9fa;
     padding-left: 160px;
     padding-right: 160px;
     display: flex;
@@ -16,6 +15,7 @@
     
     
 }
+
 main {
     height: auto;
     font-family: Arial, Helvetica, sans-serif;
@@ -31,45 +31,45 @@ margin: 0;
 
 
 .home {
-    height: 23px;
-    margin-bottom: 0px;
+    margin-top: 18px ;
+    
 }
 .dp {
-    margin-top: 10px;
+    margin-top: 18px;
     height: 30px;
+    width: 30px;
     border-radius: 50%;
-    
+    margin-right: 5px;
 }
 .me-icon {
     display: flex; 
     flex-direction: column;
     padding-top: 2px;
    padding-bottom: 2px;
+   color: black;
 }
 
+.top-icon .home {
+    width: 20px;
+    height: 20px;
+    color: #000;
+  }
+
+ 
+
 .top-icon {
-margin-top: 15px;
-   display: flex; 
-   flex-direction: column;
-   opacity: 0.6;
-   padding-top: 2px;
-   padding-bottom: 2px;
-}
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0 10px;
+    color: #000;
+  }
 .top-icon:hover {
     opacity: 1;
 }
-.notification {
-    margin-top: 16px;
-    height: 23px;
-    margin-bottom: 0px;
-}
-.notification-container {
-    display: flex; 
-    flex-direction: column;
-    padding-top: 2px;
-    padding-bottom: 2px;
-    position: relative;
- }
+
+
  .notification-container:hover {
      opacity: 1;
  }
@@ -334,16 +334,17 @@ margin-top: 15px;
   }
 
   .top-icon,
-  .notification-container,
   .me-icon {
-      margin-right: 10px;
+      margin-right: 7px;
+      width: 15px;
   }
+  
 
   .top-icon label,
-  .notification-container label,
   .me-icon label {
       display: none;
   }
+  
 
   main {
       padding-left: 10px;

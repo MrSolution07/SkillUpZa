@@ -1,7 +1,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { Card, Form, Button, Container, Row, Col } from 'react-bootstrap';
-
+import DashboardLayout from "../../Pages/Dashboard/layout";
 const JobPostingForm = () => {
   const [jobName, setJobName] = useState('');
   const [jobDescription, setJobDescription] = useState('');
@@ -56,6 +56,8 @@ const JobPostingForm = () => {
   };
 
   return (
+    <>
+    <DashboardLayout>
     <Container>
       <Row className="justify-content-center">
         <Col xs={12} md={8}>
@@ -111,6 +113,8 @@ const JobPostingForm = () => {
         </Col>
       </Row>
     </Container>
+  </DashboardLayout>
+</>
   );
 };
 

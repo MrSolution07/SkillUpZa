@@ -4,6 +4,7 @@ import { Visibility, VisibilityOff } from '@mui/icons-material';
 import IconButton from '@mui/material/IconButton';
 import InputAdornment from '@mui/material/InputAdornment';
 import TextField from '@mui/material/TextField';
+import { Link } from 'react-router-dom';
 
 function CompanyLogin() {
    const [formData, setFormData] = useState({
@@ -132,7 +133,8 @@ function CompanyLogin() {
                                            </div>
                                            <div className="form-group mb-0 row">
                                                <div className="col-12 mt-2">
-                                                   <button className="btn btn-gradient-primary btn-round btn-block waves-effect waves-light" id="btnLog" type="submit">Log In <i className="fas fa-sign-in-alt ml-1"></i></button>
+                                               <Link to="/dashboard">
+                                                   <button className="btn btn-gradient-primary btn-round btn-block waves-effect waves-light" id="btnLog" type="submit">Log In <i className="fas fa-sign-in-alt ml-1"></i></button></Link>
                                                </div>
                                            </div>
                                        </form>

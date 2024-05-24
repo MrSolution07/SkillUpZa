@@ -1,11 +1,9 @@
 import TeacherCard from "../../../Components/Cards/TeacherCard";
-
-import DashboardLayout from "../layout";
-function Jobs() {
+import Header from "../../../Components/Social/Header"
+function UserJobs() {
   return (
-    <>
-    <DashboardLayout>
             <div className="container" style={{marginTop:"10%"}}>
+           <Header/>
             <div className="row">
                 <h2 className="sec-title mb-15">
                   <span></span> 
@@ -111,11 +109,9 @@ function Jobs() {
               />
             </div>
           </div>
-          </DashboardLayout>
-    </>
 
         
     )
 }
 
-    export default Jobs;
+export default UserJobs;
