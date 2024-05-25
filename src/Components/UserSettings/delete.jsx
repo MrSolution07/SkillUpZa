@@ -2,8 +2,33 @@ import React from 'react';
 import { Card, Button, Container, Row, Col } from 'react-bootstrap';
 import HomeHeader from "../../Components/Social/Header";
 import './passwordcard.css';
+import axios from 'axios'; // Make sure to import axios
 
-const DeleteAccountCard = ({ handleDeleteAccount }) => {
+const handleDeleteAccount = async () => {
+  if (window.confirm('Are you sure you want to delete your account? This action cannot be undone.')) {
+    try {
+      const response = await axios.post('http://localhost/DATABASE_DATA/delete.php', {
+        username: localStorage.getItem('username')
+      });
+      const data = response.data;
+      console.log(localStorage.getItem('username'));
+
+      console.log('Delete account response:', data);
+      if (data.success) {
+        localStorage.removeItem('username');
+        window.alert('Account deleted successfully');
+        window.location.href = '/'; // Redirect to home page
+      } else {
+        window.alert('Error deleting account: ' + data.message);
+      }
+    } catch (error) {
+      console.error('Error deleting account:', error);
+      window.alert('Error deleting account');
+    }
+  }
+};
+
+const DeleteAccountCard = () => {
   return (
     <div className="deletecard">
       <HomeHeader />
@@ -26,3 +51,4 @@ const DeleteAccountCard = ({ handleDeleteAccount }) => {
 };
 
 export default DeleteAccountCard;
+
