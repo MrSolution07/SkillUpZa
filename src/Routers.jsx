@@ -24,6 +24,9 @@ import AfterLogin from "./Pages/AfterLogin";
 import Interview from "./Components/Interview/index.jsx";
 import CompanySettings from "./Components/CompanySettings";
 
+import ChangePasswordCard from "./Components/UserSettings/changepassword.jsx";
+import DeleteAccountCard from "./Components/UserSettings/delete.jsx";
+import ProfileCard from "./Components/UserSettings/profilecard.jsx";
 
 // dashboard here
 
@@ -52,7 +55,18 @@ const router = createBrowserRouter([
     path: "/BussinessAi",
     element: <BussinessAi />,
   },
- 
+  {
+    path: "/ChangePasswordCard",
+    element: <ChangePasswordCard/>
+  },
+  {
+    path: "/DeleteAccountCard",
+    element: <DeleteAccountCard/>
+  },
+  {
+    path: "ProfileCard",
+    element: <ProfileCard/>
+  },
   {
     path: "/MyCourses",
     element: <MyCourses />,

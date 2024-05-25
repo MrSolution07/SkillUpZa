@@ -407,6 +407,7 @@
     .navbar-expand-lg .navbar-nav{
     	padding: 5px 0;
     }
+		
     .navbar.navbar-expand-lg .navbar-toggler {
 	    width: 40px;
 	    height: 35px;
@@ -418,6 +419,7 @@
 	    border: none;
 	    font-size: 20px;
 	    line-height: 34px;
+			top: auto;
 	}
 	.navbar.navbar-expand-lg .navbar-collapse {
 	    position: absolute;
@@ -539,6 +541,10 @@
 	}
 	.ab-social a{
 		margin-bottom: 8px;
+	}
+	button.navbar-toggler{
+			margin-top: 5px;
+			margin-bottom: 8px;
 	}
 	.user-btn{
 		right: 23%;
@@ -1057,6 +1063,10 @@
 		max-height: fit-content;   
 		width: 70px;
 	}
+		.container-fluid {
+			margin-left: 9%;
+		}
+	
 
 }
 
@@ -1070,8 +1080,14 @@
 	#card-slider {
 	    height: 1070px;
 	}	
-	
-	
+	.header-06 span{
+		display: none;
+	}
+	.header-06 button{
+		display: inline-block;
+		
+	}
+
 }
 @media (max-width: 768px) {
   .home3-teacher .sec-title {
@@ -1081,6 +1097,14 @@
   .home3-teacher .sec-desc {
     font-size: 1rem;
   }
+	.container-fluid {
+			margin-left: 0;
+		}
+
+		.afterlogin{
+			margin-right: 12%;
+		}
+		
 
   .home3-teacher .teacher-card {
     width: 160px;

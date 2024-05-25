@@ -12,8 +12,6 @@
     align-items: center;
     z-index: 100;
     font-size: smaller;
-    
-    
 }
 
 main {
@@ -23,17 +21,22 @@ main {
     padding-left: 150px;
     padding-right: 150px;
     background-color: darkcyan;
-}
-p {
-padding: 0;
-margin: 0;
+    transition: padding-top 0.3s ease; /* Add transition */
 }
 
+.main-with-dropdown {
+    padding-top: 150px; /* Adjust this value as needed */
+}
+
+p {
+    padding: 0;
+    margin: 0;
+}
 
 .home {
-    margin-top: 18px ;
-    
+    margin-top: 18px;
 }
+
 .dp {
     margin-top: 18px;
     height: 30px;
@@ -41,21 +44,53 @@ margin: 0;
     border-radius: 50%;
     margin-right: 5px;
 }
+
 .me-icon {
-    display: flex; 
+    display: flex;
     flex-direction: column;
     padding-top: 2px;
-   padding-bottom: 2px;
-   color: black;
+    padding-bottom: 2px;
+    color: black;
 }
 
 .top-icon .home {
     width: 20px;
     height: 20px;
     color: #000;
-  }
+}
 
- 
+.settings-dropdown {
+    position: relative;
+}
+
+.dropDownProfile {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    z-index: 1;
+    width: max-content;
+}
+
+.dropDownProfile ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.dropDownProfile li {
+    margin-bottom: 5px;
+}
+
+.dropDownProfile li a {
+    text-decoration: none;
+    color: #333;
+}
 
 .top-icon {
     display: flex;
@@ -64,28 +99,25 @@ margin: 0;
     text-align: center;
     margin: 0 10px;
     color: #000;
-  }
+}
+
 .top-icon:hover {
     opacity: 1;
 }
 
-
- .notification-container:hover {
-     opacity: 1;
- }
- 
+.notification-container:hover {
+    opacity: 1;
+}
 
 .main {
     display: flex;
     justify-content: space-between;
-    
-
 }
+
 .left-main {
     width: auto;
     display: flex;
     flex-direction: column;
-
 }
 
 .left-main-1 {
@@ -94,20 +126,22 @@ margin: 0;
     margin-bottom: 10px;
     position: absolute;
     top: 1;
-    left:  85px;
+    left: 85px;
     border: 1px solid rgba(199, 192, 192, 0.5);
     border-radius: 10px;
     background: radial-gradient(ellipse at center, #0E2A47 0%, #1D4D75 30%, #2A7DAD 60%, #58C2FF 100%);
     width: 230px;
-    margin-right: 25px; 
+    margin-right: 25px;
     display: flex;
     flex-direction: column;
 }
+
 .banner {
     width: 100%;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
 }
+
 .my-picture {
     width: 30%;
     border: 2px white solid;
@@ -115,48 +149,49 @@ margin: 0;
     position: absolute;
     left: 70px;
     top: 30px;
-    
 }
+
 .about {
     border: 1px solid white;
     background-color: white;
     border-bottom: 1px solid rgba(199, 192, 192, 0.5);
 }
+
 .about h5 {
-     padding-top: 30px; 
+    padding-top: 30px;
     text-align: center;
     margin-bottom: 0;
 }
+
 .about p {
     font-size: 12px;
     text-align: center;
-    margin-top: 5px; 
+    margin-top: 5px;
     margin-bottom: 10px;
 }
+
 .middle-main {
     flex: 1;
-   
 }
+
 .middle-pic {
     width: 50px;
     border-radius: 50%;
     margin-right: 10px;
 }
+
 .middle-main-1 {
     border-radius: 20px;
     background-color: white;
     margin-bottom: 10px;
     flex: 1;
     width: 100%;
-
 }
+
 .post-1 {
     display: flex;
     padding: 10px 20px;
-    
-    
 }
-
 
 .post {
     flex: 1;
@@ -164,38 +199,42 @@ margin: 0;
     background-color: transparent;
     border-radius: 40px;
     height: 50px;
-    
-
 }
+
 .post::placeholder {
     padding-left: 10px;
     color: black;
 }
+
 .upload {
     height: 25px;
     margin: 12px;
 }
+
 .input {
     display: flex;
-    align-items: center; 
+    align-items: center;
 }
+
 .linked-input {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px; 
+    padding: 10px 20px;
 }
+
 .post-about {
     display: flex;
     margin-top: 10px;
     margin-bottom: 10px;
     padding: 10px 20px;
-
 }
+
 .post-image {
     width: 100%;
     margin-top: 10px;
 }
+
 .middle-main-2 {
     background-color: white;
     border-top-right-radius: 10px;
@@ -204,33 +243,32 @@ margin: 0;
     padding: 5px 12px;
     flex: 1;
     margin-top: 35px;
-
-   
 }
+
 .name {
     font-weight: 600;
     font-size: 14px;
     margin-bottom: 2px;
 }
+
 .name-about {
     font-size: 13px;
     font-weight: 400;
     color: grey;
 }
+
 .right-main {
     width: 290px;
     margin-left: 25px;
     display: flex;
     flex-direction: column;
-   
 }
 
 .right-main-1 {
-    /* height: 420px; */
-    background-color:white;
+    background-color: white;
     border: 1px solid rgba(199, 192, 192, 0.5);
     border-radius: 10px;
-    margin-bottom: 10px; 
+    margin-bottom: 10px;
     padding-top: 10px;
     padding-left: 10px;
     width: 290px;
@@ -238,6 +276,7 @@ margin: 0;
     display: flex;
     flex-direction: column;
 }
+
 .arz {
     width: 50px;
     border-radius: 50%;
@@ -245,20 +284,25 @@ margin: 0;
     margin-left: 5px;
     margin-right: 10px;
 }
+
 .arz-info {
-   width: 180px;
+    width: 180px;
 }
+
 .arz-card {
     display: flex;
     margin-bottom: 5px;
 }
+
 .arz-info h5 {
     margin-bottom: 5px;
 }
+
 .arz-info p {
     margin-bottom: 10px;
     font-size: 12px;
 }
+
 .follow-button {
     padding: 8px 16px;
     border-radius: 16px;
@@ -266,6 +310,7 @@ margin: 0;
     background-color: transparent;
     font-size: 15px;
 }
+
 .right-main-2 {
     height: 260px;
     margin-top: 0;
@@ -273,24 +318,26 @@ margin: 0;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color:white;
+    background-color: white;
     border: 1px solid rgba(199, 192, 192, 0.5);
     border-radius: 10px;
     margin-bottom: 10px;
-        width: 290px;
+    width: 290px;
     margin-left: 25px;
     display: flex;
     flex-direction: column;
-
 }
+
 .link {
     width: 80px;
     border-radius: 50%;
     margin-right: 30px;
 }
+
 .link-2 {
     width: 80px;
 }
+
 .link-box {
     display: flex;
     justify-content: center;
@@ -298,6 +345,7 @@ margin: 0;
     margin-top: 20px;
     margin-bottom: 20px;
 }
+
 .right-main-2 button {
     padding: 10px 12px;
     margin-top: 20px;
@@ -307,20 +355,22 @@ margin: 0;
     border-radius: 20px;
     width: 70%;
 }
+
 .right-main-3 {
     height: 200px;
-   
-    
 }
+
 .icon {
     height: 15px;
     margin-right: 10px;
 }
+
 .icon-group {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+
 .position {
     position: sticky;
     top: 80px;
@@ -328,26 +378,32 @@ margin: 0;
 
 
 @media (max-width: 768px) {
-  .header {
-      padding-left: 10px;
-      padding-right: 10px;
-  }
+    .header {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
 
-  .top-icon,
-  .me-icon {
-      margin-right: 7px;
-      width: 15px;
-  }
-  
+    .top-icon,
+    .me-icon {
+        margin-right: 7px;
+        width: 10px;
+    }
+    .me-icon{
+        display: none;
+    }
+    .dropDownProfile{
+        margin: 10%;
+        right:500px;
+    }
 
-  .top-icon label,
-  .me-icon label {
-      display: none;
-  }
-  
+    .top-icon label,
+    .me-icon label {
+        display: none;
+    }
 
-  main {
-      padding-left: 10px;
-      padding-right: 10px;
-  }
+    main {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
 }
+

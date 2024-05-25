@@ -6178,3 +6178,12 @@ Profile Page
     margin-bottom: 20px;
 }
 
+.afterlogin{
+		margin-left: 9%;
+}
+
+.fixed-size-img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+  }
