@@ -34,7 +34,7 @@ import DashboardPage from "./Pages/Dashboard/index.jsx";
 
 import SkillAI from "./Pages/Dashboard/SkillAI/index.jsx";
 
-import Jobs from "./Pages/Dashboard/Jobs/jobs.jsx";
+
 
 
 

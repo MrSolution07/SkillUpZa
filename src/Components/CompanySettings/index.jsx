@@ -1,18 +1,9 @@
-
 import React, { useState, useEffect } from 'react';
 import { Card, Form, Button, Container, Row, Col } from 'react-bootstrap';
 import axios from 'axios';
-
-const AccountSettingsCard = () => 
-{
-
-};
-
-import React, { useState } from 'react';
-import { Card, Form, Button, Container, Row, Col } from 'react-bootstrap';
 import DashboardLayout from "../../Pages/Dashboard/layout";
-const CompanySettingsCard = () => {
 
+const AccountSettingsCard = () => {
   const [username, setUsername] = useState('');
   const [email, setEmail] = useState('');
   const [mobileNumber, setMobileNumber] = useState('');
@@ -20,7 +11,7 @@ const CompanySettingsCard = () => {
   const [profilePictureBase64, setProfilePictureBase64] = useState('');
   const [currentPassword, setCurrentPassword] = useState('');
   const [newPassword, setNewPassword] = useState('');
- 
+
   useEffect(() => {
     fetchUserData();
   }, []);
@@ -247,4 +238,6 @@ const CompanySettingsCard = () => {
   </>
   );
 }
-export default AccountSettingsCard ;
+
+export default AccountSettingsCard;
+
