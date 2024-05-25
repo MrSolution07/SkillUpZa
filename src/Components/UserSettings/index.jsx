@@ -28,6 +28,8 @@ const AccountSettingsCard = () => {
         setEmail(responseData[0].Email);
         setMobileNumber(responseData[0].Mobile_number);
         setProfilePictureBase64(responseData[0].Profile_picture);
+        setCurrentPassword(responseData[0].current_Password);
+        setNewPassword(responseData[0].New_Password);
       } else {
         console.error('Error:', responseData.message);
       }
@@ -73,20 +75,30 @@ const AccountSettingsCard = () => {
   };
 
   const handlePasswordChangeSubmit = async (event) => {
-    event.preventDefault();
-    try {
-      const response = await axios.post('http://localhost/DATABASE_DATA/update.php', {
-        username: localStorage.getItem('username'),
-        currentPassword,
-        newPassword
-      });
-      const data = response.data;
-      console.log('Password update response:', data);
+  event.preventDefault();
+  try {
+    // const formData = new FormData();
+    // formData.append('username', username);
+    // formData.append('currentPassword', currentPassword);
+    // formData.append('newPassword', newPassword);
+
+    const response = await axios.post('http://localhost/DATABASE_DATA/update.php', {
+      username,
+      currentPassword,
+      newPassword,
+    });
+    console.log(currentPassword);
+    const data = response.data;
+    //console.log('Password update response:', data);
+    if (data.success) {
       window.alert('Password updated successfully');
-    } catch (error) {
-      console.error('Error updating password:', error);
+    } else {
+      window.alert('Error updating password: ' + data.message);
     }
-  };
+  } catch (error) {
+    console.error('Error updating password:', error);
+  }
+};
 
   const handleDeleteAccount = async () => {
     if (window.confirm('Are you sure you want to delete your account? This action cannot be undone.')) {
