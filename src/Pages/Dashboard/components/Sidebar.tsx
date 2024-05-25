@@ -102,7 +102,7 @@ const Sidebar = () => {
                   fontWeight="bold"
                   sx={{ m: "10px 0 0 0" }}
                 >
-                  {localStorage.getItem('username')}
+                  {localStorage.getItem('companyname')}
                 </Typography>
                 <Typography variant="h5" color={colors.greenAccent[500]}>
                   SkillUp

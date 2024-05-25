@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container, Row, Col, Card, Form, Button } from 'react-bootstrap';
 import axios from 'axios';
 
 import Homeheader from "../../Components/Social/Header";
@@ -12,6 +12,9 @@ const AccountSettingsCard = () => {
   const [email, setEmail] = useState('');
   const [mobileNumber, setMobileNumber] = useState('');
   const [profilePicture, setProfilePicture] = useState(null);
+  const [profilePictureBase64, setProfilePictureBase64] = useState('');
+  const [currentPassword, setCurrentPassword] = useState('');
+  const [newPassword, setNewPassword] = useState('');
 
   useEffect(() => {
     fetchUserData();
@@ -19,15 +22,15 @@ const AccountSettingsCard = () => {
 
   const fetchUserData = async () => {
     try {
-      const response = await axios.post('https://skill-up-za-be8f6d8201c2.herokuapp.com/update.php', {
+      const response = await axios.post('http://localhost/DATABASE_DATA/update.php', {
         username: localStorage.getItem('username')
       });
       const responseData = response.data;
-      if (response.status === 200) {
+      if (response.status === 200 && responseData.length > 0 && responseData[0].Username) {
         setUsername(responseData[0].Username);
         setEmail(responseData[0].Email);
         setMobileNumber(responseData[0].Mobile_number);
-        setProfilePicture(responseData[0].Profile_picture);
+        setProfilePictureBase64(responseData[0].Profile_picture);
       } else {
         console.error('Error:', responseData.message);
       }
@@ -39,23 +42,44 @@ const AccountSettingsCard = () => {
   const handleAccountSettingsSubmit = async (event) => {
     event.preventDefault();
     try {
-      const response = await axios.post('https://skill-up-za-be8f6d8201c2.herokuapp.com/update.php', {
-        username,
-        email,
-        mobileNumber
+      const formData = new FormData();
+      formData.append('username', username);
+      formData.append('email', email);
+      formData.append('mobileNumber', mobileNumber);
+      if (profilePicture) {
+        formData.append('ProfilePicture', profilePicture);
+      }
+
+      const response = await axios.post('http://localhost/DATABASE_DATA/update.php', formData, {
+        headers: {
+          'Content-Type': 'multipart/form-data'
+        }
       });
+
       const data = response.data;
-      console.log('Update response:', data);
       window.alert('Info updated successfully');
     } catch (error) {
       console.error('Error updating user data:', error);
     }
   };
 
-  const handlePasswordChangeSubmit = async (currentPassword, newPassword) => {
+  const handleProfilePictureChange = (event) => {
+    const file = event.target.files[0];
+    if (file) {
+      setProfilePicture(file);
+      const reader = new FileReader();
+      reader.onloadend = () => {
+        setProfilePictureBase64(reader.result);
+      };
+      reader.readAsDataURL(file);
+    }
+  };
+
+  const handlePasswordChangeSubmit = async (event) => {
+    event.preventDefault();
     try {
-      const response = await axios.post('https://skill-up-za-be8f6d8201c2.herokuapp.com/update.php', {
-        username,
+      const response = await axios.post('http://localhost/DATABASE_DATA/update.php', {
+        username: localStorage.getItem('username'),
         currentPassword,
         newPassword
       });
@@ -70,7 +94,7 @@ const AccountSettingsCard = () => {
   const handleDeleteAccount = async () => {
     if (window.confirm('Are you sure you want to delete your account? This action cannot be undone.')) {
       try {
-        const response = await axios.post('https://skill-up-za-be8f6d8201c2.herokuapp.com/delete.php', {
+        const response = await axios.post('http://localhost/DATABASE_DATA/delete.php', {
           username: localStorage.getItem('username')
         });
         const data = response.data;
@@ -98,12 +122,53 @@ const AccountSettingsCard = () => {
         <Row className="mb-4">
           <Col xs={12} md={12}>
             <ProfileCard
-              profilePicture={profilePicture}
+              profilePicture={profilePictureBase64}
               handleProfilePictureChange={handleProfilePictureChange}
-              removeProfilePicture={() => setProfilePicture(null)}
+              removeProfilePicture={() => setProfilePictureBase64('')}
             />
           </Col>
-
+          <Col xs={12} md={12}>
+            <Card className="mb-4" style={{ borderRadius: '15px' }}>
+              <Card.Body>
+                <Card.Title className="text-center mb-4">Account Settings</Card.Title>
+                <Form onSubmit={handleAccountSettingsSubmit}>
+                  <Form.Group controlId="username">
+                    <Form.Label>Username</Form.Label>
+                    <Form.Control
+                      type="text"
+                      name="username"
+                      value={username}
+                      onChange={(e) => setUsername(e.target.value)}
+                      placeholder="Enter username"
+                    />
+                  </Form.Group>
+                  <Form.Group controlId="email">
+                    <Form.Label>Email</Form.Label>
+                    <Form.Control
+                      type="email"
+                      value={email}
+                      name="email"
+                      onChange={(e) => setEmail(e.target.value)}
+                      placeholder="Enter new email"
+                    />
+                  </Form.Group>
+                  <Form.Group controlId="mobileNumber">
+                    <Form.Label>Mobile Number</Form.Label>
+                    <Form.Control
+                      type="text"
+                      value={mobileNumber}
+                      name="mobileNumber"
+                      onChange={(e) => setMobileNumber(e.target.value)}
+                      placeholder="Enter new mobile number"
+                    />
+                  </Form.Group>
+                  <Button variant="primary" type="submit" className="w-100">
+                    Save Changes
+                  </Button>
+                </Form>
+              </Card.Body>
+            </Card>
+          </Col>
           <Col xs={12} md={12}>
             <ChangePasswordCard handlePasswordChangeSubmit={handlePasswordChangeSubmit} />
           </Col>
@@ -117,5 +182,3 @@ const AccountSettingsCard = () => {
 };
 
 export default AccountSettingsCard;
-
-     

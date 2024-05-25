@@ -31,7 +31,14 @@ import ProfileCard from "./Components/UserSettings/profilecard.jsx";
 // dashboard here
 
 import DashboardPage from "./Pages/Dashboard/index.jsx";
+
 import SkillAI from "./Pages/Dashboard/SkillAI/index.jsx";
+
+
+
+
+
+
 import HomeUsr from "./Pages/HomeUsr/index.jsx";
 import JobPosting from "./Components/JobPosting";
 import BussinessAi from "./Pages/Dashboard//AiBusiness/index.jsx";
@@ -52,6 +59,11 @@ const router = createBrowserRouter([
   },
 
   {
+
+    path: "/Interview",
+    element: <Interview />,
+  },
+  {
     path: "/BussinessAi",
     element: <BussinessAi />,
   },
@@ -66,6 +78,7 @@ const router = createBrowserRouter([
   {
     path: "ProfileCard",
     element: <ProfileCard/>
+
   },
   {
     path: "/MyCourses",
@@ -103,10 +116,7 @@ const router = createBrowserRouter([
     path: "/HomePage",
     element: <HomePage />,
   },
-  {
-    path: "/Interview",
-    element: <Interview />,
-  },
+  
   {
     path: "/Jobs",
     element: <Jobs />,
@@ -123,6 +133,9 @@ const router = createBrowserRouter([
     path: "/Dashboard",
     element: < DashboardPage />,
   },
+
+
+
   {
     path: "/",
     element: <Home />,

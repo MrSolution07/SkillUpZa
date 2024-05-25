@@ -26,7 +26,7 @@ const RegisterPage = () => {
     };
 
     const validatePassword = (password) => {
-        const strongPasswordPattern = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
+        const strongPasswordPattern = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&~#^_+=|\\(){}[\]:;<>,./-])[A-Za-z\d@$!%*?&~#^_+=|\\(){}[\]:;<>,./-]{8,}$/;
         return strongPasswordPattern.test(password);
     };
 
@@ -62,7 +62,7 @@ const RegisterPage = () => {
             phpData.append("password", formData.password);
             phpData.append("mobile", formData.mobile);
 
-            const response = await axios.post('https://skill-up-za-be8f6d8201c2.herokuapp.com/register.php', phpData);
+            const response = await axios.post('http://localhost/DATABASE_DATA/register.php', phpData);
             const data = response.data;
 
             if (data.success) {

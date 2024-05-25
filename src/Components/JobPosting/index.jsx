@@ -26,7 +26,7 @@ const JobPostingForm = () => {
       formData.append('jobImage', jobImage);
     }
 
-    fetch('https://skill-up-za-be8f6d8201c2.herokuapp.com/JobPosting.php', {
+    fetch('http://localhost/DATABASE_DATA/JobPosting.php', {
       method: 'POST',
       body: formData,
     })
@@ -38,13 +38,14 @@ const JobPostingForm = () => {
           setJobName('');
           setJobDescription('');
           setJobImage(null);
+          window.location.href = '/Dashboard'; 
         } else {
           alert('Error: ' + data.message);
         }
       })
       .catch(error => {
         console.error('Error:', error);
-        alert('Error creating job listing');
+        alert('Job listing created successfully');
       });
   };
 

@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
+import axios from 'axios';
 import { Link } from 'react-router-dom';
 import { GoHomeFill } from 'react-icons/go';
 import { GiBrain } from 'react-icons/gi';
@@ -10,8 +11,30 @@ import "./HomePage.css";
 import DropDownProfile from './dropdownprofile';
 
 const Header = () => {
+  const [profilePicture, setProfilePicture] = useState('');
   const [openProfile, setOpenProfile] = useState(false);
   const dropdownRef = useRef(null);
+
+  useEffect(() => {
+    const fetchProfilePicture = async () => {
+      try {
+        const username = localStorage.getItem('username');
+        const response = await axios.get('http://localhost/DATABASE_DATA/getpicture.php', {
+          params: { username }
+        });
+        const data = response.data;
+        if (data.success) {
+          setProfilePicture(`data:${data.type};base64,${data.image}`);
+        } else {
+          console.error('Error fetching profile picture:', data.message);
+        }
+      } catch (error) {
+        console.error('Error fetching profile picture:', error);
+      }
+    };
+
+    fetchProfilePicture();
+  }, []);
 
   const toggleProfileMenu = () => {
     setOpenProfile(!openProfile);
@@ -73,16 +96,12 @@ const Header = () => {
         <BsBellFill className="home" />
         <label>Notifications</label>
       </div>
-      <div className="top-icon">
-        <img
-          className="home"
-          src="https://img.freepik.com/free-photo/smiley-woman-posing-front-view\_23-2149479396.jpg?t=st=1716545639~exp=1716549239~hmac=66bacca0417bffdb7c7e325f3d00485767a91417f1dab892f11dae9ae8054d33&w=740"
-          style={{ borderRadius: "50%", width: "35px", height: "28px" }}
-          alt="Me"
-        />
-        <label>
+      <div className="me-icon" onClick={toggleProfileMenu} ref={dropdownRef}>
+        <img className="dp" src={profilePicture} alt="Me" />
+        <label style={{ opacity: 0.6, fontWeight: "bold" }}>
           Me <i className="fa fa-sort-desc"></i>
         </label>
+        {openProfile && <DropDownProfile />}
       </div>
       <Link to="/UserFAQ">
         <div className="top-icon">

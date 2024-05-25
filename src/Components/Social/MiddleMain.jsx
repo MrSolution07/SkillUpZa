@@ -1,35 +1,129 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import axios from 'axios';
 
 const MiddleMain = () => {
-return (
-<div className="middle-main">
-    {/* MiddleMain1 content */}
-    <div className="middle-main-1">
-        <div className="post-1">
-            <img className="middle-pic" src= "https://img.freepik.com/free-photo/smiley-woman-posing-front-view_23-2149479396.jpg?t=st=1716545639~exp=1716549239~hmac=66bacca0417bffdb7c7e325f3d00485767a91417f1dab892f11dae9ae8054d33&w=740" style={{width:"50px",height:"45px"}} alt="Profile Picture" />
-            <input className="post" type="text" placeholder="Start a post" />
-        </div>
-        </div>
+    const [profilePicture, setProfilePicture] = useState('');
+    const [content, setContent] = useState('');
+    const [postImage, setPostImage] = useState(null);
+    const [posts, setPosts] = useState([]);
 
-    {/* MiddleMain2 content */}
-    <div className="middle-main-2">
-        <div className="post-about">
-            <div>
-                <img className="middle-pic" src="https://img.freepik.com/free-photo/smiley-woman-posing-front-view_23-2149479396.jpg?t=st=1716545639~exp=1716549239~hmac=66bacca0417bffdb7c7e325f3d00485767a91417f1dab892f11dae9ae8054d33&w=740" style={{width:"50px",height:"45px"}} alt="Profile Picture" />
+    useEffect(() => {
+        const fetchProfilePicture = async () => {
+            try {
+                const username = localStorage.getItem('username');
+                const response = await axios.get('http://localhost/DATABASE_DATA/getpicture.php', {
+                    params: { username }
+                });
+                const data = response.data;
+                if (data.success) {
+                    setProfilePicture(`data:${data.type};base64,${data.image}`);
+                } else {
+                    console.error('Error fetching profile picture:', data.message);
+                }
+            } catch (error) {
+                console.error('Error fetching profile picture:', error);
+            }
+        };
+
+        const fetchPosts = async () => {
+            try {
+                const response = await axios.get('http://localhost/DATABASE_DATA/get_posts.php');
+                const data = response.data;
+                if (data.success) {
+                    setPosts(data.posts);
+                } else {
+                    console.error('Error fetching posts:', data.message);
+                }
+            } catch (error) {
+                console.error('Error fetching posts:', error);
+            }
+        };
+
+        fetchProfilePicture();
+        fetchPosts();
+    }, []);
+
+    const handleCreatePost = async () => {
+        const formData = new FormData();
+        const username = localStorage.getItem('username');
+
+        formData.append('username', username);
+        formData.append('content', content);
+        if (postImage) {
+            formData.append('postImage', postImage);
+        }
+
+        try {
+            const response = await axios.post('http://localhost/DATABASE_DATA/create_post.php', formData, {
+                headers: {
+                    'Content-Type': 'multipart/form-data'
+                }
+            });
+            const data = response.data;
+            if (data.success) {
+                setContent('');
+                setPostImage(null);
+                const newPost = {
+                    username,
+                    content,
+                    createdAt: new Date().toISOString(),
+                    image: postImage ? URL.createObjectURL(postImage) : null,
+                    imageType: postImage ? postImage.type : null
+                };
+                setPosts([newPost, ...posts]);
+            } else {
+                console.error('Error creating post:', data.message);
+            }
+        } catch (error) {
+            console.error('Error creating post:', error);
+        }
+    };
+
+    return (
+        <div className="middle-main">
+            {/* MiddleMain1 content */}
+            <div className="middle-main-1">
+                <div className="post-1">
+                    <img className="middle-pic" src={profilePicture} alt="Profile Picture" />
+                    <input
+                        className="post"
+                        type="text"
+                        placeholder="Start a post"
+                        value={content}
+                        onChange={(e) => setContent(e.target.value)}
+                    />
+                    <input
+                        type="file"
+                        accept="image/*"
+                        onChange={(e) => setPostImage(e.target.files[0])}
+                    />
+                    <button onClick={handleCreatePost}>Post</button>
+                </div>
             </div>
-            <div>
-                <p className="name">UserName</p>
-                <p className="name-about">IT Student</p>
-                <p className="name-about">6h &#183; <i className="fa fa-globe" aria-hidden="true"></i></p>
+
+            {/* MiddleMain2 content */}
+            <div className="middle-main-2">
+                {posts.map((post, index) => (
+                    <div key={index} className="post-about">
+                        <div>
+                            <img className="middle-pic" src={profilePicture} alt="Profile Picture" />
+                        </div>
+                        <div>
+                            <p className="name">{post.username}</p>
+                            <p className="name-about">IT Student</p>
+                            <p className="name-about">{new Date(post.createdAt).toLocaleTimeString()} &#183; <i className="fa fa-globe" aria-hidden="true"></i></p>
+                        </div>
+                        <div>
+                            <p>{post.content}</p>
+                        </div>
+                        {post.image && (
+                            <img className="post-image" src={`data:${post.imageType};base64,${post.image}`} alt="Post Image" />
+                        )}
+                    </div>
+                ))}
             </div>
         </div>
-        <div>
-            <p>Post content</p>
-        </div>
-        <img className="post-image" src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=1469&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Post Image" />
-    </div>
-</div>
-);
+    );
 };
 
 export default MiddleMain;
