@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import useWindowPosition from "../../Hooks/useWindowPosition";
-import Contact from "../../Pages/Contact";
 
 
 function Navbar({ className,logo }) {

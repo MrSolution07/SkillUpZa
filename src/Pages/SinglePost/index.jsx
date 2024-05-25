@@ -7,6 +7,9 @@ import DetailsSideBar from "../../Components/Blogs/DetailsSideBar";
 import CommentForm from "../../Components/Form/CommentForm";
 import Comment from "../../Components/Comment/Comment";
 import GotoTop from "../../Components/GotoTop";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faXTwitter} from '@fortawesome/free-brands-svg-icons';
+
 
 function SinglePost() {
   const [isLoading, setIsLoading] = useState(true);
@@ -77,8 +80,7 @@ function SinglePost() {
                       <i className="social_facebook"></i>
                     </a>
                     <a className="twi" href="https://twitter.com/_Skill_Up_/status/1784949119582195767?t=PPYZjB1fn0GIJJ5XNoYBKw&s=19">
-                      <i><img src ="public/assets/images/twitter-x.png" alt = ""/>
-                      </i>
+                    <FontAwesomeIcon icon={faXTwitter} />                      
                     </a>
                     <a className="goo" href="#">
                       <i className="social_googleplus"></i>

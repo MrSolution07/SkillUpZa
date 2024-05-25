@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import TeacherCard from "../../../Components/Cards/TeacherCard";
-import Header from "../../../Components/Social/Header"
+
+import DashboardLayout from "../layout";
 function Jobs() {
   const [jobs, setJobs] = useState([]);
 
@@ -18,8 +19,9 @@ function Jobs() {
   }, []);
 
   return (
+    <>
+    <DashboardLayout>
             <div className="container" style={{marginTop:"10%"}}>
-           <Header/>
             <div className="row">
                 <h2 className="sec-title mb-15">
                   <span></span> 
@@ -134,6 +136,8 @@ function Jobs() {
               />
             </div>
           </div>
+          </DashboardLayout>
+    </>
 
         
     )

@@ -977,6 +977,9 @@
 .ti-instagram:before {
   content: "\e73d";
 }
+.insta{
+  background-color: grey;
+}
 .ti-google:before {
   content: "\e73e";
 }

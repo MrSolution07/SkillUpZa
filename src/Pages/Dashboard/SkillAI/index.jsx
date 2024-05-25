@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
+import { TextField, Button } from '@mui/material';
 import { fetchData } from './script';
 import Homeheader from "../../../Components/Social/Header";
 import "../../../Components/NewStyle/style.css";
-import SendIcon from '@mui/icons-material/Send';
+import { RiSendPlane2Line } from 'react-icons/ri';
 
 function SkillAI() {
   const [userInput, setUserInput] = useState('');
@@ -54,27 +55,21 @@ function SkillAI() {
         </div>
         <div className="flex h-14 shrink-0 items-center border-t border-[#1f2937] bg-[#1f2937] px-4 dark:border-[#f0f0f0] dark:bg-[#f0f0f0]" id="prompt">
           <div style={{ display: 'flex', alignItems: 'center', width: '100%' }}>
-            <input
-              className="flex-1 rounded-md border-0 py-2 px-3 text-sm focus:outline-none dark:text-gray-900"
+            <TextField
+              className="flex-1 rounded-md py-2 px-3 text-sm focus:outline-none dark:text-gray-900"
               placeholder="Type your message..."
               value={userInput}
               onChange={(e) => setUserInput(e.target.value)}
               onKeyDown={handleKeyDown}
-              type="text"
-              style={{ backgroundColor: '#d1d5db' }}
-            />
-            <button
-              onClick={handleSend}
-              type="button"
-              style={{
-                background: 'transparent',
-                border: 'none',
-                cursor: 'pointer',
-                marginLeft: '10px',
+              style={{ marginRight: '10px', width: '100%' }}
+              InputProps={{
+                endAdornment: (
+                  <Button onClick={handleSend} type="button" variant="contained" color="primary" disableElevation style={{ backgroundColor: 'transparent' }}>
+                    <RiSendPlane2Line size={24} style={{ color: 'black' }} />
+                  </Button>
+                ),
               }}
-            >
-              <SendIcon style={{ color: '#1f2937' }} />
-            </button>
+            />
           </div>
         </div>
       </div>
