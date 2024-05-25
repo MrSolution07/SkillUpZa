@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 import { Card, Form, Button, Container, Row, Col } from 'react-bootstrap';
 import axios from 'axios';
@@ -16,7 +17,7 @@ const ProfileCard = () => {
 
   const fetchUserData = async () => {
     try {
-      const response = await axios.post('http://localhost/DATABASE_DATA/update.php', {
+      const response = await axios.post('http://localhost/DATABASE_DATA/update_user.php', {
         username: localStorage.getItem('username')
       });
       const responseData = response.data;
@@ -36,7 +37,7 @@ const ProfileCard = () => {
   const handleAccountSettingsSubmit = async (event) => {
     event.preventDefault();
     try {
-      const response = await axios.post('http://localhost/DATABASE_DATA/update.php', {
+      const response = await axios.post('http://localhost/DATABASE_DATA/update_user.php', {
         username,
         email,
         mobileNumber
@@ -49,14 +50,26 @@ const ProfileCard = () => {
     }
   };
 
-  const handleProfilePictureChange = (event) => {
+  const handleProfilePictureChange = async (event) => {
     const file = event.target.files[0];
     if (file) {
-      const reader = new FileReader();
-      reader.onload = (e) => {
-        setProfilePicture(e.target.result);
-      };
-      reader.readAsDataURL(file);
+      const formData = new FormData();
+      formData.append('profilePicture', file);
+      formData.append('username', username);
+
+      try {
+        const response = await axios.post('http://localhost/DATABASE_DATA/upload_profile_picture.php', formData, {
+          headers: {
+            'Content-Type': 'multipart/form-data'
+          }
+        });
+        const data = response.data;
+        console.log('Upload response:', data);
+        setProfilePicture(URL.createObjectURL(file));
+        window.alert('Profile picture uploaded successfully');
+      } catch (error) {
+        console.error('Error uploading profile picture:', error);
+      }
     }
   };
 
@@ -134,5 +147,4 @@ const ProfileCard = () => {
 };
 
 export default ProfileCard;
-
 
