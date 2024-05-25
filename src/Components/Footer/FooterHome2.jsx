@@ -1,4 +1,7 @@
 import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faXTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons';
+
 
 function FooterHome2() {
   return (
@@ -44,13 +47,12 @@ function FooterHome2() {
                   <a className="fac" href="https://www.facebook.com/profile.php?id=61559534575921">
                     <i className="social_facebook"></i>
                   </a>
-                  <a className="twi" href="https://twitter.com/_Skill_Up_/status/1784949119582195767?t=PPYZjB1fn0GIJJ5XNoYBKw&s=19">
-                      <i><img src ="public/assets/images/twitter-x.png" alt = ""/>
-                      </i>
-                    </a>
-                    <a href="https://www.instagram.com/skillupza/">
-                      <i><img src="public/assets/images/instagram.png" alt="" /></i>
-                    </a>
+                  <a className="twi" href="https://x.com/_Skill_Up_/status/1784949119582195767?t=PPYZjB1fn0GIJJ5XNoYBKw&s=19">
+                  <FontAwesomeIcon icon={faXTwitter} />
+                </a>
+                  <a className="insta" href="https://www.instagram.com/skillupza/">
+                  <FontAwesomeIcon icon={faInstagram} />
+                 </a>
                 </div>
               </div>
             </aside>

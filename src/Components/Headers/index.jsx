@@ -69,9 +69,9 @@ function Header({ className, logo, joinBtn, search }) {
 
               {/*  User Btn  */}
               {className !== "header-02" && (
-                <a href="/LoginPage" className="user-btn">
+                <Link to="/LoginPage" className="user-btn">
                   <i className="ti-user"></i>
-                </a>
+                </Link>
               )}
               {/*  User Btn  */}
 
