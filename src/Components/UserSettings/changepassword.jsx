@@ -2,14 +2,31 @@ import React, { useState } from 'react';
 import { Card, Form, Button, Container, Row, Col } from 'react-bootstrap';
 import HomeHeader from "../../Components/Social/Header";
 import './passwordcard.css';
+import axios from 'axios';
 
-const ChangePasswordCard = ({ handlePasswordChangeSubmit }) => {
+const ChangePasswordCard = () => {
   const [currentPassword, setCurrentPassword] = useState('');
   const [newPassword, setNewPassword] = useState('');
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    handlePasswordChangeSubmit(currentPassword, newPassword);
+  const handlePasswordChangeSubmit = async (event) => {
+    event.preventDefault();
+    try {
+      const response = await axios.post('http://localhost/DATABASE_DATA/update_user_password.php', {
+        username: localStorage.getItem("username"),
+        currentPassword: currentPassword,
+        newPassword: newPassword,
+      });
+      console.log(currentPassword);
+      console.log(newPassword);
+      const data = response.data;
+      if (data.success) {
+        window.alert('Password updated successfully');
+      } else {
+        window.alert('Error updating password: ' + data.message);
+      }
+    } catch (error) {
+      console.error('Error updating password:', error);
+    }
   };
 
   return (
@@ -21,7 +38,7 @@ const ChangePasswordCard = ({ handlePasswordChangeSubmit }) => {
             <Card className="card-custom mb-4" style={{ borderRadius: '15px', width: "500px", height: "400px",marginLeft:"90%" }}>
               <Card.Body>
                 <Card.Title className="text-center mb-4">Change Password</Card.Title>
-                <Form onSubmit={handleSubmit}>
+                <Form onSubmit={handlePasswordChangeSubmit}>
                   <Form.Group controlId="currentPassword" className="mb-4">
                     <Form.Label>Current Password</Form.Label>
                     <Form.Control
