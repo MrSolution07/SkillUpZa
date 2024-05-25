@@ -62,7 +62,8 @@ const router = createBrowserRouter([
 
     path: "/Interview",
     element: <Interview />,
-
+  },
+  {
     path: "/BussinessAi",
     element: <BussinessAi />,
   },
