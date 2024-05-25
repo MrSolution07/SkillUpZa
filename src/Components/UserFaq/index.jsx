@@ -16,12 +16,12 @@ const UserFAQ = () => {
 
   return (
     <>
-    <Header/>
+      <Header />
       <Banner title="Frequently Asked Questions" background="assets/images/FAQbanner.jpg" />
 
       <section className="interview-section">
         <Container className="custom-card">
-          <Card className="mt-4 ">
+          <Card className="mt-4">
             <Card.Body>
               <div id="faq">
                 {/* FAQ Items */}
@@ -33,10 +33,7 @@ const UserFAQ = () => {
                 />
                 <FAQItem 
                   question="What can I do on Skill UpZA?"
-                  answer="
-                  Find Jobs: Search for open positions based on your skills, interests, and location.
-                  Upskill for a New Career: Explore a variety of learning paths and courses to develop in-demand skills.
-                  Personalized Recommendations: Get matched with jobs and courses tailored to your unique profile."
+                  answer="Find Jobs: Search for open positions based on your skills, interests, and location. Upskill for a New Career: Explore a variety of learning paths and courses to develop in-demand skills. Personalized Recommendations: Get matched with jobs and courses tailored to your unique profile."
                   isOpen={open["faq2"]}
                   onClick={() => handleToggle("faq2")}
                 />
@@ -46,9 +43,22 @@ const UserFAQ = () => {
                   isOpen={open["faq3"]}
                   onClick={() => handleToggle("faq3")}
                 />
+                
+                <FAQItem 
+                  question="How does the AI career advisor work on Skill UpZA?"
+                  answer="Skill UpZA's AI career advisor is a powerful tool that leverages artificial intelligence to provide personalized career guidance. Based on your profile, interests, skills, and goals, the AI advisor can suggest relevant career paths, recommend courses or certifications to pursue, and offer insights into industries and job roles that may be a good fit for you. Additionally, the AI advisor can assist you in optimizing your resume and preparing for interviews."
+                  isOpen={open["faq5"]}
+                  onClick={() => handleToggle("faq5")}
+                />
+                <FAQItem 
+                  question="How can I benefit from the courses offered on Skill UpZA?"
+                  answer="Skill UpZA source a wide range of online courses designed to help you enhance your skills and knowledge. These courses cover various topics, including technical skills, soft skills, and industry-specific knowledge. By enrolling in these courses, you can improve your competitiveness in the job market and better position yourself for career advancement."
+                  isOpen={open["faq6"]}
+                  onClick={() => handleToggle("faq6")}
+                />
                 <FAQItem 
                   question="I have another question that's not answered here."
-                  answer="No problem!  Feel free to contact our support team at Skill UpZA@outlook.com and we'll be happy to help."
+                  answer="No problem! Feel free to contact our support team at Skill UpZA@outlook.com and we'll be happy to help."
                   isOpen={open["faq4"]}
                   onClick={() => handleToggle("faq4")}
                 />

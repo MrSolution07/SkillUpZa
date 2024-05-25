@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import { TextField, Button } from '@mui/material';
-import { fetchData } from './script';
-import Homeheader from "../../../Components/Social/Header";
+import { TextField, IconButton } from '@mui/material';
+import { fetchData } from '../SkillAI/script'; // Import the modified fetchData from another file
 import "../../../Components/NewStyle/style.css";
+import DashboardLayout from "../layout";
 import { RiSendPlane2Line } from 'react-icons/ri';
 
 function SkillAI() {
@@ -11,10 +11,11 @@ function SkillAI() {
   const [isSending, setIsSending] = useState(false);
 
   const handleSend = async () => {
-    if (!userInput.trim()) return;
-    appendMessage('User', userInput);
-    setUserInput('');
+    if (!userInput.trim()) return; // Prevent sending empty messages
+    appendMessage('User', userInput); // Display user message immediately
+    setUserInput(''); // Clear input field
     setIsSending(true);
+
     try {
       const botResponse = await fetchData(userInput);
       appendMessage('Bot', botResponse);
@@ -25,21 +26,22 @@ function SkillAI() {
 
   const handleKeyDown = (e) => {
     if (e.key === 'Enter') {
-      e.preventDefault();
+      e.preventDefault(); // Prevent the default form submission behavior
       handleSend();
     }
   };
 
   const appendMessage = (sender, message) => {
-    const messageLines = message.split('\\\\\\\\n');
+    // Split message by line breaks and add each line as a separate message
+    const messageLines = message.split('\n');
     const newMessages = messageLines.map((line, index) => ({ sender, message: line }));
+
     setMessages(messages => [...messages, ...newMessages]);
   };
 
   return (
-    <>
-      <Homeheader />
-      <div className="ai-body" style={{ backgroundColor: 'transparent', border: '0px solid', height: '80vh', overflow: 'visible', display: 'flex', flexDirection: 'column', marginBottom: "25px" }}>
+    <DashboardLayout>
+      <div className="ai-body" style={{ marginTop: "0px", backgroundColor: 'transparent', border: '0px solid', height: '75vh', overflow: 'visible', display: 'flex', flexDirection: 'column', marginBottom: "25px" }}>
         <header className="">
           <div className="title">Skill AI</div>
         </header>
@@ -64,16 +66,16 @@ function SkillAI() {
               style={{ marginRight: '10px', width: '100%' }}
               InputProps={{
                 endAdornment: (
-                  <Button onClick={handleSend} type="button" variant="contained" color="primary" disableElevation style={{ backgroundColor: 'transparent' }}>
+                  <IconButton onClick={handleSend} type="button">
                     <RiSendPlane2Line size={24} style={{ color: 'black' }} />
-                  </Button>
+                  </IconButton>
                 ),
               }}
             />
           </div>
         </div>
       </div>
-    </>
+    </DashboardLayout>
   );
 }
 

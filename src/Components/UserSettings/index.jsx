@@ -1,8 +1,11 @@
-
-
 import React, { useState, useEffect } from 'react';
-import { Card, Form, Button, Container, Row, Col } from 'react-bootstrap';
+import { Container, Row, Col, Card, Form, Button } from 'react-bootstrap';
 import axios from 'axios';
+
+import Homeheader from "../../Components/Social/Header";
+import ProfileCard from './profilecard';
+import ChangePasswordCard from './changepassword';
+import DeleteAccountCard from './delete';
 
 const AccountSettingsCard = () => {
   const [username, setUsername] = useState('');
@@ -12,7 +15,7 @@ const AccountSettingsCard = () => {
   const [profilePictureBase64, setProfilePictureBase64] = useState('');
   const [currentPassword, setCurrentPassword] = useState('');
   const [newPassword, setNewPassword] = useState('');
- 
+
   useEffect(() => {
     fetchUserData();
   }, []);
@@ -113,128 +116,69 @@ const AccountSettingsCard = () => {
   };
 
   return (
-    <Container>
-      <Row className="mb-4">
-        <Col xs={12} md={12}>
-          <Card className="mb-4" style={{ borderRadius: '15px', position: 'relative' }}>
-            <Card.Body className="text-center">
-              {profilePictureBase64 ? (
-                <>
-                  <div style={{ position: 'relative', width: '150px', height: '150px', margin: 'auto' }}>
-                    <img
-                      src={profilePictureBase64}
-                      alt="Profile"
-                      className="rounded-circle img-fluid"
-                      style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+    <>
+      <Homeheader />
+      <Container style={{marginTop:"10%"}}>
+        <Row className="mb-4">
+          <Col xs={12} md={12}>
+            <ProfileCard
+              profilePicture={profilePictureBase64}
+              handleProfilePictureChange={handleProfilePictureChange}
+              removeProfilePicture={() => setProfilePictureBase64('')}
+            />
+          </Col>
+          <Col xs={12} md={12}>
+            <Card className="mb-4" style={{ borderRadius: '15px' }}>
+              <Card.Body>
+                <Card.Title className="text-center mb-4">Account Settings</Card.Title>
+                <Form onSubmit={handleAccountSettingsSubmit}>
+                  <Form.Group controlId="username">
+                    <Form.Label>Username</Form.Label>
+                    <Form.Control
+                      type="text"
+                      name="username"
+                      value={username}
+                      onChange={(e) => setUsername(e.target.value)}
+                      placeholder="Enter username"
                     />
-                    <Button variant="danger" onClick={() => setProfilePictureBase64('')} className="mb-0">
-                      Remove Picture
-                    </Button>
-                  </div>
-                </>
-              ) : (
-                <Form.Group controlId="profilePicture">
-                  <Form.Label>Upload Profile Picture</Form.Label>
-                  <Form.Control type="file" accept="image/*" onChange={handleProfilePictureChange} />
-                </Form.Group>
-              )}
-              <Card.Title>User Profile</Card.Title>
-            </Card.Body>
-          </Card>
-        </Col>
-
-        <Col xs={12} md={12}>
-          <Card className="mb-4" style={{ borderRadius: '15px' }}>
-            <Card.Body>
-              <Card.Title className="text-center mb-4">Account Settings</Card.Title>
-              <Form onSubmit={handleAccountSettingsSubmit}>
-                <Form.Group controlId="username">
-                  <Form.Label>Username</Form.Label>
-                  <Form.Control
-                    type="text"
-                    name="username"
-                    value={username}
-                    onChange={(e) => setUsername(e.target.value)}
-                    placeholder="Enter username"
-                  />
-                </Form.Group>
-                <Form.Group controlId="email">
-                  <Form.Label>Email</Form.Label>
-                  <Form.Control
-                    type="email"
-                    value={email}
-                    name="email"
-                    onChange={(e) => setEmail(e.target.value)}
-                    placeholder="Enter new email"
-                  />
-                </Form.Group>
-                <Form.Group controlId="mobileNumber">
-                  <Form.Label>Mobile Number</Form.Label>
-                  <Form.Control
-                    type="text"
-                    value={mobileNumber}
-                    name="mobileNumber"
-                    onChange={(e) => setMobileNumber(e.target.value)}
-                    placeholder="Enter new mobile number"
-                  />
-                </Form.Group>
-                <Button variant="primary" type="submit" className="w-100">
-                  Save Changes
-                </Button>
-              </Form>
-            </Card.Body>
-          </Card>
-        </Col>
-        <Col xs={12} md={12}>
-          <Card className="mb-4" style={{ borderRadius: '15px' }}>
-            <Card.Body>
-              <Card.Title className="text-center mb-4">Change Password</Card.Title>
-              <Form onSubmit={handlePasswordChangeSubmit}>
-                <Form.Group controlId="currentPassword">
-                  <Form.Label>Current Password</Form.Label>
-                  <Form.Control
-                    type="password"
-                    value={currentPassword}
-                    name="currentPassword"
-                    onChange={(e) => setCurrentPassword(e.target.value)}
-                    placeholder="Enter current password"
-                  />
-                </Form.Group>
-                <Form.Group controlId="newPassword">
-                  <Form.Label>New Password</Form.Label>
-                  <Form.Control
-                    type="password"
-                    value={newPassword}
-                    name="newPassword"
-                    onChange={(e) => setNewPassword(e.target.value)}
-                    placeholder="Enter new password"
-                  />
-                </Form.Group>
-                <Button variant="primary" type="submit" className="w-100">
-                  Save Password
-                </Button>
-              </Form>
-            </Card.Body>
-          </Card>
-        </Col>
-
-        <Col xs={12} md={12}>
-          <Card className="mb-4" style={{ borderRadius: '15px' }}>
-            <Card.Body className="text-center">
-              <Card.Title>Delete Account</Card.Title>
-              <p>
-                <strong>Warning:</strong> Deleting your account is irreversible. Please proceed with caution.
-              </p>
-              <Button variant="danger" onClick={handleDeleteAccount}>
-                Delete Account
-              </Button>
-            </Card.Body>
-          </Card>
-        </Col>
-      </Row>
-    </Container>
+                  </Form.Group>
+                  <Form.Group controlId="email">
+                    <Form.Label>Email</Form.Label>
+                    <Form.Control
+                      type="email"
+                      value={email}
+                      name="email"
+                      onChange={(e) => setEmail(e.target.value)}
+                      placeholder="Enter new email"
+                    />
+                  </Form.Group>
+                  <Form.Group controlId="mobileNumber">
+                    <Form.Label>Mobile Number</Form.Label>
+                    <Form.Control
+                      type="text"
+                      value={mobileNumber}
+                      name="mobileNumber"
+                      onChange={(e) => setMobileNumber(e.target.value)}
+                      placeholder="Enter new mobile number"
+                    />
+                  </Form.Group>
+                  <Button variant="primary" type="submit" className="w-100">
+                    Save Changes
+                  </Button>
+                </Form>
+              </Card.Body>
+            </Card>
+          </Col>
+          <Col xs={12} md={12}>
+            <ChangePasswordCard handlePasswordChangeSubmit={handlePasswordChangeSubmit} />
+          </Col>
+          <Col xs={12} md={12}>
+            <DeleteAccountCard handleDeleteAccount={handleDeleteAccount} />
+          </Col>
+        </Row>
+      </Container>
+    </>
   );
 };
 
 export default AccountSettingsCard;
-
