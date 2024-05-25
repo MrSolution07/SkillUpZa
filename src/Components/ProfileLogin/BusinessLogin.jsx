@@ -29,7 +29,7 @@ function CompanyLogin() {
            phpData.append("businessName", formData.businessName);
            phpData.append("password", formData.password);
 
-           axios.post('http://localhost/DATABASE_DATA/BusinessLogin.php', phpData)
+           axios.post('  https://cannonball-can.000webhostapp.com/BusinessLogin.php', phpData)
                .then(response => {
                    const data = response.data;
 

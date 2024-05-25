@@ -26,7 +26,7 @@ const JobPostingForm = () => {
       formData.append('jobImage', jobImage);
     }
 
-    fetch('http://localhost/DATABASE_DATA/JobPosting.php', {
+    fetch('  https://cannonball-can.000webhostapp.com/JobPosting.php', {
       method: 'POST',
       body: formData,
     })

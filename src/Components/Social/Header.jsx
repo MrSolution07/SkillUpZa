@@ -19,7 +19,7 @@ const Header = () => {
     const fetchProfilePicture = async () => {
       try {
         const username = localStorage.getItem('username');
-        const response = await axios.get('http://localhost/DATABASE_DATA/getpicture.php', {
+        const response = await axios.get('  https://cannonball-can.000webhostapp.com/getpicture.php', {
           params: { username }
         });
         const data = response.data;
@@ -101,7 +101,7 @@ const Header = () => {
         <label style={{ opacity: 0.6, fontWeight: "bold" }}>
           Me <i className="fa fa-sort-desc"></i>
         </label>
-        {openProfile && <DropDownProfile />}
+        {/* {openProfile && <DropDownProfile />} */}
       </div>
       <Link to="/UserFAQ">
         <div className="top-icon">

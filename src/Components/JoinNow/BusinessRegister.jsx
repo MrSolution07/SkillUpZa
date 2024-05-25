@@ -59,7 +59,7 @@ const BusinessRegisterPage = () => {
             phpData.append("password", formData.password);
             phpData.append("mobile", formData.mobile);
 
-            const response = await axios.post('http://localhost/DATABASE_DATA/Bus_register.php', phpData);
+            const response = await axios.post('  https://cannonball-can.000webhostapp.com/Bus_register.php', phpData);
             const data = response.data;
 
             console.log(data);

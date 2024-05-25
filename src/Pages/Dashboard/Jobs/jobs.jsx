@@ -6,7 +6,7 @@ function Jobs() {
   const [jobs, setJobs] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost/DATABASE_DATA/getJobs.php')
+    fetch('  https://cannonball-can.000webhostapp.com/getJobs.php')
       .then(response => response.json())
       .then(data => {
         if (data.success) {
@@ -155,7 +155,7 @@ export default Jobs;
   // const [jobs, setJobs] = useState([]);
 
   // useEffect(() => {
-  //   fetch('http://localhost/DATABASE_DATA/getJobs.php')
+  //   fetch('  https://cannonball-can.000webhostapp.com/getJobs.php')
   //     .then(response => response.json())
   //     .then(data => {
   //       if (data.success) {
