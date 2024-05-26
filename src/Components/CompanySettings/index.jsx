@@ -18,7 +18,7 @@ const AccountSettingsCard = () => {
 
   const fetchUserData = async () => {
     try {
-      const response = await axios.post('  https://cannonball-can.000webhostapp.com/bus_update.php', {
+      const response = await axios.post('  http://localhost/DATABASE_DATA/bus_update.php', {
         username: localStorage.getItem('companyname')
       });
       const responseData = response.data;
@@ -46,7 +46,7 @@ const AccountSettingsCard = () => {
         formData.append('ProfilePicture', profilePicture);
       }
 
-      const response = await axios.post('  https://cannonball-can.000webhostapp.com/bus_update.php', formData, {
+      const response = await axios.post('  http://localhost/DATABASE_DATA/bus_update.php', formData, {
         headers: {
           'Content-Type': 'multipart/form-data'
         }
@@ -74,7 +74,7 @@ const AccountSettingsCard = () => {
   const handlePasswordChangeSubmit = async (event) => {
     event.preventDefault();
     try {
-      const response = await axios.post('  https://cannonball-can.000webhostapp.com/bus_update.php', {
+      const response = await axios.post('  http://localhost/DATABASE_DATA/bus_update.php', {
         username,
         currentPassword,
         newPassword
@@ -90,7 +90,7 @@ const AccountSettingsCard = () => {
   const handleDeleteAccount = async () => {
     if (window.confirm('Are you sure you want to delete your account? This action cannot be undone.')) {
       try {
-        const response = await axios.post('  https://cannonball-can.000webhostapp.com/bus_delete.php', {
+        const response = await axios.post('  http://localhost/DATABASE_DATA/bus_delete.php', {
           username: localStorage.getItem('companyname')
         });
         const data = response.data;

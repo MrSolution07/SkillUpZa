@@ -19,7 +19,7 @@ const Header = () => {
     const fetchProfilePicture = async () => {
       try {
         const username = localStorage.getItem('username');
-        const response = await axios.get('  https://cannonball-can.000webhostapp.com/getpicture.php', {
+        const response = await axios.get('   http://localhost/DATABASE_DATA/getpicture.php', {
           params: { username }
         });
         const data = response.data;

@@ -68,7 +68,7 @@ const BusinessRegisterPage = () => {
             phpData.append("mobile", formData.mobile);
 
             // Send registration data to the server
-            const response = await axios.post('https://cannonball-can.000webhostapp.com/Bus_register.php', phpData);
+            const response = await axios.post('http://localhost/DATABASE_DATA/Bus_register.php', phpData);
             const data = response.data;
 
             console.log(data);

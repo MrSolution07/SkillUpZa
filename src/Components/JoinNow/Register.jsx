@@ -62,8 +62,9 @@ const RegisterPage = () => {
             phpData.append("password", formData.password);
             phpData.append("mobile", formData.mobile);
 
-            const response = await axios.post('  https://cannonball-can.000webhostapp.com/register.php', phpData);
+            const response = await axios.post('http://localhost/DATABASE_DATA/register.php', phpData);
             const data = response.data;
+            
 
             if (data.success) {
                 alert("Registration successful");
