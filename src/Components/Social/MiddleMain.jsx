@@ -11,7 +11,7 @@ const MiddleMain = () => {
         const fetchProfilePicture = async () => {
             try {
                 const username = localStorage.getItem('username');
-                const response = await axios.get('  https://skill-up-za-c3dcd77b52be.herokuapp.com/getpicture.php', {
+                const response = await axios.get('  http://skill-up-za.infinityfreeapp.com/getpicture.php', {
                     params: { username }
                 });
                 const data = response.data;
@@ -27,7 +27,7 @@ const MiddleMain = () => {
 
         const fetchPosts = async () => {
             try {
-                const response = await axios.get('  https://skill-up-za-c3dcd77b52be.herokuapp.com/get_posts.php');
+                const response = await axios.get('  http://skill-up-za.infinityfreeapp.com/get_posts.php');
                 const data = response.data;
                 if (data.success) {
                     setPosts(data.posts);
@@ -54,7 +54,7 @@ const MiddleMain = () => {
         }
 
         try {
-            const response = await axios.post('  https://skill-up-za-c3dcd77b52be.herokuapp.com/create_post.php', formData, {
+            const response = await axios.post('  http://skill-up-za.infinityfreeapp.com/create_post.php', formData, {
                 headers: {
                     'Content-Type': 'multipart/form-data'
                 }

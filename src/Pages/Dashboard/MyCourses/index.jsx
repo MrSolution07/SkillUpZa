@@ -59,7 +59,7 @@ function Mycourses() {
     const fetchCourses = async () => {
       try {
         const username = localStorage.getItem("username");
-        const response = await axios.get("   https://skill-up-za-c3dcd77b52be.herokuapp.com/getCourse.php", {
+        const response = await axios.get("   http://skill-up-za.infinityfreeapp.com/getCourse.php", {
           params: { username }
         });
         const data = response.data;
