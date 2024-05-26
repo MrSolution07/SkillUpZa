@@ -1087,6 +1087,11 @@
 		display: inline-block;
 		
 	}
+	#removebtn-company{
+		line-height: 0.8;
+		margin-top: 15%;
+	}
+	
 
 }
 @media (max-width: 768px) {

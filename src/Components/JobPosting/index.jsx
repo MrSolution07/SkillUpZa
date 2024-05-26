@@ -62,14 +62,14 @@ const JobPostingForm = () => {
     <Container>
       <Row className="justify-content-center">
         <Col xs={12} md={8}>
-          <Card className="mb-4" style={{ borderRadius: '15px', minHeight: '600px' }}>
+          <Card className="mb-4" id='jobposting' style={{ borderRadius: '15px', minHeight: '600px' }}>
             {jobImage && (
               <div className="text-center mt-4">
                 <img
                   src={URL.createObjectURL(jobImage)}
                   alt="Job"
                   className="img-fluid rounded-circle"
-                  style={{ width: '150px', height: '150px', objectFit: 'cover' }}
+                  style={{ width: '80%', height: '100%', objectFit: 'cover' }}
                 />
               </div>
             )}

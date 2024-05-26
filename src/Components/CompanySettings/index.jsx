@@ -128,7 +128,7 @@ const AccountSettingsCard = () => {
                       className="rounded-circle img-fluid"
                       style={{ width: '100%', height: '100%', objectFit: 'cover' }}
                     />
-                    <Button variant="danger" onClick={() => setProfilePictureBase64('')} className="mb-0">
+                    <Button variant="danger" onClick={() => setProfilePictureBase64('')} className="mb-0" id='removebtn-company'>
                       Remove Picture
                     </Button>
                   </div>
