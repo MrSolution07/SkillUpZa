@@ -165,7 +165,7 @@ const Login = () => {
       phpData.append("username", formData.username);
       phpData.append("password", formData.password);
 
-      axios.post('http://localhost/DATABASE_DATA/Login.php', phpData)
+      axios.post('https://skill-up-za-c3dcd77b52be.herokuapp.com/Login.php', phpData)
         .then(response => {
           const data = response.data;
           if (data.success) {

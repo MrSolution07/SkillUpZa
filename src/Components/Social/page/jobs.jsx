@@ -6,7 +6,7 @@ function UserJobs() {
   const [loading, setLoading] = useState(true);
   
   useEffect(() => {
-    fetch('http://localhost/DATABASE_DATA/getJobs.php')
+    fetch('https://skill-up-za-c3dcd77b52be.herokuapp.com/getJobs.php')
       .then(response => response.json())
       .then(data => {
         if (data.success) {

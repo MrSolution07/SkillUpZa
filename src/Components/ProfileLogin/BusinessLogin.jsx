@@ -29,7 +29,7 @@ function CompanyLogin() {
             phpData.append("businessName", formData.businessName);
             phpData.append("password", formData.password);
 
-            axios.post('http://localhost/DATABASE_DATA/BusinessLogin.php', phpData)
+            axios.post('https://skill-up-za-c3dcd77b52be.herokuapp.com/BusinessLogin.php', phpData)
                 .then(response => {
                     const data = response.data;
 

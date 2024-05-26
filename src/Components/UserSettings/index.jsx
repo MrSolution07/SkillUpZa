@@ -85,7 +85,7 @@ const AccountSettingsCard = () => {
     // formData.append('currentPassword', currentPassword);
     // formData.append('newPassword', newPassword);
 
-    const response = await axios.post('http://localhost/DATABASE_DATA/update.php', {
+    const response = await axios.post('https://skill-up-za-c3dcd77b52be.herokuapp.com/update.php', {
       username,
       currentPassword,
       newPassword,
