@@ -28,8 +28,8 @@ function HomeHero() {
           <div className="col-lg-5 col-md-5">
             <div className="hero-content">
               <h2>Your path to Success</h2>
-              <p>
-              Unlock your potential with SkillUp, the ultimate platform
+              <p style={{letterSpacing:"1px"}}>
+              Unlock your potential with Skill UpZA, the ultimate platform
                for career advancement and personal growth. Discover diverse job opportunities 
               tailored to your skills and aspirations.
               </p>

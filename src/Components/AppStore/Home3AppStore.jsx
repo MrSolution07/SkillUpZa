@@ -10,10 +10,10 @@ function Home3AppStore() {
             <h2 className="sec-title">
               Start achieving
               <br /> academic excellence
-              <br /> with SkillUp
+              <br /> with Skill UpZA
             </h2>
             <p className="sec-desc">
-              Take classes on the go with the SkillUp app. Stream or download to
+              Take classes on the go with the Skill UpZA app. Stream or download to
               watch on the plane, the subway, or wherever you learn best.
             </p>
             <a href="#" className="SkillUplms-btn-3">

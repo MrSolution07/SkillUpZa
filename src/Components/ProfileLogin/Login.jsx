@@ -135,10 +135,11 @@
 
 
 
-
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
+import { IconButton, InputAdornment, TextField } from '@mui/material';
+import { Visibility, VisibilityOff } from '@mui/icons-material';
 
 const Login = () => {
   const [formData, setFormData] = useState({
@@ -164,21 +165,16 @@ const Login = () => {
       phpData.append("username", formData.username);
       phpData.append("password", formData.password);
 
-      axios.post('  https://cannonball-can.000webhostapp.com/Login.php', phpData)
-                  
+      axios.post('https://cannonball-can.000webhostapp.com/Login.php', phpData)
         .then(response => {
           const data = response.data;
           if (data.success) {
             localStorage.setItem('username', formData.username);
-            localStorage.setItem('Email' ,data.email);
+            localStorage.setItem('Email', data.email);
             localStorage.setItem('ProfilePicture', data.picture);
 
-             
-             
             alert("Login successful");
             window.location.href = '/AfterLogin'; // Redirect to dashboard on successful login
-           
-            
           } else {
             setError("Login failed. Please check your credentials.");
           }
@@ -216,39 +212,53 @@ const Login = () => {
                   </div>
                   <form className="form-horizontal auth-form my-4" onSubmit={handleSubmit}>
                     <div className="form-group">
-                      <label htmlFor="username">Username</label>
-                      <div className="input-group mb-3">
-                        <span className="auth-form-icon">
-                          <i className="dripicons-user"></i>
-                        </span>
-                        <input
-                          type="text"
-                          className="form-control"
-                          id="username"
-                          name="username"
-                          value={formData.username} onChange={handleChange}
-                          placeholder="Enter username"
-                        />
-                      </div>
+                      <TextField
+                        fullWidth
+                        label="Username"
+                        type="text"
+                        id="username"
+                        name="username"
+                        value={formData.username}
+                        onChange={handleChange}
+                        placeholder="Enter username"
+                        variant="outlined"
+                        margin="normal"
+                        InputProps={{
+                          startAdornment: (
+                            <InputAdornment position="start">
+                              <i className="dripicons-user"></i>
+                            </InputAdornment>
+                          ),
+                        }}
+                      />
                     </div>
                     <div className="form-group">
-                      <label htmlFor="userpassword">Password</label>
-                      <div className="input-group mb-3">
-                        <span className="auth-form-icon">
-                          <i className="dripicons-lock"></i>
-                        </span>
-                        <input
-                          type={showPassword ? "text" : "password"}
-                          className="form-control"
-                          id="userpassword"
-                          name="password"
-                          value={formData.password} onChange={handleChange}
-                          placeholder="Enter password"
-                        />
-                        <button type="button" className="btn btn-secondary" onClick={toggleShowPassword}>
-                          {showPassword ? "Hide" : "Show"}
-                        </button>
-                      </div>
+                      <TextField
+                        fullWidth
+                        label="Password"
+                        type={showPassword ? "text" : "password"}
+                        id="userpassword"
+                        name="password"
+                        value={formData.password}
+                        onChange={handleChange}
+                        placeholder="Enter password"
+                        variant="outlined"
+                        margin="normal"
+                        InputProps={{
+                          startAdornment: (
+                            <InputAdornment position="start">
+                              <i className="dripicons-lock"></i>
+                            </InputAdornment>
+                          ),
+                          endAdornment: (
+                            <InputAdornment position="end">
+                              <IconButton onClick={toggleShowPassword} edge="end" size="small">
+                                {showPassword ? <VisibilityOff /> : <Visibility />}
+                              </IconButton>
+                            </InputAdornment>
+                          ),
+                        }}
+                      />
                     </div>
                     <div className="form-group mb-0 row">
                       <div className="col-12 mt-2">
@@ -272,3 +282,4 @@ const Login = () => {
 }
 
 export default Login;
+

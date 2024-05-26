@@ -75,6 +75,7 @@ p {
     padding: 10px;
     z-index: 1;
     width: max-content;
+    
 }
 
 .dropDownProfile ul {
@@ -84,7 +85,7 @@ p {
 }
 
 .dropDownProfile li {
-    margin-bottom: 5px;
+    margin-bottom: 2%;
 }
 
 .dropDownProfile li a {
@@ -327,6 +328,10 @@ p {
     display: flex;
     flex-direction: column;
 }
+.navbar-nav  {
+    padding: 0.5rem 1rem; 
+    text-align: left;
+  }
 
 .link {
     width: 80px;
@@ -382,6 +387,9 @@ p {
         padding-left: 10px;
         padding-right: 10px;
     }
+    .dropdown-menu {
+        min-width: 300px;
+    }
 
     .top-icon,
     .me-icon {
@@ -392,8 +400,9 @@ p {
         display: none;
     }
     .dropDownProfile{
-        margin: 10%;
-        right:500px;
+        left: 0;
+        right: auto;
+        top: 40px;
     }
 
     .top-icon label,
@@ -407,3 +416,13 @@ p {
     }
 }
 
+@media (min-width: 992px) {
+    .dropdown-menu {
+      min-width: 40%; 
+    }
+  }
+  @media (min-width: 550px) {
+    .navbar-nav {
+      padding: 0.75rem 1.5rem; /* Increase padding for large screens */
+    }
+  }

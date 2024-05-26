@@ -77,7 +77,7 @@ const ProfileCard = () => {
                         className="rounded-circle img-fluid"
                         style={{ width: '100%', height: '100%', objectFit: 'contain' }}
                       />
-                      <Button variant="danger" onClick={() => setProfilePicture(null)} className="mb-0">
+                      <Button variant="danger" onClick={() => setProfilePicture(null)} className="mb-0" id="text-btn">
                         Remove Picture
                       </Button>
                     </div>

@@ -13,12 +13,12 @@ const ChangePasswordCard = ({ handlePasswordChangeSubmit }) => {
   };
 
   return (
-    <div className="passwordcard">
+    <div className="passwordcard d-flex justify-content-center align-items-center" style={{ minHeight: '100vh' }}>
       <HomeHeader />
-      <Container className="d-flex justify-content-center align-items-center" style={{ minHeight: '100vh' }}>
-        <Row className="w-100">
-          <Col xs={12} md={6} lg={4}>
-            <Card className="card-custom mb-4" style={{ borderRadius: '15px', width: "500px", height: "400px",marginLeft:"90%" }}>
+      <Container>
+        <Row className="justify-content-center">
+          <Col xs={12} md={8} lg={6}>
+            <Card className="card-custom mb-4" style={{ borderRadius: '15px' }}>
               <Card.Body>
                 <Card.Title className="text-center mb-4">Change Password</Card.Title>
                 <Form onSubmit={handleSubmit}>

@@ -16,6 +16,7 @@ const BusinessRegisterPage = () => {
     const [error, setError] = useState('');
     const [termsAccepted, setTermsAccepted] = useState(false);
     const [showPassword, setShowPassword] = useState(false);
+    const [showConfirmPassword, setShowConfirmPassword] = useState(false);
 
     const handleChange = (e) => {
         setFormData(prev => ({
@@ -23,6 +24,8 @@ const BusinessRegisterPage = () => {
             [e.target.name]: e.target.value
         }));
     };
+
+    // Function to validate the password strength
     const validatePassword = (password) => {
         const strongPasswordPattern = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&~#^_+=|\\(){}[\]:;<>,./-])[A-Za-z\d@$!%*?&~#^_+=|\\(){}[\]:;<>,./-]{8,}$/; //pattern for password with js simple...
         return strongPasswordPattern.test(password);
@@ -31,11 +34,13 @@ const BusinessRegisterPage = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
 
+        // Check if terms and conditions are accepted
         if (!termsAccepted) {
             setError('Please accept the terms and conditions');
             return;
         }
 
+        // Check if all fields are filled
         for (const key in formData) {
             if (formData[key] === '') {
                 setError('Please fill in all fields');
@@ -43,10 +48,13 @@ const BusinessRegisterPage = () => {
             }
         }
 
+        // Check if passwords match
         if (formData.password !== formData.confirm_password) {
             setError('Passwords do not match');
             return;
         }
+
+        // Validate password strength
         if (!validatePassword(formData.password)) {
             setError('Password must be at least 8 characters long, include an uppercase letter, a lowercase letter, a number, and a special character.');
             return;
@@ -59,7 +67,8 @@ const BusinessRegisterPage = () => {
             phpData.append("password", formData.password);
             phpData.append("mobile", formData.mobile);
 
-            const response = await axios.post('  https://cannonball-can.000webhostapp.com/Bus_register.php', phpData);
+            // Send registration data to the server
+            const response = await axios.post('https://cannonball-can.000webhostapp.com/Bus_register.php', phpData);
             const data = response.data;
 
             console.log(data);
@@ -81,9 +90,10 @@ const BusinessRegisterPage = () => {
     const handleTermsChange = () => {
         setTermsAccepted(prev => !prev);
     };
+
     const toggleShowPassword = () => {
         setShowPassword(prev => !prev);
-      };
+    };
 
     const toggleShowConfirmPassword = () => {
         setShowConfirmPassword(prev => !prev);
@@ -108,46 +118,102 @@ const BusinessRegisterPage = () => {
                                     </div>
                                     <form className="form-horizontal auth-form my-4" onSubmit={handleSubmit}>
                                         <div className="form-group">
-                                            <label htmlFor="username">Business Name</label>
-                                            <div className="input-group mb-3">
-                                                <span className="auth-form-icon">
-                                                    <i className="dripicons-user"></i>
-                                                </span>
-                                                <input type="text" className="form-control" id="username" name="businessName" value={formData.businessName} onChange={handleChange} placeholder="Enter Business" />
-                                            </div>
+                                            <TextField
+                                                fullWidth
+                                                label="Business Name"
+                                                type="text"
+                                                id="username"
+                                                name="businessName"
+                                                value={formData.businessName}
+                                                onChange={handleChange}
+                                                placeholder="Enter Business"
+                                                variant="outlined"
+                                                margin="normal"
+                                                InputProps={{
+                                                    startAdornment: (
+                                                        <InputAdornment position="start">
+                                                            <i className="dripicons-user"></i>
+                                                        </InputAdornment>
+                                                    ),
+                                                }}
+                                            />
                                         </div>
                                         <div className="form-group">
-                                            <label htmlFor="useremail">Email</label>
-                                            <div className="input-group mb-3">
-                                                <span className="auth-form-icon">
-                                                    <i className="dripicons-mail"></i>
-                                                </span>
-                                                <input type="email" className="form-control" id="useremail" name="email" value={formData.email} onChange={handleChange} placeholder="Enter company Email" />
-                                            </div>
+                                            <TextField
+                                                fullWidth
+                                                label="Email"
+                                                type="email"
+                                                id="useremail"
+                                                name="email"
+                                                value={formData.email}
+                                                onChange={handleChange}
+                                                placeholder="Enter company Email"
+                                                variant="outlined"
+                                                margin="normal"
+                                                InputProps={{
+                                                    startAdornment: (
+                                                        <InputAdornment position="start">
+                                                            <i className="dripicons-mail"></i>
+                                                        </InputAdornment>
+                                                    ),
+                                                }}
+                                            />
                                         </div>
                                         <div className="form-group">
-                                            <label htmlFor="userpassword">Password</label>
-                                            <div className="input-group mb-3">
-                                                <span className="auth-form-icon">
-                                                    <i className="dripicons-lock"></i>
-                                                </span>
-                                                <input type={showPassword ? "text" : "password"} className="form-control" id="userpassword" name="password" value={formData.password} onChange={handleChange} placeholder="Enter password" />
-                                                <button type="button" className="btn btn-secondary" onClick={toggleShowPassword}>
-                                                        {showPassword ? "Hide" : "Show"}
-                                                     </button>
-                                            </div>
+                                            <TextField
+                                                fullWidth
+                                                label="Password"
+                                                type={showPassword ? "text" : "password"}
+                                                id="userpassword"
+                                                name="password"
+                                                value={formData.password}
+                                                onChange={handleChange}
+                                                placeholder="Enter password"
+                                                variant="outlined"
+                                                margin="normal"
+                                                InputProps={{
+                                                    startAdornment: (
+                                                        <InputAdornment position="start">
+                                                            <i className="dripicons-lock"></i>
+                                                        </InputAdornment>
+                                                    ),
+                                                    endAdornment: (
+                                                        <InputAdornment position="end">
+                                                            <IconButton onClick={toggleShowPassword} edge="end" size="small">
+                                                                {showPassword ? <VisibilityOff /> : <Visibility />}
+                                                            </IconButton>
+                                                        </InputAdornment>
+                                                    ),
+                                                }}
+                                            />
                                         </div>
                                         <div className="form-group">
-                                            <label htmlFor="conf_password">Confirm Password</label>
-                                            <div className="input-group mb-3">
-                                                <span className="auth-form-icon">
-                                                    <i className="dripicons-lock-open"></i>
-                                                </span>
-                                                <input type={showPassword ? "text" : "password"} className="form-control" id="conf_password" name="confirm_password" value={formData.confirm_password} onChange={handleChange} placeholder="Confirm Password" />
-                                                <button type="button" className="btn btn-secondary" onClick={toggleShowPassword}>
-                                                        {showPassword ? "Hide" : "Show"}
-                                                     </button>
-                                            </div>
+                                            <TextField
+                                                fullWidth
+                                                label="Confirm Password"
+                                                type={showConfirmPassword ? "text" : "password"}
+                                                id="conf_password"
+                                                name="confirm_password"
+                                                value={formData.confirm_password}
+                                                onChange={handleChange}
+                                                placeholder="Confirm Password"
+                                                variant="outlined"
+                                                margin="normal"
+                                                InputProps={{
+                                                    startAdornment: (
+                                                        <InputAdornment position="start">
+                                                            <i className="dripicons-lock-open"></i>
+                                                        </InputAdornment>
+                                                    ),
+                                                    endAdornment: (
+                                                        <InputAdornment position="end">
+                                                            <IconButton onClick={toggleShowConfirmPassword} edge="end" size="small">
+                                                                {showConfirmPassword ? <VisibilityOff /> : <Visibility />}
+                                                            </IconButton>
+                                                        </InputAdornment>
+                                                    ),
+                                                }}
+                                            />
                                         </div>
                                         <div className="form-group">
                                             <TextField
@@ -187,7 +253,7 @@ const BusinessRegisterPage = () => {
                                     </form>
                                 </div>
                                 <div className="m-3 text-center text-muted">
-                                    <p className="">Already have an account ? <a href="/BusinessLogin" className="text-primary ml-2">Log in</a></p>
+                                    <p className="">Already have an account? <a href="/BusinessLogin" className="text-primary ml-2">Log in</a></p>
                                 </div>
                             </div>
                         </div>
