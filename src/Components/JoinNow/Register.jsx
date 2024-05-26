@@ -62,7 +62,7 @@ const RegisterPage = () => {
             phpData.append("password", formData.password);
             phpData.append("mobile", formData.mobile);
 
-            const response = await axios.post('http://skill-up-za.infinityfreeapp.com/register.php', phpData);
+            const response = await axios.post('https://skill-up-za-a416b38edeac.herokuapp.com/register.php', phpData);
             const data = response.data;
             
 

@@ -6,7 +6,7 @@ function Jobs() {
   const [jobs, setJobs] = useState([]);
 
   useEffect(() => {
-    fetch('   http://skill-up-za.infinityfreeapp.com/getJobs.php')
+    fetch('   https://skill-up-za-a416b38edeac.herokuapp.com/getJobs.php')
       .then(response => response.json())
       .then(data => {
         if (data.success) {
