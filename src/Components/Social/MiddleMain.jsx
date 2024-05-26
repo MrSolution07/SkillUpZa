@@ -81,7 +81,6 @@ const MiddleMain = () => {
 
     return (
         <div className="middle-main">
-            {/* MiddleMain1 content */}
             <div className="middle-main-1">
                 <div className="post-1">
                     <img className="middle-pic" src={profilePicture} alt="Profile Picture" />
@@ -92,16 +91,22 @@ const MiddleMain = () => {
                         value={content}
                         onChange={(e) => setContent(e.target.value)}
                     />
-                    <input
-                        type="file"
-                        accept="image/*"
-                        onChange={(e) => setPostImage(e.target.files[0])}
-                    />
-                    <button onClick={handleCreatePost}>Post</button>
+                   <label htmlFor="fileInput" className="linked-input">
+    <img src="public/assets/images/icons/attachment.svg" alt="Upload" />
+</label>
+<input
+    id="fileInput"
+    type="file"
+    accept="image/*,video/*"
+    onChange={(e) => setPostImage(e.target.files[0])}
+    style={{display: 'none'}} 
+/>
+                    <button id='sendPost' onClick={handleCreatePost}>
+                        <img src="/assets/images/icons/send.svg" alt="Send" />
+                    </button>
                 </div>
             </div>
 
-            {/* MiddleMain2 content */}
             <div className="middle-main-2">
                 {posts.map((post, index) => (
                     <div key={index} className="post-about">
