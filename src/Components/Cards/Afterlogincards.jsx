@@ -25,7 +25,7 @@ const AfterLoginCards = () => {
       imgSrc: "https://images.unsplash.com/photo-1586281380349-632531db7ed4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8am9iJTIwYXBwbGljYXRpb258ZW58MHx8MHx8fDA%3D",
       title: "Jobs",
       text: "Check and apply for available jobs posted on the platform",
-      link: "/Jobs"
+      link: "/JobsUser"
     },
     {
       imgSrc: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8am9iJTIwYXBwbGljYXRpb258ZW58MHx8MHx8fDA%3D",
