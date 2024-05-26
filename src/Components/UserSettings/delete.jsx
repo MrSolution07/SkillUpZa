@@ -38,6 +38,9 @@ const DeleteAccountCard = () => {
             <Card className="card-custom mb-4" style={{ borderRadius: '15px' }}>
               <Card.Body>
                 <Card.Title className="text-center mb-4">Delete Account</Card.Title>
+                <p>
+                <strong>Warning:</strong> Deleting your account is irreversible. Please proceed with caution.
+              </p>
                 <Button variant="danger" className="w-100" onClick={handleDeleteAccount}>
                   Delete Account
                 </Button>
