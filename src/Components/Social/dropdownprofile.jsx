@@ -7,7 +7,10 @@ const DropDownProfile = () => {
     <div className='dropDownProfile'>
       <ul className='navbar-nav'>
         <li>
-          <Link to="/ProfileCard">Profile</Link>
+          <Link to="/ViewDetails">View Profile</Link>
+        </li>
+        <li>
+          <Link to="/ProfileCar">Edit Profile</Link>
         </li>
         <li>
           <Link to="/ChangePasswordCard">Change Password</Link>

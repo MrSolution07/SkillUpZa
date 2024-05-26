@@ -92,7 +92,7 @@ const Header = () => {
           <label>My Courses</label>
         </div>
       </Link>
-      <div className="top-icon">
+      {/* <div className="top-icon">
         <BsBellFill className="home" />
         <label>Notifications</label>
       </div>
@@ -102,7 +102,7 @@ const Header = () => {
           Me <i className="fa fa-sort-desc"></i>
         </label>
         {openProfile && <DropDownProfile />}
-      </div>
+      </div> */}
       <Link to="/UserFAQ">
         <div className="top-icon">
           <FaUserGroup className="home" />
