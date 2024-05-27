@@ -97,7 +97,9 @@ const MiddleMain = () => {
         />
         <div className="iconsdiv" style={{ marginLeft: 'auto', display: 'flex', alignItems: 'center' }}>
             <label htmlFor="fileInput" className="linked-input">
-                <BsPaperclip />
+                <BsPaperclip /><button id='sendPost' onClick={handleCreatePost}>
+                <IoSend />
+            </button>
             </label>
             <input
                 id="fileInput"
@@ -106,9 +108,9 @@ const MiddleMain = () => {
                 onChange={(e) => setPostImage(e.target.files[0])}
                 style={{ display: 'none' }}
             />
-            <button id='sendPost' onClick={handleCreatePost}>
+            {/* <button id='sendPost' onClick={handleCreatePost}>
                 <IoSend />
-            </button>
+            </button> */}
         </div>
     </div>
 </div>
