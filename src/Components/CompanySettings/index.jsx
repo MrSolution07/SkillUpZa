@@ -19,7 +19,7 @@ const AccountSettingsCard = () => {
 
   const fetchUserData = async () => {
     try {
-      const response = await axios.post('bus_update.php', {
+      const response = await axios.post('https://skill-up-za-a416b38edeac.herokuapp.com/bus_update.php', {
         username: localStorage.getItem('companyname')
       });
       const responseData = response.data;
