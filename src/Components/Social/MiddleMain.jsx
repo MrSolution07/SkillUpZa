@@ -144,6 +144,20 @@ const MiddleMain = () => {
     const [postImage, setPostImage] = useState(null);
     const [posts, setPosts] = useState([]);
 
+    const fetchPosts = async () => {
+        try {
+            const response = await axios.get('https://skill-up-za-a416b38edeac.herokuapp.com/get_posts.php');
+            const data = response.data;
+            if (data.success) {
+                setPosts(data.posts);
+            } else {
+                console.error('Error fetching posts:', data.message);
+            }
+        } catch (error) {
+            console.error('Error fetching posts:', error);
+        }
+    };
+
     useEffect(() => {
         const fetchProfilePicture = async () => {
             try {
@@ -153,7 +167,7 @@ const MiddleMain = () => {
                 });
                 const data = response.data;
                 if (data.success) {
-                    setProfilePicture(data.profilePictureUrl);
+                    setProfilePicture(`data:${data.type};base64,${data.image}`);
                 } else {
                     console.error('Error fetching profile picture:', data.message);
                 }
@@ -162,22 +176,8 @@ const MiddleMain = () => {
             }
         };
 
-        const fetchPosts = async () => {
-            try {
-                const response = await axios.get('https://skill-up-za-a416b38edeac.herokuapp.com/get_posts.php');
-                const data = response.data;
-                if (data.success) {
-                    setPosts(data.posts);
-                } else {
-                    console.error('Error fetching posts:', data.message);
-                }
-            } catch (error) {
-                console.error('Error fetching posts:', error);
-            }
-        };
-
         fetchProfilePicture();
-        fetchPosts();
+        fetchPosts(); // Call fetchPosts here
     }, []);
 
     const handleCreatePost = async () => {
@@ -200,7 +200,14 @@ const MiddleMain = () => {
             if (data && data.success) {
                 setContent('');
                 setPostImage(null);
-                fetchPosts(); // Reload posts after creating a new post
+                const newPost = {
+                    username,
+                    content,
+                    createdAt: new Date().toISOString(),
+                    image: postImage ? URL.createObjectURL(postImage) : null,
+                    imageType: postImage ? postImage.type : null
+                };
+                setPosts([newPost, ...posts]);
             } else {
                 console.error('Error creating post:', data && data.message ? data.message : 'Unknown error');
             }
@@ -248,9 +255,9 @@ const MiddleMain = () => {
                         <div className="post-content">
                             <p>{post.content}</p>
                         </div>
-                        {post.imageUrl && ( // Change 'image' to 'imageUrl'
+                        {post.image && (
                             <div className="image-container">
-                                <img className="post-image" src={post.imageUrl} alt="Post Image" />
+                                <img className="post-image" src={post.image} alt="Post Image" />
                             </div>
                         )}
                     </div>
@@ -261,4 +268,3 @@ const MiddleMain = () => {
 };
 
 export default MiddleMain;
-
