@@ -13,7 +13,7 @@ const MiddleMain = () => {
         const fetchProfilePicture = async () => {
             try {
                 const username = localStorage.getItem('username');
-                const response = await axios.get('  https://skill-up-za-a416b38edeac.herokuapp.com/getpicture.php', {
+                const response = await axios.get('https://skill-up-za-a416b38edeac.herokuapp.com/getpicture.php', {
                     params: { username }
                 });
                 const data = response.data;
@@ -29,7 +29,7 @@ const MiddleMain = () => {
 
         const fetchPosts = async () => {
             try {
-                const response = await axios.get('  https://skill-up-za-a416b38edeac.herokuapp.com/get_posts.php');
+                const response = await axios.get('https://skill-up-za-a416b38edeac.herokuapp.com/get_posts.php');
                 const data = response.data;
                 if (data.success) {
                     setPosts(data.posts);
@@ -56,7 +56,7 @@ const MiddleMain = () => {
         }
 
         try {
-            const response = await axios.post('  https://skill-up-za-a416b38edeac.herokuapp.com/create_post.php', formData, {
+            const response = await axios.post('https://skill-up-za-a416b38edeac.herokuapp.com/create_post.php', formData, {
                 headers: {
                     'Content-Type': 'multipart/form-data'
                 }
@@ -121,7 +121,7 @@ const MiddleMain = () => {
                         </div>
                         {post.image && (
                             <div className="image-container">
-                                <img className="post-image" src={`data:${post.imageType};base64,${post.image}`} alt="Post Image" />
+                                <img className="post-image" src={post.image} alt="Post Image" />
                             </div>
                         )}
                     </div>

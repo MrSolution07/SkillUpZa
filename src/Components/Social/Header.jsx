@@ -19,7 +19,7 @@ const Header = () => {
     const fetchProfilePicture = async () => {
       try {
         const username = localStorage.getItem('username');
-        const response = await axios.get('   https://skill-up-za-a416b38edeac.herokuapp.com/getpicture.php', {
+        const response = await axios.get('https://skill-up-za-a416b38edeac.herokuapp.com/getpicture.php', {
           params: { username }
         });
         const data = response.data;
