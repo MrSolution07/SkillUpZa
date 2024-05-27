@@ -7,7 +7,7 @@ const LeftMain = () => {
   useEffect(() => {
     const fetchProfilePicture = async () => {
       try {
-        const response = await axios.get('http://localhost/getpicture.php', {
+        const response = await axios.get('https://skill-up-za-a416b38edeac.herokuapp.com/getpicture.php', {
           params: { username: localStorage.getItem('username') }
         });
         setProfilePicture(response.data);
