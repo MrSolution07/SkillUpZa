@@ -49,9 +49,9 @@ const AfterLoginCards = () => {
 
   return (
     <div className="d-flex justify-content-center align-items-center afterlogin" style={{ minHeight: '100vh' }}>
-      <div className="row row-cols-1 row-cols-md-3 g-4">
+      <div className="row row-cols-1 row-cols-md-3 g-2">  {/* Changed g-4 to g-2 to reduce spacing */}
         {cardsData.map((card, index) => (
-          <div className="col mb-3" key={index}>
+          <div className="col mb-2" key={index}>  {/* Changed mb-3 to mb-2 to reduce spacing */}
             <div
               className={`card ${isCardToggled ? 'toggled' : ''}`}
               style={{ width: '18rem' }}

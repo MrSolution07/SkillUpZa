@@ -8,7 +8,7 @@ import CommentForm from "../../Components/Form/CommentForm";
 import Comment from "../../Components/Comment/Comment";
 import GotoTop from "../../Components/GotoTop";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faXTwitter} from '@fortawesome/free-brands-svg-icons';
+import { faXTwitter,faFacebook } from '@fortawesome/free-brands-svg-icons';
 
 
 function SinglePost() {
@@ -77,8 +77,8 @@ function SinglePost() {
                   <div className="post-share">
                     <h5>Share:</h5>
                     <a className="fac" href="https://www.facebook.com/profile.php?id=61559534575921">
-                    <i className="social_facebook"></i>
-                  </a>
+                    <FontAwesomeIcon icon={faFacebook} />
+                    </a>
                     <a className="twi" href="https://twitter.com/_Skill_Up_/status/1784949119582195767?t=PPYZjB1fn0GIJJ5XNoYBKw&s=19">
                     <FontAwesomeIcon icon={faXTwitter} />                      
                     </a>

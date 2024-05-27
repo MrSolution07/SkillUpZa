@@ -9,7 +9,7 @@ import FeatureCourseCard from "../../Components/Cards/FeatureCourseCard";
 import { Link } from "react-router-dom";
 import GotoTop from "../../Components/GotoTop";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faXTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { faXTwitter, faInstagram, faFacebook } from '@fortawesome/free-brands-svg-icons';
 
 const purchased = [
   {
@@ -101,7 +101,7 @@ function InstructorProfile() {
                   <div className="ab-social">
                     <h5>Follow Us</h5>
                     <a className="fac" href = "https://www.facebook.com/profile.php?id=61559534575921">
-                      <i className="social_facebook"></i>
+                    <FontAwesomeIcon icon={faFacebook} />
                     </a>
                     <a className="twi" href="https://x.com/_Skill_Up_/status/1784949119582195767?t=PPYZjB1fn0GIJJ5XNoYBKw&s=19">
                   <FontAwesomeIcon icon={faXTwitter} />

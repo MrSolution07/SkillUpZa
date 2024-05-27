@@ -1,4 +1,6 @@
 import { Link } from "react-router-dom";
+import { faXTwitter, faInstagram, faFacebook } from '@fortawesome/free-brands-svg-icons';
+
 
 function Home3Footer() {
   return (
@@ -16,14 +18,13 @@ function Home3Footer() {
                 </p>
                 <div className="ab-social">
                   <a className="fac" href="https://www.facebook.com/profile.php?id=61559534575921">
-                    <i className="social_facebook"></i>
+                  <FontAwesomeIcon icon={faFacebook} />
                   </a>
                   <a className="twi" href="https://twitter.com/_Skill_Up_/status/1784949119582195767?t=PPYZjB1fn0GIJJ5XNoYBKw&s=19">
-                      <i><img src ="public/assets/images/twitter-x.png" alt = ""/>
-                      </i>
+                  <FontAwesomeIcon icon={faXTwitter} />
                   </a>
                   <a href="https://www.instagram.com/skillupza/">
-                      <i><img src="public/assets/images/instagram.png" alt="" /></i>
+                  <FontAwesomeIcon icon={faInstagram} />
                   </a>
                 </div>
               </div>

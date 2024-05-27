@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { Card, Form, Button, Container, Row, Col } from 'react-bootstrap';
 import axios from 'axios';
@@ -81,9 +80,10 @@ const ProfileCard = () => {
           <Col xs={12} md={8} lg={6}>
             <Card className="card-custom mb-4" style={{ borderRadius: '15px' }}>
               <Card.Body className="text-center">
-                {profilePicture ? (
+                <Card.Title>User Profile</Card.Title>
+                {profilePicture && (
                   <>
-                    <div style={{ position: 'relative', width: '100px', height: '100px', margin: 'auto' }} className='removediv'>
+                    <div style={{ position: 'relative', width: '100px', height: '100px', margin: '20px auto' }}>
                       <img
                         src={profilePicture}
                         alt="Profile"
@@ -91,18 +91,11 @@ const ProfileCard = () => {
                         style={{ width: '100%', height: '100%', objectFit: 'contain' }}
                       />
                     </div>
-
-                      <Button variant="danger" onClick={() => setProfilePicture(null)} className="mb-0" id="text-btn">
-                        Remove 
-                      </Button>
+                    <Button variant="danger" onClick={() => setProfilePicture(null)} className="mb-3">
+                      Remove 
+                    </Button>
                   </>
-                ) : (
-                  <Form.Group controlId="profilePicture">
-                    <Form.Label>Upload Profile Picture</Form.Label>
-                    <Form.Control type="file" accept="image/*" onChange={handleProfilePictureChange} />
-                  </Form.Group>
                 )}
-                <Card.Title>User Profile</Card.Title>
                 <Form onSubmit={handleAccountSettingsSubmit}>
                   <Form.Group controlId="username">
                     <Form.Label>Username</Form.Label>
@@ -134,7 +127,11 @@ const ProfileCard = () => {
                       placeholder="Enter new mobile number"
                     />
                   </Form.Group>
-                  <Button variant="primary" type="submit" className="w-100" style={{marginTop:"20px"}}>
+                  <Form.Group controlId="profilePicture" className="mt-3">
+                    <Form.Label>Upload Profile Picture</Form.Label>
+                    <Form.Control type="file" accept="image/*" onChange={handleProfilePictureChange} />
+                  </Form.Group>
+                  <Button variant="primary" type="submit" className="w-100 mt-3">
                     Save Changes
                   </Button>
                 </Form>
@@ -148,5 +145,3 @@ const ProfileCard = () => {
 };
 
 export default ProfileCard;
- 
-

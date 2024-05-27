@@ -12,7 +12,7 @@ import LatestCourseCard from "../../Components/Cards/LatestCourseCard";
 import ReviewForm from "../../Components/Form/ReviewForm";
 import GotoTop from "../../Components/GotoTop";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faXTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { faXTwitter, faInstagram, faFacebook } from '@fortawesome/free-brands-svg-icons';
 
 
 function CourseSingle() {
@@ -762,7 +762,7 @@ function CourseSingle() {
                     <h5>Share:</h5>
                     
                     <a className="fac" href="https://www.facebook.com/profile.php?id=61559534575921">
-                    <i className="social_facebook"></i>
+                    <FontAwesomeIcon icon={faFacebook} />
                   </a>
                   <a className="twi" href="https://x.com/_Skill_Up_/status/1784949119582195767?t=PPYZjB1fn0GIJJ5XNoYBKw&s=19">
                   <FontAwesomeIcon icon={faXTwitter} />
