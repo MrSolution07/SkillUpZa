@@ -24,6 +24,7 @@ import AfterLogin from "./Pages/AfterLogin";
 import Interview from "./Components/Interview/index.jsx";
 import CompanySettings from "./Components/CompanySettings";
 
+import ViewDetails from "./Components/ViewDetails";
 import ChangePasswordCard from "./Components/UserSettings/changepassword.jsx";
 import DeleteAccountCard from "./Components/UserSettings/delete.jsx";
 import ProfileCard from "./Components/UserSettings/profilecard.jsx";
@@ -70,6 +71,10 @@ const router = createBrowserRouter([
   {
     path: "/ChangePasswordCard",
     element: <ChangePasswordCard/>
+  },
+  {
+    path: "/ViewDetails",
+    element: <ViewDetails/>
   },
   {
     path: "/DeleteAccountCard",

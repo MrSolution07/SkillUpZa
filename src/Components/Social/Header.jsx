@@ -92,17 +92,6 @@ const Header = () => {
           <label>My Courses</label>
         </div>
       </Link>
-      <div className="top-icon">
-        <BsBellFill className="home" />
-        <label>Notifications</label>
-      </div>
-      <div className="me-icon" onClick={toggleProfileMenu} ref={dropdownRef}>
-        <img className="dp" src={profilePicture} alt="Me" />
-        <label style={{ opacity: 0.6, fontWeight: "bold" }}>
-          Me <i className="fa fa-sort-desc"></i>
-        </label>
-        {/* {openProfile && <DropDownProfile />} */}
-      </div>
       <Link to="/UserFAQ">
         <div className="top-icon">
           <FaUserGroup className="home" />

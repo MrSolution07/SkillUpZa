@@ -55,13 +55,30 @@ function SkillAI() {
         </div>
         <div className="flex h-14 shrink-0 items-center border-t border-[#1f2937] bg-[#1f2937] px-4 dark:border-[#f0f0f0] dark:bg-[#f0f0f0]" id="prompt">
           <div style={{ display: 'flex', alignItems: 'center', width: '100%' }}>
-            <TextField
+            <TextField 
               className="flex-1 rounded-md py-2 px-3 text-sm focus:outline-none dark:text-gray-900"
               placeholder="Type your message..."
               value={userInput}
               onChange={(e) => setUserInput(e.target.value)}
               onKeyDown={handleKeyDown}
-              style={{ marginRight: '10px', width: '100%' }}
+              sx={{
+                marginRight: '10px',
+                width: '100%',
+                borderRadius: "6px",
+                '& .MuiOutlinedInput-root': {
+                  '& fieldset': {
+                    border: 'none',
+                  },
+                  backgroundColor: 'white',
+                  color: 'white',
+                },
+                '& .MuiInputBase-input': {
+                  color: 'black', // 
+                },
+                '& .MuiOutlinedInput-input': {
+                  padding: '10px 14px',
+                },
+              }}
               InputProps={{
                 endAdornment: (
                   <Button onClick={handleSend} type="button" variant="contained" color="primary" disableElevation style={{ backgroundColor: 'transparent' }}>

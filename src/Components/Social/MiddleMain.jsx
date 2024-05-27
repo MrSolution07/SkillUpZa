@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import { IoSend } from "react-icons/io5";
+import { IoMdCloudUpload } from "react-icons/io";
 
 const MiddleMain = () => {
     const [profilePicture, setProfilePicture] = useState('');
@@ -91,18 +93,18 @@ const MiddleMain = () => {
                         value={content}
                         onChange={(e) => setContent(e.target.value)}
                     />
-                   <label htmlFor="fileInput" className="linked-input">
-    <img src="public/assets/images/icons/attachment.svg" alt="Upload" />
-</label>
-<input
-    id="fileInput"
-    type="file"
-    accept="image/*,video/*"
-    onChange={(e) => setPostImage(e.target.files[0])}
-    style={{display: 'none'}} 
-/>
+                    <label htmlFor="fileInput" className="linked-input">
+                        <IoMdCloudUpload />
+                    </label>
+                    <input
+                        id="fileInput"
+                        type="file"
+                        accept="image/*,video/*"
+                        onChange={(e) => setPostImage(e.target.files[0])}
+                        style={{ display: 'none' }}
+                    />
                     <button id='sendPost' onClick={handleCreatePost}>
-                        <img src="/assets/images/icons/send.svg" alt="Send" />
+                        <IoSend />
                     </button>
                 </div>
             </div>
@@ -110,19 +112,17 @@ const MiddleMain = () => {
             <div className="middle-main-2">
                 {posts.map((post, index) => (
                     <div key={index} className="post-about">
-                        <div>
-                            <img className="middle-pic" src={profilePicture} alt="Profile Picture" />
-                        </div>
-                        <div>
+                        <div className="post-header">
                             <p className="name">{post.username}</p>
-                            <p className="name-about">IT Student</p>
                             <p className="name-about">{new Date(post.createdAt).toLocaleTimeString()} &#183; <i className="fa fa-globe" aria-hidden="true"></i></p>
                         </div>
-                        <div>
+                        <div className="post-content">
                             <p>{post.content}</p>
                         </div>
                         {post.image && (
-                            <img className="post-image" src={`data:${post.imageType};base64,${post.image}`} alt="Post Image" />
+                            <div className="image-container">
+                                <img className="post-image" src={`data:${post.imageType};base64,${post.image}`} alt="Post Image" />
+                            </div>
                         )}
                     </div>
                 ))}

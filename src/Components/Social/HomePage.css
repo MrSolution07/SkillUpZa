@@ -5,8 +5,8 @@
     right: 0;
     height: 60px;
     background-color:  #f8f9fa;
-    padding-left: 160px;
-    padding-right: 160px;
+    padding-left: 120px;
+    padding-right: 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -20,13 +20,14 @@ main {
     padding-top: 70px;
     padding-left: 150px;
     padding-right: 150px;
-    background-color: darkcyan;
+    background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);;
     transition: padding-top 0.3s ease; /* Add transition */
 }
 
 .main-with-dropdown {
     padding-top: 150px; /* Adjust this value as needed */
 }
+
 
 p {
     padding: 0;
@@ -169,7 +170,11 @@ p {
 
 .post-1 {
     display: flex;
+    align-items: center;
     padding: 10px 20px;
+    border-radius: 40px;
+    height: auto;
+    margin-top: 5%;
 }
 
 .post {
@@ -177,7 +182,8 @@ p {
     border: 1px solid rgba(199, 192, 192, 0.5);
     background-color: transparent;
     border-radius: 40px;
-    height: 50px;
+    height: 40px;
+    
 }
 
 .post::placeholder {
@@ -199,10 +205,8 @@ p {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
-    img {
-        width: 40px;
-    }
+    padding: 7px 8px;
+    padding-top: 12px;
 }
 
 .post-about {
@@ -210,12 +214,17 @@ p {
     margin-top: 10px;
     margin-bottom: 10px;
     padding: 10px 20px;
+    display: block;
 }
 
 .post-image {
-    width: 100%;
-    margin-top: 10px;
+    width: 50%;
+    margin-top: 8px;
+    display: block; /* Ensure each image is displayed as a block element */
+    border-radius: 10px; /* Optional: Add border-radius for rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow effect */
 }
+
 
 .middle-main-2 {
     background-color: white;
@@ -319,6 +328,14 @@ p {
     border-radius: 50%;
     margin-right: 30px;
 }
+#sendPost{
+    /* padding: 4px 6px; */
+}
+#sendPost{
+    border-style: none;
+    background-color: transparent;
+    top: 5px;
+}
 
 .link-2 {
     width: 80px;
@@ -349,12 +366,13 @@ p {
     top: 80px;
 }
 
-.linked-input img {
-    width: 40px;
-    height: 40px;
-    margin-bottom: 10px;
-}
 
+.linked-input, #sendPost{
+    /* justify-content:flex-start; */
+    display: inline-flex;
+    flex-direction: row;
+    color: black;
+}
 @media (max-width: 768px) {
     .header {
         padding-left: 10px;
@@ -376,6 +394,8 @@ p {
         left: 0;
         right: auto;
         top: 40px;
+        display: block;
+
     }
 
     .top-icon label,
@@ -399,3 +419,61 @@ p {
       padding: 0.75rem 1.5rem; /* Increase padding for large screens */
     }
   }
+
+@media (max-width: 768px) {
+    .middle-main-1,
+    .middle-main-2 {
+        max-width: 100%;
+    }
+    
+    .post-1 {
+        flex-direction: row;
+        align-items:center;
+    }
+    
+    .middle-pic {
+        margin-bottom: 5px;
+    }
+
+    
+    .middle-main-1{
+        width: fit-content;
+    }
+
+    
+    .post {
+        margin-bottom: 10px;
+    }
+ 
+
+
+}
+
+@media (max-width: 480px) {
+    .post-1 {
+        padding: 1%;
+    }
+/* 
+    .linked-input img {
+        width: 30px;
+        height: 30px;
+        margin-right: 5px;
+    } */
+    .post{
+        width: 100%;
+    }
+    .dropDownProfile{
+        left:auto;
+    }
+
+    
+}
+@media (max-width: 850px) {
+
+
+    .header{
+        padding: 10px;
+    }
+    }
+
+    

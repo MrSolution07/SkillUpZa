@@ -1,7 +1,7 @@
 import React from "react";
 import DashboardLayout from "./layout";
 import { tokens } from "../theme01";
-import { Box, Button, useTheme, Card, Typography } from "@mui/material";
+import { Box, Button, useTheme, Card, Typography, Grid } from "@mui/material";
 import DownloadOutlinedIcon from "@mui/icons-material/DownloadOutlined";
 import Calendar from "react-calendar";
 import "react-calendar/dist/Calendar.css";
@@ -16,16 +16,18 @@ function DashboardPage({ children }) {
     <DashboardLayout>
       <Box m="20px">
         {/* HEADER */}
-        <Box mb={4}>
-          <Typography variant="h2" component="h2" sx={{textAlign:"left",fontSize: "50px", fontWeight: "bolder", fontFamily: "sans-serif", mb: 2, marginBottom:"80px" }}>
-            Welcome, Skill UpZA
-          </Typography>
-         
-        </Box>
-        <Box display="flex" justifyContent="space-between" alignItems="flex-start" >
-          <Box width="60%">
-            {/* COMPANY DETAILS CARD */}
-            <Card sx={{ position: 'relative', height: "70vh", width: "100%", mb: 4, overflow: "hidden" }}>
+        <Typography variant="h2" component="h2" sx={{ textAlign:"left",fontSize: "50px", fontWeight: "bolder", fontFamily: "sans-serif", mb: 2 }}>
+          Welcome, <span style={{
+            backgroundImage: 'linear-gradient(to right, darkblue, darkcyan)',
+            WebkitBackgroundClip: 'text',
+            color: 'transparent',
+          }}>Skill UpZA</span>
+        </Typography>
+        
+        <Grid container spacing={2}>
+          {/* COMPANY DETAILS CARD */}
+          <Grid item xs={12} md={7}>
+            <Card sx={{ position: 'relative', height: "70vh", mb: 4, overflow: "hidden" }}>
               <img src="public/assets/images/logo.png" alt="Company Banner" style={{ width: '100%', objectFit: 'cover' }} />
               <Box sx={{ position: 'absolute', bottom: '0', width: '100%', backgroundColor: 'rgba(0, 0, 0, 0.6)', color: 'white', padding: '20px' }}>
                 <Typography variant="h3" component="div" textAlign="center" sx={{ mb: 2 }}>
@@ -39,40 +41,38 @@ function DashboardPage({ children }) {
                 </Typography>
               </Box>
             </Card>
-          </Box>
-          <Box width="35%" display="flex" flexDirection="column" justifyContent="flex-start" ml={4}>
-            {/* DOWNLOAD REPORTS BUTTON */}
-            <Card
-  sx={{
-    backgroundColor: colors.blueAccent[700],
-    color: colors.grey[100],
-    fontSize: "14px",
-    fontWeight: "bold",
-    padding: "10px 20px",
-    mb: 4,
-    textAlign: "center",
-  }}
->
-  <Button
-    sx={{
-      backgroundColor: colors.blueAccent[700],
-      color: colors.grey[100],
-      fontSize: "14px",
-      fontWeight: "bold",
-      padding: "10px 20px",
-    }}
-  >
-    <DownloadOutlinedIcon sx={{ mr: "10px" }} />
-    Download Reports
-  </Button>
-</Card>
-
+          </Grid>
+          
+          {/* DOWNLOAD REPORTS BUTTON */}
+          <Grid item xs={12} md={5}>
+            <Card sx={{
+              backgroundImage: 'linear-gradient(to right, #13547a, #80d0c7, darkcyan)',
+              color: colors.blueAccent[100],
+              fontSize: "14px",
+              fontWeight: "bold",
+              padding: "10px 20px",
+              mb: 4,
+              textAlign: "center",
+            }}>
+              <Button
+                sx={{
+                  color: colors.grey[100],
+                  fontSize: "14px",
+                  fontWeight: "bold",
+                  padding: "10px 20px",
+                }}
+              >
+                <DownloadOutlinedIcon sx={{ mr: "10px" }} />
+                Download Reports
+              </Button>
+            </Card>
+            
             {/* CALENDAR COMPONENT */}
             <Card sx={{ padding: "20px" }}>
               <Calendar />
             </Card>
-          </Box>
-        </Box>
+          </Grid>
+        </Grid>
       </Box>
     </DashboardLayout>
   );

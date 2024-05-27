@@ -211,34 +211,13 @@
     background-color: transparent;
     border: none;
     cursor: pointer;
-    float: left;
-    margin-left: 0px;
-    margin-right: 0px;
+    display: inline-flex;
+    padding: 0px;
+    margin-bottom: 15%;
   }
   button{
      margin-top: 50px;
   }
-  
-  #sendPost {
-    background-color:#17a2b8;
-    border: none;
-    color: #17a2b8;
-    padding: 5px 10px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    width: 50px;
-    height: 50px;
-    font-size: 16px;
-    margin: 2px 2px;
-    cursor: pointer;
-    transition-duration: 0.4s;
-    overflow: hidden;
-    border-radius: 90px;
-  }
 
-  #sendPost:hover {
-    background-color: #4b5563; 
-    color: #4b5563;
-    border: 2px solid #4b5563;
-  }
+  
+

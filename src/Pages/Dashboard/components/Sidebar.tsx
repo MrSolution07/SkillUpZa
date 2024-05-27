@@ -105,7 +105,7 @@ const Sidebar = () => {
                   {localStorage.getItem('companyname')}
                 </Typography>
                 <Typography variant="h5" color={colors.greenAccent[500]}>
-                  SkillUp
+                  Skill UpZA
                 </Typography>
               </Box>
             </Box>
