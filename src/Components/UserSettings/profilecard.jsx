@@ -83,17 +83,18 @@ const ProfileCard = () => {
               <Card.Body className="text-center">
                 {profilePicture ? (
                   <>
-                    <div style={{ position: 'relative', width: '100px', height: '100px', margin: 'auto' }}>
+                    <div style={{ position: 'relative', width: '100px', height: '100px', margin: 'auto' }} className='removediv'>
                       <img
                         src={profilePicture}
                         alt="Profile"
                         className="rounded-circle img-fluid"
                         style={{ width: '100%', height: '100%', objectFit: 'contain' }}
                       />
-                      <Button variant="danger" onClick={() => setProfilePicture(null)} className="mb-0" id="text-btn">
-                        Remove Picture
-                      </Button>
                     </div>
+
+                      <Button variant="danger" onClick={() => setProfilePicture(null)} className="mb-0" id="text-btn">
+                        Remove 
+                      </Button>
                   </>
                 ) : (
                   <Form.Group controlId="profilePicture">

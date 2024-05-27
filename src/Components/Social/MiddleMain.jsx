@@ -85,6 +85,7 @@ const MiddleMain = () => {
     return (
         <div className="middle-main">
             <div className="middle-main-1">
+                
                 <div className="post-1">
                     <img className="middle-pic" src={profilePicture} alt="Profile Picture" />
                    

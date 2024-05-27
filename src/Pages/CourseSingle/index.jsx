@@ -760,9 +760,7 @@ function CourseSingle() {
                   {/* share link start  */}
                   <div className="post-share">
                     <h5>Share:</h5>
-                    <a className="fac" href="#">
-                      <i className="social_facebook"></i>
-                    </a>
+                    
                     <a className="fac" href="https://www.facebook.com/profile.php?id=61559534575921">
                     <i className="social_facebook"></i>
                   </a>
