@@ -16,8 +16,8 @@ const ChangePasswordCard = () => {
         currentPassword: currentPassword,
         newPassword: newPassword,
       });
-      console.log(currentPassword);
-      console.log(newPassword);
+      // console.log(currentPassword);
+      // console.log(newPassword);
       const data = response.data;
       if (data.success) {
         window.alert('Password updated successfully');

@@ -48,13 +48,13 @@ const MiddleMain = () => {
     const handleCreatePost = async () => {
         const formData = new FormData();
         const username = localStorage.getItem('username');
-
+    
         formData.append('username', username);
         formData.append('content', content);
         if (postImage) {
             formData.append('postImage', postImage);
         }
-
+    
         try {
             const response = await axios.post('https://skill-up-za-a416b38edeac.herokuapp.com/create_post.php', formData, {
                 headers: {
@@ -62,7 +62,7 @@ const MiddleMain = () => {
                 }
             });
             const data = response.data;
-            if (data.success) {
+            if (data && data.success) {
                 setContent('');
                 setPostImage(null);
                 const newPost = {
@@ -74,12 +74,13 @@ const MiddleMain = () => {
                 };
                 setPosts([newPost, ...posts]);
             } else {
-                console.error('Error creating post:', data.message);
+                console.error('Error creating post:', data && data.message ? data.message : 'Unknown error');
             }
         } catch (error) {
             console.error('Error creating post:', error);
         }
     };
+    
 
     return (
         <div className="middle-main">
