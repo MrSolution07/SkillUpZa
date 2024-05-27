@@ -85,34 +85,34 @@ const MiddleMain = () => {
     return (
         <div className="middle-main">
             <div className="middle-main-1">
-                
-            <div className="post-1" style={{ display: 'flex', alignItems: 'center' }}>
-                    <img className="middle-pic" src={profilePicture} alt="Profile Picture" />
-                    <input
-                        className="post"
-                        type="text"
-                        placeholder="Start a post"
-                        value={content}
-                        onChange={(e) => setContent(e.target.value)}
-                    />
-                    <div className="iconsdiv" style={{ marginLeft: 'auto' }}>
-                        <label htmlFor="fileInput" className="linked-input">
-                            <BsPaperclip />
-                        </label>
-                        <input
-                            id="fileInput"
-                            type="file"
-                            accept="image/*,video/*"
-                            onChange={(e) => setPostImage(e.target.files[0])}
-                            style={{ display: 'none' }}
-                        />
-                        <button id='sendPost' onClick={handleCreatePost}>
-                            <IoSend />
-                        </button>
-                    </div>
-                </div>
+    <div className="post-1" style={{ display: 'flex', alignItems: 'center' }}>
+        <img className="middle-pic" src={profilePicture} alt="Profile Picture" />
+        <input
+            className="post"
+            type="text"
+            placeholder="Start a post"
+            value={content}
+            onChange={(e) => setContent(e.target.value)}
+            style={{ flex: 1 }} // Allow the input field to take remaining space
+        />
+        <div className="iconsdiv" style={{ marginLeft: 'auto', display: 'flex', alignItems: 'center' }}>
+            <label htmlFor="fileInput" className="linked-input">
+                <BsPaperclip />
+            </label>
+            <input
+                id="fileInput"
+                type="file"
+                accept="image/*,video/*"
+                onChange={(e) => setPostImage(e.target.files[0])}
+                style={{ display: 'none' }}
+            />
+            <button id='sendPost' onClick={handleCreatePost}>
+                <IoSend />
+            </button>
+        </div>
+    </div>
+</div>
 
-            </div>
 
             <div className="middle-main-2">
                 {posts.map((post, index) => (

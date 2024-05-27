@@ -182,12 +182,6 @@ p {
     height: auto;
     margin-top: 5%;
 }
-@media (max-width: 768px) {
-    .post-1 {
-        flex-direction: row;
-        align-items:center;
-    }
-}
 
 .post {
     flex: 1;
