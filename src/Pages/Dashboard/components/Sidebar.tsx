@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useEffect, useState } from 'react';
 import { ProSidebar, Menu, MenuItem } from "react-pro-sidebar";
 import { Box, IconButton, Typography, useTheme } from "@mui/material";
 import { Link } from "react-router-dom";
@@ -7,15 +7,15 @@ import { tokens } from "../../theme01";
 import HomeOutlinedIcon from "@mui/icons-material/HomeOutlined";
 import PeopleOutlinedIcon from "@mui/icons-material/PeopleOutlined";
 import ContactsOutlinedIcon from "@mui/icons-material/ContactsOutlined";
-import ReceiptOutlinedIcon from "@mui/icons-material/ReceiptOutlined";
 import PersonOutlinedIcon from "@mui/icons-material/PersonOutlined";
-import HelpOutlineOutlinedIcon from "@mui/icons-material/HelpOutlineOutlined";
 import BarChartOutlinedIcon from "@mui/icons-material/BarChartOutlined";
 import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined";
-import React from "react";
+import axios from 'axios';
+
 const Item = ({ title, to, icon, selected, setSelected }) => {
   const theme = useTheme();
   const colors = tokens(theme.palette.mode);
+
   return (
     <MenuItem
       active={selected === title}
@@ -36,6 +36,29 @@ const Sidebar = () => {
   const colors = tokens(theme.palette.mode);
   const [isCollapsed, setIsCollapsed] = useState(false);
   const [selected, setSelected] = useState("");
+  const [profilePicture, setProfilePicture] = useState('');
+
+  useEffect(() => {
+    const username = localStorage.getItem("companyname");
+
+    const fetchProfilePicture = async () => {
+      try {
+        const response = await axios.get('https://skill-up-za-a416b38edeac.herokuapp.com/get_bus_picture.php', {
+          params: { username }
+        });
+        const data = response.data;
+        if (data.success) {
+          setProfilePicture(`data:${data.type};base64,${data.image}`);
+        } else {
+          console.error('Error fetching profile picture:', data.message);
+        }
+      } catch (error) {
+        console.error('Error fetching profile picture:', error);
+      }
+    };
+
+    fetchProfilePicture();
+  }, []);
 
   return (
     <Box
@@ -76,6 +99,7 @@ const Sidebar = () => {
                 ml="15px"
               >
                 <Typography variant="h3" color={colors.grey[100]}>
+                  {/* Your Logo or Title */}
                 </Typography>
                 <IconButton onClick={() => setIsCollapsed(!isCollapsed)}>
                   <MenuOutlinedIcon />
@@ -91,7 +115,7 @@ const Sidebar = () => {
                   alt="profile-user"
                   width="100px"
                   height="100px"
-                  src={`public/assets/images/logo.png`}
+                  src={profilePicture}
                   style={{ cursor: "pointer", borderRadius: "50%" }}
                 />
               </Box>
@@ -125,7 +149,7 @@ const Sidebar = () => {
               color={colors.grey[300]}
               sx={{ m: "15px 0 5px 20px" }}
             >
-               
+              {/* Profile Section */}
             </Typography>
             <Item
               title="Profile"
@@ -141,8 +165,6 @@ const Sidebar = () => {
               selected={selected}
               setSelected={setSelected}
             />
-            
-
 
             <Typography
               variant="h6"
@@ -158,14 +180,6 @@ const Sidebar = () => {
               selected={selected}
               setSelected={setSelected}
             />
-            
-            {/* <Item
-              title="FAQ Page"
-              to="/Faq"
-              icon={<HelpOutlineOutlinedIcon />}
-              selected={selected}
-              setSelected={setSelected}
-            />  */}
 
             <Typography
               variant="h6"
@@ -181,7 +195,6 @@ const Sidebar = () => {
               selected={selected}
               setSelected={setSelected}
             />
-            
           </Box>
         </Menu>
       </ProSidebar>
