@@ -153,6 +153,9 @@ p {
 .middle-main {
     flex: 1;
 }
+.iconsdiv{
+    display: inline-block;    
+}
 
 .middle-pic {
     width: 50px;

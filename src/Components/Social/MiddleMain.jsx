@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { IoSend } from "react-icons/io5";
-import { IoMdCloudUpload } from "react-icons/io";
+import { BsPaperclip } from "react-icons/bs";
+
 
 const MiddleMain = () => {
     const [profilePicture, setProfilePicture] = useState('');
@@ -86,6 +87,7 @@ const MiddleMain = () => {
             <div className="middle-main-1">
                 <div className="post-1">
                     <img className="middle-pic" src={profilePicture} alt="Profile Picture" />
+                   
                     <input
                         className="post"
                         type="text"
@@ -93,8 +95,9 @@ const MiddleMain = () => {
                         value={content}
                         onChange={(e) => setContent(e.target.value)}
                     />
+                     <div className="iconsdiv">
                     <label htmlFor="fileInput" className="linked-input">
-                        <IoMdCloudUpload />
+                    <BsPaperclip />
                     </label>
                     <input
                         id="fileInput"
@@ -103,9 +106,11 @@ const MiddleMain = () => {
                         onChange={(e) => setPostImage(e.target.files[0])}
                         style={{ display: 'none' }}
                     />
+
                     <button id='sendPost' onClick={handleCreatePost}>
                         <IoSend />
                     </button>
+                </div>
                 </div>
             </div>
 
