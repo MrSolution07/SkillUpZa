@@ -10,7 +10,7 @@ const DropDownProfile = () => {
           <Link to="/ViewDetails">View Profile</Link>
         </li>
         <li>
-          <Link to="/ProfileCar">Edit Profile</Link>
+          <Link to="/ProfileCard">Edit Profile</Link>
         </li>
         <li>
           <Link to="/ChangePasswordCard">Change Password</Link>
