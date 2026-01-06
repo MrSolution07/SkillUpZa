@@ -1,57 +1,303 @@
-Overview
+# SkillUpZA
 
-This design document provides a comprehensive overview of the web application, SkillUpZA. It delves into various critical aspects of SkillUpZA, including its purpose and functionality. Additionally, it includes narratives, entity relationship diagrams, and sketches/screen dumps to visually demonstrate the practicality of SkillUpZA. Moreover, this document addresses the functional requirements of the web application.
+<div align="center">
+
+![SkillUpZA Logo](public/assets/images/logo.png)
+
+**An AI-driven career platform empowering job seekers and students in South Africa**
+
+[Features](#features) • [Installation](#installation) • [Usage](#usage) • [Tech Stack](#tech-stack) • [Project Structure](#project-structure)
+
+</div>
+
+---
+
+## 📋 Overview
+
+SkillUpZA is a comprehensive AI-driven career platform tailored for South African users. It addresses the critical challenges of unemployment by providing job seekers, graduates, and high school students with the tools and resources needed to enhance their career prospects. The platform bridges the gap between employer demands and job seeker skills through intelligent matching, personalized learning paths, and comprehensive career guidance.
+
+## 🎯 Problem Statement
+
+The employment environment in South Africa presents significant challenges for job-seekers, graduates, and career changers. SkillUpZA addresses three key root causes:
+
+- **Lack of career guidance for high school students**: Students often lack sufficient knowledge or guidance when selecting meaningful career paths, leading to choices that may not align with long-term fulfillment.
+
+- **Under-skilled graduates**: Many graduates lack practical skills required for employment, including essential soft skills valued by employers, despite holding degrees or diplomas.
+
+- **Tedious job-seeking process**: Online job applications can lack clarity, and there's a risk of information theft on dubious websites, making the job search process challenging and potentially hazardous.
+
+## ✨ Features
+
+### Core Features
+
+1. **🤖 AI-Powered Skills Assessment**
+   - Analyze users' skills and provide insights into strengths and areas for improvement
+   - Personalized recommendations based on assessment results
+
+2. **📚 Personalized Learning Plans**
+   - AI-driven recommendations for individualized learning paths
+   - Skill enhancement based on career goals
+   - Comprehensive suite of online courses covering technical and soft skills
+
+3. **🎯 Job Matching Algorithms**
+   - Intelligent algorithms matching users with relevant job opportunities
+   - Matching based on skills, experience, and career aspirations
+   - Real-time job search with integration to local job databases
+
+4. **🤝 Networking and Collaboration**
+   - Platform for users to connect and share experiences
+   - Collaborative project opportunities
+   - Supportive community environment
+
+5. **💼 AI-Powered Mentorship System**
+   - Automated career advice and personalized guidance
+   - Virtual mentorship interactions
+   - Career coaching from experienced professionals and Skill AI
+
+6. **📱 User-Friendly Interface**
+   - Visually appealing and intuitive design
+   - Mobile-responsive for accessibility on-the-go
+   - Seamless and consistent user experience
+
+7. **📊 Analytics and Reporting**
+   - Data collection on user activity and website traffic
+   - Course performance analytics
+   - Ongoing platform improvement and optimization
+
+### Additional Features
+
+- User and Business authentication systems
+- Job posting and management for employers
+- Blog system for career insights and tips
+- Interview preparation tools
+- User dashboard with progress tracking
+- Profile management and settings
+- Course enrollment and tracking
+
+## 🛠️ Tech Stack
+
+### Frontend
+- **React 18** - UI library
+- **Vite** - Build tool and dev server
+- **React Router DOM** - Client-side routing
+- **Material-UI (MUI)** - Component library
+- **Bootstrap** - CSS framework
+- **Tailwind CSS** - Utility-first CSS
+- **Framer Motion** - Animation library
+- **Axios** - HTTP client
+- **Recharts** - Data visualization
+
+### Backend
+- **PHP** - Server-side scripting
+- **MySQL** - Database (via JawsDB)
+- **Composer** - PHP dependency management
+
+### Other Tools
+- **EmailJS** - Email service integration
+- **React Icons** - Icon library
+- **Swiper** - Touch slider
+- **React Helmet** - Document head management
+
+## 📦 Prerequisites
+
+Before you begin, ensure you have the following installed:
+
+- **Node.js** (v16 or higher) - [Download](https://nodejs.org/)
+- **npm** or **yarn** - Package manager
+- **PHP** (v7.4 or higher) - [Download](https://www.php.net/downloads)
+- **Composer** - PHP dependency manager - [Download](https://getcomposer.org/)
+- **MySQL** - Database server (or access to JawsDB)
+- **Git** - Version control
+
+## 🚀 Installation
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/yourusername/SkillUpZa.git
+cd SkillUpZa
+```
+
+### 2. Install Frontend Dependencies
+
+```bash
+npm install
+```
+
+### 3. Install Backend Dependencies
+
+```bash
+cd DATABASE_DATA
+composer install
+cd ..
+```
+
+### 4. Environment Configuration
+
+Create a `.env` file in the root directory (if not already present):
+
+```env
+# Database Configuration (for PHP backend)
+JAWSDB_URL=your_jawsdb_connection_string
+# or
+JAWSDB=your_jawsdb_connection_string
+
+# API Endpoints (if needed)
+VITE_API_URL=http://localhost:8000
+```
+
+For the PHP backend, ensure your `DATABASE_DATA/connect.php` is configured with your database credentials.
+
+### 5. Database Setup
+
+1. Import the database schema from `src/Data/Database_tables/` (if available)
+2. Configure your database connection in `DATABASE_DATA/connect.php`
+3. Ensure all required tables are created
+
+## 💻 Usage
+
+### Development Mode
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+The application will be available at `http://localhost:5173` (or the port specified by Vite).
+
+### Backend Server
+
+For the PHP backend, you'll need a PHP server. You can use:
+
+```bash
+# Using PHP built-in server
+cd DATABASE_DATA
+php -S localhost:8000
+```
+
+Or configure your preferred web server (Apache, Nginx) to serve the `DATABASE_DATA` directory.
+
+### Build for Production
+
+```bash
+npm run build
+```
+
+The production build will be in the `dist` directory.
+
+### Preview Production Build
+
+```bash
+npm run preview
+```
+
+## 📁 Project Structure
+
+```
+SkillUpZa/
+├── DATABASE_DATA/          # PHP backend API
+│   ├── connect.php        # Database connection
+│   ├── *.php              # API endpoints
+│   └── vendor/            # Composer dependencies
+├── public/                # Static assets
+│   └── assets/           # Images, fonts, CSS
+├── src/                   # React application source
+│   ├── Components/       # Reusable React components
+│   │   ├── About/
+│   │   ├── Blogs/
+│   │   ├── Course/
+│   │   ├── Dashboard/
+│   │   ├── JobPosting/
+│   │   ├── ProfileLogin/
+│   │   ├── Social/
+│   │   └── ...
+│   ├── Pages/            # Page components
+│   │   ├── Home/
+│   │   ├── Dashboard/
+│   │   ├── Course-3/
+│   │   └── ...
+│   ├── Data/             # Static data and database schemas
+│   ├── Hooks/            # Custom React hooks
+│   ├── App.jsx           # Main App component
+│   ├── main.jsx          # Application entry point
+│   └── Routers.jsx       # Route configuration
+├── index.html            # HTML template
+├── package.json          # Node.js dependencies
+├── vite.config.js        # Vite configuration
+└── vercel.json           # Vercel deployment config
+```
+
+## 🎯 Key Routes
+
+- `/` - Home page
+- `/LoginPage` - User login
+- `/Register` - User registration
+- `/BusinessLogin` - Business login
+- `/BusinessRegister` - Business registration
+- `/Dashboard` - User dashboard
+- `/SkillAI` - AI-powered skills assessment
+- `/Jobs` - Job listings
+- `/Courses` - Course catalog
+- `/MyCourses` - Enrolled courses
+- `/UserSettings` - User profile settings
+- `/CompanySettings` - Company profile settings
+- `/Interview` - Interview preparation
+- `/blog` - Blog posts
+- `/contact` - Contact page
+
+## 👥 Stakeholders
+
+- **Job Seekers**: Primary users seeking to enhance job prospects and advance careers
+- **High School Students**: Exploring career paths and gaining valuable insights
+- **Employers**: Organizations seeking skilled candidates through the job board
+- **Supporters and Partners**: Contributing to platform growth and success
+
+## 🎯 Project Objectives
+
+- Establish a ground-breaking platform dedicated to empowering job seekers and students
+- Bridge the gap between employer demands and job seeker skills
+- Combat unemployment challenges in South Africa
+- Simplify job searching by offering genuine opportunities and skill-building courses
+- Provide personalized career guidance through AI technology
+
+## 🤝 Contributing
+
+Contributions are welcome! Please follow these steps:
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+### Development Guidelines
+
+- Follow the existing code style
+- Write meaningful commit messages
+- Test your changes thoroughly
+- Update documentation as needed
+
+## 📝 License
+
+This project is licensed under the ISC License.
+
+## 📧 Contact & Support
+
+For questions, issues, or contributions, please open an issue on the GitHub repository.
+
+## 🙏 Acknowledgments
+
+- All contributors and supporters of SkillUpZA
+- The South African developer community
+- Open-source libraries and frameworks that made this project possible
+
+---
+
+<div align="center">
 
 
-Introduction
 
-The current predicament regarding the employment environment proves to cause a challenge amongst job-seekers, graduates and career changers. This creates a space where the job-seeking process is tedious and often times demotivating. Therefore, empowering not only these people but also high-school learners and university students is a crucial role that we have took up. The unemployment rate, particularly in South Africa, raises many concerns about the social and societal impact this could have around the livelihood of citizens and the overall functioning of the economy. It is then important that this role we have assumed aims to mediate the stresses and the root causes of unemployment.
+*Empowering individuals to unlock their full potential and achieve their career aspirations*
 
-Problem Statement
-
-SkillUpZA aims to address the identified problem by developing a comprehensive AI-driven career platform tailored for South African users.
-Identifying the root causes :
-Although there are many causes of unemployment and they differ from country to country, we will only briefly elaborate on the causes that relate to South Africa and our web application:
-•	Lack of career guidance for high school students: High school students often face challenges in selecting a meaningful career path due to insufficient knowledge or guidance. Making significant life decisions at a young age can lead to uncertainty and may result in choices that do not align with long-term fulfilment or enthusiasm. Therefore, there is a need for resources that facilitate informed decision-making and support students in choosing careers that resonate with their passions and aspirations.
-•	Under-skilled graduates: Many graduates encounter the common challenge of lacking practical skills required for employment, even with their qualifications. Despite holding degrees or diplomas, a significant portion may find themselves underprepared for the demands of the workforce. This gap extends beyond technical expertise to include essential soft skills, which are increasingly valued by employers.
-•	Tedious job-seeking process: While online platforms have made job hunting more convenient, there are still challenges. Sometimes, online job applications lack clarity, which can make job seekers sceptical about the validity of job postings. Additionally, there's the risk of information theft on dubious websites and potentially hazardous redirects, which can compromise individuals' online security and privacy. Furthermore, traditional methods like walk-ins continue to present practical challenges and inefficiencies.
-
-
-Project Scope
-
-       SkillUpZA will offer the following key features:
-
-1.	Skills Assessment: An AI-powered assessment tool to analyse users' skills and provide insights into strengths and areas for improvement.
-2.	Personalized Learning Plans: AI-driven recommendations for individualized learning paths, guiding users to enhance their skills based on their career goals.
-3.	Job Matching Algorithms: Intelligent algorithms that match users with relevant job opportunities, taking into account their skills, experience, and career aspirations.
-4.	Networking and Collaboration: A platform for users to connect, share experiences, and collaborate on projects, fostering a supportive community.
-5.	Fully AI-Powered Mentorship System: An AI-driven mentorship program offering automated career advice, personalized guidance, and virtual mentorship interactions.
-6.	Real-time Job Search: Integration with local job databases to provide users with up-to-date and actual job opportunities in South Africa.
-7.	User-Friendly Interface: A visually appealing and intuitive interface to ensure a positive user experience.
-8.	Mobile Responsiveness: Compatibility with various devices, including mobile phones, for accessibility on-the-go.
-
-SkillUpZA Project Documentation
-
-Project Objectives
-•	Establish a ground-breaking platform, SkillUpZA, dedicated to empowering job seekers and high school students by revolutionizing their approach to job seeking and personal development.
-•	Bridge the gap between the demands of employers and the skills possessed by job seekers, ensuring individuals can unlock their full potential and achieve their career aspirations.
-•	Combat the challenges of unemployment, particularly prevalent in regions like South Africa, by providing comprehensive tools and resources to enhance job seekers' readiness for the workforce.
-•	Simplify the daunting task of job searching across various websites and discerning fake posts by offering genuine job opportunities and skill-building courses tailored to meet the demands of today's job market.
-Functional Scope (Business Process Requirements)
-•	User-friendly interface: Develop an intuitive and easy-to-navigate website interface, ensuring a seamless and consistent user experience for individuals accessing the platform.
-•	Job board: Implement a robust job board at the core of SkillUpZA, connecting job seekers with diverse employment opportunities across various industries and locations.
-•	Skill-building courses: Offer a comprehensive suite of online courses and workshops covering both technical and soft skills essential for success in the job market.
-•	Career coaching: Provide personalized guidance and support from experienced professionals and Skill AI to assist individuals in navigating their job search and career development path.
-•	Advanced algorithms: Utilize advanced algorithms to match users with relevant job listings based on their skills, experience, and career goals, thereby increasing their chances of securing their desired positions.
-•	Analytics and reporting: Employ analytics tools to collect data on user activity, website traffic, and course performance, facilitating ongoing improvement and optimization of the platform.
-Stakeholders (Business/ Stakeholder Analysis Solution Impact)
-•	Job seekers: The primary users of SkillUpZA, seeking to enhance their job prospects and advance their careers through access to job opportunities and skill-building resources.
-•	High school students: Individuals using SkillUpZA to explore different career paths, majors, and industries, gaining valuable insights to make informed decisions about their future education and career trajectories with an opportumnity to pick up some skills valuable.
-•	Employers: Organizations seeking skilled and qualified candidates, connecting with potential employees through SkillUpZA's job board and talent pool.
-•	Supporters and partners: Individuals and organizations aligned with SkillUpZA's mission, contributing to the platform's growth and success through collaboration and advocacy.
-Solution Statement (Vision and Mission)
-•	SkillUpZA envisions a future where individuals have the tools and resources needed to thrive in today's dynamic job market, regardless of their background or circumstances.
-•	Our mission is to empower job seekers and high school students by providing them with access to genuine job opportunities, skill-building courses, and personalized career guidance, ultimately enabling them to unlock their full potential and achieve their career aspirations.
-•	By bridging the gap between employers' demands and the skills of job seekers, SkillUpZA aims to foster economic growth, reduce unemployment, and create a more inclusive and prosperous society.
-
-
+</div>
