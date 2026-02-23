@@ -28,7 +28,7 @@ const Login = () => {
       phpData.append("username", formData.username);
       phpData.append("password", formData.password);
 
-      axios.post('https://skill-up-za-a416b38edeac.herokuapp.com/Login.php', phpData)
+      axios.post('https://skillaupza.free.nf/auth/Login.php', phpData)
         .then(response => {
           const data = response.data;
           if (data.success) {

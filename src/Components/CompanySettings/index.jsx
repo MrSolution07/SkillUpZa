@@ -19,7 +19,7 @@ const AccountSettingsCard = () => {
 
   const fetchUserData = async () => {
     try {
-      const response = await axios.post('https://skill-up-za-a416b38edeac.herokuapp.com/bus_update.php', {
+      const response = await axios.post('https://skillaupza.free.nf/business/bus_update.php', {
         username: localStorage.getItem('companyname')
       });
       const responseData = response.data;
@@ -49,7 +49,7 @@ const AccountSettingsCard = () => {
         formData.append('ProfilePicture', profilePicture);
       }
 
-      const response = await axios.post('https://skill-up-za-a416b38edeac.herokuapp.com/bus_update.php', formData, {
+      const response = await axios.post('https://skillaupza.free.nf/business/bus_update.php', formData, {
         headers: {
           'Content-Type': 'multipart/form-data'
         }
@@ -81,7 +81,7 @@ const AccountSettingsCard = () => {
   const handlePasswordChangeSubmit = async (event) => {
     event.preventDefault();
     try {
-      const response = await axios.post('https://skill-up-za-a416b38edeac.herokuapp.com/update_bus_password.php', {
+      const response = await axios.post('https://skillaupza.free.nf/business/update_bus_password.php', {
         username: localStorage.getItem("companyname"),
         currentPassword: currentPassword,
         newPassword: newPassword,
@@ -100,7 +100,7 @@ const AccountSettingsCard = () => {
   const handleDeleteAccount = async () => {
     if (window.confirm('Are you sure you want to delete your account? This action cannot be undone.')) {
       try {
-        const response = await axios.post('https://skill-up-za-a416b38edeac.herokuapp.com/bus_delete.php', {
+        const response = await axios.post('https://skillaupza.free.nf/business/bus_delete.php', {
           username: localStorage.getItem('companyname')
         });
         const data = response.data;

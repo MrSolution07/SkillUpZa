@@ -43,7 +43,7 @@ const Sidebar = () => {
 
     const fetchProfilePicture = async () => {
       try {
-        const response = await axios.get('https://skill-up-za-a416b38edeac.herokuapp.com/get_bus_picture.php', {
+        const response = await axios.get('https://skillaupza.free.nf/business/get_bus_picture.php', {
           params: { username }
         });
         const data = response.data;

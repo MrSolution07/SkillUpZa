@@ -6,7 +6,7 @@ function UserJobs() {
   const [loading, setLoading] = useState(true);
   
   useEffect(() => {
-    fetch('https://skill-up-za-a416b38edeac.herokuapp.com/getJobs.php')
+    fetch('https://skillaupza.free.nf/jobs/getJobs.php')
       .then(response => response.json())
       .then(data => {
         if (data.success) {

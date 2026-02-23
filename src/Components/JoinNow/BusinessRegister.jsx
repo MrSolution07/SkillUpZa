@@ -68,7 +68,7 @@ const BusinessRegisterPage = () => {
             phpData.append("mobile", formData.mobile);
 
             // Send registration data to the server
-            const response = await axios.post('https://skill-up-za-a416b38edeac.herokuapp.com/Bus_register.php', phpData);
+            const response = await axios.post('https://skillaupza.free.nf/auth/Bus_register.php', phpData);
             const data = response.data;
 
             console.log(data);

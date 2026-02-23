@@ -16,7 +16,7 @@ const ProfileCard = () => {
 
   const fetchUserData = async () => {
     try {
-      const response = await axios.post('https://skill-up-za-a416b38edeac.herokuapp.com/update_user.php', {
+      const response = await axios.post('https://skillaupza.free.nf/user/update_user.php', {
         username: localStorage.getItem('username')
       });
       const responseData = response.data;
@@ -36,7 +36,7 @@ const ProfileCard = () => {
   const handleAccountSettingsSubmit = async (event) => {
     event.preventDefault();
     try {
-      const response = await axios.post('https://skill-up-za-a416b38edeac.herokuapp.com/update_user.php', {
+      const response = await axios.post('https://skillaupza.free.nf/user/update_user.php', {
         username,
         email,
         mobileNumber
@@ -57,7 +57,7 @@ const ProfileCard = () => {
       formData.append('username', username);
 
       try {
-        const response = await axios.post('https://skill-up-za-a416b38edeac.herokuapp.com/upload_profile_picture.php', formData, {
+        const response = await axios.post('https://skillaupza.free.nf/user/upload_profile_picture.php', formData, {
           headers: {
             'Content-Type': 'multipart/form-data'
           }
