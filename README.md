@@ -289,7 +289,6 @@ For questions, issues, or contributions, please open an issue on the GitHub repo
 ## 🙏 Acknowledgments
 
 - All contributors and supporters of SkillUpZA
-- The South African developer community
 - Open-source libraries and frameworks that made this project possible
 
 ---
