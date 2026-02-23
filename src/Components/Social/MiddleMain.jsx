@@ -14,7 +14,7 @@ const MiddleMain = () => {
         const fetchProfilePicture = async () => {
             try {
                 const username = localStorage.getItem('username');
-                const response = await axios.get('https://skillaupza.free.nf/user/getpicture.php', {
+                const response = await axios.get('/api/user/getpicture.php', {
                     params: { username }
                 });
                 const data = response.data;
@@ -30,7 +30,7 @@ const MiddleMain = () => {
 
         const fetchPosts = async () => {
             try {
-                const response = await axios.get('https://skillaupza.free.nf/posts/get_posts.php');
+                const response = await axios.get('/api/posts/get_posts.php');
                 const data = response.data;
                 if (data.success) {
                     setPosts(data.posts);
@@ -57,7 +57,7 @@ const MiddleMain = () => {
         }
 
         try {
-            const response = await axios.post('https://skillaupza.free.nf/posts/create_post.php', formData, {
+            const response = await axios.post('/api/posts/create_post.php', formData, {
                 headers: {
                     'Content-Type': 'multipart/form-data'
                 }

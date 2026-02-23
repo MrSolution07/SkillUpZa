@@ -19,7 +19,7 @@ const Header = () => {
     const fetchProfilePicture = async () => {
       try {
         const username = localStorage.getItem('username');
-        const response = await axios.get('https://skillaupza.free.nf/user/getpicture.php', {
+        const response = await axios.get('/api/user/getpicture.php', {
           params: { username }
         });
         const data = response.data;

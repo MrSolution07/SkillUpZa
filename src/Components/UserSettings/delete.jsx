@@ -7,7 +7,7 @@ import axios from 'axios'; // Make sure to import axios
 const handleDeleteAccount = async () => {
   if (window.confirm('Are you sure you want to delete your account? This action cannot be undone.')) {
     try {
-      const response = await axios.post('https://skillaupza.free.nf/user/delete.php', {
+      const response = await axios.post('/api/user/delete.php', {
         username: localStorage.getItem('username')
       });
       const data = response.data;

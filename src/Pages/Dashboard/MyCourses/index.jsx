@@ -59,7 +59,7 @@ function Mycourses() {
     const fetchCourses = async () => {
       try {
         const username = localStorage.getItem("username");
-        const response = await axios.get("https://skillaupza.free.nf/courses/getCourse.php", {
+        const response = await axios.get("/api/courses/getCourse.php", {
           params: { username }
         });
         const data = response.data;

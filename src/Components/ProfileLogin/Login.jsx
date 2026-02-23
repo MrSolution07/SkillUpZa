@@ -28,7 +28,7 @@ const Login = () => {
       phpData.append("username", formData.username);
       phpData.append("password", formData.password);
 
-      axios.post('https://skillaupza.free.nf/auth/Login.php', phpData)
+      axios.post('/api/auth/Login.php', phpData)
         .then(response => {
           const data = response.data;
           if (data.success) {

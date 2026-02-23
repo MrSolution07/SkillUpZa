@@ -33,7 +33,7 @@
 //         }
 //     };     const fetchUserDetails = async () => {
 //       try {
-//           const response = await fetch('https://skillaupza.free.nf/business/get_bus_details.php', {
+//           const response = await fetch('/api/business/get_bus_details.php', {
 //               method: 'POST',
 //               headers: {
 //                   'Content-Type': 'application/json',
@@ -142,7 +142,7 @@ function DashboardPage({ children }) {
 
     const fetchProfilePicture = async () => {
       try {
-        const response = await axios.get('https://skillaupza.free.nf/business/get_bus_picture.php', {
+        const response = await axios.get('/api/business/get_bus_picture.php', {
           params: { username }
         });
         const data = response.data;
@@ -158,7 +158,7 @@ function DashboardPage({ children }) {
 
     const fetchUserDetails = async () => {
       try {
-        const response = await fetch('https://skillaupza.free.nf/business/get_bus_details.php', {
+        const response = await fetch('/api/business/get_bus_details.php', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',

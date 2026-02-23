@@ -86,7 +86,7 @@ const ViewDetails = () => {
 
         const fetchProfilePicture = async () => {
             try {
-                const response = await axios.get('https://skillaupza.free.nf/user/getpicture.php', {
+                const response = await axios.get('/api/user/getpicture.php', {
                     params: { username }
                 });
                 const data = response.data;
@@ -102,7 +102,7 @@ const ViewDetails = () => {
 
         const fetchUserDetails = async () => {
             try {
-                const response = await fetch('https://skillaupza.free.nf/user/get_user_details.php', {
+                const response = await fetch('/api/user/get_user_details.php', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',

@@ -11,7 +11,7 @@ const ChangePasswordCard = () => {
   const handlePasswordChangeSubmit = async (event) => {
     event.preventDefault();
     try {
-      const response = await axios.post('https://skillaupza.free.nf/user/update_user_password.php', {
+      const response = await axios.post('/api/user/update_user_password.php', {
         username: localStorage.getItem("username"),
         currentPassword: currentPassword,
         newPassword: newPassword,

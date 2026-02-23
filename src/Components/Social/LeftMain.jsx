@@ -7,7 +7,7 @@ const LeftMain = () => {
   useEffect(() => {
     const fetchProfilePicture = async () => {
       try {
-        const response = await axios.get('https://skillaupza.free.nf/user/getpicture.php', {
+        const response = await axios.get('/api/user/getpicture.php', {
           params: { username: localStorage.getItem('username') }
         });
         setProfilePicture(response.data);

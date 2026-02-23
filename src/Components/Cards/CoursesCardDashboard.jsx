@@ -7,7 +7,7 @@ function CoursesCardDashboard({ course, className, swiper }) {
   const handleAddCourse = async () => {
     try {
       const username = localStorage.getItem("username");
-      const response = await axios.post('https://skillaupza.free.nf/courses/add_course.php', {
+      const response = await axios.post('/api/courses/add_course.php', {
         username: username,
         courseName: course.title,
         courseHeading: course.heading,
