@@ -134,7 +134,13 @@ cd ..
 
 ### 4. Environment Configuration
 
-Create a `.env` file in the root directory (if not already present):
+Copy `.env.example` to `.env` and fill in your API keys:
+
+```bash
+cp .env.example .env
+```
+
+Add your values to `.env` (never commit this file):
 
 ```env
 # Database Configuration (for PHP backend)
@@ -144,7 +150,18 @@ JAWSDB=your_jawsdb_connection_string
 
 # API Endpoints (if needed)
 VITE_API_URL=http://localhost:8000
+
+# RapidAPI - SkillAI chat (https://rapidapi.com)
+VITE_RAPIDAPI_KEY=your_rapidapi_key
+VITE_RAPIDAPI_HOST=chatgpt-42.p.rapidapi.com
+
+# EmailJS - Contact form (https://www.emailjs.com)
+VITE_EMAILJS_PUBLIC_KEY=your_emailjs_public_key
+VITE_EMAILJS_SERVICE_ID=your_emailjs_service_id
+VITE_EMAILJS_TEMPLATE_ID=your_emailjs_template_id
 ```
+
+**Important:** Never commit `.env` — it contains secrets. Use `.env.example` as a template.
 
 For the PHP backend, ensure your `DATABASE_DATA/connect.php` is configured with your database credentials.
 

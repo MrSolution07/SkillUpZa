@@ -1,7 +1,6 @@
 
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
-import dotenv from 'dotenv';
 
 function ContactForm() {
 
@@ -11,9 +10,12 @@ function ContactForm() {
     e.preventDefault();
 
     emailjs
-      .sendForm('service_yehrrri', 'template_dddpkfq', form.current, {
-        publicKey: "rlCbap33nERIZrDI3"
-      })
+      .sendForm(
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+        form.current,
+        { publicKey: import.meta.env.VITE_EMAILJS_PUBLIC_KEY }
+      )
       .then(
         () => {
           console.log('SUCCESS!');
