@@ -58,7 +58,7 @@ if ($result->num_rows > 0) {
     $jobListing = array(
       
       "BusinessName" => $row["BusinessName"],
-      "JobName" => $row["description"],
+      "JobName" => $row["jobName"],
       "jobImage" => $row["jobImage"]
     );
     array_push($jobListings, $jobListing);

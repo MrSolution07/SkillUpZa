@@ -1,5 +1,5 @@
 <?php
-require("connect.php");
+require("database.php");
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
@@ -10,6 +10,10 @@ header("Access-Control-Allow-Headers: Content-Type, Authorization");
 
 try {
     if ($_SERVER["REQUEST_METHOD"] == "GET") {
+        // Use current host so image URLs work on any domain (InfinityFree, Heroku, etc.)
+        $baseUrl = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? 'https' : 'http') . '://' . ($_SERVER['HTTP_HOST'] ?? 'localhost');
+        $baseUrl = rtrim($baseUrl, '/');
+
         $sql = "SELECT Username, Content, CreatedAt, ImageId FROM posts ORDER BY CreatedAt DESC";
         $result = $conn->query($sql);
 
@@ -17,8 +21,8 @@ try {
             $posts = [];
             while ($row = $result->fetch_assoc()) {
                 $imageUrl = null;
-                if ($row["ImageId"]) {
-                    $imageUrl = "https://skill-up-za-a416b38edeac.herokuapp.com/get_image.php?imageId=" . $row["ImageId"];
+                if (!empty($row["ImageId"])) {
+                    $imageUrl = $baseUrl . "/get_image.php?imageId=" . (int)$row["ImageId"];
                 }
 
                 $posts[] = [
