@@ -165,6 +165,8 @@ VITE_EMAILJS_TEMPLATE_ID=your_emailjs_template_id
 
 For the PHP backend, ensure your `DATABASE_DATA/connect.php` is configured with your database credentials.
 
+**Deploying the PHP backend?** See [docs/DEPLOYMENT_PHP_BACKEND.md](docs/DEPLOYMENT_PHP_BACKEND.md) for deployment instructions (Render, InfinityFree, database setup, CORS, and frontend configuration).
+
 ### 5. Database Setup
 
 1. Import the database schema from `src/Data/Database_tables/` (if available)
