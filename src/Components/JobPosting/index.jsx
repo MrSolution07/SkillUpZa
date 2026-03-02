@@ -26,7 +26,7 @@ const JobPostingForm = () => {
       formData.append('jobImage', jobImage);
     }
 
-    fetch('/api/jobs/JobPosting.php', {
+    fetch('https://skillaupza.free.nf/jobs/JobPosting.php', {
       method: 'POST',
       body: formData,
     })

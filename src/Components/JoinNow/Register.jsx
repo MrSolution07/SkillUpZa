@@ -62,9 +62,17 @@ const RegisterPage = () => {
             phpData.append("password", formData.password);
             phpData.append("mobile", formData.mobile);
 
-            const response = await axios.post('/api/auth/register.php', phpData);
+            // #region agent log
+            fetch('http://127.0.0.1:7863/ingest/c2115104-a734-4314-8966-22b49f239129',{method:'POST',headers:{'Content-Type':'application/json','X-Debug-Session-Id':'ad49b2'},body:JSON.stringify({sessionId:'ad49b2',location:'Register.jsx:65',message:'Pre-request: about to POST register',data:{url:'https://skillaupza.free.nf/auth/register.php'},timestamp:Date.now(),hypothesisId:'H1-H5',runId:'run1'})}).catch(()=>{});
+            // #endregion
+
+            const response = await axios.post('https://skillaupza.free.nf/auth/register.php', phpData);
+
+            // #region agent log
+            fetch('http://127.0.0.1:7863/ingest/c2115104-a734-4314-8966-22b49f239129',{method:'POST',headers:{'Content-Type':'application/json','X-Debug-Session-Id':'ad49b2'},body:JSON.stringify({sessionId:'ad49b2',location:'Register.jsx:68',message:'Post-request success',data:{status:response.status,headers:Object.fromEntries(Object.entries(response.headers||{})),dataType:typeof response.data,dataPreview:JSON.stringify(response.data).substring(0,500)},timestamp:Date.now(),hypothesisId:'H2-H3',runId:'run1'})}).catch(()=>{});
+            // #endregion
+
             const data = response.data;
-            
 
             if (data.success) {
                 alert("Registration successful");
@@ -74,6 +82,9 @@ const RegisterPage = () => {
             }
 
         } catch (error) {
+            // #region agent log
+            fetch('http://127.0.0.1:7863/ingest/c2115104-a734-4314-8966-22b49f239129',{method:'POST',headers:{'Content-Type':'application/json','X-Debug-Session-Id':'ad49b2'},body:JSON.stringify({sessionId:'ad49b2',location:'Register.jsx:80',message:'Request FAILED',data:{errorMsg:error?.message,errorCode:error?.code,responseStatus:error?.response?.status,responseData:typeof error?.response?.data === 'string' ? error.response.data.substring(0,500) : JSON.stringify(error?.response?.data)?.substring(0,500),responseHeaders:error?.response?.headers ? Object.fromEntries(Object.entries(error.response.headers)) : null},timestamp:Date.now(),hypothesisId:'H1-H5',runId:'run1'})}).catch(()=>{});
+            // #endregion
             console.error('Error:', error);
             setError("An error occurred. Please try again later.");
         }

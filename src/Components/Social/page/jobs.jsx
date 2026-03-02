@@ -6,7 +6,7 @@ function UserJobs() {
   const [loading, setLoading] = useState(true);
   
   useEffect(() => {
-    fetch('/api/jobs/getJobs.php')
+    fetch('https://skillaupza.free.nf/jobs/getJobs.php')
       .then(response => response.json())
       .then(data => {
         if (data.success) {
