@@ -26,7 +26,7 @@ const JobPostingForm = () => {
       formData.append('jobImage', jobImage);
     }
 
-    fetch('https://skillaupza.free.nf/jobs/JobPosting.php', {
+    fetch('https://backend-skillup.onrender.com/jobs/JobPosting.php', {
       method: 'POST',
       body: formData,
     })

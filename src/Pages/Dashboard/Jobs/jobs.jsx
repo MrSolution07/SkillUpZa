@@ -6,7 +6,7 @@ function Jobs() {
   const [jobs, setJobs] = useState([]);
 
   useEffect(() => {
-    fetch('https://skillaupza.free.nf/jobs/getJobs.php')
+    fetch('https://backend-skillup.onrender.com/jobs/getJobs.php')
       .then(response => response.json())
       .then(data => {
         if (data.success) {

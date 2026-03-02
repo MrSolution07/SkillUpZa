@@ -1,4 +1,4 @@
-const BACKEND = 'https://skillaupza.free.nf';
+const BACKEND = 'https://backend-skillup.onrender.com';
 
 function getRawBody(req) {
   return new Promise((resolve, reject) => {
@@ -20,9 +20,9 @@ export default async function handler(req, res) {
         headers[key] = value;
       }
     }
-    headers['host'] = 'skillaupza.free.nf';
+    headers['host'] = 'backend-skillup.onrender.com';
     headers['user-agent'] = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36';
-    headers['referer'] = 'https://skillaupza.free.nf/';
+    headers['referer'] = 'https://backend-skillup.onrender.com/';
 
     const opts = {
       method: req.method,

@@ -62,7 +62,7 @@ const RegisterPage = () => {
             phpData.append("password", formData.password);
             phpData.append("mobile", formData.mobile);
 
-            const response = await axios.post('https://skillaupza.free.nf/auth/register.php', phpData);
+            const response = await axios.post('https://backend-skillup.onrender.com/auth/register.php', phpData);
             const data = response.data;
 
             if (data.success) {
