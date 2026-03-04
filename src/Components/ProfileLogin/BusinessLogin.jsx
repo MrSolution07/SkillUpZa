@@ -4,9 +4,10 @@ import { Visibility, VisibilityOff } from '@mui/icons-material';
 import IconButton from '@mui/material/IconButton';
 import InputAdornment from '@mui/material/InputAdornment';
 import TextField from '@mui/material/TextField';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 function CompanyLogin() {
+    const navigate = useNavigate();
     const [formData, setFormData] = useState({
         businessName: '',
         password: ''
@@ -36,7 +37,7 @@ function CompanyLogin() {
                     if (data.success) {
                         localStorage.setItem('companyname', formData.businessName);
                         alert("Login successful");
-                        window.location.href = '/Dashboard'; // Redirect to dashboard on successful login
+                        navigate('/Dashboard', { replace: true });
                     } else {
                         setError("Login failed. Please check your credentials.");
                     }

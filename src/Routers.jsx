@@ -127,7 +127,7 @@ const router = createBrowserRouter([
     element: <Jobs />,
   },
   {
-    path: "/Afterlogin",
+    path: "/AfterLogin",
     element: <AfterLogin />,
   },
   {

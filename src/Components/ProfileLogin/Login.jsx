@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import { IconButton, InputAdornment, TextField } from '@mui/material';
 import { Visibility, VisibilityOff } from '@mui/icons-material';
 
 const Login = () => {
+  const navigate = useNavigate();
   const [formData, setFormData] = useState({
     username: '',
     password: ''
@@ -37,7 +38,7 @@ const Login = () => {
             localStorage.setItem('ProfilePicture', data.picture);
 
             alert("Login successful");
-            window.location.href = '/AfterLogin'; // Redirect to dashboard on successful login
+            navigate('/AfterLogin', { replace: true });
           } else {
             setError("Login failed. Please check your credentials.");
           }
