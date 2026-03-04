@@ -274,7 +274,7 @@ If you use InfinityFree, configure `config/database.php` with direct credentials
 
 ```php
 <?php
-$servername = "sqlXXX.infinityfree.com";  // From InfinityFree control panel
+$servername = "sqlXXX.infinityfree.com";  
 $username   = "if0_XXXXXXXX";
 $password   = "your_password";
 $database   = "if0_XXXXXXXX_skillup";

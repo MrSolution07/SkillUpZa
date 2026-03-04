@@ -29,7 +29,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $currentPassword = $postData['currentPassword'];
     $newPassword = $postData['newPassword'];
 
-    $sql = "SELECT password FROM credentials WHERE Username = ?";
+    $sql = "SELECT Password FROM credentials WHERE Username = ?";
     $stmt = $conn->prepare($sql);
     if (!$stmt) {
         error_log("Prepare statement failed: " . $conn->error);
@@ -47,7 +47,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     $row = $result->fetch_assoc();
-    $hashedPassword = $row['password'];
+    $hashedPassword = $row['Password'] ?? $row['password'] ?? null;
 
     // Verify the current password
     if (!password_verify($currentPassword, $hashedPassword)) {
@@ -57,7 +57,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     $newHashedPassword = password_hash($newPassword, PASSWORD_BCRYPT);
-    $sql = "UPDATE credentials SET password = ? WHERE Username = ?";
+    $sql = "UPDATE credentials SET Password = ? WHERE Username = ?";
     $stmt = $conn->prepare($sql);
     if (!$stmt) {
         error_log("Prepare statement failed: " . $conn->error);
